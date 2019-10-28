@@ -161,3 +161,14 @@
 # print(course.intersection(course2))
 
 # Also...{} can never be empty...it is called dictionary
+
+
+# method by which we can get the sqaure of the numbers in the list
+
+# numbers = [1, 2, 3, 4, 5, 6, 7]
+# squared_numbers = []
+# for i in numbers:
+#     squared_numbers.append(i ** 2)
+#
+# print(squared_numbers)
+

@@ -97,13 +97,13 @@
 #     main(100, 90)
 #     my_turtle.right(10)
 
-import turtle
-my_turtle = turtle.Turtle()
- # my_turtle.speed(0)
-for i in range(10):
-    my_turtle.circle(100)
-    my_turtle.forward(100)
-    my_turtle.circle(100)
-    my_turtle.right(90)
-    my_turtle.forward(-100)
-    my_turtle.backward(100)
+# import turtle
+# my_turtle = turtle.Turtle()
+#  # my_turtle.speed(0)
+# for i in range(10):
+#     my_turtle.circle(100)
+#     my_turtle.forward(100)
+#     my_turtle.circle(100)
+#     my_turtle.right(90)
+#     my_turtle.forward(-100)
+#     my_turtle.backward(100)
