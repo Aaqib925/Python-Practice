@@ -31,17 +31,52 @@
 # Then, the output should be:
 # 40320
 # =========CODE============
+#
+# def fact(x):
+#     """ this function calculates the factorial of the input number"""
+#     if x == 0:
+#         return 1
+#     else:
+#         return x * fact(x - 1)
+#
+#
+# x = int(input("Enter any number: "))
+# if x != 0:
+#     print("The factorial of", x, "is", fact(x))
+# else:
+#     print("The factorial of 0 is 1")
 
-def fact(x):
-    """ this function calculates the factorial of the input number"""
-    if x == 0:
-        return 1
-    else:
-        return x * fact(x - 1)
+# Question:
+# With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
+# Suppose the following input is supplied to the program:
+# 8
+# Then, the output should be:
+# {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+
+# =======CODE==========
+# n = int(input("Enter any number: "))
+# dictionary = {}
+#
+# for i in range(1, n + 1):
+#     dictionary[i] = i * i
+#
+# print(dictionary)
 
 
-x = int(input("Enter any number: "))
-if x != 0:
-    print("The factorial of", x, "is", fact(x))
-else:
-    print("The factorial of 0 is 1")
+# Question:
+# Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+# Suppose the following input is supplied to the program:
+# 34,67,55,33,12,98
+# Then, the output should be:
+# ['34', '67', '55', '33', '12', '98']
+# ('34', '67', '55', '33', '12', '98')
+
+# ===========CODE================
+
+# values = input("Enter the values: ")
+# result = values.split(",")
+# t = tuple(result)
+# print(result)
+# print(t)
+#
+
