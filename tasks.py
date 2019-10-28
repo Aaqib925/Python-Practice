@@ -32,14 +32,16 @@
 # 40320
 # =========CODE============
 
-# def fact(x):
-#     """ this function calculates the factorial of the input number"""
-#     if x == 0:
-#         return 1
-#     else:
-#         return x * fact(x - 1)
-#
-#
-# x = int(input("Enter any number: "))
-#
-# print("The factorial of", x, "is", fact(x))
+def fact(x):
+    """ this function calculates the factorial of the input number"""
+    if x == 0:
+        return 1
+    else:
+        return x * fact(x - 1)
+
+
+x = int(input("Enter any number: "))
+if x != 0:
+    print("The factorial of", x, "is", fact(x))
+else:
+    print("The factorial of 0 is 1")
