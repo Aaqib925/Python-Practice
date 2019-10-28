@@ -106,4 +106,4 @@ for i in range(10):
     my_turtle.circle(100)
     my_turtle.right(90)
     my_turtle.forward(-100)
-
+    # my_turtle.backward(100)
