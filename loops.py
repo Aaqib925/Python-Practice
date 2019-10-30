@@ -73,3 +73,12 @@
 #     x += 1
 #     print(x)
 
+# write a program to print the multiplication table of any input value using while loop
+
+num = int(input("Enter any number: "))
+i = 1
+while i <= 10:
+
+    print(num, "*", i, "=", num * i)
+    i += 1
+

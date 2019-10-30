@@ -1,5 +1,5 @@
 # program to count the number of vowels in the String
-
+#
 # sentence = input("Enter the String: ")
 # vowels = 0
 # for i in sentence:
@@ -15,15 +15,15 @@
 #
 # Hints:
 # Consider use range(#begin, #end) method
-
+#
 # list1 = []
 # for i in range(2000, 3201):
 #     if (i % 7 == 0) and (i % 5 != 0):
 #         list1.append(i)
 #
 # print(list1)
-
-
+#
+#
 # Write a program which can compute the factorial of a given numbers.
 # The results should be printed in a comma-separated sequence on a single line.
 # Suppose the following input is supplied to the program:
@@ -45,14 +45,14 @@
 #     print("The factorial of", x, "is", fact(x))
 # else:
 #     print("The factorial of 0 is 1")
-
+#
 # Question:
 # With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
 # Suppose the following input is supplied to the program:
 # 8
 # Then, the output should be:
 # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
-
+#
 # =======CODE==========
 # n = int(input("Enter any number: "))
 # dictionary = {}
@@ -61,8 +61,8 @@
 #     dictionary[i] = i * i
 #
 # print(dictionary)
-
-
+#
+#
 # Question:
 # Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
 # Suppose the following input is supplied to the program:
@@ -70,13 +70,13 @@
 # Then, the output should be:
 # ['34', '67', '55', '33', '12', '98']
 # ('34', '67', '55', '33', '12', '98')
-
+#
 # ===========CODE================
-
+#
 # values = input("Enter the values: ")
 # result = values.split(",")
 # t = tuple(result)
 # print(result)
 # print(t)
 #
-
+#
