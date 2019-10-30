@@ -74,11 +74,19 @@
 #     print(x)
 
 # write a program to print the multiplication table of any input value using while loop
+# 
+# num = int(input("Enter any number: "))
+# i = 1
+# while i <= 10:
+# 
+#     print(num, "*", i, "=", num * i)
+#     i += 1
 
-num = int(input("Enter any number: "))
-i = 1
-while i <= 10:
 
-    print(num, "*", i, "=", num * i)
-    i += 1
-
+# another method added
+# num = int(input("Enter any number: "))
+#
+# i = 1
+# while i <= 10:
+#     print(str(num) + "\t*\t" + str(i) + "\t=\t" + str(num * i))
+#     i += 1
