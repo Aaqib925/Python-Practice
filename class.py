@@ -38,13 +38,13 @@
 # class variables....wo variables jo k class k har instance k liye available hote hen for different modifications
 class Employee():
     raise_amount = 1.04  # now i have to add this variable to the method where it is required
-
+    number_of_employees = 0
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.pay = pay
         self.mail = first + last + "@company.com"
-
+        Employee.number_of_employees += 1
     def full_name(self):
         return self.first + self.last
 
@@ -94,3 +94,6 @@ emp_2 = Employee("Test", "User", 90000)
 # print(Employee.raise_amount)
 # print(emp_1.raise_amount)
 # print(emp_2.raise_amount)
+
+# to find out the number of employees we create class varible of number of variables
+# print(Employee.number_of_employees)
