@@ -16,4 +16,4 @@
 # using the while loop to print the pattern allgned from left
 
 row = 1
-while row < 5
+while row < 5:
