@@ -2,7 +2,7 @@
 # while row < 6:
 #     col = 1
 #     while col <= row:
-#         print("*", end="")
+#         print("*", end=" ")
 #         col += 1
 #
 #     print("")
@@ -16,7 +16,7 @@
 # while row < n:     # if we put 10 as value of n then, the last pattern contains 9 stars
 #     col = 1
 #     while col <= row:
-#         print("*", end="")
+#         print("*", end=" ")
 #         col += 1
 #     print("")
 #     row += 1
@@ -29,17 +29,17 @@
 # while row < n + 1:   # this will give the same number of stars in tha last line
 #     col = 1
 #     while col <= row:
-#         print("*", end="")
+#         print("*", end=" ")
 #         col += 1
 #     print("")
 #     row += 1
 
 # row = 1
 #
-# while row < 5:
+# while row < 6:
 #     col = 5
 #     while col >= row:
-#         print("*", end="")
+#         print("*", end=" ")
 #         col -= 1
 #
 #     print("")
@@ -52,9 +52,14 @@
 # while row < n + 1:
 #     col = column
 #     while col >= row:
-#         print("*", end="")
+#         print("*", end=" ")
 #         col -= 1
 #
 #     print("")
 #     row += 1
+
+
+# making a pyramid using for loop(right triangle)
+# for rows in range(10):
+#     print("*" * rows)
 
