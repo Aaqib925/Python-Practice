@@ -63,3 +63,10 @@
 # for rows in range(10):
 #     print("*" * rows)
 
+number = int(input("Enter the total number of rows of pattern: "))
+
+for i in range(1, number + 1):
+    for j in range(1, i + 1):
+        print("*", end=" ")
+
+    print("")
