@@ -75,7 +75,7 @@
 #     for j in range(1, i):
 #         print("*", end=" ")
 #     print()
-
+#
 # num = int(input("Enter the number of total rows in pattern: "))
 #
 # for i in range(num+1, 1, -1):
