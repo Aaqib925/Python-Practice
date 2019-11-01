@@ -76,10 +76,27 @@
 #         print("*", end=" ")
 #     print()
 
-num = int(input("Enter the number of total rows in pattern: "))
+# num = int(input("Enter the number of total rows in pattern: "))
+#
+# for i in range(num+1, 1, -1):
+#     for j in range(1, i):
+#         print("*", end=" ")
+#
+#     print()
 
-for i in range(num+1, 1, -1):
-    for j in range(1, i):
-        print("*", end=" ")
+# for i in range(1, 6):
+#     for j in range(1, i+1):
+#         print("*", end="")
+#
+#     print()
 
-    print()
+# number = int(input("Enter the number of columns of last row: "))
+#
+# for i in range(1, number + 1):
+#     for j in range(1, i + 1):
+#         print("*", end="")
+#
+#     print()
+
+
+
