@@ -14,9 +14,9 @@
 
 #adding two or more strings
 
-greetings = "Hello"
-
-name = "world"
+# greetings = "Hello"
+#
+# name = "world"
 
 #message = greetings + ", " + name
 #print(message)
