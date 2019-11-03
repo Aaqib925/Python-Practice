@@ -4,7 +4,7 @@
 #
 # print(value)
 
-# if we want to get a random floating point valyue in the certain range
+# if we want to get a random floating point value in the certain range
 
 # import random
 # value = random.uniform(1, 12)

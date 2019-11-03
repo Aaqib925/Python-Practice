@@ -36,24 +36,24 @@
 
 
 # class variables....wo variables jo k class k har instance k liye available hote hen for different modifications
-class Employee():
-    raise_amount = 1.04  # now i have to add this variable to the method where it is required
-    number_of_employees = 0
-    def __init__(self, first, last, pay):
-        self.first = first
-        self.last = last
-        self.pay = pay
-        self.mail = first + last + "@company.com"
-        Employee.number_of_employees += 1
-    def full_name(self):
-        return self.first + self.last
-
-    def apply_raise(self):
-        self.pay = int(self.pay * self.raise_amount)
-
-
-emp_1 = Employee("Aaqib", "Nazir", 10000)
-emp_2 = Employee("Test", "User", 90000)
+# class Employee():
+#     raise_amount = 1.04  # now i have to add this variable to the method where it is required
+#     number_of_employees = 0
+#     def __init__(self, first, last, pay):
+#         self.first = first
+#         self.last = last
+#         self.pay = pay
+#         self.mail = first + last + "@company.com"
+#         Employee.number_of_employees += 1
+#     def full_name(self):
+#         return self.first + self.last
+#
+#     def apply_raise(self):
+#         self.pay = int(self.pay * self.raise_amount)
+#
+#
+# emp_1 = Employee("Aaqib", "Nazir", 10000)
+# emp_2 = Employee("Test", "User", 90000)
 
 # print(emp_1.full_name())
 # print(emp_2.full_name())
@@ -97,3 +97,23 @@ emp_2 = Employee("Test", "User", 90000)
 
 # to find out the number of employees we create class varible of number of variables
 # print(Employee.number_of_employees)
+
+
+class Students():
+
+    def __init__(self, first, last, roll_number, status):
+        self.first_name = first
+        self.last_name = last
+        self.roll_number = roll_number
+        self.status = status
+
+    # creating a class method similar as functions
+
+    def full_name(self):
+        return "The full name of student" + "({})".format(self.roll_number)+" is " + self.first_name + " " + self.last_name
+
+
+student_1 = Students("Aaqib", "Nazir", "CT-47", "present")
+print(student_1.__dict__)
+
+print(student_1.full_name())
