@@ -159,5 +159,11 @@ employee_1 = Employee("Aaqib", "Nazir", 10000)
 employee_2 = Employee("Test", "User", 10000)
 employee_3 = Employee("test", "user", 10000)
 
+# now i am using the class method to increase the pay of the every employee without using the instance
 
+Employee.raise_pay_amt(1.04)
+print(employee_1.raise_amount)
+print(employee_2.raise_amount)
+print(employee_3.raise_amount)
 
+# the class variable changed the pay of every single Employee instance
