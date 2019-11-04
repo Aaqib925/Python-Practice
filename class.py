@@ -138,6 +138,8 @@
 
 # creating a class of an employee
 import datetime
+
+
 class Employee:
 
     # creating a regular class method which takes self as first argument
@@ -179,8 +181,8 @@ employee_3 = Employee("test", "user", 10000)
 # the class variable changed the pay of every single Employee instance
 
 
-
 # creating a my today's date variable using datetime module
 
-my_date = datetime.date(2019, 30, 3)
+my_date = datetime.date(2019, 3, 30)  # if it return false it means that the day on this date is not a working day and
+# vice versa
 print(Employee.is_workday(my_date))
