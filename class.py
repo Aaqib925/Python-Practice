@@ -137,7 +137,7 @@
 # Class method
 
 # creating a class of an employee
-
+import datetime
 class Employee:
 
     # creating a regular class method which takes self as first argument
@@ -147,12 +147,22 @@ class Employee:
         self.last_name = last
         self.pay = pay
 
-    # now i am going to create a class variable to increase the pay of the Empolyee...which takes cls(class) as
+    # now i am going to create a class variable to increase the pay of the Employee...which takes cls(class) as
     # argument
 
     @classmethod
     def raise_pay_amt(cls, amount):
         cls.raise_amount = amount
+
+    # creating a static method which does not take instance self and class ass first argument
+    # in python the date time module has sunday == 6 and saturday == 5 after using a date time module
+    # importing date time module in last lines
+    @staticmethod
+    # creating a static method to check if the a working day or not
+    def is_workday(day):
+        if day.weekday() == 5 or day.weekday == 6:
+            return False
+        return True
 
 
 employee_1 = Employee("Aaqib", "Nazir", 10000)
@@ -161,9 +171,16 @@ employee_3 = Employee("test", "user", 10000)
 
 # now i am using the class method to increase the pay of the every employee without using the instance
 
-Employee.raise_pay_amt(1.04)
-print(employee_1.raise_amount)
-print(employee_2.raise_amount)
-print(employee_3.raise_amount)
+# Employee.raise_pay_amt(1.04)
+# print(employee_1.raise_amount)
+# print(employee_2.raise_amount)
+# print(employee_3.raise_amount)
 
 # the class variable changed the pay of every single Employee instance
+
+
+
+# creating a my today's date variable using datetime module
+
+my_date = datetime.date(2019, 30, 3)
+print(Employee.is_workday(my_date))
