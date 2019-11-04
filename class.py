@@ -134,4 +134,30 @@
 # alternative constructors....and the static methods actually do not take self or class as there arguments...they are
 # just like an function in the class
 
+# Class method
+
+# creating a class of an employee
+
+class Employee:
+
+    # creating a regular class method which takes self as first argument
+
+    def __init__(self, first, last, pay):
+        self.first_name = first
+        self.last_name = last
+        self.pay = pay
+
+    # now i am going to create a class variable to increase the pay of the Empolyee...which takes cls(class) as
+    # argument
+
+    @classmethod
+    def raise_pay_amt(cls, amount):
+        cls.raise_amount = amount
+
+
+employee_1 = Employee("Aaqib", "Nazir", 10000)
+employee_2 = Employee("Test", "User", 10000)
+employee_3 = Employee("test", "user", 10000)
+
+
 
