@@ -99,31 +99,35 @@
 # print(Employee.number_of_employees)
 
 
-class Students():
-    number_of_students = 0
+# class Students():
+#     number_of_students = 0
+#
+#     def __init__(self, first, last, roll_number, status):
+#         self.first_name = first
+#         self.last_name = last
+#         self.roll_number = roll_number
+#         self.status = status
+#         Students.number_of_students += 1
+#
+#     # creating a class method similar as functions
+#
+#     def full_name(self):
+#         return "The full name of student" + "({})".format(
+#             self.roll_number) + " is " + self.first_name + " " + self.last_name
+#
+#
+# student_1 = Students("Aaqib", "Nazir", "CT-47", "present")
+# print(student_1.__dict__)
+# student_2 = Students("Abbas", "none", "CT-46", "present")
+# print(student_1.full_name())
+#
+#
+# print(student_2.__dict__)
+# print(student_2.full_name())
+#
+# print(Students.number_of_students)
 
-    def __init__(self, first, last, roll_number, status):
-        self.first_name = first
-        self.last_name = last
-        self.roll_number = roll_number
-        self.status = status
-        Students.number_of_students += 1
+# There are 3 methods involved in classes...regulat...static...and class methods
 
-    # creating a class method similar as functions
-
-    def full_name(self):
-        return "The full name of student" + "({})".format(
-            self.roll_number) + " is " + self.first_name + " " + self.last_name
-
-
-student_1 = Students("Aaqib", "Nazir", "CT-47", "present")
-print(student_1.__dict__)
-student_2 = Students("Abbas", "none", "CT-46", "present")
-print(student_1.full_name())
-
-
-print(student_2.__dict__)
-print(student_2.full_name())
-
-print(Students.number_of_students)
+# print(4+2*10//5)
 
