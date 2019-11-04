@@ -129,5 +129,9 @@
 
 # There are 3 methods involved in classes...regulat...static...and class methods
 
-# print(4+2*10//5)
+# there is a lot of difference between a regular method, class method and a static method...actually the regular method
+# takes self as an first argument...class methods use cls(class) as an first argument which are also called as
+# alternative constructors....and the static methods actually do not take self or class as there arguments...they are
+# just like an function in the class
+
 
