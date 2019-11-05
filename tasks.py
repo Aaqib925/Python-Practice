@@ -155,4 +155,21 @@
 
 # the guessing game
 
+# import random
+#
+# comp_choice = random.randint(1, 20)
+# print(comp_choice)
+#
+# my_guess = int(input("Guess the number chosen by the computer: "))
+#
+# if my_guess > comp_choice:
+#     print("Your guess was too high")
+#
+# elif my_guess < comp_choice:
+#     print("Your number is too low")
+#
+# elif my_guess == comp_choice:
+#     print("You guessed the correct number!!")
+
+
 
