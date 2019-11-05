@@ -95,3 +95,10 @@ sub4 = int(input("Enter marks in Comp Sci: "))
 
 sub5 = int(input("Enter marks in Urdu: "))
 
+
+per = ((sub1 + sub2 + sub3 + sub4 + sub5) / 500) * 100
+
+
+
+
+
