@@ -80,3 +80,8 @@
 # print(t)
 #
 #
+
+
+# Question:
+# write a program which takes imput of the marks of the subjects and prompt the grade to the user
+
