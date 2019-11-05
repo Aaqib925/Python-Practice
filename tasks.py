@@ -85,18 +85,18 @@
 # Question:
 # write a program which takes imput of the marks of the subjects and prompt the grade to the user
 
-# sub1 = int(input("Enter marks in Chemistry: "))
-#
-# sub2 = int(input("Enter marks in Physics: "))
-#
-# sub3 = int(input("Enter marks in Maths: "))
-#
-# sub4 = int(input("Enter marks in Comp Sci: "))
-#
-# sub5 = int(input("Enter marks in Urdu: "))
+sub1 = int(input("Enter marks in Chemistry: "))
+
+sub2 = int(input("Enter marks in Physics: "))
+
+sub3 = int(input("Enter marks in Maths: "))
+
+sub4 = int(input("Enter marks in Comp Sci: "))
+
+sub5 = int(input("Enter marks in Urdu: "))
 
 
-# per = ((sub1 + sub2 + sub3 + sub4 + sub5) / 500) * 100
+per = ((sub1 + sub2 + sub3 + sub4 + sub5) / 500) * 100
 
 print("Your percentage is: ", per)
 
@@ -111,7 +111,7 @@ elif per < 80 and per >= 70:
 elif per < 70 and per >= 60:
     print("B")
 
-elif per > 60 and per >= 50:
+elif per < 60 and per >= 50:
     print("C")
 
 elif per < 50:
