@@ -85,3 +85,13 @@
 # Question:
 # write a program which takes imput of the marks of the subjects and prompt the grade to the user
 
+sub1 = int(input("Enter marks in Chemistry: "))
+
+sub2 = int(input("Enter marks in Physics: "))
+
+sub3 = int(input("Enter marks in Maths: "))
+
+sub4 = int(input("Enter marks in Comp Sci: "))
+
+sub5 = int(input("Enter marks in Urdu: "))
+
