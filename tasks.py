@@ -85,36 +85,60 @@
 # Question:
 # write a program which takes imput of the marks of the subjects and prompt the grade to the user
 
-sub1 = int(input("Enter marks in Chemistry: "))
+# sub1 = int(input("Enter marks in Chemistry: "))
+#
+# sub2 = int(input("Enter marks in Physics: "))
+#
+# sub3 = int(input("Enter marks in Maths: "))
+#
+# sub4 = int(input("Enter marks in Comp Sci: "))
+#
+# sub5 = int(input("Enter marks in Urdu: "))
+#
+#
+# per = ((sub1 + sub2 + sub3 + sub4 + sub5) / 500) * 100
+#
+# print("Your percentage is: ", per)
+#
+# print("Your grade is: ", end="")
+#
+# if per <= 100 and per >= 80:
+#     print("A1")
+#
+# elif per < 80 and per >= 70:
+#     print("A")
+#
+# elif per < 70 and per >= 60:
+#     print("B")
+#
+# elif per < 60 and per >= 50:
+#     print("C")
+#
+# elif per < 50:
+#     print("Fail")
 
-sub2 = int(input("Enter marks in Physics: "))
+# Let's learn about list comprehensions! You are given three integers X, Y and Z representing the dimensions of a cuboid along with an
+# integer N. You have to print a list of all possible coordinates given by (i, j, k) on a 3D grid where the sum of i + j + k  is not
+# equal to N. Here, 0 <= i <= X; 0 <= j <= Y; 0 <= k <= Z
+#
+# Input Format
+# Four integers X, Y, Z and N each on four separate lines, respectively.
+#
+# Constraints
+# Print the list in lexicographic increasing order.
+#
+# Sample Input
+# 1
+# 1
+# 1
+# 2
+#
+# Sample Output
+# [[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]
+#
+#
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 
-sub3 = int(input("Enter marks in Maths: "))
 
-sub4 = int(input("Enter marks in Comp Sci: "))
-
-sub5 = int(input("Enter marks in Urdu: "))
-
-
-per = ((sub1 + sub2 + sub3 + sub4 + sub5) / 500) * 100
-
-print("Your percentage is: ", per)
-
-print("Your grade is: ", end="")
-
-if per <= 100 and per >= 80:
-    print("A1")
-
-elif per < 80 and per >= 70:
-    print("A")
-
-elif per < 70 and per >= 60:
-    print("B")
-
-elif per < 60 and per >= 50:
-    print("C")
-
-elif per < 50:
-    print("Fail")
 
 
