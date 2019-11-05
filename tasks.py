@@ -148,9 +148,11 @@
 # print(result)
 
 
-n = int(input())
-    arr = map(int, input().split())
+# n = int(input())
+#     arr = map(int, input().split())
+#
+#     print(sorted(list(set(arr)))[-2])
 
-    print(sorted(list(set(arr)))[-2])
+# the guessing game
 
 
