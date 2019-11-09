@@ -31,7 +31,7 @@
 row = 1
 x = " "
 n = int(input("Enter the range of the pattern: "))
-column = int(input("Enter the number of columns of pattern: "))
+column = int(input("Enter the number of columns of first row: "))
 while row < n + 1:
     col = column
     print(x*row, end="")
