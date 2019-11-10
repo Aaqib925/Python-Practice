@@ -188,24 +188,25 @@
 # print("The square root of complex number", num, "is: ", cmath.sqrt(num))
 
 # program to calculate the area of a triangle
+#
+# import math
+#
+# a = float(input("Enter the first side of triangle: "))
+# b = float(input("Enter the second side of triangle: "))
+# c = float(input("Enter the third side of triangle: "))
+#
+#
+# def para():
+#     """ calculates the value of parameter of the triangle """
+#     parameter = (a + b + c) / 2
+#     return parameter
+#
+#
+# def area(parameter):
+#     """ Calculates the area of a triangle """
+#     answer = math.sqrt(parameter * (parameter - a) * (parameter - b) * (parameter - c))
+#     return "The area of the triangle is %0.2f " % answer
+#
+#
+# print(area(para()))
 
-import math
-
-a = float(input("Enter the first side of triangle: "))
-b = float(input("Enter the second side of triangle: "))
-c = float(input("Enter the third side of triangle: "))
-
-
-def para():
-    """ calculates the value of parameter of the triangle """
-    parameter = (a + b + c) / 2
-    return parameter
-
-
-def area(parameter):
-    """ Calculates the area of a triangle """
-    answer = math.sqrt(parameter * (parameter - a) * (parameter - b) * (parameter - c))
-    return "The area of the triangle is %0.2f " % answer
-
-
-print(area(para()))
