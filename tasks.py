@@ -171,5 +171,18 @@
 # elif my_guess == comp_choice:
 #     print("You guessed the correct number!!")
 
+# program to calculate the square root of positive and complex numbers
 
+# import math
+#
+# num = int(input("Enter any positive number: "))
+# if num < 0:
+#     print("Please enter a positive number")
+#
+# print("The sqaure root of", num, "is: "math.sqrt(num))
 
+import cmath
+
+num = complex(input("Enter any complex number: "))
+
+print("The square root of complex number", num, "is: ", cmath.sqrt(num))
