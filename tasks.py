@@ -210,3 +210,27 @@
 #
 # print(area(para()))
 
+# program to solve the find out the root if quadratic equation
+
+import math
+
+print("Solve the quadratic equation ax^2 + bx + c = 0")
+a = int(input("Enter the value of coefficient of x^2: "))
+b = int(input("Enter the value of coefficient of x: "))
+c = int(input("Enter the constant value: "))
+
+
+def discrim():
+    """ Calculates the discriminant of the equation """
+    discriminant = math.sqrt(b - (4 * a * c))
+    return discriminant
+
+
+def roots(discriminant):
+    """ Calculates the roots of the equation """
+    x1 = (-b + discriminant) / 2 * a
+    x2 = (-b - discriminant) / 2 * a
+    return "The roots of equation {}x^2 + {}x + {} are: ".format(a, b, c), x1,  x2
+
+
+print(roots(discrim()))
