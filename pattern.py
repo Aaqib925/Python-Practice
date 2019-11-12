@@ -165,3 +165,9 @@
 #
 #     row += 1
 #     row2 -= 1
+
+x = " "
+for row in range(5):
+
+    print(row*x, end="")
+    print("*")
