@@ -176,3 +176,12 @@
 # for row in range(5, 0, -1):
 #     print(row*x, end="")
 #     print("*")
+
+i = 0
+j = 5
+for row in range(5):
+    for col in range(5):
+        if row == i and col ==j:
+            print("*", end="")
+            i += 1
+            j -= 1
