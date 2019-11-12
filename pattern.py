@@ -172,7 +172,7 @@
 #     print(row*x, end="")
 #     print("*")
 
-x = "    "
-for row in range(5, 0, -1):
-    print(row*x, end="")
-    print("*")
+# x = " "
+# for row in range(5, 0, -1):
+#     print(row*x, end="")
+#     print("*")
