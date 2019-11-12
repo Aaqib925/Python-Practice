@@ -152,19 +152,19 @@
 #     print(n, ":", fibonacci(n))
 
 
-# row = 1
-# x = "   "
-# row2 = 5
-# while row <= 5 and row2 >= 1:
-#
-#     # print(row2 * x, end="")
-#     print("*")
-#     print(row2 * x, end="")
-#     print("*")
-#     print(row*x, end="")
-#
-#     row += 1
-#     row2 -= 1
+row = 1
+x = "   "
+row2 = 5
+while row <= 5 and row2 >= 1:
+
+
+    print("*")
+    print(row2 * x, end="")
+    print("*")
+    print(row*x, end="")
+
+    row += 1
+    row2 -= 1
 
 # x = " "
 # for row in range(5):
@@ -177,16 +177,16 @@
 #     print(row*x, end="")
 #     print("*")
 
-i = 0
-j = 4
-for row in range(5):
-    for col in range(5):
-        if row == i and col == j:
-            print("*", end="")
-            i += 1
-            j -= 1
-        elif row == col:
-            print("*", end='')
-        else:
-            print(end=" ")
-    print()
+# i = 0
+# j = 4
+# for row in range(5):
+#     for col in range(5):
+#         if row == i and col == j:
+#             print("*", end="")
+#             i += 1
+#             j -= 1
+#         elif row == col:
+#             print("*", end='')
+#         else:
+#             print(end=" ")
+#     print()
