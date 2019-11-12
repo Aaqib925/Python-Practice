@@ -166,8 +166,13 @@
 #     row += 1
 #     row2 -= 1
 
-x = " "
-for row in range(5):
+# x = " "
+# for row in range(5):
+#
+#     print(row*x, end="")
+#     print("*")
 
+x = " "
+for row in range(5, 0, -1):
     print(row*x, end="")
     print("*")
