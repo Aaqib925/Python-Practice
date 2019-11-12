@@ -152,4 +152,11 @@
 #     print(n, ":", fibonacci(n))
 
 
+row = 1
+x = " "
+while row <= 5:
+    print("*")
+
+    print(row*x, end="")
+    row += 1
 
