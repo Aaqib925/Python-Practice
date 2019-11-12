@@ -152,11 +152,16 @@
 #     print(n, ":", fibonacci(n))
 
 
-row = 1
-x = " "
-while row <= 5:
-    print("*")
-
-    print(row*x, end="")
-    row += 1
-
+# row = 1
+# x = "   "
+# row2 = 5
+# while row <= 5 and row2 >= 1:
+#
+#     # print(row2 * x, end="")
+#     print("*")
+#     print(row2 * x, end="")
+#     print("*")
+#     print(row*x, end="")
+#
+#     row += 1
+#     row2 -= 1
