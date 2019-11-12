@@ -29,3 +29,33 @@ def fibonacci(n):
 
 
 fibonacci(n)
+
+
+# recursive function example which repeat itself over and over and over
+# def fibonacci(n):
+#     if n == 1:
+#         return 1
+#     elif n == 2:
+#         return  1
+#     elif n > 2:
+#         return fibonacci(n - 1) + fibonacci(n - 2)
+#
+# for n in range(1, 11):
+#     print(n, ":", fibonacci(n))
+
+# Memoization ( to delete the cache values )
+
+from functools import lru_cache
+
+@lru_cache(maxsize= 1000)
+
+def fibonacci(n):
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    if n > 2:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+for n in range(1, 100):
+    print(n, ":", fibonacci(n))

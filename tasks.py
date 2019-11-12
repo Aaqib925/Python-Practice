@@ -222,7 +222,7 @@
 #
 # def discrim():
 #     """ Calculates the discriminant of the equation """
-#     discriminant = math.sqrt(b - (4 * a * c))
+#     discriminant = math.sqrt((b**2) - (4 * a * c))
 #     return discriminant
 #
 #
@@ -237,10 +237,11 @@
 
 # swapping the value of 2 variables
 
-# x = 1
-# y = 2
+# x = 22
+# y = 33
 #
 # x, y = y, x
 #
 # print("The value of x after swapping is: ", x)
 # print("The value of y after swapping is: ", y)
+
