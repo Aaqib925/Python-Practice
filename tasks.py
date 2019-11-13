@@ -245,3 +245,23 @@
 # print("The value of x after swapping is: ", x)
 # print("The value of y after swapping is: ", y)
 
+
+# write a program to calculate the armstrong number
+
+# num = int(input("Enter any number: "))
+#
+# sum = 0
+#
+# num2 = num
+# while num2 > 0:
+#     num3 = num2 % 10
+#     sum += num3 ** 3
+#     print(sum)
+#     num2 //= 10
+#
+# if num == sum:
+#     print("The number {} is an Armstrong number".format(num))
+#
+# else:
+#     print("The number {} is not Armstrong number".format(num))
+
