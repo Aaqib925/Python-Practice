@@ -310,3 +310,9 @@
 #
 # for x in d.values():
 #     print(x, end="")
+
+# def fun(a, b):
+#     return b ** a
+#
+# print(fun(b = 2, 2))
+
