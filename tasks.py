@@ -278,9 +278,31 @@
 
 # now making a function which calculate the square of the numbers
 
-def sq(n):
+# def sq(n):
+#
+#     for i in range(1, n + 1):
+#         print("The square of", i, "is", i ** 2)
+#
+# sq(10)
+#
+# lst = [[x for x in range(3)] for y in range(3)]
+#
+# for r in range(3):
+#     for c in range(3):
+#         if lst[r][c] % 2 == 0:
+#             print("#")
 
-    for i in range(1, n + 1):
-        print("The square of", i, "is", i ** 2)
 
-sq(10)
+# tup = (1, 2, 4, 8)
+# tup = tup[-2: -1]
+# print(tup)
+# tup = tup[-1]
+# print(tup)
+
+# lst = [1, 2]
+#
+# for v in range(2):
+#     lst.insert(-1, lst[v])
+#
+# print(lst)
+
