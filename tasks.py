@@ -446,8 +446,8 @@
 
 # program to find out the factors of a given number
 
-num = int(input("Enter any number: "))
-
-for i in range(1, num + 1):
-    if num % i == 0:
-        print(i, "times", num // i, "is", num)
+# num = int(input("Enter any number: "))
+#
+# for i in range(1, num + 1):
+#     if num % i == 0:
+#         print(i, "times", num // i, "is", num)
