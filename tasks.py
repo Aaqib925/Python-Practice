@@ -384,30 +384,30 @@
 
 # write a program to convert celsius into fahrenheit and vice versa
 
-print("Please select one choice.")
-print("1. Convert Celsius into Fahrenheit.")
-print("2. Convert Fahrenheit into Celsius.")
-
-choice = int(input("Enter your choice of conversion: "))
-
-if choice == 1:
-    print("===========Celsius to Fahrenheit conversion==========")
-    cel = float(input("Enter the value you want to convert in Fahrenheit: "))
-
-    def fah():
-        fahrenheit = (cel * 1.8) + 32
-        return "%0.2f" % fahrenheit
-    print(cel, "Celsius is equals to: ", fah()+" fahrenheits")
-
-elif choice == 2:
-    print("==========Fahrenheit to Celsius conversion============")
-
-    far = float(input("Enter the value you want to convert in Celsius: "))
-
-    def cel():
-        celsius = (far - 32)/1.8
-        return "%0.2f" % celsius
-    print(far, "Fahrenheits are equal to: ", cel()+" celsius")
-
-else:
-    print("Invalid choice, Please enter correct choice number.")
+# print("Please select one choice.")
+# print("1. Convert Celsius into Fahrenheit.")
+# print("2. Convert Fahrenheit into Celsius.")
+#
+# choice = int(input("Enter your choice of conversion: "))
+#
+# if choice == 1:
+#     print("===========Celsius to Fahrenheit conversion==========")
+#     cel = float(input("Enter the value you want to convert in Fahrenheit: "))
+#
+#     def fah():
+#         fahrenheit = (cel * 1.8) + 32
+#         return "%0.2f" % fahrenheit
+#     print(cel, "Celsius is equals to: ", fah()+" fahrenheits")
+#
+# elif choice == 2:
+#     print("==========Fahrenheit to Celsius conversion============")
+#
+#     far = float(input("Enter the value you want to convert in Celsius: "))
+#
+#     def cel():
+#         celsius = (far - 32)/1.8
+#         return "%0.2f" % celsius
+#     print(far, "Fahrenheits are equal to: ", cel()+" celsius")
+#
+# else:
+#     print("Invalid choice, Please enter correct choice number.")
