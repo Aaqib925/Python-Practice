@@ -306,3 +306,7 @@
 #
 # print(lst)
 
+# d = {"1": "0", "0": "1"}
+#
+# for x in d.values():
+#     print(x, end="")
