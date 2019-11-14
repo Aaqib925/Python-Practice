@@ -411,3 +411,23 @@
 #
 # else:
 #     print("Invalid choice, Please enter correct choice number.")
+
+
+# program to check whether the year is leap year or not condition 1 = if year is divisible by 4 then...it should be
+# divisible by 100 and if its true then it should be divisible by 400 also...if not...then year is not the leap year
+
+
+# year = int(input("Enter the year: "))
+#
+#
+# def isleap(year):
+#     if year % 4 == 0:
+#         if year % 100 != 0 or year % 400 == 0:
+#             print("{} is a leap year".format(year))
+#         else:
+#             print("{} is not a leap year".format(year))
+#     else:
+#         print("{} is not leap year".format(year))
+#
+#
+# isleap(year)
