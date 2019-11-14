@@ -444,3 +444,4 @@
 #     print(num, "is not a prime number.")
 
 
+# program to find out the factors of a given number
