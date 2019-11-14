@@ -1,10 +1,7 @@
 # program to count the number of vowels in the String
 #
-# sentence = input("Enter the String: ")
-# vowels = 0
-# for i in sentence:
-#     if i == "a" or i == "e" or i == "i" or i == "o" or i == "u" or i == "A" or i == "E" or i == "I" or i == "O" or i == "U":
-#         vowels += 1
+# sentence = input("Enter the String: ") vowels = 0 for i in sentence: if i == "a" or i == "e" or i == "i" or i ==
+# "o" or i == "u" or i == "A" or i == "E" or i == "I" or i == "O" or i == "U": vowels += 1
 #
 # print("There are", vowels, "vowels in your String")
 
@@ -46,12 +43,10 @@
 # else:
 #     print("The factorial of 0 is 1")
 #
-# Question:
-# With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
-# Suppose the following input is supplied to the program:
-# 8
-# Then, the output should be:
-# {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+# Question: With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that
+# is an integral number between 1 and n (both included). and then the program should print the dictionary. Suppose
+# the following input is supplied to the program: 8 Then, the output should be: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25,
+# 6: 36, 7: 49, 8: 64}
 #
 # =======CODE==========
 # n = int(input("Enter any number: "))
@@ -63,13 +58,9 @@
 # print(dictionary)
 #
 #
-# Question:
-# Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
-# Suppose the following input is supplied to the program:
-# 34,67,55,33,12,98
-# Then, the output should be:
-# ['34', '67', '55', '33', '12', '98']
-# ('34', '67', '55', '33', '12', '98')
+# Question: Write a program which accepts a sequence of comma-separated numbers from console and generate a list and
+# a tuple which contains every number. Suppose the following input is supplied to the program: 34,67,55,33,12,
+# 98 Then, the output should be: ['34', '67', '55', '33', '12', '98'] ('34', '67', '55', '33', '12', '98')
 #
 # ===========CODE================
 #
@@ -117,9 +108,9 @@
 # elif per < 50:
 #     print("Fail")
 
-# Let's learn about list comprehensions! You are given three integers X, Y and Z representing the dimensions of a cuboid along with an
-# integer N. You have to print a list of all possible coordinates given by (i, j, k) on a 3D grid where the sum of i + j + k  is not
-# equal to N. Here, 0 <= i <= X; 0 <= j <= Y; 0 <= k <= Z
+# Let's learn about list comprehensions! You are given three integers X, Y and Z representing the dimensions of a
+# cuboid along with an integer N. You have to print a list of all possible coordinates given by (i, j, k) on a 3D
+# grid where the sum of i + j + k  is not equal to N. Here, 0 <= i <= X; 0 <= j <= Y; 0 <= k <= Z
 #
 # Input Format
 # Four integers X, Y, Z and N each on four separate lines, respectively.
@@ -437,19 +428,19 @@
 # prime number is that number which do not have any factors except itself
 
 
-num = int(input("Enter any number: "))
+# num = int(input("Enter any number: "))
 
 # we have to write a code by which we can check whether the factors of number exist or not
-
-if num > 1:
-    for i in range(2, num):
-        if (num % i) == 0:
-            print(num, "is not a prime number.")
-            print(i, "times", num // i, "is", num)
-            break
-    else:
-        print(num, "is a prime number.")
-else:
-    print(num, "is not a prime number.")
+#
+# if num > 1:
+#     for i in range(2, num):
+#         if (num % i) == 0:
+#             print(num, "is not a prime number.")
+#             print(i, "times", num // i, "is", num)
+#             break
+#     else:
+#         print(num, "is a prime number.")
+# else:
+#     print(num, "is not a prime number.")
 
 
