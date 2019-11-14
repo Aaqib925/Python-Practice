@@ -248,22 +248,26 @@
 
 # write a program to calculate the armstrong number
 
-num = int(input("Enter any number: "))
+# num = int(input("Enter any number: "))
+#
+# # this is value in which the total of cubes of number will be added
+# sum = 0
+#
+# num2 = num # initializing another variable so we could the num value with sum...
+#
+# while num2 > 0:
+#     num3 = num2 % 10  # this operation gives us each number for making cube separately
+#
+#     sum += num3 ** 3  # adding the cube of single number from num to sum variable
+#     # print(sum)
+#     num2 //= 10   # this is going to remove the last number from the num value
+#
+# if num == sum:
+#     print("The number {} is an Armstrong number".format(num))
+#
+# else:
+#     print("The number {} is not Armstrong number".format(num))
 
-# this is value in which the total of cubes of number will be added
-sum = 0
 
-num2 = num # initializing another variable so we could the num value with sum...
+# write a program to generate the square of the numbers
 
-while num2 > 0:
-    num3 = num2 % 10  # this operation gives us each number for making cube separately
-
-    sum += num3 ** 3  # adding the cube of single number from num to sum variable
-    # print(sum)
-    num2 //= 10   # this is going to remove the last number from the num value
-
-if num == sum:
-    print("The number {} is an Armstrong number".format(num))
-
-else:
-    print("The number {} is not Armstrong number".format(num))
