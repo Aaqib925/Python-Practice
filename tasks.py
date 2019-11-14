@@ -340,3 +340,43 @@
 #     print("*")
 # else:
 #     print("*")
+
+
+# Write a program to convert kilometers into miles
+# 1 kilometer = 0.621371 miles
+
+print("1. Convert kilometer into miles.")
+print("2. Convert miles into kilometers.")
+
+x = int(input("Enter number of which conversion you want: "))
+
+con_factor = 0.621371  # since 1 kilometer is = 0.621371 miles
+
+if x == 1:
+    print("=========Kilometers into miles conversion=========")
+
+    km = float(input("Enter value you want to covert in miles: "))
+
+
+    def ktm():
+        miles = km * con_factor
+        return "%2f" % miles
+
+
+    print(km, "kilometers are equal to:", ktm()+" miles")
+
+elif x == 2:
+    print("=======Miles into kilometer conversion======")
+
+    mil = float(input("Enter the value to convert into kilometers: "))
+
+
+    def mile():
+        kilometers = mil / con_factor
+        return "%2f" % kilometers
+
+
+    print(mil, "miles are equals to:", mile()+" kilometers")
+
+else:
+    print("Invalid choice, Please enter correct choice number.")
