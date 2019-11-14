@@ -431,3 +431,26 @@
 #
 #
 # isleap(year)
+
+
+# Program to find whether a number is prime number or not...and if not...then explain how...by showing the factors of it
+# prime number is that number which do not have any factors except itself
+
+
+num = int(input("Enter any number: "))
+
+# we have to write a code by which we can check whether the factors of number exist or not
+
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print(num, "is not a prime number.")
+            print(i, "times", num // i, "is", num)
+            break
+    else:
+        print(num, "is a prime number.")
+else:
+    print(num, "is not a prime number.")
+
+
+
