@@ -334,3 +334,9 @@
 #     return fun1(a) * fun1(a)
 #
 # print(fun2(2))
+# i = 0
+# while i < i + 2:
+#     i += 1
+#     print("*")
+# else:
+#     print("*")
