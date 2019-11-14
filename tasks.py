@@ -316,3 +316,21 @@
 #
 # print(fun(b = 2, 2))
 
+# list = [x * x for x in range(5)]
+# print(list)
+
+# def fun(x, y):
+#     if x == y:
+#         return x
+#     else:
+#         return fun(x, y - 1)
+#
+# print(fun(0, 3))
+
+# def fun1(a):
+#     return None
+#
+# def fun2(a):
+#     return fun1(a) * fun1(a)
+#
+# print(fun2(2))
