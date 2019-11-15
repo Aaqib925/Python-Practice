@@ -455,18 +455,18 @@
 
 # program to print the prime numbers in a interval
 
-lower = int(input("Enter the upper limit: "))
-upper = int(input("Enter the lower limit: "))
-
-print("Prime numbers in the interval", lower, "and", upper, "are:")
-count = 0
-for num in range(lower, upper + 1):
-    if num > 1:
-        for i in range(2, num):
-            if num % i == 0:
-                break
-        else:
-            print(num)
-            count += 1
-
-print("There are", count, "prime numbers in interval", lower, "and", upper)
+# lower = int(input("Enter the upper limit: "))
+# upper = int(input("Enter the lower limit: "))
+#
+# print("Prime numbers in the interval", lower, "and", upper, "are:")
+# count = 0
+# for num in range(lower, upper + 1):
+#     if num > 1:
+#         for i in range(2, num):
+#             if num % i == 0:
+#                 break
+#         else:
+#             print(num)
+#             count += 1
+#
+# print("There are", count, "prime numbers in interval", lower, "and", upper)
