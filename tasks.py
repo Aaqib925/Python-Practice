@@ -485,3 +485,10 @@
 #     for i in range(1, num + 1):
 #         factorial = factorial * i
 #     print("This factorial of {} is".format(num), factorial)
+
+# program to print the multiplication table
+
+# num = int(input("Enter any number: "))
+# for i in range(1, 11):
+#     print(num, "x", i, "=", num * i)
+
