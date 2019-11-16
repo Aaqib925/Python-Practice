@@ -519,3 +519,18 @@
 #         counter += 1
 
 
+# write a function to count number of integer in a number
+
+# num = int(input("Enter any number to find out it's length: "))
+#
+#
+# def num_counter(any_num):
+#     """ function to count the number of int in a number """
+#     counter = 0
+#     while any_num > 0:
+#         any_num = any_num // 10
+#         counter += 1
+#     return counter
+#
+#
+# print(num_counter(num))
