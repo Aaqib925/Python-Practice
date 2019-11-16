@@ -496,26 +496,26 @@
 
 # first the number of terms you want to get in certain fibonacci series
 
-n_terms = int(input("Enter the number of terms you want in the fibonacci series: "))
-
-first_num = 0
-sec_num = 1
-
-counter = 0
-if n_terms == 0 or n_terms == 1:
-    print(first_num)
-
-elif n_terms < 0:
-    print("Please enter a positive number.")
-
-else:
-    print("The fibonacci series is: ", end="")
-    while counter < n_terms:
-        print(first_num, end=", ")
-        nth = first_num + sec_num
-
-        first_num = sec_num
-        sec_num = nth
-        counter += 1
+# n_terms = int(input("Enter the number of terms you want in the fibonacci series: "))
+#
+# first_num = 0
+# sec_num = 1
+#
+# counter = 0
+# if n_terms == 0 or n_terms == 1:
+#     print(first_num)
+#
+# elif n_terms < 0:
+#     print("Please enter a positive number.")
+#
+# else:
+#     print("The fibonacci series is: ", end="")
+#     while counter < n_terms:
+#         print(first_num, end=", ")
+#         nth = first_num + sec_num
+#
+#         first_num = sec_num
+#         sec_num = nth
+#         counter += 1
 
 
