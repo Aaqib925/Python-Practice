@@ -7,4 +7,20 @@
 #     print(table, "*", i, "=", table * i)
 
 
-fib
+# fibonacci series
+
+num_terms = int(input("Enter the no. of terms on fibonacci series: "))
+
+first_term = 1
+second_term = 2
+
+counter = 0
+
+while counter <= num_terms:
+    print(first_term, end=", ")
+    nth = first_term + second_term
+
+    first_term = second_term
+    second_term = nth
+
+    counter += 1
