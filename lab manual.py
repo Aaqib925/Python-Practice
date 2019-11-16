@@ -66,3 +66,11 @@
 #
 # elif age >= 65:
 #     print("Older.")
+
+for i in range(1, 21):
+    if i == 9:
+        continue
+    elif i == 13:
+        continue
+    else:
+        print(i, end=", ")
