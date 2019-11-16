@@ -473,15 +473,15 @@
 
 # write a program to print the factorial of the any number
 
-num = int(input("Enter any number: "))
-factorial = 1
-if num < 0:
-    print("The factorial of negative number does not exist.")
-
-elif num == 0 or num == 1:
-    print("The factorial of", num, "is 1")
-
-else:
-    for i in range(1, num + 1):
-        factorial = factorial * i
-    print("This factorial of {} is".format(num), factorial)
+# num = int(input("Enter any number: "))
+# factorial = 1
+# if num < 0:
+#     print("The factorial of negative number does not exist.")
+#
+# elif num == 0 or num == 1:
+#     print("The factorial of", num, "is 1")
+#
+# else:
+#     for i in range(1, num + 1):
+#         factorial = factorial * i
+#     print("This factorial of {} is".format(num), factorial)
