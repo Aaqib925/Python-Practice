@@ -16,9 +16,9 @@ second_term = 2
 
 counter = 0
 
-while counter <= num_terms:
+while counter < num_terms:
     print(first_term, end=", ")
-    nth = first_term + second_term
+    nth = first_term + second_term  # here second term is = nth term of iteration before
 
     first_term = second_term
     second_term = nth
