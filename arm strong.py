@@ -1,28 +1,25 @@
-# def counter(num):
-#     length = len(str(num))
-#     return length
-#
-#
-# num1 = int(input("Enter any number: "))
-#
-#
-# def arm_strong():
-#     for i in range(counter(num1)):
-#         digit =
+# program to find out check whether a number is a armstrong number or not
+
+number = input("Enter any number: ")
 
 
-# num = 333
+def func(num):
+    """" this function find out the length of the input number and add the total """
+    total = 0
+    length = len(num)
 
-# length = len(str(num))
+    for i in range(length):
+        total = total + int(num[i]) ** length
 
-# for items in enumerate(num):
+    return total
 
 
-# for i in range(1, length + 1):
+def fun2(total):
+    if total == number:
+        print("The number {} is Arm Strong number.".format(number))
 
-# i = 1
-# while i < length + 1:
-#     digit = str(num)
-#     dig = digit[i]
-#     print(digit)
-#     i += 1
+    else:
+        print("The number {} is not a Arm Strong number.".format(number))
+
+
+(fun2(func(number)))

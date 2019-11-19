@@ -238,7 +238,7 @@
 
 
 # write a program to calculate the armstrong number
-
+#
 # num = int(input("Enter any number: "))
 #
 # # this is value in which the total of cubes of number will be added
