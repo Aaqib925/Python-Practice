@@ -6,20 +6,14 @@ number = input("Enter any number: ")
 def func(num):
     """" this function find out the length of the input number and add the total """
     total = 0
-    length = len(num)
+    length = len(number)
 
     for i in range(length):
         total = total + int(num[i]) ** length
 
-    return total
-
-
-def fun2(total):
-    if total == number:
-        print("The number {} is Arm Strong number.".format(number))
-
+    if int(number) == total:
+        print("The number {} is a Arm Strong number.".format(num))
     else:
-        print("The number {} is not a Arm Strong number.".format(number))
+        print("The number {} is not a Arm Strong number.".format(num))
 
-
-(fun2(func(number)))
+func(number)
