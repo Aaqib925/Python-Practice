@@ -16,5 +16,5 @@ def func(num):
     else:
         print("The number {} is not a Arm Strong number.".format(num))
 
-func(number)
 
+func(number)
