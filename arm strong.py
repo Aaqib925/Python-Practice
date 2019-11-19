@@ -17,3 +17,4 @@ def func(num):
         print("The number {} is not a Arm Strong number.".format(num))
 
 func(number)
+
