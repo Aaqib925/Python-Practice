@@ -533,14 +533,35 @@
 #     return counter
 #
 # write a program to check what number is repeated in the list
-
-num = int(input("Enter the range of your list: "))
-
-my_list = []
-
-for i in range(num):
-    x = int(input("Enter numbers you want to include in your list: "))
-    my_list.append(x)
-
-print("Your list is: ", my_list)
-
+#
+# num = int(input("Enter the range of your list: "))
+#
+# my_inp_list = []
+#
+# for i in range(num):
+#     x = int(input("Enter numbers you want to include in your list: "))
+#     my_inp_list.append(x)
+#
+# print("Your list is: ", my_inp_list)
+#
+# repeated_values = []
+#
+#
+# def check_repeated(my_list):
+#     for i in range(len(my_list)):
+#         for j in range(i + 1, len(my_list)):
+#             if my_list[i] == my_list[j] and my_list[i] not in repeated_values:
+#                 repeated_values.append(my_list[i])
+#     return repeated_values
+#
+#
+# print(""" Enter your choice:
+# 1. if you want to check which number is repeated in the list
+# 2. Exit """)
+#
+# choice = int(input("Enter any choice: "))
+#
+# if choice == 1:
+#     print("The values repeated in the list are: ", check_repeated(my_inp_list))
+# else:
+#     print("Thank You")
