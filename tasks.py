@@ -565,3 +565,4 @@
 #     print("The values repeated in the list are: ", check_repeated(my_inp_list))
 # else:
 #     print("Thank You")
+
