@@ -532,7 +532,15 @@
 #         counter += 1
 #     return counter
 #
-#
-# print(num_counter(num))
+# write a program to check what number is repeated in the list
 
+num = int(input("Enter the range of your list: "))
+
+my_list = []
+
+for i in range(num):
+    x = int(input("Enter numbers you want to include in your list: "))
+    my_list.append(x)
+
+print("Your list is: ", my_list)
 
