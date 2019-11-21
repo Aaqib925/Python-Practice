@@ -568,4 +568,30 @@
 
 # write a program which converts decimal into binary number
 
+# num = 10
+# ls = []
+# while num > 1:
+#     remainder = num % 2
+#
+#     ls.append(remainder)
+#
+#     num //= 2
+#     if num == 1:
+#         ls.append(1)
+#
+# ls2 = ls.reverse()
+# print(ls2)
 
+num = 50
+total = ""
+while num > 1:
+    remainder = num % 2
+    total = str(remainder) + total
+
+    num //= 2
+    if num == 1:
+        total = str(1) + total
+
+print(total)
+
+print(bin(50))
