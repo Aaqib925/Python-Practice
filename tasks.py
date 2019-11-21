@@ -568,17 +568,19 @@
 
 # write a program which converts decimal into binary number
 
-num = 34
-
-while True:
-
-    remainder = str(num % 2)
-
-    num = num // 2
-
-    # print(remainder, end="")
-
-    if num == 1:
-        print(1)
-        break
-
+# num = 34
+# x = ""
+# while True:
+#
+#     remainder = str(num % 2)
+#
+#     num = num // 2
+#
+#     total = str(remainder + x)
+#     for i in total:
+#         total = i + total
+#         print(total)
+#
+#     if num == 1:
+#         print(1)
+#         break
