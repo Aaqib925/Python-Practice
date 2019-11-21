@@ -566,4 +566,19 @@
 # else:
 #     print("Thank You")
 
+# write a program which converts decimal into binary number
+
+num = 34
+
+while True:
+
+    remainder = str(num % 2)
+
+    num = num // 2
+
+    # print(remainder, end="")
+
+    if num == 1:
+        print(1)
+        break
 
