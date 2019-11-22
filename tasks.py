@@ -582,7 +582,7 @@
 # ls2 = ls.reverse()
 # print(ls2)
 
-num = 50
+num = 254
 total = ""
 while num > 1:
     remainder = num % 2
@@ -594,4 +594,5 @@ while num > 1:
 
 print(total)
 
-print(bin(50))
+print(bin(254))
+
