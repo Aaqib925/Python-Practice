@@ -596,3 +596,5 @@ print(total)
 
 print(bin(254))
 
+
+
