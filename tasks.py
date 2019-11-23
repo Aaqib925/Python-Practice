@@ -582,19 +582,18 @@
 # ls2 = ls.reverse()
 # print(ls2)
 
-num = 254
-total = ""
-while num > 1:
-    remainder = num % 2
-    total = str(remainder) + total
-
-    num //= 2
-    if num == 1:
-        total = str(1) + total
-
-print(total)
-
-print(bin(254))
-
-
-
+# num = 254
+# total = ""
+# while num > 1:
+#     remainder = num % 2
+#     total = str(remainder) + total
+#
+#     num //= 2
+#     if num == 1:
+#         total = str(1) + total
+#
+# print(total)
+#
+# print(bin(254))
+#
+#
