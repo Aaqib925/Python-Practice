@@ -596,3 +596,10 @@
 # print(total)
 #
 # program to convert binary to hexa decimal
+
+num = "2790862"
+
+length = len(num)
+
+bit = num[3:length]
+print(bit)
