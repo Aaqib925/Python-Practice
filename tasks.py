@@ -595,3 +595,4 @@
 #
 # print(total)
 #
+# program to convert binary to hexa decimal
