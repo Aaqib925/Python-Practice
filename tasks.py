@@ -374,7 +374,7 @@
 
 
 # write a program to convert celsius into fahrenheit and vice versa
-
+#
 # print("Please select one choice.")
 # print("1. Convert Celsius into Fahrenheit.")
 # print("2. Convert Fahrenheit into Celsius.")
@@ -533,7 +533,7 @@
 #     return counter
 #
 # write a program to check what number is repeated in the list
-#
+
 # num = int(input("Enter the range of your list: "))
 #
 # my_inp_list = []
@@ -582,7 +582,8 @@
 # ls2 = ls.reverse()
 # print(ls2)
 
-# num = 254
+# num = 22
+#
 # total = ""
 # while num > 1:
 #     remainder = num % 2
@@ -593,7 +594,4 @@
 #         total = str(1) + total
 #
 # print(total)
-#
-# print(bin(254))
-#
 #
