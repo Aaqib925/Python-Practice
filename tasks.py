@@ -597,9 +597,13 @@
 #
 # program to convert binary to hexa decimal
 
-num = "2790862"
+num = "02790862"
 
 length = len(num)
 
-bit = num[3:length]
+
+bit = num[length-4:length]
+bit2 = num[length-8: length-4]
+
+print(bit2)
 print(bit)
