@@ -625,3 +625,15 @@
 
 # program to convert binary to hexa
 
+num = "0001111"
+
+length = len(num)
+range1 = 0
+range2 = 4
+
+while length > 0:
+
+
+
+
+
