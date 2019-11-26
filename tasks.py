@@ -630,11 +630,16 @@ length = len(str(num))
 
 range1 = 0
 range2 = 4
-
+total = 0
 while length >= 0:
 
     num2 = str(num)[range1:range2]
-    print(num2)
+    # print(num2)
+
+    for i in range(len(num2)):
+        if num2[0] == str(1):
+
+    range1 += 4
     range2 += 5
     length -= 4
 
