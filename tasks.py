@@ -625,26 +625,23 @@
 
 # program to convert binary to hexa
 
-num = 10101000
-length = len(str(num))
-
-range1 = 0
-range2 = 4
-total = 0
-while length >= 0:
-
-    num2 = str(num)[range1:range2]
-    print(num2)
-    for i in num2:
-        if i == str(1):
-
-        elif i == str(0):
-            print("No")
-
-    range1 += 4
-    range2 += 5
-    length -= 4
-print(total)
-
-
-
+# num = 10101000
+# length = len(str(num))
+#
+# range1 = 0
+# range2 = 4
+# total = 0
+# while length >= 0:
+#
+#     num2 = str(num)[range1:range2]
+#     print(num2)
+#     for i in num2:
+#         if i == str(1):
+#
+#         elif i == str(0):
+#             print("No")
+#
+#     range1 += 4
+#     range2 += 5
+#     length -= 4
+# print(total)
