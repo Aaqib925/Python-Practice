@@ -625,13 +625,20 @@
 
 # program to convert binary to hexa
 
-num = "0001111"
+num = "00011111"
 
 length = len(num)
+
 range1 = 0
 range2 = 4
 
-while length > 0:
+while length >= 0:
+
+    num2 = num[range1:range2]
+    print(num2)
+    range1 += 4
+    range2 += 5
+    length -= 4
 
 
 
