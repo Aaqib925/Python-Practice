@@ -606,6 +606,7 @@
 # print(bit2)
 # print(bit)
 
+# code for making the four bits
 num = "7462122"
 
 length = len(num)
@@ -617,7 +618,6 @@ if modulus != 0:
         num2 = i * str(0) + str(num)
         if len(num2) % 4 == 0:
             break
-
 else:
     print(num)
 
