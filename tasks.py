@@ -606,14 +606,19 @@
 # print(bit2)
 # print(bit)
 
-num = "115675"
+num = "7462122"
 
 length = len(num)
 
-modulus = int(num) % 4
-
+modulus = length % 4
+num2 = ""
 if modulus != 0:
-    for i in range(modulus):
+    for i in range(modulus * 4):
         num2 = i * str(0) + str(num)
+        if len(num2) % 4 == 0:
+            break
+
+else:
+    print(num)
 
 print(num2)
