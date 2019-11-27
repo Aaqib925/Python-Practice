@@ -595,16 +595,6 @@
 #
 # print(total)
 #
-# program to convert binary to hexa decimal
-
-# num = "02790862"
-#
-# length = len(num)
-# bit = num[length-4:length]
-# bit2 = num[length-8: length-4]
-#
-# print(bit2)
-# print(bit)
 
 # code for making the four bits
 # num = input("Enter any number: ")
@@ -625,7 +615,7 @@
 
 # program to convert binary to hexa
 
-num = 10101000
+num = 100011001111
 length = len(str(num))
 
 range1 = 0
@@ -635,7 +625,7 @@ final = []
 while length >= 0:
     total = 0
     num2 = str(num)[range1:range2]
-    print(num2)
+    # print(num2)
     for i in range(len(num2)):
         if num2[0] == str(1):
             total += 8
@@ -655,10 +645,23 @@ while length >= 0:
             total += 0
         if total <= 16:
             break
-    if total > 0:
+    if total > 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
         final.append(total)
+    if total > 0 and total == 10:
+        final.append("A")
+    if total > 0 and total == 11:
+        final.append("B")
+    if total > 0 and total == 12:
+        final.append("C")
+    if total > 0 and total == 13:
+        final.append("D")
+    if total > 0 and total == 14:
+        final.append("E")
+    if total > 0 and total == 15:
+        final.append("F")
     range1 += 4
     range2 += 5
     length -= 4
     num2 = ""
-print(final)
+final_answer = "".join(str(element) for element in final)
+print("Your", num, "in Hex Decimal is equal to", final_answer)
