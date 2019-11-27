@@ -568,21 +568,7 @@
 
 # write a program which converts decimal into binary number
 
-# num = 10
-# ls = []
-# while num > 1:
-#     remainder = num % 2
-#
-#     ls.append(remainder)
-#
-#     num //= 2
-#     if num == 1:
-#         ls.append(1)
-#
-# ls2 = ls.reverse()
-# print(ls2)
-
-# num = 22
+# num = 333
 #
 # total = ""
 # while num > 1:
