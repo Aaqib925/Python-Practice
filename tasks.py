@@ -601,7 +601,8 @@
 
 # program to convert binary to hexa
 
-num = 100011001111
+num = '01001010'  # the number from here should be in string format...if not then program will show error if number
+# starts with zero
 length = len(str(num))
 
 range1 = 0
