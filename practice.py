@@ -146,3 +146,17 @@
 #         print()
 #
 # pattern3(8)
+
+# def pattern4(num):
+#     for i in range(0, num):
+#         for j in range(0, num - i - 1):
+#             print(end=" ")
+#         for j in range(0, i + 1):
+#             print("*", end=" ")
+#
+#         print()
+#
+#
+# pattern4(5)
+
+
