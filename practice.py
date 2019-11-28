@@ -169,3 +169,16 @@
 #
 #
 # pattern5(5)
+
+# string = "hello"
+# rev = ""
+# for i in string:
+#     rev = i + rev
+# print(rev)
+
+# string = "asaa"
+# counter = 0
+# for i in string:
+#     if i == "a" or i == "e" or i == "i" or i == "o" or i == "u":
+#         counter += 1
+# print(counter)
