@@ -678,10 +678,11 @@ for i in range(1, len_user + 1):
 print(col_list)
 
 print("Now please enter the column in which your letters appear from the list below: ")
-num = "1\t2\t3\t4\t5\t6"
+num = "1\t2\t3\t4\t5\t6\t7"
 print(num)
 print("---------------------")
 
+last_list = []
 conj_col1 = ["A", "E", "I", "M", "Q", "U", "Y"]
 conj_col2 = ["B", "F", "J", "N", "R", "V", "Z"]
 conj_col3 = ["C", "G", "K", "O", "S", "W"]
@@ -689,18 +690,27 @@ conj_col4 = ["D", "H", "I", "P", "T", "X"]
 for j in col_list:
     if j == 1:
         print("A\tE\tI\tM\tQ\tU\tY")
+        last_list.append(conj_col1)
     if j == 2:
         print("B\tF\tJ\tN\tR\tV\tZ")
+        last_list.append(conj_col2)
     if j == 3:
         print("C\tG\tK\tO\tS\tW")
+        last_list.append(conj_col3)
     if j == 4:
         print("D\tH\tI\tP\tT\tX")
+        last_list.append(conj_col4)
 
 final_list = []
+ls = []
 for letter_choice in range(1, len(col_list) + 1):
     letter_choosen = int(input("Enter the column number of the {} letter from word: ".format(letter_choice)))
     final_list.append(letter_choosen)
 print(final_list)
 
-for final_answer in range(len(final_list)):
-    if final_list[i]
+print(last_list)
+
+word = ""
+
+for s in range(len(final_list)):
+    word += last_list[]
