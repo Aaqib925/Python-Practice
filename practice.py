@@ -111,3 +111,15 @@
 #     print()
 #     row += 1
 
+
+# def pattern1(num):
+#     for i in range(num):
+#         for j in range(num):
+#             if i == j:
+#                 print("*", end="")
+#             else:
+#                 print(end=" ")
+#         print()
+#
+#
+# pattern1(5)
