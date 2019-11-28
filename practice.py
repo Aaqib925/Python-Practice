@@ -249,3 +249,9 @@
 #         string2 += i.upper()
 #
 # print(string2)
+
+# my_list = [1, 2, 3, 4]
+# my_list2 = [3, 4, 2, 2]
+#
+# my_list.extend(my_list2)
+# print(my_list)
