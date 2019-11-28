@@ -654,3 +654,53 @@
 # print("Your", num, "in Hex Decimal is equal to", final_answer)
 
 # Alhumdullilah <3
+
+print("Please think a word in your mind.")
+len_user = int(input("Enter how many letters your word has: "))
+
+print("Please enter the column number of your letter from the list below: ")
+print("""
+1\t2\t3\t4
+-------------
+A\tB\tC\tD
+E\tF\tG\tH
+I\tJ\tK\tL
+M\tN\tO\tP
+Q\tR\tS\tT
+U\tV\tW\tX
+Y\tZ
+""")
+
+col_list = []
+for i in range(1, len_user + 1):
+    col = int(input("Enter the column number for {} letter of your word:".format(i)))
+    col_list.append(col)
+print(col_list)
+
+print("Now please enter the column in which your letters appear from the list below: ")
+num = "1\t2\t3\t4\t5\t6"
+print(num)
+print("---------------------")
+
+conj_col1 = ["A", "E", "I", "M", "Q", "U", "Y"]
+conj_col2 = ["B", "F", "J", "N", "R", "V", "Z"]
+conj_col3 = ["C", "G", "K", "O", "S", "W"]
+conj_col4 = ["D", "H", "I", "P", "T", "X"]
+for j in col_list:
+    if j == 1:
+        print("A\tE\tI\tM\tQ\tU\tY")
+    if j == 2:
+        print("B\tF\tJ\tN\tR\tV\tZ")
+    if j == 3:
+        print("C\tG\tK\tO\tS\tW")
+    if j == 4:
+        print("D\tH\tI\tP\tT\tX")
+
+final_list = []
+for letter_choice in range(1, len(col_list) + 1):
+    letter_choosen = int(input("Enter the column number of the {} letter from word: ".format(letter_choice)))
+    final_list.append(letter_choosen)
+print(final_list)
+
+for final_answer in range(len(final_list)):
+    if final_list[i]
