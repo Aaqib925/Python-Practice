@@ -241,3 +241,11 @@
 #     if i == "z":
 #         string2 += "Z"
 # print(string2)
+
+# string = "aaqib"
+# string2 = ""
+# for i in string:
+#     if i != i.upper():
+#         string2 += i.upper()
+#
+# print(string2)
