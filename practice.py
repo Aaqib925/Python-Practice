@@ -100,14 +100,14 @@
 #     print()
 #     row += 1
 
-row = 1
-x = " "
-while row <= 5:
-    col = 5
-    print(x * row, end="")
-    while col >= row:
-        print(row, end="")
-        col -= 1
-    print()
-    row += 1
+# row = 1
+# x = " "
+# while row <= 5:
+#     col = 5
+#     print(x * row, end="")
+#     while col >= row:
+#         print(row, end=" ")
+#         col -= 1
+#     print()
+#     row += 1
 
