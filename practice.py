@@ -183,61 +183,61 @@
 #         counter += 1
 # print(counter)
 
-string = "this is what it looks like"
-string2 = ""
-for i in string:
-    if i == "a":
-        string2 += "A"
-    if i == "b":
-        string2 += "B"
-    if i == "c":
-        string2 += "C"
-    if i == "d":
-        string2 += "D"
-    if i == "e":
-        string2 += "E"
-    if i == "f":
-        string2 += "F"
-    if i == "g":
-        string2 += "G"
-    if i == "h":
-        string2 += "H"
-    if i == "i":
-        string2 += "I"
-    if i == "j":
-        string2 += "J"
-    if i == "e":
-        string2 += "E"
-    if i == "k":
-        string2 += "K"
-    if i == "l":
-        string2 += "L"
-    if i == "m":
-        string2 += "M"
-    if i == "n":
-        string2 += "N"
-    if i == "o":
-        string2 += "O"
-    if i == "p":
-        string2 += "P"
-    if i == "q":
-        string2 += "Q"
-    if i == "r":
-        string2 += "R"
-    if i == "s":
-        string2 += "S"
-    if i == "t":
-        string2 += "T"
-    if i == "u":
-        string2 += "U"
-    if i == "v":
-        string2 += "V"
-    if i == "w":
-        string2 += "W"
-    if i == "x":
-        string2 += "X"
-    if i == "y":
-        string2 += "Y"
-    if i == "z":
-        string2 += "Z"
-print(string2)
+# string = "this is what it looks like"
+# string2 = ""
+# for i in string:
+#     if i == "a":
+#         string2 += "A"
+#     if i == "b":
+#         string2 += "B"
+#     if i == "c":
+#         string2 += "C"
+#     if i == "d":
+#         string2 += "D"
+#     if i == "e":
+#         string2 += "E"
+#     if i == "f":
+#         string2 += "F"
+#     if i == "g":
+#         string2 += "G"
+#     if i == "h":
+#         string2 += "H"
+#     if i == "i":
+#         string2 += "I"
+#     if i == "j":
+#         string2 += "J"
+#     if i == "e":
+#         string2 += "E"
+#     if i == "k":
+#         string2 += "K"
+#     if i == "l":
+#         string2 += "L"
+#     if i == "m":
+#         string2 += "M"
+#     if i == "n":
+#         string2 += "N"
+#     if i == "o":
+#         string2 += "O"
+#     if i == "p":
+#         string2 += "P"
+#     if i == "q":
+#         string2 += "Q"
+#     if i == "r":
+#         string2 += "R"
+#     if i == "s":
+#         string2 += "S"
+#     if i == "t":
+#         string2 += "T"
+#     if i == "u":
+#         string2 += "U"
+#     if i == "v":
+#         string2 += "V"
+#     if i == "w":
+#         string2 += "W"
+#     if i == "x":
+#         string2 += "X"
+#     if i == "y":
+#         string2 += "Y"
+#     if i == "z":
+#         string2 += "Z"
+# print(string2)
