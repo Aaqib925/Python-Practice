@@ -706,7 +706,7 @@ ls = []
 for letter_choice in range(1, len(col_list) + 1):
     letter_choosen = int(input("Enter the column number of the {} letter from word: ".format(letter_choice)))
     final_list.append(letter_choosen - 1)
-print(final_list)
+# print(final_list)
 
 # print(last_list)
 word = []
