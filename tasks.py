@@ -686,7 +686,7 @@ last_list = []
 conj_col1 = ["A", "E", "I", "M", "Q", "U", "Y"]
 conj_col2 = ["B", "F", "J", "N", "R", "V", "Z"]
 conj_col3 = ["C", "G", "K", "O", "S", "W"]
-conj_col4 = ["D", "H", "I", "P", "T", "X"]
+conj_col4 = ["D", "H", "L", "P", "T", "X"]
 for j in col_list:
     if j == 1:
         print("A\tE\tI\tM\tQ\tU\tY")
@@ -698,7 +698,7 @@ for j in col_list:
         print("C\tG\tK\tO\tS\tW")
         last_list.append(conj_col3)
     if j == 4:
-        print("D\tH\tI\tP\tT\tX")
+        print("D\tH\tL\tP\tT\tX")
         last_list.append(conj_col4)
 
 final_list = []
