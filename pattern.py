@@ -200,3 +200,16 @@
 #                 print(end=" ")
 #         print()
 # pattern(5)
+
+# def pattern(num):
+#     for row in range(num):
+#         for column in range(num):
+#             if row == row * column/num - row or column == column * row / num - column:
+#                 print("*", end="")
+#             elif row == column:
+#                 print(end=" ")
+#             else:
+#                 print("*", end="")
+#         print()
+#
+# pattern(10)
