@@ -705,12 +705,18 @@ final_list = []
 ls = []
 for letter_choice in range(1, len(col_list) + 1):
     letter_choosen = int(input("Enter the column number of the {} letter from word: ".format(letter_choice)))
-    final_list.append(letter_choosen)
+    final_list.append(letter_choosen - 1)
 print(final_list)
 
-print(last_list)
+# print(last_list)
+word = []
+for a in range(len(final_list)):
+    var = last_list[a]
+    index = final_list[a]
+    # print(index)
+    # print(var)
+    word.append(var[index])
 
-word = ""
 
-for s in range(len(final_list)):
-    word += last_list[]
+final_word = "".join(word)
+print("Your word is:", final_word)
