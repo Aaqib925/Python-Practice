@@ -177,16 +177,26 @@
 #     print(row*x, end="")
 #     print("*")
 
-i = 0
-j = 4
-for row in range(5):
-    for col in range(5):
-        if row == i and col == j:
-            print("*", end="")
-            i += 1
-            j -= 1
-        elif row == col:
-            print("*", end='')
-        else:
-            print(end=" ")
-    print()
+# i = 0
+# j = 4
+# for row in range(5):
+#     for col in range(5):
+#         if row == i and col == j:
+#             print("*", end="")
+#             i += 1
+#             j -= 1
+#         elif row == col:
+#             print("*", end='')
+#         else:
+#             print(end=" ")
+#     print()
+
+# def pattern(num):
+#     for row in range(num):
+#         for column in range(num):
+#             if row == 0 or column == 0 or row == num - 1 or column == num - 1:
+#                 print("*", end="")
+#             else:
+#                 print(end=" ")
+#         print()
+# pattern(5)
