@@ -25,7 +25,9 @@ def bit(binary_num):
         return 1
     elif binary_num != 0:
         bits = binary_num
-        if len(bits) != 4:
+        if len(bits) % 4 == 0:
+            return bits
+        elif len(bits) != 4:
             for i in range(len(bits) * 4):
                 bits = "0" + bits
                 if len(bits) % 4 == 0:
