@@ -587,11 +587,7 @@ num = input("Enter any number: ")
 
 length = len(num)
 print(length)
-if length < 10:
-    modulus = length % 4
-elif length > 10:
-    modulus = length % 8
-print(modulus)
+modulus = length % 4
 num2 = ""
 if modulus != 0:
     for i in range(modulus * 4):
