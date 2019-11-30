@@ -32,61 +32,54 @@ def bit(binary_num):
 
 def hexa(bits):
     """ Function to convert bits into hexa decimal """
-    if bits == "0000":
-        return 0
-    else:
-        len_bits = len(str(bits))
-        range1 = 0
-        range2 = 4
-        final = []  # in this list...the hex number will be added for each bit
+    r1 = 0
+    r2 = 4
+    length = len(bits)
+    hex_list = []
 
-        while len_bits >= 0:
-            total = 0  # here the total for each bit will be added... 8 4 2 1 method total
+    while length >= 1:
+        num2 = bits[r1:r2]
+        # print(num2)
+        total = 0
+        if num2[0] == str(1):
+            total += 8
+        elif num2[0] == str(0):
+            total += 0
+        if num2[1] == str(1):
+            total += 4
+        elif num2[1] == str(0):
+            total += 0
+        if num2[2] == str(1):
+            total += 2
+        elif num2[2] == str(0):
+            total += 0
+        if num2[3] == str(1):
+            total += 1
+        elif num2[3] == str(0):
+            total += 0
+        if total >= 16:
+            break
 
-            each_bit = str(bits)[range1:range2]
-            for i in range(len(each_bit)):
-                if each_bit[0] == str(1):
-                    total += 8
-                # elif each_bit[0] == str(0):
-                #     total += 0
-                if each_bit[1] == str(1):
-                    total += 4
-                # elif each_bit[1] == str(0):
-                #     total += 0
-                if each_bit[2] == str(1):
-                    total += 2
-                # elif each_bit[2] == str(0):
-                #     total += 0
-                if each_bit[3] == str(1):
-                    total += 1
-                # elif each_bit[3] == str(0):
-                #     total += 0
-                if total <= 16:  # else the total will be multiplied by 4 because of for loop
-                    break
+        if total == 0 or total > 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
+            hex_list.append(total)
+        if total == 10:
+            hex_list.append("A")
+        if total == 11:
+            hex_list.append("B")
+        if total == 12:
+            hex_list.append("C")
+        if total == 13:
+            hex_list.append("D")
+        if total == 14:
+            hex_list.append("E")
+        if total == 15:
+            hex_list.append("F")
+        r1 += 4
+        r2 += 4
+        length -= 4
 
-            # now replacing the number exceeding 9 with alphabets
-            if total >= 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
-                final.append(total)
-            if total > 0 and total == 10:
-                final.append("A")
-            if total > 0 and total == 11:
-                final.append("B")
-            if total > 0 and total == 12:
-                final.append("C")
-            if total > 0 and total == 13:
-                final.append("D")
-            if total > 0 and total == 14:
-                final.append("E")
-            if total > 0 and total == 15:
-                final.append("F")
-
-            # for the next bit
-            range1 += 4
-            range2 += 5
-            len_bits -= 4
-            each_bit = ""
-        final_answer = "".join(str(element) for element in final)
-        return final_answer
+    answer = "".join(str(element) for element in hex_list)
+    return answer
 
 
 user_input = int(input("Enter the decimal number to convert in binary: "))
