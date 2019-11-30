@@ -24,6 +24,7 @@ def bit(binary_num):
         modulus = len_bin_number % 4  # this will check if the number is already in bit or not
     elif len_bin_number > 10:
         modulus = len_bin_number % 8
+
     bits = ""
     if modulus != 0:
         for b in range(modulus * 4):
