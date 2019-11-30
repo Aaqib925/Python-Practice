@@ -583,21 +583,25 @@
 #
 
 # code for making the four bits
-# num = input("Enter any number: ")
-#
-# length = len(num)
-#
-# modulus = length % 4
-# num2 = ""
-# if modulus != 0:
-#     for i in range(modulus * 4):
-#         num2 = i * str(0) + str(num)
-#         if len(num2) <= modulus * 4 and len(num2) % 4 == 0:
-#             break
-# else:
-#     print(num)
-#
-# print(num2)
+num = input("Enter any number: ")
+
+length = len(num)
+print(length)
+if length < 10:
+    modulus = length % 4
+elif length > 10:
+    modulus = length % 8
+print(modulus)
+num2 = ""
+if modulus != 0:
+    for i in range(modulus * 4):
+        num2 = i * str(0) + str(num)
+        if len(num2) <= modulus * 4 and len(num2) % 4 == 0:
+            break
+else:
+    print(num)
+
+print(num2)
 
 # program to convert binary to hexa
 
