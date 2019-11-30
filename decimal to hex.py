@@ -41,42 +41,50 @@ def hexa(bits):
     final = []  # in this list...the hex number will be added for each bit
 
     while len_bits >= 0:
-        hexx = 0  # here the total for each bit will be added... 8 4 2 1 method total
+        total = 0  # here the total for each bit will be added... 8 4 2 1 method total
 
         each_bit = str(bit)[range1:range2]
         for i in range(len(each_bit)):
             if each_bit[0] == str(1):
-                hexx += 8
+                total += 8
             elif each_bit[0] == str(0):
-                hexx += 0
+                total += 0
             if each_bit[1] == str(1):
-                hexx += 4
+                total += 4
             elif each_bit[1] == str(0):
-                hexx += 0
+                total += 0
             if each_bit[2] == str(1):
-                hexx += 2
+                total += 2
             elif each_bit[2] == str(0):
-                hexx += 0
+                total += 0
             if each_bit[3] == str(1):
-                hexx += 1
+                total += 1
             elif each_bit[3] == str(0):
-                hexx += 0
-            if hexx <= 16:   # else the total will be multiplied by 4 because of for loop
+                total += 0
+            if total <= 16:   # else the total will be multiplied by 4 because of for loop
                 break
 
         # now replacing the number exceeding 9 with alphabets
-        if hexx > 0 and hexx != 10 and hexx != 11 and hexx != 12 and hexx != 13 and hexx != 14 and hexx != 15:
-            final.append(hexx)
-        if hexx > 0 and hexx == 10:
+        if total > 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
+            final.append(total)
+        if total > 0 and total == 10:
             final.append("A")
-        if hexx > 0 and hexx == 11:
+        if total > 0 and total == 11:
             final.append("B")
-        if hexx > 0 and hexx == 12:
+        if total > 0 and total == 12:
             final.append("C")
-        if hexx > 0 and hexx == 13:
+        if total > 0 and total == 13:
             final.append("D")
-        if hexx > 0 and hexx == 14:
+        if total > 0 and total == 14:
             final.append("E")
-        if hexx > 0 and hexx == 15:
+        if total > 0 and total == 15:
             final.append("F")
+
+        # for the next bit
+        range1 += 4
+        range2 += 5
+        len_bits -= 4
+        total = ""
+    final_answer = "".join(str(element) for element in final)
+    return final_answer
 
