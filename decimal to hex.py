@@ -33,8 +33,6 @@ def bit(binary_num):
                 if len(bits) % 4 == 0:
                     break
             return bits
-        else:
-            return bits
 
 
 def hexa(bits):
