@@ -19,6 +19,7 @@ def binary(num):
 
 def bit(binary_num):
     """ This function will convert the binary number into four bits """
+    global modulus
     len_bin_number = len(str(binary_num))
     if len_bin_number < 10:
         modulus = len_bin_number % 4  # this will check if the number is already in bit or not
