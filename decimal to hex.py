@@ -19,7 +19,7 @@ def binary(num):
 
 def bit(binary_num):
     """ This function will convert the binary number into four bits """
-    len_bin_number = len(binary_num)
+    len_bin_number = len(str(binary_num))
     modulus = len_bin_number % 4  # this will check if the number is already in bit or not
     bits = ""
     if modulus != 0:
@@ -35,56 +35,65 @@ def bit(binary_num):
 
 def hexa(bits):
     """ Function to convert bits into hexa decimal """
-    len_bits = len(bits)
-    range1 = 0
-    range2 = 4
-    final = []  # in this list...the hex number will be added for each bit
+    if bits == "0000":
+        return 0
+    else:
+        len_bits = len(str(bits))
+        range1 = 0
+        range2 = 4
+        final = []  # in this list...the hex number will be added for each bit
 
-    while len_bits >= 0:
-        total = 0  # here the total for each bit will be added... 8 4 2 1 method total
+        while len_bits >= 0:
+            total = 0  # here the total for each bit will be added... 8 4 2 1 method total
 
-        each_bit = str(bit)[range1:range2]
-        for i in range(len(each_bit)):
-            if each_bit[0] == str(1):
-                total += 8
-            elif each_bit[0] == str(0):
-                total += 0
-            if each_bit[1] == str(1):
-                total += 4
-            elif each_bit[1] == str(0):
-                total += 0
-            if each_bit[2] == str(1):
-                total += 2
-            elif each_bit[2] == str(0):
-                total += 0
-            if each_bit[3] == str(1):
-                total += 1
-            elif each_bit[3] == str(0):
-                total += 0
-            if total <= 16:   # else the total will be multiplied by 4 because of for loop
-                break
+            each_bit = str(bits)[range1:range2]
+            for i in range(len(each_bit)):
+                if each_bit[0] == str(1):
+                    total += 8
+                elif each_bit[0] == str(0):
+                    total += 0
+                if each_bit[1] == str(1):
+                    total += 4
+                elif each_bit[1] == str(0):
+                    total += 0
+                if each_bit[2] == str(1):
+                    total += 2
+                elif each_bit[2] == str(0):
+                    total += 0
+                if each_bit[3] == str(1):
+                    total += 1
+                elif each_bit[3] == str(0):
+                    total += 0
+                if total <= 16:  # else the total will be multiplied by 4 because of for loop
+                    break
 
-        # now replacing the number exceeding 9 with alphabets
-        if total > 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
-            final.append(total)
-        if total > 0 and total == 10:
-            final.append("A")
-        if total > 0 and total == 11:
-            final.append("B")
-        if total > 0 and total == 12:
-            final.append("C")
-        if total > 0 and total == 13:
-            final.append("D")
-        if total > 0 and total == 14:
-            final.append("E")
-        if total > 0 and total == 15:
-            final.append("F")
+            # now replacing the number exceeding 9 with alphabets
+            if total > 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
+                final.append(total)
+            if total > 0 and total == 10:
+                final.append("A")
+            if total > 0 and total == 11:
+                final.append("B")
+            if total > 0 and total == 12:
+                final.append("C")
+            if total > 0 and total == 13:
+                final.append("D")
+            if total > 0 and total == 14:
+                final.append("E")
+            if total > 0 and total == 15:
+                final.append("F")
 
-        # for the next bit
-        range1 += 4
-        range2 += 5
-        len_bits -= 4
-        total = ""
-    final_answer = "".join(str(element) for element in final)
-    return final_answer
+            # for the next bit
+            range1 += 4
+            range2 += 5
+            len_bits -= 4
+            each_bit = ""
+        final_answer = "".join(str(element) for element in final)
+        return final_answer
 
+
+user_input = int(input("Enter the decimal number to convert in binary: "))
+
+print("Your number {} in binary is equal to:".format(user_input), binary(user_input))
+print("Your binary number in form of bits is:", bit(binary(user_input)))
+print("Your number {} in hexa decimal is equal to:".format(user_input), hexa(bit(binary(user_input))))
