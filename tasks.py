@@ -583,27 +583,26 @@
 #
 
 # code for making the four bits
-num = input("Enter any number: ")
-
-length = len(num)
-print(length)
-modulus = length % 4
-num2 = ""
-if modulus != 0:
-    for i in range(modulus * 4):
-        num2 = i * str(0) + str(num)
-        # if len(num2) <= modulus * 4 and len(num2) % 4 == 0:
-        if len(num2) == modulus + length:
-            break
-else:
-    print(num)
-
-print(num2)
+# num = input("Enter any number: ")
+#
+# length = len(num)
+# print(length)
+# modulus = length % 4
+# num2 = ""
+# if modulus != 0:
+#     for i in range(modulus * 4):
+#         num2 = i * str(0) + str(num)
+#         if len(num2) == modulus + length:
+#             break
+# else:
+#     print(num)
+#
+# print(num2)
 
 # program to convert binary to hexa
 
-# num = '1011'  # the number from here should be in string format...if not then program will show error if number
-# starts with zero
+# num = '00110110010000001110'  # the number from here should be in string format...if not then program will show error if number
+# # starts with zero
 # length = len(str(num))
 #
 # range1 = 0
@@ -633,7 +632,7 @@ print(num2)
 #             total += 0
 #         if total <= 16:
 #             break
-#     if total > 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
+#     if total >= 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
 #         final.append(total)
 #     if total > 0 and total == 10:
 #         final.append("A")
@@ -721,3 +720,10 @@ print(num2)
 #
 # final_word = "".join(word)
 # print("Your word is:", final_word)
+
+# num = "12"
+# for i in range(len(num) * 4):
+#     num = str(0) + num
+#     if len(num) % 4 == 0:
+#         break
+# print(num)

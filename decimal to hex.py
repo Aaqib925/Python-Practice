@@ -18,24 +18,16 @@ def binary(num):
 
 
 def bit(binary_num):
-    """ This function will convert the binary number into four bits """
-    global modulus
-    len_bin_number = len(str(binary_num))
-    if len_bin_number < 10:
-        modulus = len_bin_number % 4  # this will check if the number is already in bit or not
-    elif len_bin_number > 10:
-        modulus = len_bin_number % 8
-
-    bits = ""
-    if modulus != 0:
-        for b in range(modulus * 4):
-            bits = b * str(0) + str(binary_num)  # this will add zeros till the bit is closest bit is made
-            if len(bits) <= modulus * 4 and len(bits) % 4 == 0:
+    """  Function to form bits of binary number """
+    bits = binary_num
+    if len(bits) != 4:
+        for i in range(len(bits) * 4):
+            bits = "0" + bits
+            if len(bits) % 4 == 0:
                 break
+        return bits
     else:
-        bits = binary_num  # if the number does not need any zero addition this will return the number
-
-    return bits
+        return bits
 
 
 def hexa(bits):
@@ -55,25 +47,25 @@ def hexa(bits):
             for i in range(len(each_bit)):
                 if each_bit[0] == str(1):
                     total += 8
-                elif each_bit[0] == str(0):
-                    total += 0
+                # elif each_bit[0] == str(0):
+                #     total += 0
                 if each_bit[1] == str(1):
                     total += 4
-                elif each_bit[1] == str(0):
-                    total += 0
+                # elif each_bit[1] == str(0):
+                #     total += 0
                 if each_bit[2] == str(1):
                     total += 2
-                elif each_bit[2] == str(0):
-                    total += 0
+                # elif each_bit[2] == str(0):
+                #     total += 0
                 if each_bit[3] == str(1):
                     total += 1
-                elif each_bit[3] == str(0):
-                    total += 0
+                # elif each_bit[3] == str(0):
+                #     total += 0
                 if total <= 16:  # else the total will be multiplied by 4 because of for loop
                     break
 
             # now replacing the number exceeding 9 with alphabets
-            if total > 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
+            if total >= 0 and total != 10 and total != 11 and total != 12 and total != 13 and total != 14 and total != 15:
                 final.append(total)
             if total > 0 and total == 10:
                 final.append("A")
