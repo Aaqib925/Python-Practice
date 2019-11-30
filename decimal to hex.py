@@ -20,20 +20,19 @@ def binary(num):
 def bit(binary_num):
     """ This function will convert the binary number into four bits """
     len_bin_number = len(binary_num)
-    modulus = len_bin_number % 4    # this will check if the number is already in bit or not
+    modulus = len_bin_number % 4  # this will check if the number is already in bit or not
     bits = ""
     if modulus != 0:
         for b in range(modulus * 4):
-            bits = b * str(0) + str(binary_num)   # this will add zeros till the bit is closest bit is made
+            bits = b * str(0) + str(binary_num)  # this will add zeros till the bit is closest bit is made
             if len(bits) <= modulus * 4 and len(bits) % 4 == 0:
                 break
     else:
-        bits = binary_num # if the number does not need any zero addition this will return the number
+        bits = binary_num  # if the number does not need any zero addition this will return the number
 
     return bits
 
+
 def hexa(bits):
-    """ Fucnti"""
-
-
-
+    """ Function to convert bits into hexa decimal """
+    len_bits = len(bits)
