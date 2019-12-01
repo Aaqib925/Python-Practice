@@ -1,5 +1,5 @@
 # This is a program that guess a word by getting the information about the user's word
-print("Please think a word in your mind.")
+print("Please think of a word in your mind.")
 len_user = int(input("Enter how many letters your word has: "))
 
 print("Please enter the column number of your letter from the list below: ")
