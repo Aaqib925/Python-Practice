@@ -97,3 +97,4 @@ user_input = int(input("Enter the decimal number to convert in binary: "))
 print("Your number {} in binary is equal to:".format(user_input), binary(user_input))
 print("Your binary number in form of bits is:", bit(binary(user_input)))
 print("Your number {} in hexa decimal is equal to:".format(user_input), hexa(bit(binary(user_input))))
+
