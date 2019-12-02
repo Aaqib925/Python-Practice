@@ -37,6 +37,7 @@ def bit(binary_num):
 
 def hexa(bits):
     """ Function to convert bits into hexa decimal """
+
     if bits == 0:
         return 0
     elif bits == 1:
