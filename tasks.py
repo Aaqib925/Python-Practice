@@ -777,3 +777,10 @@
 #
 # answer = "".join(str(element) for element in hex_list)
 # print(answer)
+
+# program using lambda function
+
+lst = [1, 2, 3, 4, 5]
+
+new_lst = list(map(lambda x: x * 2, lst))
+print(new_lst)
