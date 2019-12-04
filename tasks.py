@@ -792,3 +792,4 @@
 #
 # new_lst = list(map(lambda x: x * 2, lst))
 # print(new_lst)
+
