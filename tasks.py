@@ -793,3 +793,9 @@
 # new_lst = list(map(lambda x: x * 2, lst))
 # print(new_lst)
 
+# how to print the nested index in tuples
+n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+
+# nested index
+print(n_tuple[0][3])
+print(n_tuple[1][1])
