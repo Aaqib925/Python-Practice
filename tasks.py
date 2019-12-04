@@ -779,8 +779,10 @@
 # print(answer)
 
 # program using lambda function
+# lambda function are also called as anonymous functions...in these functions you don't have to write the def keyword
 
-lst = [1, 2, 3, 4, 5]
 
-new_lst = list(map(lambda x: x * 2, lst))
-print(new_lst)
+# lst = [1, 2, 3, 4, 5]
+#
+# new_lst = list(map(lambda x: x * 2, lst))
+# print(new_lst)
