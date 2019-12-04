@@ -781,6 +781,12 @@
 # program using lambda function
 # lambda function are also called as anonymous functions...in these functions you don't have to write the def keyword
 
+# double = lambda x: x ** 2
+# print(double(5))
+
+# lst = [1, 2, 3, 4, 5, 6]
+# my_lst = list(filter(lambda x: (x % 2 == 0), lst))
+# print(my_lst)
 
 # lst = [1, 2, 3, 4, 5]
 #
