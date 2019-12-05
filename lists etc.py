@@ -199,4 +199,6 @@ def matrix(columns, rows):
     return main_list
 
 
-print(matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: "))))
+# print(matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: "))))
+
+num_matrices = int(input("Enter the number of matrices you want: "))
