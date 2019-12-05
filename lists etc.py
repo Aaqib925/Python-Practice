@@ -201,7 +201,12 @@ def matrix(columns, rows):
 
 # print(matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: "))))
 
-num_matrices = int(input("Enter the number of matrices you want: "))
-for s in range(num_matrices):
-    matrices = matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: ")))
-    print(matrices)
+# num_matrices = int(input("Enter the number of matrices you want: "))
+# for s in range(num_matrices):
+#     matrices = matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: ")))
+#     print(matrices)
+
+matrix_a = matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: ")))
+matrix_b = matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: ")))
+print(matrix_a)
+print(matrix_b)
