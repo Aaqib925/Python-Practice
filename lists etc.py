@@ -172,3 +172,7 @@
 #
 # print(squared_numbers)
 
+# list within list is called 2 dimensional array
+
+lst = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(lst[0][1])
