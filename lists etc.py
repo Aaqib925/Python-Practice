@@ -1,11 +1,11 @@
 # there are three types...lists, tuples and sets....for list [] , for tuples () , and for sets {}
 # lists are mutable are the tuples are immutable....that means nothing can be added or changed in the tuples or sets
 
-#LISTS
+# LISTS
 # course = ["Maths", "Chemistry", "Physics", "CompSci"]
-#print(course)
-#print(course[0:3])  #this is for the range
-#print(len(course))
+# print(course)
+# print(course[0:3])  #this is for the range
+# print(len(course))
 
 # to add something in the list we can use the keyword of append, insert and expand...all of them are used according to the condition
 
@@ -89,12 +89,12 @@
 # print(max(num))
 # print(sum(num))
 
-#course = ["Maths", "Chemistry", "Physics", "CompSci"]
-#print("The Index of the required data is: " + str(course.index("CompSci")))
+# course = ["Maths", "Chemistry", "Physics", "CompSci"]
+# print("The Index of the required data is: " + str(course.index("CompSci")))
 
 # conditionals
-#course = ["Maths", "Chemistry", "Physics", "CompSci"]
-#print("Arts" in course)
+# course = ["Maths", "Chemistry", "Physics", "CompSci"]
+# print("Arts" in course)
 
 # course = ["Maths", "Chemistry", "Physics", "CompSci"]
 # for item in course:
@@ -174,5 +174,29 @@
 
 # list within list is called 2 dimensional array
 
-lst = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-print(lst[0][1])
+# lst = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(lst)
+
+# making a matrix by taking input
+
+# main_list = []
+# for i in range(3):
+#     my_list = []
+#     for j in range(3):
+#         x = int(input("Enter the numbers you want to add in matrix: "))
+#         my_list.append(x)
+#     main_list.append(my_list)
+# print(main_list)
+
+def matrix(columns, rows):
+    main_list = []
+    for i in range(rows):
+        my_list = []
+        for j in range(columns):
+            x = int(input("Enter the numbers to add in matrix: "))
+            my_list.append(x)
+        main_list.append(my_list)
+    return main_list
+
+
+print(matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: "))))
