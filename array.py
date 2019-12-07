@@ -27,4 +27,20 @@
 # new_array = array(my_array.typecode, [a for a in my_array])
 # print(new_array)
 
+# getting the input by user for array
+
+# from array import *
+#
+# my_array = array("i", [])
+#
+# n = int(input("Enter the number of elements you want to add in array: "))
+#
+# for i in range(1, n + 1):
+#     x = int(input("Enter the {} value: ".format(i)))
+#     my_array.append(x)
+#
+# print(my_array)
+
+
+
 
