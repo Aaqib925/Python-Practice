@@ -5,8 +5,13 @@
 # for integer use int and for floating point number use float keyword
 from array import *
 my_array = array("I", [1, 2, 3])  # i means signed...and capital I means only unsigned integer
+# print(my_array)
+# print(my_array.buffer_info())   # this will print the address of the array and the size of the array
+# my_array.append(2)
+# my_array.remove(1)   # here the argument in remove function means the index...but it starts from 1
+my_array.pop()
 print(my_array)
-print(my_array.buffer_info())   # this will print the address of the array and the size of the array
+
 
 
 
