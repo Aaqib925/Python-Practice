@@ -55,5 +55,13 @@
 #         break
 #     counter += 1
 
+# adding two numbers
 
 
+a = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+b = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for i in range(len(a)):
+    for j in range(len(b)):
+        result[i][j] = a[i][j] + b[i][j]
+print(result)
