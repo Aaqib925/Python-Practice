@@ -21,6 +21,10 @@
 # my_array = array("u", ["a", "b", "c"])
 # print(my_array)
 
-
+# for copying the values of one array to second array
+# from array import *
+# my_array = array("i", [1, 2, 3])
+# new_array = array(my_array.typecode, [a for a in my_array])
+# print(new_array)
 
 
