@@ -76,14 +76,14 @@
 #         result[i][j] = a[i][j] - b[i][j]
 # print(result)
 
-# multiplying two matrices
-
-a = [[21, 22, 23], [24, 25, 26], [27, 28, 29]]
-b = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-result = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
-
-for i in range(len(a)):
-    for j in range(len(b)):
-        result[i][j] = a[i][j] * b[i][j]
-
-print(result)
+# # multiplying two matrices
+#
+# a = [[21, 22, 23], [24, 25, 26], [27, 28, 29]]
+# b = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# result = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+#
+# for i in range(len(a)):
+#     for j in range(len(b)):
+#         result[i][j] = a[i][j] * b[i][j]
+#
+# print(result)
