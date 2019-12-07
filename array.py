@@ -41,6 +41,19 @@
 #
 # print(my_array)
 
+# for finding the index of the number
+# val = int(input("Enter which value you want to find in the array: "))
+#
+# counter = 0
+# for i in my_array:
+#     if i == val:
+#         print("The index of {} number is: ".format(val), counter)
+#         break
+#
+#     elif i != val:
+#         print("The value", val, "not found in your array")
+#         break
+#     counter += 1
 
 
 
