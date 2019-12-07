@@ -188,15 +188,15 @@
 #     main_list.append(my_list)
 # print(main_list)
 
-def matrix(columns, rows):
-    main_list = []
-    for i in range(rows):
-        my_list = []
-        for j in range(columns):
-            x = int(input("Enter the numbers to add in matrix: "))
-            my_list.append(x)
-        main_list.append(my_list)
-    return main_list
+# def matrix(columns, rows):
+#     main_list = []
+#     for i in range(rows):
+#         my_list = []
+#         for j in range(columns):
+#             x = int(input("Enter the numbers to add in matrix: "))
+#             my_list.append(x)
+#         main_list.append(my_list)
+#     return main_list
 
 
 # print(matrix(int(input("Enter the number of columns of matrix: ")), int(input("Enter the number of rows: "))))
@@ -208,10 +208,10 @@ def matrix(columns, rows):
 x1 = int(input("Enter the number of columns of matrix A: "))
 x2 = int(input("Enter the number of rows of matrix A: "))
 
-matrix_a = matrix(x1, x2)
-
-print(matrix_a)
-y1 = int(input("Enter the number of columns of matrix B: "))
-y2 = int(input("Enter the number of rows of matrix B: "))
-matrix_b = matrix(y1, y2)
-print(matrix_b)
+# matrix_a = matrix(x1, x2)
+#
+# print(matrix_a)
+# y1 = int(input("Enter the number of columns of matrix B: "))
+# y2 = int(input("Enter the number of rows of matrix B: "))
+# matrix_b = matrix(y1, y2)
+# print(matrix_b)
