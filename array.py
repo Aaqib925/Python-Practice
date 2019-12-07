@@ -57,11 +57,21 @@
 
 # adding two numbers
 
+# a = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+# b = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+# result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+# for i in range(len(a)):
+#     for j in range(len(b)):
+#         result[i][j] = a[i][j] + b[i][j]
+# print(result)
 
-a = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+# subtracting the two matrices
+
+a = [[2, 2, 2], [2, 2, 2], [2, 2, 2]]
 b = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
 result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
 for i in range(len(a)):
     for j in range(len(b)):
-        result[i][j] = a[i][j] + b[i][j]
+        result[i][j] = a[i][j] - b[i][j]
 print(result)
