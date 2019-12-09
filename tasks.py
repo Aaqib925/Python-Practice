@@ -806,7 +806,8 @@ dic1 = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seve
 dic2 = {10: "Ten", 11: "Eleven", 12: "Twelve", 13: "thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen", 17: "Seventeen", 18: "Eighteen", 19: "Nineteen"}
 dic3 = {10: "Ten", 20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "Seventy", 80: "Eighty", 90: "Ninety", 100: "Hundred"}
 
-num = 4000
+num = 9999
+print(num)
 word = ""
 
 # for units
@@ -830,5 +831,22 @@ elif str(val2) != str(0):
     # print(tens)
     word = str(tens) + word
     # print(word)
+num //= 10
 
-print(num)
+# for hundreds
+
+val3 = num % 10
+if str(val3) != str(0):
+    hundreds = dic1.get(val3)
+    word = str(hundreds) + " Hundreds and " + word
+    # print(word)
+
+num //= 10
+
+# for thousands
+
+val4 = num % 10
+if str(val4) != str(0):
+    thousands = dic1.get(val4)
+    word = str(thousands) + " Thousands " + word
+    print(word)
