@@ -19,6 +19,7 @@
 #
 # func(number)
 
+
 def is_armstrong(num):
     num1 = num
     total = 0
