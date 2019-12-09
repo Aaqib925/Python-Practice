@@ -18,3 +18,23 @@
 #
 #
 # func(number)
+
+def is_armstrong(num):
+    num1 = num
+    total = 0
+
+    while num1 > 0:
+        num2 = num1 % 10
+
+        total += num2 ** len(str(num))
+
+        num1 //= 10
+    return total
+
+
+user_num = int(input("Enter any number: "))
+
+if user_num == is_armstrong(user_num):
+    print("The number {} is a Armstrong number.".format(user_num))
+else:
+    print("The number {} is not a Armstrong number".format(user_num))
