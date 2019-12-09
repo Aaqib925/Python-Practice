@@ -808,9 +808,18 @@ dic3 = {20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "
 ls = ["Thousands", "Hundred"]
 
 length = len(str(num))
-if length == 1:
-    print(dic1.get(num))
-elif length == 2 and str(num)[-1] != str(0):
-    print(dic2.get(num))
-else:
-    print(dic3.get(num))
+# if length == 1:
+#     print(dic1.get(num))
+# elif length == 2 and str(num)[-1] != str(0):
+#     print(dic2.get(num))
+# else:
+#     print(dic3.get(num))
+total = ""
+for i in range(length):
+    # num2 = num
+    num2 = num % 10
+    if num2 >= 1 and num2 < 9:
+        var = dic1.get(num2)
+        total = str( ) + var + total
+        print(total)
+    num //= 10
