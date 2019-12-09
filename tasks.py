@@ -805,4 +805,15 @@ num = int(input("Enter any number: "))
 dic1 = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"}
 dic2 = {10: "Ten", 11: "Eleven", 12: "Twelve", 13: "thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen", 17: "Seventeen", 18: "Eighteen", 19: "Nineteen"}
 dic3 = {20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "Seventy", 80: "Eighty", 90: "Ninety", 100: "Hundred"}
+ls = ["Thousands", "Hundred"]
 
+length = len(str(num))
+for i in range(length):
+    if length == 1:
+        print(dic1.get(num))
+    elif length == 2:
+        print(dic2.get(num))
+        break
+    elif length == 2:
+        print(dic3.get(num))
+        break
