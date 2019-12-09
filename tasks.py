@@ -808,12 +808,9 @@ dic3 = {20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "
 ls = ["Thousands", "Hundred"]
 
 length = len(str(num))
-for i in range(length):
-    if length == 1:
-        print(dic1.get(num))
-    elif length == 2:
-        print(dic2.get(num))
-        break
-    elif length == 2:
-        print(dic3.get(num))
-        break
+if length == 1:
+    print(dic1.get(num))
+elif length == 2 and str(num)[-1] != str(0):
+    print(dic2.get(num))
+else:
+    print(dic3.get(num))
