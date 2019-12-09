@@ -804,20 +804,31 @@
 
 dic1 = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"}
 dic2 = {10: "Ten", 11: "Eleven", 12: "Twelve", 13: "thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen", 17: "Seventeen", 18: "Eighteen", 19: "Nineteen"}
-dic3 = {20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "Seventy", 80: "Eighty", 90: "Ninety", 100: "Hundred"}
+dic3 = {10: "Ten", 20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "Seventy", 80: "Eighty", 90: "Ninety", 100: "Hundred"}
 
-num = 4015
+num = 4000
 word = ""
 
 # for units
 val1 = num % 10
 # print(val1)
 if val1 != str(0):
-    tens = dic1.get(val1)
-    word += " " + tens
-elif val1 == str(0):
-    word += " "
+    units = dic1.get(val1)
+    word += " " + str(units)
 
-#
+# print(word)
+
+# for tens
 num //= 10
+val2 = num % 10
+if str(val2) == str(0):
+    val_2 = val2
+elif str(val2) != str(0):
+    val_2 = str(val2) + str(0)
+    # print(val_2)
+    tens = dic3.get(int(val_2))
+    # print(tens)
+    word = str(tens) + word
+    # print(word)
 
+print(num)
