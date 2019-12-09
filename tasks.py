@@ -800,26 +800,24 @@
 # print(n_tuple[0][3])
 # print(n_tuple[1][1])
 
-num = int(input("Enter any number: "))
+# num = int(input("Enter any number: "))
 
 dic1 = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"}
 dic2 = {10: "Ten", 11: "Eleven", 12: "Twelve", 13: "thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen", 17: "Seventeen", 18: "Eighteen", 19: "Nineteen"}
 dic3 = {20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "Seventy", 80: "Eighty", 90: "Ninety", 100: "Hundred"}
-ls = ["Thousands", "Hundred"]
 
-length = len(str(num))
-# if length == 1:
-#     print(dic1.get(num))
-# elif length == 2 and str(num)[-1] != str(0):
-#     print(dic2.get(num))
-# else:
-#     print(dic3.get(num))
-total = ""
-for i in range(length):
-    # num2 = num
-    num2 = num % 10
-    if num2 >= 1 and num2 < 9:
-        var = dic1.get(num2)
-        total = str( ) + var + total
-        print(total)
-    num //= 10
+num = 4015
+word = ""
+
+# for units
+val1 = num % 10
+# print(val1)
+if val1 != str(0):
+    tens = dic1.get(val1)
+    word += " " + tens
+elif val1 == str(0):
+    word += " "
+
+#
+num //= 10
+
