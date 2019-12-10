@@ -29,7 +29,6 @@ if length >= 2:
         if length == 2:
             print("Your number {} in words is: ".format(int(num_copy)), word)
     if length >= 2 and int(last_two) in dic2 and int(last_two) not in dic3:
-        # print("Yes")
 
         tens = dic2.get(int(last_two))
         word = word + str(tens)
