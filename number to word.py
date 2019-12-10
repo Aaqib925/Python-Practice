@@ -23,7 +23,7 @@ if length == 1:
     print("Your number {} in words is: ".format(int(num_copy)), word)
 if length >= 2:
     if last == str(0) and length >= 2 and num not in dic2:
-        print("Yes")
+
         ten = dic3.get(num)
         word = word + str(ten)
         if length == 2:
