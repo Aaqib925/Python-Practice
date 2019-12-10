@@ -20,28 +20,28 @@ word = ""
 if length == 1:
     val1 = dic1.get(num)
     word = word + val1
-    print(word)
+    print("Your number {} in words is: ".format(int(num_copy)), word)
 if length >= 2:
     if last == str(0) and length >= 2 and num not in dic2:
         print("Yes")
         ten = dic3.get(num)
         word = word + str(ten)
         if length == 2:
-            print(word)
+            print("Your number {} in words is: ".format(int(num_copy)), word)
     if length >= 2 and int(last_two) in dic2 and int(last_two) not in dic3:
         # print("Yes")
 
         tens = dic2.get(int(last_two))
         word = word + str(tens)
         if length == 2 and num in dic2:
-            print(word)
+            print("Your number {} in words is: ".format(int(num_copy)), word)
     elif length > 2 and int(last_two) in dic3 and int(last_two) not in dic2:
 
         tens = dic3.get(int(last_two))
 
         word = str(tens)
         if length == 2 and int(last_two) in dic3:
-            print(word)
+            print("Your number {} in words is: ".format(int(num_copy)), word)
 
     elif length >= 2 and int(last_two) not in dic2 and last != str(0):
         val2 = num % 10
@@ -57,7 +57,7 @@ if length >= 2:
             word = str(val__2) + word + str(" ")
 
         if length == 2:
-            print(word)
+            print("Your number {} in words is: ".format(int(num_copy)), word)
     if length >= 3:
         last_third = str(num_copy)[-3]
 
@@ -65,22 +65,22 @@ if length >= 2:
             hundred = dic1.get(int(last_third))
             word = str(hundred) + " Hundreds"
             if length == 3:
-                print(word)
+                print("Your number {} in words is: ".format(int(num_copy)), word)
         elif last_two != "00" and length >= 3:
             hundred2 = dic1.get(int(last_third))
             word = str(hundred2) + " Hundreds and " + word
             if length == 3:
-                print(word)
+                print("Your number {} in words is: ".format(int(num_copy)), word)
     if length == 4:
         first = str(num_copy)[0]
         last_three = str(num_copy)[1: length]
         if last_three == "000":
             thousand = dic1.get(int(first))
             word = thousand + " Thousands"
-            print(word)
+            print("Your number {} in words is: ".format(int(num_copy)), word)
         else:
             thousand2 = dic1.get(int(first))
             word = str(thousand2) + " Thousands " + word
-            print(word)
+            print("Your number {} in words is: ".format(int(num_copy)), word)
 
 
