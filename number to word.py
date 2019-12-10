@@ -28,15 +28,15 @@ if length >= 2:
         word = word + str(tens)
         if length == 2 and num in dic2:
             print(word)
-        elif length >= 2 and int(last_two) not in dic2 and last != str(0):
-            val2 = num % 10
-            val_2 = dic1.get(val2)
-            word = word + str(" ") + str(val_2)
-            num //= 10
-            num = str(num) + str(0)
-            val__2 = dic3.get(int(num))
-            word = word + str(" ") + str(val__2)
-            print(word)
+    elif length >= 2 and int(last_two) not in dic2 and last != str(0):
+        val2 = num % 10
+        val_2 = dic1.get(val2)
+        word = word + str(" ") + str(val_2)
+        num //= 10
+        num = str(num) + str(0)
+        val__2 = dic3.get(int(num))
+        word = str(val__2) + word + str(" ")
+        print(word)
 
 
 
