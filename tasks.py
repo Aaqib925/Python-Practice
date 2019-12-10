@@ -802,68 +802,70 @@
 
 # num = int(input("Enter any number: "))
 
-dic1 = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"}
-dic2 = {10: "Ten", 11: "Eleven", 12: "Twelve", 13: "thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen", 17: "Seventeen", 18: "Eighteen", 19: "Nineteen"}
-dic3 = {10: "Ten", 20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "Seventy", 80: "Eighty", 90: "Ninety", 100: "Hundred"}
-
-num = 7215
-print(num)
-
-word = ""
-length = len(str(num))
-
-last_two = int(str(num)[length - 2: length])
-# print(last_two)
-
-if last_two not in dic2:
-    # for units
-    val1 = num % 10
-    # print(val1)
-    if val1 != str(0):
-        units = dic1.get(val1)
-        word += " " + str(units)
-
-
-# print(word)
-num //= 10
-
-if last_two not in dic2:
-    # for tens
-
-    val2 = num % 10
-    if str(val2) == str(0):
-        val_2 = val2
-    elif str(val2) != str(0):
-        val_2 = str(val2) + str(0)
-        # print(val_2)
-        tens = dic3.get(int(val_2))
-        # print(tens)
-        word = str(tens) + word
-        # print(word)
-
-
-elif last_two in dic2:
-    tens = dic2.get(int(last_two))
-
-    word = str(tens) + word
-
-
-num //= 10
-
-# for hundreds
-
-val3 = num % 10
-if str(val3) != str(0):
-    hundreds = dic1.get(val3)
-    word = str(hundreds) + " Hundreds and " + word
-    # print(word)
-
-num //= 10
-
-# for thousands
-
-val4 = num % 10
-if str(val4) != str(0):
-    thousands = dic1.get(val4)
-    word = str(thousands) + " Thousands " + word
-    print(word)
+# dic1 = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"}
+# dic2 = {10: "Ten", 11: "Eleven", 12: "Twelve", 13: "thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen", 17: "Seventeen", 18: "Eighteen", 19: "Nineteen"}
+# dic3 = {10: "Ten", 20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "Seventy", 80: "Eighty", 90: "Ninety", 100: "Hundred"}
+#
+# num = int(input("Enter any number: "))
+# # print(num)
+#
+# word = ""
+# length = len(str(num))
+# last = int(str(num)[-1])
+# # print(last)
+# last_two = int(str(num)[length - 2: length])
+# # print(last_two)
+#
+# if last_two not in dic2:
+#     # for units
+#     val1 = num % 10
+#     # print(val1)
+#     if val1 != str(0):
+#         units = dic1.get(val1)
+#         word += " " + str(units) + "."
+#
+# # else:
+# #     word = str(dic1.get(last))
+# # print(word)
+# # num //= 10
+#
+# if last_two not in dic2:
+#     # for tens
+#
+#     val2 = num % 10
+#     if str(val2) == str(0):
+#         val_2 = val2
+#     elif str(val2) != str(0):
+#         val_2 = str(val2) + str(0)
+#         # print(val_2)
+#         tens = dic3.get(int(val_2))
+#         # print(tens)
+#         word = str(tens) + word
+#         # print(word)
+#
+#
+# elif last_two in dic2:
+#     tens = dic2.get(int(last_two))
+#
+#     word = str(tens) + word
+#
+#
+# num //= 10
+#
+# # for hundreds
+#
+# val3 = num % 10
+# if str(val3) != str(0):
+#     hundreds = dic1.get(val3)
+#     word = str(hundreds) + " Hundreds and " + word
+#     # print(word)
+#
+# num //= 10
+#
+# # for thousands
+#
+# val4 = num % 10
+# if str(val4) != str(0):
+#     thousands = dic1.get(val4)
+#     word = str(thousands) + " Thousands " + word
+#     print(word)
