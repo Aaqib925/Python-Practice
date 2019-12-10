@@ -23,18 +23,20 @@ if length == 1:
     print(word)
 if length >= 2:
     if last == str(0) and length >= 2 and num not in dic2:
+        print("Yes")
         ten = dic3.get(num)
         word = word + str(ten)
         if length == 2:
             print(word)
     if length >= 2 and int(last_two) in dic2 and int(last_two) not in dic3:
+        # print("Yes")
 
         tens = dic2.get(int(last_two))
         word = word + str(tens)
         if length == 2 and num in dic2:
             print(word)
-    elif length >= 2 and int(last_two) in dic3 and int(last_two) not in dic2:
-        # print(num)
+    elif length > 2 and int(last_two) in dic3 and int(last_two) not in dic2:
+        print("yaas")
         tens = dic3.get(int(last_two))
 
         word = str(tens)
