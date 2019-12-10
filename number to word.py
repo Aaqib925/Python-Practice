@@ -40,7 +40,8 @@ if length >= 2:
         num //= 10
         # print(num)
 
-        num = str(num)[1] + str(0)
+        num = str(num)[-1] + str(0)
+        # print(num)
 
         val__2 = dic3.get(int(num))
         # print(val__2)
@@ -50,6 +51,7 @@ if length >= 2:
             print(word)
     if length >= 3:
         last_third = str(num_copy)[-3]
+        # print(last_third)
         if last_two == "00":
             hundred = dic1.get(int(last_third))
             word = str(hundred) + " Hundreds"
@@ -59,8 +61,16 @@ if length >= 2:
             hundred2 = dic1.get(int(last_third))
             word = str(hundred2) + " Hundreds and " + word
             print(word)
-
-
-
+    if length == 4:
+        first = str(num_copy)[0]
+        last_three = str(num_copy)[1: length]
+        if last_three == "000":
+            thousand = dic1.get(int(first))
+            word = thousand + " Thousands"
+            print(word)
+        else:
+            thousand2 = dic1.get(int(first))
+            word = str(thousand2) + " Thousands " + word
+            print(word)
 
 
