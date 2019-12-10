@@ -36,7 +36,7 @@ if length >= 2:
         if length == 2 and num in dic2:
             print(word)
     elif length > 2 and int(last_two) in dic3 and int(last_two) not in dic2:
-        print("yaas")
+
         tens = dic3.get(int(last_two))
 
         word = str(tens)
