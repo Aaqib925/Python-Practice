@@ -872,25 +872,41 @@
 
 # program to swap the elements of two lists without using a temporary variable
 
-list1 = [78, "a", "b", 99]
-list2 = ["c", "d", 76, 66]
+# list1 = [[1, 2, 3], 3, 4, 6]
+# list2 = ["a", "b", 66, 77]
+#
+# length_list1 = len(list1)
+# length_list2 = len(list2)
+# # print(length_list1)
+# # print(length_list2)
+# for a in list2:
+#     list1.insert(0, a)
+#
+# for b in list1:
+#     popped_value = list1.pop(length_list2)
+#     list2.insert(0, popped_value)
+#
+# for c in list1:
+#     if c in list2:
+#         list2.remove(c)
+#
+# list1.reverse()
+# list2.reverse()
+# print(list1)
+# print(list2)
 
-length_list1 = len(list1)
-length_list2 = len(list2)
-# print(length_list1)
-# print(length_list2)
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9]
+list3 = []
+for i in list1:
+    list3.append(i)
+    list1.remove(i)
 for a in list2:
-    list1.insert(0, a)
+    list1.append(a)
+    list2.remove(a)
 
-for b in list1:
-    popped_value = list1.pop(length_list1)
-    list2.insert(0, popped_value)
+for b in list3:
+    list2.append(b)
 
-for c in list1:
-    if c in list2:
-        list2.remove(c)
-
-list1.reverse()
-list2.reverse()
 print(list1)
 print(list2)
