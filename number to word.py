@@ -60,15 +60,15 @@ if length >= 2:
     if length >= 3:
         last_third = str(num_copy)[-3]
 
-        if last_two == "00":
+        if last_two == "00" and last_third != "0":
             hundred = dic1.get(int(last_third))
             word = str(hundred) + " Hundreds"
             if length == 3:
                 print("Your number {} in words is: ".format(int(num_copy)), word)
-        elif last_two != "00" and length >= 3:
+        elif last_two != "00" and length >= 3 and last_third != "0":
             hundred2 = dic1.get(int(last_third))
             word = str(hundred2) + " Hundreds and " + word
-            if length == 3:
+            if length == 3 and last_third != "0":
                 print("Your number {} in words is: ".format(int(num_copy)), word)
     if length == 4:
         first = str(num_copy)[0]
