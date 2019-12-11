@@ -870,3 +870,20 @@
 #     word = str(thousands) + " Thousands " + word
 #     print(word)
 
+# program to swap the elements of two lists without using a temporary variable
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+
+length_list1 = len(list1)
+length_list2 = len(list2)
+print(length_list1)
+print(length_list2)
+for a in list2:
+    list1.insert(0, a)
+
+for b in list1:
+    popped_value = list1.pop(length_list1)
+    list2.insert(0, popped_value)
+
+
