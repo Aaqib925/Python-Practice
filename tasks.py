@@ -869,3 +869,4 @@
 #     thousands = dic1.get(val4)
 #     word = str(thousands) + " Thousands " + word
 #     print(word)
+
