@@ -895,18 +895,21 @@
 # print(list1)
 # print(list2)
 
-list1 = [1, 2, 3, 4, 5]
-list2 = [6, 7, 8, 9]
-list3 = []
-for i in list1:
-    list3.append(i)
-    list1.remove(i)
-for a in list2:
-    list1.append(a)
-    list2.remove(a)
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [6, 7, 8, 9]
+# list3 = []
+# for i in list1:
+#     list3.append(i)
+#     list1.remove(i)
+# for a in list2:
+#     list1.append(a)
+#     list2.remove(a)
+#
+# for b in list3:
+#     list2.append(b)
+#
+# print(list1)
+# print(list2)
 
-for b in list3:
-    list2.append(b)
 
-print(list1)
-print(list2)
+
