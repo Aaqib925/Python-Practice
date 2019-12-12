@@ -911,25 +911,26 @@
 # print(list1)
 # print(list2)
 
-from msvcrt import getch
-
-string = 'Please predict the answer'
-y = ""
-counter = 0
-for i in range(len(string)):
-    x = getch()
-    if x.decode() != "/":
-        print(x.decode())
-    elif x.decode() == "/":
-        print(string[counter])
-        counter += 1
-        while x.decode() == "/":
-            z = getch()
-            counter += 1
-            print(string[counter - 1])
-            if z.decode() == "/":
-                break
-            else:
-                y = y + z.decode()
-
-print(y)
+# from msvcrt import getch
+# from getch import getch
+# string = 'Please predict the answer'
+# y = ""
+# counter = 0
+# for i in range(len(string)):
+#     x = getch()
+#     if x.decode() != "/":
+#         print(x.decode())
+#     elif x.decode() == "/":
+#         print(string[counter])
+#         counter += 1
+#         while x.decode() == "/":
+#             z = getch()
+#             counter += 1
+#             print(string[counter - 1])
+#             if z.decode() == "/":
+#                 break
+#             else:
+#                 y = y + z.decode()
+#
+# print(y)
+print("Hello")
