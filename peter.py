@@ -1,5 +1,6 @@
-from msvcrt import getch
+# from msvcrt import getch
 import sys
+from getch import getch
 
 sent = "Please predict the answer                  "
 print("Enter the petition: ", end="")
