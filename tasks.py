@@ -872,9 +872,9 @@
 
 # program to swap the elements of two lists without using a temporary variable
 
-# list1 = [[1, 2, 3], 3, 4, 6]
-# list2 = ["a", "b", 66, 77]
-#
+# list1 = [[1, 2, 3], 2, 3, 4, 6]
+# list2 = ["a", "b", 77]
+# #
 # length_list1 = len(list1)
 # length_list2 = len(list2)
 # # print(length_list1)
@@ -934,22 +934,26 @@
 #
 # print(y)
 
-# list1 = [1, 2, 3, 4]
-# list2 = [5, 6, 7, 8]
-#
-# # x = list1.pop(0)
-# # y = list2.pop(0)
-# # list1.insert(0, y)
-# # list2.insert(0, x)
-# for i in range(len(list1)):
-#     x = list1.pop(i)
-#     y = list2.pop(i)
-#     if i == 0:
-#         list1.insert(len(list1), y)
-#         list2.insert(len(list2), x)
-#     elif i > 0:
-#         list1.insert(i, y)
-#         list2.insert(i, x)
-#
-# print(list1)
-# print(list2)
+list1 = [1, 2, 3, 4, 5]
+list2 = [5, 6, 7, 8]
+length1 = len(list1)
+length2 = len(list2)
+i = 0
+swap = 0
+while True:
+    x = list1.pop(i)
+    y = list2.pop(i)
+    if i <= length1 or length2:
+        list1.insert(i, y)
+        list2.insert(i, x)
+        swap += 1
+    elif i > length1:
+
+
+    print(list1)
+    print(list2)
+    if swap == length1:
+        break
+    i += 1
+print(list1)
+print(list2)
