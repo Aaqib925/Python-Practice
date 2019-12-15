@@ -936,6 +936,10 @@
 
 list1 = [1, 2, 3, 4, 5]
 list2 = [5, 6, 7, 8]
+for i in range(len(list1)):
+    list1[i] = list2[i]
 
+print(list1)
+print(list2)
 
 
