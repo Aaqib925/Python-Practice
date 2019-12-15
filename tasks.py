@@ -941,17 +941,15 @@ length2 = len(list2)
 i = 0
 swap = 0
 while True:
-    x = list1.pop(i)
-    y = list2.pop(i)
-    if i <= length1 or length2:
-        list1.insert(i, y)
+    if i <= length1:
+        x = list1.pop(i)
         list2.insert(i, x)
-        swap += 1
-    elif i > length1:
+    if i <= length2:
+        y = list2.pop(i)
+        list1.insert(i, y)
+    swap += 1
+    # elif i > length1:
 
-
-    print(list1)
-    print(list2)
     if swap == length1:
         break
     i += 1
