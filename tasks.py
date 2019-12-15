@@ -934,22 +934,22 @@
 #
 # print(y)
 
-list1 = [1, 2, 3, 4]
-list2 = [5, 6, 7, 8]
-
-# x = list1.pop(0)
-# y = list2.pop(0)
-# list1.insert(0, y)
-# list2.insert(0, x)
-for i in range(len(list1)):
-    x = list1.pop(i)
-    y = list2.pop(i)
-    if i == 0:
-        list1.insert(len(list1), y)
-        list2.insert(len(list2), x)
-    elif i > 0:
-        list1.insert(i, y)
-        list2.insert(i, x)
-
-print(list1)
-print(list2)
+# list1 = [1, 2, 3, 4]
+# list2 = [5, 6, 7, 8]
+#
+# # x = list1.pop(0)
+# # y = list2.pop(0)
+# # list1.insert(0, y)
+# # list2.insert(0, x)
+# for i in range(len(list1)):
+#     x = list1.pop(i)
+#     y = list2.pop(i)
+#     if i == 0:
+#         list1.insert(len(list1), y)
+#         list2.insert(len(list2), x)
+#     elif i > 0:
+#         list1.insert(i, y)
+#         list2.insert(i, x)
+#
+# print(list1)
+# print(list2)
