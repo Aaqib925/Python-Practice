@@ -934,10 +934,26 @@
 #
 # print(y)
 
-list1 = [1, 2, 3, 4, 5]
+list1 = [1, 2, 3, 4]
 list2 = [5, 6, 7, 8]
-for i in range(len(list1)):
-    list1[i] = list2[i]
+i = 0
+
+while True:
+    x = list1[i - 1]
+    print("List1", x)
+    x2 = list1.pop()
+    print(x2)
+
+    y = list2[i - 1]
+    print("List2", y)
+    y2 = list2.pop()
+    print(y2)
+    i += 1
+    # if i == len(list2) - 1 or i == len(list1) - 1:
+    #     break
+    # else:
+    #     i += 1
+
 
 print(list1)
 print(list2)
