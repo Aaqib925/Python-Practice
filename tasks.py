@@ -934,37 +934,5 @@
 #
 # print(y)
 
-# list1 = [1, 2, 3, 4]
-# list2 = [5, 6, 7, 8]
-# i = 0
-#
-# while True:
-#     x = list1[i - 1]
-#     print("List1", x)
-#     x2 = list1.pop()
-#     print(x2)
-#
-#     y = list2[i - 1]
-#     print("List2", y)
-#     y2 = list2.pop()
-#     print(y2)
-#     i += 1
-    # if i == len(list2) - 1 or i == len(list1) - 1:
-    #     break
-    # else:
-    #     i += 1
-
-
-# print(list1)
-# print(list2)
-
-
-my_list = [8, 7, 2, 4]
-sorted_list = []
-for i in my_list:
-    # print(i)
-    for j in my_list:
-        if i < j:
-            sorted_list.append(i)
-
-print(sorted_list)
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
