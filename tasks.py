@@ -953,16 +953,31 @@
 # print(list1)
 # print(list2)
 
+# list1 = []
+# for i in range(1, 6):
+#     num = int(input("Enter the {} number: ".format(i)))
+#     list1.append(num)
+# sorted_list = []
+# for i in range(len(list1)):
+#     x = list1[0]
+#     for j in range(1, len(list1)):
+#         if list1[j] < x:
+#             x = list1[j]
+#     sorted_list.append(x)
+#     list1.remove(x)
+# print(sorted_list)
+
 list1 = []
-for i in range(1, 6):
-    num = int(input("Enter the {} number: ".format(i)))
-    list1.append(num)
-sorted_list = []
+list_length = int(input("Enter the length for your list: "))
+for i in range(list_length):
+    x = int(input("Enter the number to add in your list: "))
+    list1.append(x)
+print("Before swap", list1)
 for i in range(len(list1)):
-    x = list1[0]
-    for j in range(len(list1)):
-        if list1[j] < x:
-            x = list1[j]
-    sorted_list.append(x)
-    list1.remove(x)
-print(sorted_list)
+    for j in range(i, len(list1)):
+        if list1[j] < list1[i]:
+            list1[i] = list1[i] + list1[j]
+            list1[j] = list1[i] - list1[j]
+            list1[i] = list1[i] - list1[j]
+
+print("After swap", list1)
