@@ -934,27 +934,21 @@
 #
 # print(y)
 
-list1 = [1, 2, 3, 4, 5]
-list2 = [5, 6, 7, 8]
-length1 = len(list1)
-length2 = len(list2)
-i = 0
-swap = 0
-while True:
-    if i < length1 or i < length2:
-        x = list1.pop(i)
-        y = list2.pop(i)
-        list1.insert(i, y)
-        list2.insert(i, x)
-        swap += 1
-
-        # print(list1)
-        # print(list2)
-        if swap == length1 and length2:
-            break
-        i += 1
-    else:
-        break
-
-print(list1)
-print(list2)
+# list1 = []
+# list2 = []
+# print("For first list")
+# for a in range(4):
+#     num = int(input("Enter any number to add in first list: "))
+#     list1.append(num)
+# print("For second list")
+# for b in range(4):
+#     num2 = int(input("Enter any number to add in second list: "))
+#     list2.append(num2)
+#
+# for i in range(len(list1)):
+#     list1[i] = list1[i] + list2[i]
+#     list2[i] = list1[i] - list2[i]
+#     list1[i] = list1[i] - list2[i]
+#
+# print(list1)
+# print(list2)
