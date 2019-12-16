@@ -952,3 +952,17 @@
 #
 # print(list1)
 # print(list2)
+
+list1 = []
+for i in range(1, 6):
+    num = int(input("Enter the {} number: ".format(i)))
+    list1.append(num)
+sorted_list = []
+for i in range(len(list1)):
+    x = list1[0]
+    for j in range(len(list1)):
+        if list1[j] < x:
+            x = list1[j]
+    sorted_list.append(x)
+    list1.remove(x)
+print(sorted_list)
