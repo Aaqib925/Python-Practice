@@ -214,18 +214,18 @@
 #
 # pattern(10)
 
-def pattern(num):
-    if num % 2 == 0:
-        print("Please enter odd number")
-    else:
-        for i in range(num):
-            for j in range(num):
-                if i == j or i + j == num - 1:
-                    print("*", end="")
-                else:
-                    print(end=" ")
-
-            print()
-
-
-pattern(int(input("Enter any odd number: ")))
+# def pattern(num):
+#     if num % 2 == 0:
+#         print("Please enter odd number")
+#     else:
+#         for i in range(num):
+#             for j in range(num):
+#                 if i == j or i + j == num - 1:
+#                     print("*", end="")
+#                 else:
+#                     print(end=" ")
+#
+#             print()
+#
+#
+# pattern(int(input("Enter any odd number: ")))
