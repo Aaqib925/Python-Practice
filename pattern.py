@@ -216,8 +216,16 @@
 
 def pattern(num):
     if num % 2 == 0:
-        return "Please enter odd number: "
+        print("Please enter odd number")
     else:
         for i in range(num):
             for j in range(num):
-                if row == col
+                if i == j or i + j == num - 1:
+                    print("*", end="")
+                else:
+                    print(end=" ")
+
+            print()
+
+
+pattern(int(input("Enter any odd number: ")))
