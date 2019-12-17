@@ -213,3 +213,11 @@
 #         print()
 #
 # pattern(10)
+
+def pattern(num):
+    if num % 2 == 0:
+        return "Please enter odd number: "
+    else:
+        for i in range(num):
+            for j in range(num):
+                if row == col
