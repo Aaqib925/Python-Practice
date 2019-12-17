@@ -270,6 +270,8 @@ def pattern(num):
             for j in range(num):
                 if (i == j and i <= num // 2) or (i + j == num - 1 and i < j):
                     print("*", end="")
+                elif j == num // 2 and i > j:
+                    print("*", end="")
                 else:
                     print(end=" ")
 
