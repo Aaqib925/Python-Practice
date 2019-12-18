@@ -309,15 +309,15 @@
 #
 # pattern(5)
 
-def pattern(num):
-    for i in range(num):
-        for j in range(num):
-            if i == j and i <= num // 2:
-                print("*", end="")
-            elif i + j == num - 1 and i <= num // 2:
-                print("*", end="")
-            else:
-                print(end=" ")
-        print()
-
-pattern(5)
+# def pattern(num):
+#     for i in range(num):
+#         for j in range(num):
+#             if i == j and i <= num // 2:
+#                 print("*", end="")
+#             elif i + j == num - 1 and i <= num // 2:
+#                 print("*", end="")
+#             else:
+#                 print(end=" ")
+#         print()
+#
+# pattern(5)
