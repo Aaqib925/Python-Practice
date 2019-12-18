@@ -16,3 +16,7 @@
 
 # there are 4 major concepts in OOP
 # inheritance, encapsulation, polymorphism, abstraction
+
+# inheritance is creating a new class within the class.... which is called derived class or child class to parent class
+
+# the method to restrict the variables or methods within the class is called as encapsulation
