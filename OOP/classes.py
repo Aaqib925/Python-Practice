@@ -20,3 +20,6 @@
 # inheritance is creating a new class within the class.... which is called derived class or child class to parent class
 
 # the method to restrict the variables or methods within the class is called as encapsulation
+# this is done by using underscore or double underscore
+
+# Abstraction means hiding the implementation and showing the user what we want to show only
