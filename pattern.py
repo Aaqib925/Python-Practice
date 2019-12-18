@@ -280,6 +280,7 @@
 #
 # pattern(int(input("Enter any odd number: ")))
 
+# This is an tower
 def pattern(num):
     for i in range(num):
         for j in range(num):
