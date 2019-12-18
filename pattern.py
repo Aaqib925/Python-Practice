@@ -279,3 +279,8 @@
 #
 #
 # pattern(int(input("Enter any odd number: ")))
+
+def pattern(num):
+    for i in range(num):
+        for j in range(num):
+
