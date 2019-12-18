@@ -29,3 +29,10 @@
 # example class is coloring a shape..but it can be executed for every shape
 
 # in __init__ the first wale underscore are called initial underscore and last wale are called trailing underscore
+
+
+# class registration():
+#     def __init__(self, name, age, roll_no):
+#         self.name = name
+#         self.age = age
+#         self.roll_no = roll_no
