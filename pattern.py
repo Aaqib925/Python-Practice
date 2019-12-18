@@ -295,16 +295,16 @@
 #
 # pattern(5)
 
+# This is inverted Y
+# def pattern(num):
+#     for i in range(num):
+#         for j in range(num):
+#             if j == num // 2 and i <= num // 2:
+#                 print("*", end="")
+#             elif (i == j and i > num // 2) or (i + j == num - 1 and i > num // 2):
+#                 print("*", end="")
+#             else:
+#                 print(end=" ")
+#         print()
 #
-def pattern(num):
-    for i in range(num):
-        for j in range(num):
-            if j == num // 2 and i <= num // 2:
-                print("*", end="")
-            elif (i == j and i > num // 2) or (i + j == num - 1 and i > num // 2):
-                print("*", end="")
-            else:
-                print(end=" ")
-        print()
-
-pattern(5)
+# pattern(5)
