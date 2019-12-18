@@ -51,9 +51,10 @@
 
 # print(student.items())
 
-student = {"name": "Aaqib", "age": "18", "course": ["Maths", "Physics"]}
+# student = {"name": "Aaqib", "age": "18", "course": ["Maths", "Physics"]}
 # for keys in student:
 #      print(keys)
 
 # for keys, values in student.items():
 #     print(keys, values)
+
