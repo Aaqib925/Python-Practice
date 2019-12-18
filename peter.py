@@ -34,35 +34,35 @@
 # sent = input("Enter your question: ")
 #
 # print("Your answer is: ", ans)
-from getch import getch
-
-sent = "Please predict the answer"
-
-print("Enter the petition: ")
-
-ans = ""
-counter = 0
-for i in range(len(sent)):
-    x = getch()
-    hu = x.decode()
-    if ord(hu) == 13:
-        break
-    else:
-        counter += 1
-        if hu != "/":
-            print(hu)
-
-        elif hu == "/":
-            print(sent[counter - 1])
-
-            while hu == "/":
-                z = getch()
-                counter += 1
-                print(sent[counter - 1])
-
-                if z.decode() == "/":
-                    break
-                else:
-                    ans = ans + z.decode()
-
-print(ans)
+# from getch import getch
+#
+# sent = "Please predict the answer"
+#
+# print("Enter the petition: ")
+#
+# ans = ""
+# counter = 0
+# for i in range(len(sent)):
+#     x = getch()
+#     hu = x.decode()
+#     if ord(hu) == 13:
+#         break
+#     else:
+#         counter += 1
+#         if hu != "/":
+#             print(hu)
+#
+#         elif hu == "/":
+#             print(sent[counter - 1])
+#
+#             while hu == "/":
+#                 z = getch()
+#                 counter += 1
+#                 print(sent[counter - 1])
+#
+#                 if z.decode() == "/":
+#                     break
+#                 else:
+#                     ans = ans + z.decode()
+#
+# print(ans)
