@@ -26,3 +26,6 @@
 # in abstract class no instance can be created but child class can be created
 
 # polymorphism is the ability to use the method on various objects
+# example class is coloring a shape..but it can be executed for every shape
+
+# in __init__ the first wale underscore are called initial underscore and last wale are called trailing underscore
