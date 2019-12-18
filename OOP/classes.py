@@ -31,23 +31,23 @@
 # in __init__ the first wale underscore are called initial underscore and last wale are called trailing underscore
 
 
-class registration:
-    def __init__(self, name, age, roll_no):
-        self.name = name
-        self.age = age
-        self.roll_no = roll_no
-        self.uni_name = "NED university"
+# class registration:
+#     def __init__(self, name, age, roll_no):
+#         self.name = name
+#         self.age = age
+#         self.roll_no = roll_no
+#         self.uni_name = "NED university"
 
         # now i will create a method to update uni name
 
-    def update_uni(self, new_uni):
-        self.uni_name = new_uni
+    # def update_uni(self, new_uni):
+    #     self.uni_name = new_uni
 
 
 # student_1 = registration("Aaqib", 18, "CT-047")
 # print(student_1.name, student_1.age, student_1.roll_no, student_1.uni_name)
 
-student_1.update_uni("KU")   # this will update the value for uni_name
-print(student_1.uni_name)
+# student_1.update_uni("KU")   # this will update the value for uni_name
+# print(student_1.uni_name)
 
-print(student_1.__dict__)  # this will print whole data in form of dictionary
+# print(student_1.__dict__)  # this will print whole data in form of dictionary
