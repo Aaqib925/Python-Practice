@@ -58,3 +58,12 @@
 # for keys, values in student.items():
 #     print(keys, values)
 
+dic = {"counter_1": 0, "counter_0": 0}
+num = int(input("Enter any binary number to calculate zero and ones: "))
+for i in str(num):
+    if i == str(1):
+        dic["counter_1"] += 1
+    elif i == str(0):
+        dic["counter_0"] += 1
+
+print(dic)
