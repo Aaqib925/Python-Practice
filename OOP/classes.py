@@ -23,3 +23,6 @@
 # this is done by using underscore or double underscore
 
 # Abstraction means hiding the implementation and showing the user what we want to show only
+# in abstract class no instance can be created but child class can be created
+
+# polymorphism is the ability to use the method on various objects
