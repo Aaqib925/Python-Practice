@@ -38,30 +38,31 @@ from getch import getch
 
 sent = "Please predict the answer"
 
-print("Enter the petition: ", end="", flush=True)
+print("Enter the petition: ")
 
 ans = ""
 counter = 0
 for i in range(len(sent)):
     x = getch()
-    if ord(x.decode()) == 13:
+    hu = x.decode()
+    if ord(hu) == 13:
         break
     else:
         counter += 1
-        if x.decode() != "/":
-            print(x.decode(), end="", flush=True)
+        if hu != "/":
+            print(hu)
 
-        elif x.decode() == "/":
+        elif hu == "/":
             print(sent[counter - 1])
 
-            while x.decode() == "/":
+            while hu == "/":
                 z = getch()
                 counter += 1
-                print(sent[counter - 1], end="", flush=True)
+                print(sent[counter - 1])
 
                 if z.decode() == "/":
                     break
                 else:
                     ans = ans + z.decode()
 
-print(ans, flush=True)
+print(ans)
