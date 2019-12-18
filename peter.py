@@ -1,10 +1,45 @@
 # from msvcrt import getch
-import sys
+# import sys
+# from getch import getch
+#
+# sent = "Please predict the answer                  "
+# print("Enter the petition: ", end="")
+# sys.stdout.flush()
+# ans = ""
+# counter = 0
+# for i in range(len(sent)):
+#     x = getch()
+#     if ord(x.decode()) == 13:
+#         break
+#     else:
+#         counter += 1
+#         if x.decode() != "/":
+#             print(x.decode(), end="")
+#             sys.stdout.flush()
+#
+#         elif x.decode() == "/":
+#             print(sent[counter - 1], end="")
+#             sys.stdout.flush()
+#             while x.decode() == "/":
+#                 z = getch()
+#                 counter += 1
+#                 print(sent[counter - 1], end="")
+#                 sys.stdout.flush()
+#                 if z.decode() == "/":
+#                     break
+#                 else:
+#                     ans = ans + z.decode()
+#
+# print()
+# sent = input("Enter your question: ")
+#
+# print("Your answer is: ", ans)
 from getch import getch
 
-sent = "Please predict the answer                  "
-print("Enter the petition: ", end="")
-sys.stdout.flush()
+sent = "Please predict the answer"
+
+print("Enter the petition: ", end="", flush=True)
+
 ans = ""
 counter = 0
 for i in range(len(sent)):
@@ -14,23 +49,19 @@ for i in range(len(sent)):
     else:
         counter += 1
         if x.decode() != "/":
-            print(x.decode(), end="")
-            sys.stdout.flush()
+            print(x.decode(), end="", flush=True)
 
         elif x.decode() == "/":
-            print(sent[counter - 1], end="")
-            sys.stdout.flush()
+            print(sent[counter - 1])
+
             while x.decode() == "/":
                 z = getch()
                 counter += 1
-                print(sent[counter - 1], end="")
-                sys.stdout.flush()
+                print(sent[counter - 1], end="", flush=True)
+
                 if z.decode() == "/":
                     break
                 else:
                     ans = ans + z.decode()
 
-print()
-sent = input("Enter your question: ")
-
-print("Your answer is: ", ans)
+print(ans, flush=True)
