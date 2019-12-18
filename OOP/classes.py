@@ -13,3 +13,6 @@
 # person_one = human("Aaqib")  # this is passing the value to the class
 # print(person_one)   # this will print the memory code in which this code is saved
 # print(person_one.name)  # this will print the value
+
+# there are 4 major concepts in OOP
+# inheritance, encapsulation, polymorphism, abstraction
