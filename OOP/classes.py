@@ -44,9 +44,10 @@ class registration:
         self.uni_name = new_uni
 
 
-student_1 = registration("Aaqib", 18, "CT-047")
-print(student_1.name, student_1.age, student_1.roll_no, student_1.uni_name)
-student_1.update_uni("KU")
+# student_1 = registration("Aaqib", 18, "CT-047")
+# print(student_1.name, student_1.age, student_1.roll_no, student_1.uni_name)
+
+student_1.update_uni("KU")   # this will update the value for uni_name
 print(student_1.uni_name)
 
-print(student_1.__dict__)
+print(student_1.__dict__)  # this will print whole data in form of dictionary
