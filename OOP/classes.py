@@ -51,3 +51,4 @@
 # print(student_1.uni_name)
 
 # print(student_1.__dict__)  # this will print whole data in form of dictionary
+
