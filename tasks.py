@@ -1028,20 +1028,20 @@
 #         highest_candles += 1
 # print(highest_candles)
 
-t_format = "12:05:45AM"
-
-
-def timeConversion(s):
-    part = s[8:]
-    hours = int(s[0:2])
-    total = hours + 12
-    if part == "PM":
-        if total != 24:
-            return str(total) + s[2:8]
-        elif total == 24:
-            return s[:8]
-    elif part == "AM":
-        if total != 24:
-            return s[:8]
-        elif total == 24:
-            return "00" + s[2:8]
+# s = "12:05:45AM"
+#
+#
+# def timeConversion(s):
+#     part = s[8:]
+#     hours = int(s[0:2])
+#     total = hours + 12
+#     if part == "PM":
+#         if total != 24:
+#             return str(total) + s[2:8]
+#         elif total == 24:
+#             return s[:8]
+#     elif part == "AM":
+#         if total != 24:
+#             return s[:8]
+#         elif total == 24:
+#             return "00" + s[2:8]
