@@ -33,7 +33,7 @@
 #         col += 1
 #     print("")
 #     row += 1
-
+#
 # row = 1
 #
 # while row < 6:
@@ -98,7 +98,7 @@
 #
 #     print()
 
-
+#
 # n = int(input("Enter the range of the pattern: "))
 # for i in range(1, n + 1):
 #
