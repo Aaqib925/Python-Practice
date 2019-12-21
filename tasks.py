@@ -1019,3 +1019,10 @@
 #         max_count += lst[i]
 # print(max_count)
 # print(min_count)
+
+heights = [3, 3, 2, 1]
+highest_candles = 0
+for i in heights:
+    if i == max(heights):
+        highest_candles += 1
+print(highest_candles)
