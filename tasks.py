@@ -1000,16 +1000,22 @@
 #
 # print("After swap", list1)
 
-lst = [1, 2, 3, 4, 5]
+lst = [5, 5, 5, 5, 5]
 max_value = max(lst)
 min_value = min(lst)
 min_count = 0
 max_count = 0
-for i in lst:
-    if i != min_value:
-        max_count += i
-for j in lst:
-    if j != max_value:
-        min_count += j
+
+if max_value == min_value and max_value != min_value:
+    for i in lst:
+        if i != min_value and max_value != min_value:
+            max_count += i
+    for j in lst:
+        if j != max_value:
+            min_count += j
+if max_value == min_value:
+    for i in range(len(lst) - 1):
+        min_count += lst[i]
+        max_count += lst[i]
 print(max_count)
 print(min_count)
