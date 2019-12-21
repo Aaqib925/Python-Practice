@@ -1022,7 +1022,8 @@
 
 heights = [3, 3, 2, 1]
 highest_candles = 0
+maxi = max(heights)
 for i in heights:
-    if i == max(heights):
+    if i == maxi:
         highest_candles += 1
 print(highest_candles)
