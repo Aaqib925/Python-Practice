@@ -1029,6 +1029,8 @@
 # print(highest_candles)
 
 t_format = "12:05:45AM"
+
+
 def timeConversion(s):
     part = s[8:]
     hours = int(s[0:2])
