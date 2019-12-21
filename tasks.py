@@ -1020,10 +1020,10 @@
 # print(max_count)
 # print(min_count)
 
-heights = [3, 3, 2, 1]
-highest_candles = 0
-maxi = max(heights)
-for i in heights:
-    if i == maxi:
-        highest_candles += 1
-print(highest_candles)
+# heights = [3, 3, 2, 1]
+# highest_candles = 0
+# maxi = max(heights)
+# for i in heights:
+#     if i == maxi:
+#         highest_candles += 1
+# print(highest_candles)
