@@ -1089,15 +1089,16 @@
 
 dic = {}
 word = input("Enter any word or sentence: ")
-dic["Space"] = 0
+dic["Spaces"] = 0
 for i in range(len(word)):
     x = word[i]
     if x != " ":
         dic[x] = 0
+        for j in range(len(word)):
+            if x == word[j] and x != " ":
+                dic[x] += 1
     elif x == " ":
-        dic["Space"] += 1
-    for j in range(len(word)):
-        if x == word[j] and x != " ":
-            dic[x] += 1
+        dic["Spaces"] += 1
+
 
 print(dic)
