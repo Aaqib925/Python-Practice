@@ -1059,14 +1059,19 @@
 #             round_off.append(i)
 #     return round_off
 
-num = (2, 5, 6, 1)
-mini = num[0]
-maxi = num[0]
-for i in num:
+tup = ()
+tup_list = list(tup)
+for i in range(1, int(input("Enter length of tuple: ")) + 1):
+    x = int(input("Enter {} element to add in tuple: ".format(i)))
+    tup_list.append(x)
+tup = tuple(tup_list)
+mini = tup[0]
+maxi = tup[0]
+for i in tup:
     if i < mini:
         mini = i
     elif i > maxi:
         maxi = i
 
-print(mini)
-print(maxi)
+print("The minimum value is: ", mini)
+print("The maximum value is: ", maxi)
