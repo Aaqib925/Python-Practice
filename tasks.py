@@ -1059,19 +1059,19 @@
 #             round_off.append(i)
 #     return round_off
 
-tup = ()
-tup_list = list(tup)
-for i in range(1, int(input("Enter length of tuple: ")) + 1):
-    x = int(input("Enter {} element to add in tuple: ".format(i)))
-    tup_list.append(x)
-tup = tuple(tup_list)
-mini = tup[0]
-maxi = tup[0]
-for i in tup:
-    if i < mini:
-        mini = i
-    elif i > maxi:
-        maxi = i
-
-print("The minimum value is: ", mini)
-print("The maximum value is: ", maxi)
+# tup = ()
+# tup_list = list(tup)
+# for i in range(1, int(input("Enter length of tuple: ")) + 1):
+#     x = int(input("Enter {} element to add in tuple: ".format(i)))
+#     tup_list.append(x)
+# tup = tuple(tup_list)
+# mini = tup[0]
+# maxi = tup[0]
+# for i in tup:
+#     if i < mini:
+#         mini = i
+#     elif i > maxi:
+#         maxi = i
+#
+# print("The minimum value is: ", mini)
+# print("The maximum value is: ", maxi)
