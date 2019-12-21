@@ -1045,3 +1045,4 @@
 #             return s[:8]
 #         elif total == 24:
 #             return "00" + s[2:8]
+#
