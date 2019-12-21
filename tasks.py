@@ -1027,3 +1027,12 @@
 #     if i == maxi:
 #         highest_candles += 1
 # print(highest_candles)
+
+t_format = "12:05:45PM"
+hours = t_format[0: 2]
+
+total = int(hours) + 12
+if total == 24:
+    print("00" + t_format[2:8])
+else:
+    print(str(total) + t_format[2:8])
