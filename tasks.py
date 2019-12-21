@@ -1076,12 +1076,13 @@
 # print("The minimum value is: ", mini)
 # print("The maximum value is: ", maxi)
 
-dic = {}
-word = input("Enter any word: ")
-for i in range(len(word)):
-    dic[word[i]] = 0
-    for j in range(len(word)):
-        if word[i] == word[j]:
-            dic[word[i]] += 1
-
-print(dic)
+# dic = {}
+# word = input("Enter any word: ")
+# for i in range(len(word)):
+#     if word[i] != " ":
+#         dic[word[i]] = 0
+#     for j in range(len(word)):
+#         if word[i] == word[j]:
+#             dic[word[i]] += 1
+#
+# print(dic)
