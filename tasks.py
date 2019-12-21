@@ -1058,3 +1058,15 @@
 #         elif i < 38:
 #             round_off.append(i)
 #     return round_off
+
+num = (2, 5, 6, 1)
+mini = num[0]
+maxi = num[0]
+for i in num:
+    if i < mini:
+        mini = i
+    elif i > maxi:
+        maxi = i
+
+print(mini)
+print(maxi)
