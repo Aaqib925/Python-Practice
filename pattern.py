@@ -335,9 +335,9 @@
 #
 # pattern(5)
 
-num = int(input("Enter any number: "))
-for i in range(0, num):
-    print((num - i) * " ", end="")
-    for j in range(0, i + 1):
-        print("*", end="")
-    print()
+# num = int(input("Enter any number: "))
+# for i in range(0, num):
+#     print((num - i) * " ", end="")
+#     for j in range(0, i + 1):
+#         print("*", end="")
+#     print()
