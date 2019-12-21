@@ -1028,11 +1028,16 @@
 #         highest_candles += 1
 # print(highest_candles)
 
-t_format = "12:05:45PM"
-hours = t_format[0: 2]
+t_format = "12:05:45AM"
 
-total = int(hours) + 12
-if total == 24:
-    print("00" + t_format[2:8])
-else:
-    print(str(total) + t_format[2:8])
+hour = t_format[0:2]
+
+part = t_format[8:]
+if part == "PM":
+    total = int(hour) + 12
+    if total != 24:
+        print(str(total) + t_format[2:8])
+    elif total == 24:
+        print("00" + t_format[2:8])
+if part == "AM":
+    print(t_format[:8])
