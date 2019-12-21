@@ -1046,3 +1046,15 @@
 #         elif total == 24:
 #             return "00" + s[2:8]
 #
+
+def gradingStudents(grades):
+    round_off = []
+    for i in grades:
+        five_multiple = ((i // 5) + 1) * 5
+        if i >= 38 and (five_multiple - i) < 3:
+            round_off.append(five_multiple)
+        elif i >= 38 and (five_multiple - i) >= 3:
+            round_off.append(i)
+        elif i < 38:
+            round_off.append(i)
+    return round_off
