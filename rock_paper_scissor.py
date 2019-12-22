@@ -1,6 +1,6 @@
 import random
-import simplegui
-
+import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
+import pygame
 # Global variables that all functions know about.
 # DO NOT EDIT THESE GLOBAL VARIABLES
 # OR YOUR GAME WILL BREAK.
@@ -130,7 +130,7 @@ def play_rps():
 
 play_rps()
 
-"""   
+"""
 [0, 1, 2]
 [r, p, s]
 
