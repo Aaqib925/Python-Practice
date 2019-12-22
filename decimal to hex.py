@@ -1,3 +1,7 @@
+# This program convert a decimal number into binary number and then convert it into bits and calculate the hexa number
+# 8, 4, 2, 1 method formula
+
+
 def binary(num):
     """ Function to convert a decimal number into binary """
 
