@@ -1126,9 +1126,8 @@
 # print(apple_count)
 # print(orange_count)
 
-x1 = 21   # starting position of kangaroo 1
-v1 = 6    # rate of jump of kangaroo 1
-x2 = 47   # starting position of kangaroo 2
-v2 = 3   # rate of jump of kangaroo 2
-
-if
+def kangaroo(x1, v1, x2, v2):
+    if v1 > v2 and (x2 - x1) % (v1 - v2) == 0:
+        return "YES"
+    else:
+        return "NO"
