@@ -17,14 +17,18 @@ def binary(num):
     return binary_number
 
 
-def bit(binary_num):
+user_input = int(input("Enter the decimal number to convert in binary: "))
+val1 = binary(user_input)
+
+
+def bit(val11):
     """  Function to form bits of binary number """
-    if binary_num == 0:
+    if val11 == 0:
         return 0000
-    elif binary_num == 1:
+    elif val11 == 1:
         return 1
-    elif binary_num != 0:
-        bits = binary_num
+    elif val11 != 0:
+        bits = val11
         if len(bits) % 4 == 0:
             return bits
         elif len(bits) != 4:
@@ -35,21 +39,24 @@ def bit(binary_num):
             return bits
 
 
-def hexa(bits):
+val2 = bit(val1)
+
+
+def hexa(val22):
     """ Function to convert bits into hexa decimal """
 
-    if bits == 0:
+    if val22 == 0:
         return 0
-    elif bits == 1:
+    elif val22 == 1:
         return 1
     else:
         r1 = 0
         r2 = 4
-        length = len(bits)
+        length = len(val22)
         hex_list = []
 
         while length >= 1:
-            num2 = bits[r1:r2]
+            num2 = val22[r1:r2]
             # print(num2)
             total = 0
             if num2[0] == str(1):
@@ -93,9 +100,7 @@ def hexa(bits):
         return answer
 
 
-user_input = int(input("Enter the decimal number to convert in binary: "))
-
-print("Your number {} in binary is equal to:".format(user_input), binary(user_input))
-print("Your binary number in form of bits is:", bit(binary(user_input)))
-print("Your number {} in hexa decimal is equal to:".format(user_input), hexa(bit(binary(user_input))))
-
+val3 = hexa(val2)
+print("Your number {} in binary is equal to:".format(user_input), val1)
+print("Your binary number in form of bits is:", val2)
+print("Your number {} in hexa decimal is equal to:".format(user_input), val3)
