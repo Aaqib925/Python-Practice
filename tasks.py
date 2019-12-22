@@ -1125,3 +1125,9 @@
 #
 # print(apple_count)
 # print(orange_count)
+
+x1 = 0   # starting position of kangaroo 1
+v1 = 3   # rate of jump of kangaroo 1
+x2 = 4   # starting position of kangaroo 2
+v2 = 2   # rate of jump of kangaroo 2
+
