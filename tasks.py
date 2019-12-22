@@ -1102,3 +1102,26 @@
 #
 #
 # print(dic)
+
+# s = 7
+# t = 11
+# a = 5
+# b = 15
+# m = 3
+# n = 2
+#
+# apple = [-2, 2, 1]
+# orange = [5, -6]
+# apple_count = 0
+# orange_count = 0
+# for i in apple:
+#     z = i + a
+#     if z >= s and z <= t:
+#         apple_count += 1
+# for j in orange:
+#     y = j + b
+#     if y >= s and y <= t:
+#         orange_count += 1
+#
+# print(apple_count)
+# print(orange_count)

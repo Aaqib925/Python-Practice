@@ -69,7 +69,7 @@ class MyClass1:
                             text="Please enter the column number of your letter from the list below: ")
             f3Label.grid(row=3, column=0)
             # imageview
-            img = "C:\\Users\\zainu\\OneDrive\\Desktop\\Areeba_Project\\pic1.png"
+            img = "//home//conqueror//Downloads//pic1.png"
             canvas = Canvas(win2, width=200, height=100)
             canvas.pack()
             mi = PhotoImage(file=img)
