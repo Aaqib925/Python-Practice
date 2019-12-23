@@ -349,7 +349,6 @@ for i in range(num):
     stars += "* "
 
 for j in range(num):
+    stars = " " + stars
     time.sleep(0.4)
-    stars = "\t" + stars
-    print(stars)
-
+    print(stars, end="")
