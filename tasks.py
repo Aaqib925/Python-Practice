@@ -1132,21 +1132,21 @@
 #     else:
 #         return "NO"
 
-a = [2, 6]
-b = [24, 36]
-counter = 0
-for i in range(a[1], b[0] + 1):
-    cond1 = 0
-    for x in a:
-        if i % x != 0:
-            cond1 = 1
-            break
-    cond2 = 0
-    for y in b:
-        if y % i != 0:
-            cond2 = 1
-            break
-    if cond1 == 0 and cond2 == 0:
-        counter += 1
-
-print(counter)
+# a = [2, 6]
+# b = [24, 36]
+# counter = 0
+# for i in range(a[-1], b[0] + 1):
+#     cond1 = 0
+#     for x in a:
+#         if i % x != 0:
+#             cond1 = 1
+#             break
+#     cond2 = 0
+#     for y in b:
+#         if y % i != 0:
+#             cond2 = 1
+#             break
+#     if cond1 == 0 and cond2 == 0:
+#         counter += 1
+#
+# print(counter)
