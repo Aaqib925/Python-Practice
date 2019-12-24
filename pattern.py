@@ -346,9 +346,8 @@
 #
 # stars = ""
 # for i in range(num):
-#     stars += "* "
-#
+#     stars += "*"
 # for j in range(num):
-#     stars = " " + stars
+#     stars = " \r" + stars
 #     time.sleep(0.4)
 #     print(stars, end="")

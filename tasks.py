@@ -1151,7 +1151,7 @@
 #
 # print(counter)
 
-scores = [3, 4, 21, 36, 10, 28, 35, 5, 24, 42]
+scores = [10]
 highest_record = 0
 lowest_record = 0
 high = scores[0]
