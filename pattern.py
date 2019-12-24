@@ -347,10 +347,12 @@ num = int(input("Enter any number: "))
 stars = ""
 for i in range(num):
     stars += "* "
-for j in range(num):
-    time.sleep(0.6)
-    print("\r", end="")
-    print(stars, end="")
-    stars = "\t" + stars
-
+# for i in range(num):
+#     for j in range(num):
+#         time.sleep(0.6)
+#         print("\r", end="")
+#         print(stars, end="")
+#         stars = "\t" + stars
+#     print()
+#     j = 0
 
