@@ -346,9 +346,9 @@ num = int(input("Enter any number: "))
 
 stars = ""
 for i in range(num):
-    stars += "*"
+    stars += "* "
 for j in range(num):
-    time.sleep(0.5)
+    time.sleep(0.6)
     print("\r", end="")
     print(stars, end="")
-    stars = " " + stars
+    stars = "\t" + stars
