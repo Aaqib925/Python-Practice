@@ -356,3 +356,11 @@ for i in range(num):
 #     print()
 #     j = 0
 
+for i in range(num):
+    for j in range(num):
+        time.sleep(0.4)
+        print("\r", end="")
+        print(stars, end="")
+        stars = "\t" + stars
+    print()
+
