@@ -352,3 +352,4 @@ for j in range(num):
     print("\r", end="")
     print(stars, end="")
     stars = "\t" + stars
+
