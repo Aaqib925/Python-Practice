@@ -1151,17 +1151,18 @@
 #
 # print(counter)
 
-scores = [10]
-highest_record = 0
-lowest_record = 0
-high = scores[0]
-low = scores[0]
-for i in scores:
-    if i > high:
-        high = i
-        highest_record += 1
-    elif i < low:
-        low = i
-        lowest_record += 1
-print(highest_record)
-print(lowest_record)
+# scores = [10]
+# highest_record = 0
+# lowest_record = 0
+# high = scores[0]
+# low = scores[0]
+# for i in scores:
+#     if i > high:
+#         high = i
+#         highest_record += 1
+#     elif i < low:
+#         low = i
+#         lowest_record += 1
+# print(highest_record)
+# print(lowest_record)
+
