@@ -31,3 +31,9 @@
 # else:
 #     print(x)
 
+try:
+    x = int(input("Enter any positive number: "))
+    # raise Exception("Please enter a positive number.")
+
+except Exception as e:
+    print(e)
