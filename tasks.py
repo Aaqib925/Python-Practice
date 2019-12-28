@@ -1166,3 +1166,7 @@
 # print(highest_record)
 # print(lowest_record)
 
+num = int(input("Enter any number: "))
+for i in range(1, num + 1):
+    if num % i == 0:
+        print(str(i), "\t*\t", str(num // i), "\t=\t", num)
