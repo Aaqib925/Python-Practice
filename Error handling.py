@@ -18,3 +18,5 @@ except ValueError:
 else:
     print("This is else block...no error found in the try block")
 
+finally:
+    print("This is finally block....I am gonna run what ever it is..huhu")
