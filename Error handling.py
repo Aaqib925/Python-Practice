@@ -38,3 +38,12 @@
 # except Exception as e:
 #     print(e)
 
+try:
+    f = open("Aaqib.txt")
+except FileNotFoundError:
+    print("File not found.")
+else:
+    print("Closing the file.")
+    f.close()
+finally:
+    print("Done")
