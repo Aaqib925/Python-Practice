@@ -8,9 +8,13 @@ try:
     a = int(input("Enter first number: "))
     b = int(input("Enter second number: "))
     print(a/b)
+
 except ZeroDivisionError:
     print("Denominator can never be zero.")
+
 except ValueError:
     print("Please enter a integer.")
+
 else:
     print("This is else block...no error found in the try block")
+
