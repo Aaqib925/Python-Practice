@@ -7,8 +7,4 @@
 try:
     a = int(input("Enter first number: "))
     b = int(input("Enter second number: "))
-    z = a / b
-    print("Your answer is: ", z)
-
-except:
-    print("Something went wrong...please try again")
+    print(a/b)
