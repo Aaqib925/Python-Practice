@@ -1237,3 +1237,12 @@ for i in range(1, 3):
 print(matrix)
 determinant = (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0])
 print("The determinant of the matrix is: ", determinant)
+
+# for the adjoin
+matrix[0][1], matrix[1][0] = matrix[1][0], matrix[0][1]
+# print(matrix)
+
+matrix[0][0] = matrix[0][0] * -1
+matrix[1][1] = matrix[1][1] * -1
+# print(matrix)
+
