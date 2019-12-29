@@ -9,3 +9,25 @@
 
 
 # now i will create a file by using open keyword...but by using the mode...else it will show me error of file not found
+
+# f = open("text.txt")
+# print(f)
+
+# f = open("text.txt", "r")  # this will create a file...
+# print(f.read())
+# print(f.readline(), end="")
+# print(f.readline(), end="")
+
+# print(f.readlines())  # this will print all the lines...and then shows in the list
+
+# for x in f:
+#     print(x)
+
+# f = open("text.txt", "a")
+# f.write("Hello")
+#
+# f = open("text.txt", "w")    # write will overwrite all the contents where as append will add in the last of the file
+# f.write("Aaqib")
+# f = open("text.txt", "r")
+# print(f.readlines())
+
