@@ -1198,3 +1198,23 @@
 # Since end="" is used in the exception block, so line doesn't terminate and GFC is printed in the same line
 
 # code 2
+
+value = [1, 2, 3, 4]
+data = 0
+
+try:
+    data = value[3]
+except IndexError:
+    print("CSIT Index Error", end="")
+except:
+    print('NEDUET IndexError ', end='')
+finally:
+    print('Python IndexError ', end='')
+
+data = 10
+try:
+    data = data/0
+except ZeroDivisionError:
+    print('CSIT ZeroDivisionError ', end='')
+finally:
+    print('Python ZeroDivisionError ')
