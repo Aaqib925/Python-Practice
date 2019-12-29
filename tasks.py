@@ -1187,3 +1187,13 @@ except:
     print("Inside except block", end="")
 else:
     print("GFG", end="")
+
+# In this code....first...the try block executes and since the number can't be divided by zero than the except block
+# executed and printed cannot divide by zero
+# Since the try block don't ran properly else part doesn't executed
+
+# in the second try block...data is divisible by 5 so that the try block run...no exception raised....then it goes
+# straight to the else block and print GFC
+
+# Since end="" is used in the exception block, so line doesn't terminate and GFC is printed in the same line
+
