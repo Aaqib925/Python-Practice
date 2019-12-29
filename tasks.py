@@ -1199,25 +1199,25 @@
 
 # code 2
 
-value = [1, 2, 3, 4]
-data = 0
-
-try:
-    data = value[3]
-except IndexError:
-    print("CSIT Index Error", end="")
-except:
-    print('NEDUET IndexError ', end='')
-finally:
-    print('Python IndexError ', end='')
-
-data = 10
-try:
-    data = data/0
-except ZeroDivisionError:
-    print('CSIT ZeroDivisionError ', end='')
-finally:
-    print('Python ZeroDivisionError ')
+# value = [1, 2, 3, 4]
+# data = 0
+#
+# try:
+#     data = value[3]
+# except IndexError:
+#     print("CSIT Index Error", end="")
+# except:
+#     print('NEDUET IndexError ', end='')
+# finally:
+#     print('Python IndexError ', end='')
+#
+# data = 10
+# try:
+#     data = data/0
+# except ZeroDivisionError:
+#     print('CSIT ZeroDivisionError ', end='')
+# finally:
+#     print('Python ZeroDivisionError ')
 
 # since there is not error in the try block then the exception will not be raised...then the finally block will print
 # after that since the data is not divisible by zero than it will raise exception and print the line in exception block
