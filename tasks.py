@@ -1254,3 +1254,16 @@
 #             # matrix[i][j] = str(matrix[i][j]) +  "/" + str(determinant)
 #             matrix[i][j] = matrix[i][j] / determinant
 #     print(matrix)
+
+s = "DDUUDDUDUUUD"
+count = 0
+sea_level = 0
+for i in s:
+
+    if i == "U":
+        sea_level += 1
+    elif i == "D":
+        sea_level -= 1
+    if sea_level == 0 and i == "U":
+        count += 1
+print(count)
