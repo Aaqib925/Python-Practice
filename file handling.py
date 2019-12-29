@@ -44,20 +44,23 @@
 
 # lab manual exercise
 
-f = open("employee.txt", "a")
+# f = open("employee.txt", "a")
+#
+# emplo_id = input("Enter the id of employee: ")
+# emplo_name = input("Enter the name of employee: ")
+# emplo_salary = input("Enter salary of employee: ")
+#
+# f.write(emplo_id)
+# f.write("\n")
+# f.write(emplo_name)
+# f.write("\n")
+# f.write(emplo_salary)
+# print("\n")
+#
+# f = open("employee.txt", "r")
+# print(f.read(), end="")
+#
+# f.close()
 
-emplo_id = input("Enter the id of employee: ")
-emplo_name = input("Enter the name of employee: ")
-emplo_salary = input("Enter salary of employee: ")
-
-f.write(emplo_id)
-f.write("\n")
-f.write(emplo_name)
-f.write("\n")
-f.write(emplo_salary)
-print("\n")
-
-f = open("employee.txt", "r")
-print(f.read(), end="")
-
-f.close()
+import os
+os.remove("employee.txt")
