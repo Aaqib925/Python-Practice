@@ -38,3 +38,6 @@
 
 # import os
 # os.remove("text.txt")  # this will delete the file
+
+# we can delete the directory by using the syntax os.rmdir() and passing the directory name..but the
+# directory must be empty
