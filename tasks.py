@@ -1249,5 +1249,5 @@ print("The Adjoint of your matrix is: ", matrix)
 for i in range(len(matrix)):
     for j in range(len(matrix)):
         # matrix[i][j] = str(matrix[i][j]) +  "/" + str(determinant)
-        # matrix[i][j] = matrix[i][j] / determinant
+        matrix[i][j] = matrix[i][j] / determinant
 print(matrix)
