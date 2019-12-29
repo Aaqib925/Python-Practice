@@ -1223,3 +1223,15 @@
 # after that since the data is not divisible by zero than it will raise exception and print the line in exception block
 # after that finally block will be executed
 # since the end="" is used after every print...so line will not be terminated
+
+
+# create a program to find the inverse of 2 x 2 matrix
+
+matrix = []
+for i in range(1, 3):
+    mat = []
+    for j in range(1, 3):
+        x = int(input("Enter numbers to add in {} Matrix: ".format(i)))
+        mat.append(x)
+    matrix.append(mat)
+
