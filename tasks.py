@@ -1255,15 +1255,27 @@
 #             matrix[i][j] = matrix[i][j] / determinant
 #     print(matrix)
 
-s = "DDUUDDUDUUUD"
-count = 0
-sea_level = 0
-for i in s:
+# s = "DDUUDDUDUUUD"
+# count = 0
+# sea_level = 0
+# for i in s:
+#
+#     if i == "U":
+#         sea_level += 1
+#     elif i == "D":
+#         sea_level -= 1
+#     if sea_level == 0 and i == "U":
+#         count += 1
+# print(count)
 
-    if i == "U":
-        sea_level += 1
-    elif i == "D":
-        sea_level -= 1
-    if sea_level == 0 and i == "U":
-        count += 1
-print(count)
+b = 5
+maxi = -1
+keyboard = [4]
+drives = [5]
+
+for i in keyboard:
+    for j in drives:
+        if i + j <= b:
+            maxi = max(maxi, i + j)
+
+print(maxi)
