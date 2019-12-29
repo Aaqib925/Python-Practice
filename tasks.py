@@ -1227,30 +1227,30 @@
 
 # create a program to find the inverse of 2 x 2 matrix
 
-matrix = []
-for i in range(1, 3):
-    mat = []
-    for j in range(1, 3):
-        x = int(input("Enter numbers to add in {} row: ".format(i)))
-        mat.append(x)
-    matrix.append(mat)
-print("Your Matrix is: ", matrix)
-determinant = (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0])
-print("The determinant of the matrix is: ", determinant)
-
-if determinant == 0:
-    print("The Inverse of Singular matrix is not possible.")
-else:
-    # for the adjoin
-    matrix[0][0], matrix[1][1] = matrix[1][1], matrix[0][0]
-    # print(matrix)
-
-    matrix[0][1] = matrix[0][1] * -1
-    matrix[1][0] = matrix[1][0] * -1
-    print("The Adjoint of your matrix is: ", matrix)
-
-    for i in range(len(matrix)):
-        for j in range(len(matrix)):
-            # matrix[i][j] = str(matrix[i][j]) +  "/" + str(determinant)
-            matrix[i][j] = matrix[i][j] / determinant
-    print(matrix)
+# matrix = []
+# for i in range(1, 3):
+#     mat = []
+#     for j in range(1, 3):
+#         x = int(input("Enter numbers to add in {} row: ".format(i)))
+#         mat.append(x)
+#     matrix.append(mat)
+# print("Your Matrix is: ", matrix)
+# determinant = (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0])
+# print("The determinant of the matrix is: ", determinant)
+#
+# if determinant == 0:
+#     print("The Inverse of Singular matrix is not possible.")
+# else:
+#     # for the adjoin
+#     matrix[0][0], matrix[1][1] = matrix[1][1], matrix[0][0]
+#     # print(matrix)
+#
+#     matrix[0][1] = matrix[0][1] * -1
+#     matrix[1][0] = matrix[1][0] * -1
+#     print("The Adjoint of your matrix is: ", matrix)
+#
+#     for i in range(len(matrix)):
+#         for j in range(len(matrix)):
+#             # matrix[i][j] = str(matrix[i][j]) +  "/" + str(determinant)
+#             matrix[i][j] = matrix[i][j] / determinant
+#     print(matrix)
