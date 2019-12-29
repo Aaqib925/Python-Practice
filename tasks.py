@@ -1246,3 +1246,7 @@ matrix[0][0] = matrix[0][0] * -1
 matrix[1][1] = matrix[1][1] * -1
 # print(matrix)
 
+for i in range(len(matrix)):
+    for j in range(len(matrix)):
+        matrix[i][j] = matrix[i][j] // determinant
+print(matrix)
