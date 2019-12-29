@@ -31,3 +31,5 @@
 # f = open("text.txt", "r")
 # print(f.readlines())
 
+# if you want to open a image file ...we use mode of rb...which means read binary....but will show us the hexa code
+# which are the pixels of that image file
