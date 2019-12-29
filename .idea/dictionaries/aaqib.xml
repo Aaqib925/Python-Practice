@@ -2,6 +2,9 @@
   <dictionary name="aaqib">
     <words>
       <w>adjoint</w>
+      <w>readlin</w>
+      <w>readline</w>
+      <w>readlines</w>
     </words>
   </dictionary>
 </component>
