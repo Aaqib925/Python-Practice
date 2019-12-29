@@ -1234,7 +1234,7 @@ for i in range(1, 3):
         x = int(input("Enter numbers to add in {} row: ".format(i)))
         mat.append(x)
     matrix.append(mat)
-print(matrix)
+print("Your Matrix is: ", matrix)
 determinant = (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0])
 print("The determinant of the matrix is: ", determinant)
 
