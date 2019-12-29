@@ -1218,3 +1218,8 @@ except ZeroDivisionError:
     print('CSIT ZeroDivisionError ', end='')
 finally:
     print('Python ZeroDivisionError ')
+
+# since there is not error in the try block then the exception will not be raised...then the finally block will print
+# after that since the data is not divisible by zero than it will raise exception and print the line in exception block
+# after that finally block will be executed
+# since the end="" is used after every print...so line will not be terminated
