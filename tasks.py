@@ -1170,3 +1170,13 @@
 # for i in range(1, num + 1):
 #     if num % i == 0:
 #         print(str(i), "\t*\t", str(num // i), "\t=\t", num)
+
+
+data = 50
+
+try:
+    data = data / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero", end="")
+else:
+    print("Division successful", end="")
