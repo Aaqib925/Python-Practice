@@ -1172,21 +1172,21 @@
 #         print(str(i), "\t*\t", str(num // i), "\t=\t", num)
 
 
-data = 50
-
-try:
-    data = data / 0
-except ZeroDivisionError:
-    print("Cannot divide by zero", end="")
-else:
-    print("Division successful", end="")
-
-try:
-    data = data / 5
-except:
-    print("Inside except block", end="")
-else:
-    print("GFG", end="")
+# data = 50
+#
+# try:
+#     data = data / 0
+# except ZeroDivisionError:
+#     print("Cannot divide by zero", end="")
+# else:
+#     print("Division successful", end="")
+#
+# try:
+#     data = data / 5
+# except:
+#     print("Inside except block", end="")
+# else:
+#     print("GFG", end="")
 
 # In this code....first...the try block executes and since the number can't be divided by zero than the except block
 # executed and printed cannot divide by zero
