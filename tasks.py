@@ -1282,7 +1282,17 @@
 
 mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
 
-for i in range(len(mat)):
-    for j in range(len(mat)):
+for i in range(3):
+    for j in range(3):
+        # if i == 0 and j == 0:
+        #     ind = mat[i][j]
+        #     print(ind)
+        # elif i == 1 and j == 0:
+        #     sec = mat[i][j]
+        #     print(sec)
+        # elif i == 2 and j == 0:
+        #     third = mat[i][j]
+        #     print(third)
         if j == 0:
             print(mat[i][j])
+
