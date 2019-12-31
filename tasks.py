@@ -1282,5 +1282,10 @@
 
 mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
 
-for i in mat[1:]:
-    print(i[1:])
+a = [i[1:] for i in mat[1:]]
+print(a)
+
+b = [j[::2] for j in mat[1:]]
+print(b)
+
+c =
