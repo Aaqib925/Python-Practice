@@ -1286,7 +1286,14 @@ def det2x2(matrix):
     return det
 
 
-mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
+mat = []
+for x in range(1, 4):
+    mat1 = []
+    for y in range(1, 4):
+        z = int(input("Enter number of {} row {} element: ".format(x, y)))
+        mat1.append(z)
+    mat.append(mat1)
+print(mat)
 
 a = [i[1:] for i in mat[1:]]
 
