@@ -1286,22 +1286,42 @@ def det2x2(matrix):
     return det
 
 
-mat = []
-for x in range(1, 4):
-    mat1 = []
-    for y in range(1, 4):
-        z = int(input("Enter number of {} row {} element: ".format(x, y)))
-        mat1.append(z)
-    mat.append(mat1)
-print(mat)
+# mat = []
+# for x in range(1, 4):
+#     mat1 = []
+#     for y in range(1, 4):
+#         z = int(input("Enter number of {} row {} element: ".format(x, y)))
+#         mat1.append(z)
+#     mat.append(mat1)
+# print(mat)
+#
+# a = [i[1:] for i in mat[1:]]
+#
+# b = [j[::2] for j in mat[1:]]
+#
+# c = [k[:2] for k in mat[1:]]
+#
+# determinant = (mat[0][0] * det2x2(a)) - (mat[0][1] * det2x2(b)) + (mat[0][2] * det2x2(c))
+# print(determinant)
 
-a = [i[1:] for i in mat[1:]]
-
-b = [j[::2] for j in mat[1:]]
-
-c = [k[:2] for k in mat[1:]]
-
-determinant = (mat[0][0] * det2x2(a)) - (mat[0][1] * det2x2(b)) + (mat[0][2] * det2x2(c))
-print(determinant)
+# for adjoint
+mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
+adjoint = []
+first = []
+second = []
+for e in range(3):
+    for f in range(3):
+        element = 1
+        if e == 0 and f == 0:
+            element *= det2x2([h[1:] for h in mat[1:]]) * (-1 ** (1 + 1))
+            first.append(element)
+        elif e == 0 and f == 1:
+            element *= det2x2([h[::2] for h in mat[1:]]) * (-1 ** (1 + 2))
+            first.append(element)
+        elif e == 0 and f == 2:
+            element *= det2x2([h[:2] for h in mat[1:]]) * (-1 ** (1 + 3))
+            first.append(element)
+        elif e == 1 and f == 2:
+            element *=
 
 
