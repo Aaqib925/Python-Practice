@@ -1268,14 +1268,14 @@
 #         count += 1
 # print(count)
 
-b = 5
-maxi = -1
-keyboard = [4]
-drives = [5]
-
-for i in keyboard:
-    for j in drives:
-        if i + j <= b:
-            maxi = max(maxi, i + j)
-
-print(maxi)
+# b = 5
+# maxi = -1
+# keyboard = [4]
+# drives = [5]
+#
+# for i in keyboard:
+#     for j in drives:
+#         if i + j <= b:
+#             maxi = max(maxi, i + j)
+#
+# print(maxi)
