@@ -1288,4 +1288,5 @@ print(a)
 b = [j[::2] for j in mat[1:]]
 print(b)
 
-c =
+c = [k[:2] for k in mat[1:]]
+print(c)
