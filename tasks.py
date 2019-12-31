@@ -1289,14 +1289,12 @@ def det2x2(matrix):
 mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
 
 a = [i[1:] for i in mat[1:]]
-print(a)
-print(det2x2(a))
 
 b = [j[::2] for j in mat[1:]]
-print(b)
-print(det2x2(b))
 
 c = [k[:2] for k in mat[1:]]
-print(c)
-print(det2x2(c))
+
+determinant = (mat[0][0] * det2x2(a)) - (mat[0][1] * det2x2(b)) + (mat[0][2] * det2x2(c))
+print(determinant)
+
 
