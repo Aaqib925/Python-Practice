@@ -1282,18 +1282,5 @@
 
 mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
 
-determinant = 0
-for i in range(3):
-    for j in range(3):
-        if i == 0 and j == 0:
-            ind = mat[i][j]
-            print([mat[i + 1][j + 1], mat[i + 1][j + 2]], [mat[i + 2][j + 1], mat[i + 2][j + 2]])
-        elif i == 1 and j == 0:
-            sec = mat[i][j]
-            # print(sec)
-            print([mat[i][j], mat[i][j + 2]], [mat[]])
-        elif i == 2 and j == 0:
-            third = mat[i][j]
-            # print(third)
-            print([mat[i - 1][j], mat[i - 1][i - 1]])
-
+for i in mat[1:]:
+    print(i[1:])
