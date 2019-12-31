@@ -1279,3 +1279,10 @@
 #             maxi = max(maxi, i + j)
 #
 # print(maxi)
+
+mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
+
+for i in range(len(mat)):
+    for j in range(len(mat)):
+        if j == 0:
+            print(mat[i][j])

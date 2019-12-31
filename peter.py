@@ -123,4 +123,3 @@
 #     print("The answer according to prediction is: ", answer)
 
 
-
