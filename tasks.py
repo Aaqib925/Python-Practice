@@ -1290,3 +1290,4 @@ print(b)
 
 c = [k[:2] for k in mat[1:]]
 print(c)
+
