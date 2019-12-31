@@ -1280,14 +1280,23 @@
 #
 # print(maxi)
 
+def det2x2(matrix):
+    """ This functions returns the determinant of 2 x 2 matrix """
+    det = matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
+    return det
+
+
 mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
 
 a = [i[1:] for i in mat[1:]]
 print(a)
+print(det2x2(a))
 
 b = [j[::2] for j in mat[1:]]
 print(b)
+print(det2x2(b))
 
 c = [k[:2] for k in mat[1:]]
 print(c)
+print(det2x2(c))
 
