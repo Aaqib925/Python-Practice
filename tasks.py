@@ -1350,7 +1350,3 @@
 #         for j in range(3):
 #             adjoint[i][j] = adjoint[i][j] / determinant
 #     print("The inverse of matrix is: ", adjoint)
-
-
-mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
-print([h[:2] for h in mat[::2]])
