@@ -1280,73 +1280,77 @@
 #
 # print(maxi)
 
-def det2x2(matrix):
-    """ This functions returns the determinant of 2 x 2 matrix """
-    det = matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
-    return det
+# def det2x2(matrix):
+#     """ This functions returns the determinant of 2 x 2 matrix """
+#     det = matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
+#     return det
+#
+#
+# mat = []
+# for x in range(1, 4):
+#     mat1 = []
+#     for y in range(1, 4):
+#         z = int(input("Enter number of {} row {} element: ".format(x, y)))
+#         mat1.append(z)
+#     mat.append(mat1)
+# print(mat)
+#
+# a = [i[1:] for i in mat[1:]]
+#
+# b = [j[::2] for j in mat[1:]]
+#
+# c = [k[:2] for k in mat[1:]]
+#
+# determinant = (mat[0][0] * det2x2(a)) - (mat[0][1] * det2x2(b)) + (mat[0][2] * det2x2(c))
+# if determinant == 0:
+#     print("The inverse of singular matrix is not possible")
+# else:
+#     print("The determinant of matrix is: ", determinant)
+#
+#     adjoint = []
+#     first = []
+#     second = []
+#     third = []
+#     for e in range(3):
+#         for f in range(3):
+#             element = 1
+#             if e == 0 and f == 0:
+#                 element *= det2x2([h[1:] for h in mat[1:]]) * 1
+#                 first.append(element)
+#             elif e == 0 and f == 1:
+#                 element *= det2x2([h[::2] for h in mat[1:]]) * (-1)
+#                 first.append(element)
+#             elif e == 0 and f == 2:
+#                 element *= det2x2([h[:2] for h in mat[1:]]) * 1
+#                 first.append(element)
+#             elif e == 1 and f == 0:
+#                 element *= det2x2([h[1:] for h in mat[::2]]) * (-1)
+#                 second.append(element)
+#             elif e == 1 and f == 1:
+#                 element *= det2x2([h[::2] for h in mat[::2]]) * 1
+#                 second.append(element)
+#             elif e == 1 and f == 2:
+#                 element *= det2x2([h[:2] for h in mat[::2]]) * (-1)
+#                 second.append(element)
+#             elif e == 2 and f == 0:
+#                 element *= det2x2([h[:2] for h in mat[:2]]) * 1
+#                 third.append(element)
+#             elif e == 2 and f == 1:
+#                 element *= det2x2([h[::2] for h in mat[:2]]) * (-1)
+#                 third.append(element)
+#             elif e == 2 and f == 2:
+#                 element *= det2x2([h[:2] for h in mat[:2]]) * 1
+#                 third.append(element)
+#
+#     adjoint.append(first)
+#     adjoint.append(second)
+#     adjoint.append(third)
+#     print("The adjoint of matrix is:", adjoint)
+#     for i in range(3):
+#         for j in range(3):
+#             adjoint[i][j] = adjoint[i][j] / determinant
+#     print("The inverse of matrix is: ", adjoint)
 
 
-mat = []
-for x in range(1, 4):
-    mat1 = []
-    for y in range(1, 4):
-        z = int(input("Enter number of {} row {} element: ".format(x, y)))
-        mat1.append(z)
-    mat.append(mat1)
-print(mat)
-
-a = [i[1:] for i in mat[1:]]
-
-b = [j[::2] for j in mat[1:]]
-
-c = [k[:2] for k in mat[1:]]
-
-determinant = (mat[0][0] * det2x2(a)) - (mat[0][1] * det2x2(b)) + (mat[0][2] * det2x2(c))
-if determinant == 0:
-    print("The inverse of singular matrix is not possible")
-else:
-    print("The determinant of matrix is: ", determinant)
-
-    adjoint = []
-    first = []
-    second = []
-    third = []
-    for e in range(3):
-        for f in range(3):
-            element = 1
-            if e == 0 and f == 0:
-                element *= det2x2([h[1:] for h in mat[1:]]) * 1
-                first.append(element)
-            elif e == 0 and f == 1:
-                element *= det2x2([h[::2] for h in mat[1:]]) * (-1)
-                first.append(element)
-            elif e == 0 and f == 2:
-                element *= det2x2([h[:2] for h in mat[1:]]) * 1
-                first.append(element)
-            elif e == 1 and f == 0:
-                element *= det2x2([h[1:] for h in mat[::2]]) * (-1)
-                second.append(element)
-            elif e == 1 and f == 1:
-                element *= det2x2([h[::2] for h in mat[::2]]) * 1
-                second.append(element)
-            elif e == 1 and f == 2:
-                element *= det2x2([h[:2] for h in mat[::2]]) * (-1)
-                second.append(element)
-            elif e == 2 and f == 0:
-                element *= det2x2([h[:2] for h in mat[:2]]) * 1
-                third.append(element)
-            elif e == 2 and f == 1:
-                element *= det2x2([h[::2] for h in mat[:2]]) * (-1)
-                third.append(element)
-            elif e == 2 and f == 2:
-                element *= det2x2([h[:2] for h in mat[:2]]) * 1
-                third.append(element)
-
-    adjoint.append(first)
-    adjoint.append(second)
-    adjoint.append(third)
-    print("The adjoint of matrix is:", adjoint)
-    for i in range(3):
-        for j in range(3):
-            adjoint[i][j] = adjoint[i][j] / determinant
-    print("The inverse of matrix is: ", adjoint)
+mat = [[2, 3, 4], [6, 7, 8], [9, 8, 3]]
+print([h[:2] for h in mat[::2]])
