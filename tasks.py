@@ -1350,4 +1350,3 @@
 #         for j in range(3):
 #             adjoint[i][j] = adjoint[i][j] / determinant
 #     print("The inverse of matrix is: ", adjoint)
-
