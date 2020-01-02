@@ -1285,7 +1285,7 @@ def det2x2(matrix):
     det = matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
     return det
 
-#
+
 mat = []
 for x in range(1, 4):
     mat1 = []
@@ -1350,5 +1350,3 @@ for i in range(3):
     for j in range(3):
         adjoint[i][j] = adjoint[i][j] / determinant
 print("The inverse of matrix is: ", adjoint)
-
-print("Done")
