@@ -1351,10 +1351,8 @@
 #         adjoint[i][j] = adjoint[i][j] / determinant
 # print("The inverse of matrix is: ", adjoint)
 
-import mysql.connector
-db = mysql.connector.connect(
-    host="localhost",
-    user="Aaqib",
-    passwd="aaqib925"
-)
-print(db)
+# important commands for the installation of mysql
+# you ahve to install libssl with command sudo apt-get install libssl-dev
+# then use in the terminal of virtual project pip install mysql
+# then use the command pip install mysql-connector
+# this will work Insha Allah
