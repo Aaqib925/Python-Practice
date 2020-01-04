@@ -1359,3 +1359,10 @@
 
 # i will make a program to find out the magic square for n terms in range
 
+mat = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
+ans = 0
+for i in range(3):
+    num = abs(sum(mat[i]) - 15)
+    ans += num
+
+print(ans)
