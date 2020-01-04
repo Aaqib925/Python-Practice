@@ -1366,3 +1366,14 @@
 #     ans += num
 #
 # print(ans)
+
+user = int(input("Enter the range of the square: "))
+
+mat = []
+for i in range(user):
+    mat1 = []
+    for j in range(user):
+        mat1.append(0)
+    mat.append(mat1)
+
+print(mat)
