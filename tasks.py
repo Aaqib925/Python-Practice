@@ -1376,4 +1376,14 @@ for i in range(user):
         mat1.append(0)
     mat.append(mat1)
 
-print(mat)
+# print(mat)
+
+# for the magic square
+
+for a in range(1, (user ** 2) + 1):
+    if a == 1:
+        ith = user // 2
+        jth = user - 1
+        mat[ith][jth] += 1
+    else:
+        ith =
