@@ -1395,7 +1395,7 @@ for i in range(1, (user ** 2) + 1):
             ith = 0
             jth = user - 2
             if mat[ith][jth] == 0:
-                mat[ith][jth] = i
+                mat[ith][jth] += i
                 ith_list.append(ith)
                 jth_list.append(jth)
             else:
@@ -1407,14 +1407,22 @@ for i in range(1, (user ** 2) + 1):
         else:
             if ith == -1:
                 ith = user - 1
-                ith_list.append(ith)
-            else:
-                ith_list.append(ith)
+                # ith_list.append(ith)
+            # else:
+            #     ith_list.append(ith)
             if jth == user:
                 jth = 0
-                jth_list.append(jth)
+            #     jth_list.append(jth)
             else:
+            #     jth_list.append(jth)
+            if mat[ith][jth] == 0:
+                mat[ith][jth] += i
+                ith_list.append(ith)
                 jth_list.append(jth)
+            elif mat[ith][jth] != 0:
+                ith = ith + 1
+                jth = jth - 2
+                mat[ith][jth] += i
 
 print(jth_list[2:])
 print(ith_list[2:])
