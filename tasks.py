@@ -1370,20 +1370,44 @@
 user = int(input("Enter the range of the square: "))
 
 mat = []
-for i in range(user):
+for a in range(user):
     mat1 = []
-    for j in range(user):
+    for b in range(user):
         mat1.append(0)
     mat.append(mat1)
 
 # print(mat)
 
 # for the magic square
-
-for a in range(1, (user ** 2) + 1):
-    if a == 1:
+ith_list = [0, 0]
+jth_list = [0, 0]
+for i in range(1, (user ** 2) + 1):
+    if i == 1:
         ith = user // 2
         jth = user - 1
-        mat[ith][jth] += 1
+        mat[ith][jth] += i
+        ith_list.append(ith)
+        jth_list.append(jth)
     else:
-        ith =
+        ith = ith_list[i] - 1
+        jth = jth_list[i] + 1
+        if ith == -1 and jth == user:
+            ith = 0
+            jth = user - 2
+            ith_list.append(ith)
+            jth_list.append(jth)
+        else:
+            if ith == -1:
+                ith = user - 1
+                ith_list.append(ith)
+            else:
+                ith_list.append(ith)
+            if jth == user:
+                jth = 0
+                jth_list.append(jth)
+            else:
+                jth_list.append(jth)
+
+print(jth_list[2:])
+print(ith_list[2:])
+
