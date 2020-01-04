@@ -1358,3 +1358,4 @@
 # this will work Insha Allah
 
 # i will make a program to find out the magic square for n terms in range
+
