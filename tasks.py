@@ -1413,7 +1413,7 @@ for i in range(1, (user ** 2) + 1):
             if jth == user:
                 jth = 0
             #     jth_list.append(jth)
-            else:
+            # else:
             #     jth_list.append(jth)
             if mat[ith][jth] == 0:
                 mat[ith][jth] += i
