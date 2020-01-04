@@ -1356,3 +1356,6 @@
 # then use in the terminal of virtual project pip install mysql
 # then use the command pip install mysql-connector
 # this will work Insha Allah
+
+# i will make a program to find out the magic square for n terms in range
+
