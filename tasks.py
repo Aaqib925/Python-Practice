@@ -1389,6 +1389,9 @@ for i in range(1, (user ** 2) + 1):
         ith_list.append(ith)
         jth_list.append(jth)
     else:
+        # print(mat)
+        # print(jth_list)
+        # print(ith_list)
         ith = ith_list[i] - 1
         jth = jth_list[i] + 1
         if ith == -1 and jth == user:
@@ -1440,7 +1443,14 @@ for i in range(1, (user ** 2) + 1):
                     ith_list.append(ith)
                     jth_list.append(jth)
 
-print(jth_list[2:])
-print(ith_list[2:])
-print(mat)
+# print(jth_list[2:])
+# print(ith_list[2:])
 
+const = sum(mat[0])
+ans = ""
+for i in range(user):
+    ans += str(mat[i])
+    ans += "\n"
+print("Your magic matrix is as follows: ")
+print(ans)
+print("The sum for rows columns and diagonals of above matrix is: ", const)
