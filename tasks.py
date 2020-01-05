@@ -1372,7 +1372,7 @@ try:
     if user % 2 == 0:
         raise Exception
 
-except:
+except Exception:
     print("Please Enter a Odd number.")
 
 else:
