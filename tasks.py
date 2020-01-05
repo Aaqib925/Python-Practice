@@ -1367,90 +1367,91 @@
 #
 # print(ans)
 
-user = int(input("Enter the range of the square: "))
+try:
+    user = int(input("Enter the range of the square: "))
+    if user % 2 == 0:
+        raise Exception
 
-mat = []
-for a in range(user):
-    mat1 = []
-    for b in range(user):
-        mat1.append(0)
-    mat.append(mat1)
+except:
+    print("Please Enter a Odd number.")
 
-# print(mat)
+else:
+    mat = []
+    for a in range(user):
+        mat1 = []
+        for b in range(user):
+            mat1.append(0)
+        mat.append(mat1)
 
-# for the magic square
-ith_list = [0, 0]
-jth_list = [0, 0]
-for i in range(1, (user ** 2) + 1):
-    if i == 1:
-        ith = user // 2
-        jth = user - 1
-        mat[ith][jth] += i
-        ith_list.append(ith)
-        jth_list.append(jth)
-    else:
-        # print(mat)
-        # print(jth_list)
-        # print(ith_list)
-        ith = ith_list[i] - 1
-        jth = jth_list[i] + 1
-        if ith == -1 and jth == user:
-            ith = 0
-            jth = user - 2
-            if mat[ith][jth] == 0:
-                mat[ith][jth] += i
-                ith_list.append(ith)
-                jth_list.append(jth)
-            else:
-                ith = ith + 1
-                jth = j - 2
-                mat[ith][jth] += i
-                ith_list.append(ith)
-                jth_list.append(jth)
-        elif ith != -1 and jth != user:
-            if mat[ith][jth] == 0:
-                mat[ith][jth] += i
-                ith_list.append(ith)
-                jth_list.append(jth)
-            elif mat[ith][jth] != 0:
-                ith = ith + 1
-                jth = jth - 2
-                mat[ith][jth] += i
-                ith_list.append(ith)
-                jth_list.append(jth)
+    ith_list = [0, 0]
+    jth_list = [0, 0]
+    for i in range(1, (user ** 2) + 1):
+        if i == 1:
+            ith = user // 2
+            jth = user - 1
+            mat[ith][jth] += i
+            ith_list.append(ith)
+            jth_list.append(jth)
         else:
-            if ith == -1:
-                ith = user - 1
+            ith = ith_list[i] - 1
+            jth = jth_list[i] + 1
+            if ith == -1 and jth == user:
+                ith = 0
+                jth = user - 2
+                if mat[ith][jth] == 0:
+                    mat[ith][jth] += i
+                    ith_list.append(ith)
+                    jth_list.append(jth)
+                else:
+                    ith = ith + 1
+                    jth = j - 2
+                    mat[ith][jth] += i
+                    ith_list.append(ith)
+                    jth_list.append(jth)
+            elif ith != -1 and jth != user:
                 if mat[ith][jth] == 0:
                     mat[ith][jth] += i
                     ith_list.append(ith)
                     jth_list.append(jth)
                 elif mat[ith][jth] != 0:
                     ith = ith + 1
-                    # print(ith, jth)
-                    mat[ith][jth] += i
-                    ith_list.append(ith)
-                    jth_list.append(jth)
-            elif jth == user:
-                jth = 0
-                if mat[ith][jth] == 0:
-                    mat[ith][jth] += i
-                    ith_list.append(ith)
-                    jth_list.append(jth)
-                elif mat[ith][jth] != 0:
                     jth = jth - 2
                     mat[ith][jth] += i
                     ith_list.append(ith)
                     jth_list.append(jth)
+            else:
+                if ith == -1:
+                    ith = user - 1
+                    if mat[ith][jth] == 0:
+                        mat[ith][jth] += i
+                        ith_list.append(ith)
+                        jth_list.append(jth)
+                    elif mat[ith][jth] != 0:
+                        ith = ith + 1
+                        # print(ith, jth)
+                        mat[ith][jth] += i
+                        ith_list.append(ith)
+                        jth_list.append(jth)
+                elif jth == user:
+                    jth = 0
+                    if mat[ith][jth] == 0:
+                        mat[ith][jth] += i
+                        ith_list.append(ith)
+                        jth_list.append(jth)
+                    elif mat[ith][jth] != 0:
+                        jth = jth - 2
+                        mat[ith][jth] += i
+                        ith_list.append(ith)
+                        jth_list.append(jth)
 
-# print(jth_list[2:])
-# print(ith_list[2:])
+    # print(jth_list[2:])
+    # print(ith_list[2:])
 
-const = sum(mat[0])
-ans = ""
-for i in range(user):
-    ans += str(mat[i])
-    ans += "\n"
-print("Your magic matrix is as follows: ")
-print(ans)
-print("The sum for rows columns and diagonals of above matrix is: ", const)
+    const = sum(mat[0])
+    ans = ""
+    for i in range(user):
+        ans += str(mat[i])
+        ans += "\n"
+    print("Your magic matrix is as follows: ")
+    print(ans)
+    print("The sum for rows columns and diagonals of above matrix is: ", const)
