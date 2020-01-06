@@ -1456,34 +1456,34 @@
 #     print(ans)
 #     print("The sum for rows columns and diagonals of above matrix is: ", const)
 
-user = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
-
-conditions = [
-    [[8, 3, 4], [1, 5, 9], [6, 7, 2]],
-    [[6, 7, 2], [1, 5, 9], [8, 3, 4]],
-    [[4, 3, 8], [9, 5, 1], [2, 7, 6]],
-    [[2, 7, 6], [9, 5, 1], [4, 3, 8]],
-    [[8, 1, 6], [3, 5, 7], [4, 9, 2]],
-    [[4, 9, 2], [3, 5, 7], [8, 1, 6]],
-    [[6, 1, 8], [7, 5, 3], [2, 9, 4]],
-    [[2, 9, 4], [7, 5, 3], [6, 1, 8]]
-]
-list1 = []
-for i in conditions:
-    sum1 = 0
-    for j, k in zip(i, user):
-        for z in range(3):
-            list1.append(abs(j[z] - k[z]))
-total = []
-r1 = 0
-r2 = 9
-length = len(list1)
-while True:
-    sum2 = sum(list1[r1: r2])
-    total.append(sum2)
-    r1 += 9
-    r2 += 9
-    length -= 9
-    if length == 0:
-        break
-print("Time Minimum code will be: ", min(total))
+# user = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
+#
+# conditions = [
+#     [[8, 3, 4], [1, 5, 9], [6, 7, 2]],
+#     [[6, 7, 2], [1, 5, 9], [8, 3, 4]],
+#     [[4, 3, 8], [9, 5, 1], [2, 7, 6]],
+#     [[2, 7, 6], [9, 5, 1], [4, 3, 8]],
+#     [[8, 1, 6], [3, 5, 7], [4, 9, 2]],
+#     [[4, 9, 2], [3, 5, 7], [8, 1, 6]],
+#     [[6, 1, 8], [7, 5, 3], [2, 9, 4]],
+#     [[2, 9, 4], [7, 5, 3], [6, 1, 8]]
+# ]
+# list1 = []
+# for i in conditions:
+#     sum1 = 0
+#     for j, k in zip(i, user):
+#         for z in range(3):
+#             list1.append(abs(j[z] - k[z]))
+# total = []
+# r1 = 0
+# r2 = 9
+# length = len(list1)
+# while True:
+#     sum2 = sum(list1[r1: r2])
+#     total.append(sum2)
+#     r1 += 9
+#     r2 += 9
+#     length -= 9
+#     if length == 0:
+#         break
+# print("Time Minimum code will be: ", min(total))
