@@ -1479,4 +1479,11 @@ r1 = 0
 r2 = 9
 length = len(list1)
 while True:
-
+    sum2 = sum(list1[r1: r2])
+    total.append(sum2)
+    r1 += 9
+    r2 += 9
+    length -= 9
+    if length == 0:
+        break
+print("Time Minimum code will be: ", min(total))
