@@ -1367,7 +1367,7 @@
 #
 # print(ans)
 
-try:
+# try:
 #     user = int(input("Enter the range of the square: "))
 #     if user % 2 == 0:
 #         raise Exception
@@ -1468,3 +1468,11 @@ conditions = [
     [[6, 1, 8], [7, 5, 3], [2, 9, 4]],
     [[2, 9, 4], [7, 5, 3], [6, 1, 8]]
 ]
+
+for i in conditions:
+    for j in i:
+        print(j)
+    print("Done")
+        # for k in range(3):
+        #     print(j[k])
+        # print("Done")
