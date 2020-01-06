@@ -1487,3 +1487,6 @@
 #     if length == 0:
 #         break
 # print("Time Minimum code will be: ", min(total))
+
+a = [1, 1, 2, 2, 4, 4, 5, 5, 5]
+
