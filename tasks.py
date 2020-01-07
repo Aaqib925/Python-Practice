@@ -1487,8 +1487,12 @@
 #     if length == 0:
 #         break
 # print("Time Minimum code will be: ", min(total))
-
+tot = []
 a = [1, 1, 2, 2, 4, 4, 5, 5, 5]
-for i in range(len(a)):
+for i in a:
     ls = []
-    print(a[i])
+    cond = 0
+    for j in a:
+        if a.index(i) != a.index(j):
+            if abs(i - j) <= 1:
+                con
