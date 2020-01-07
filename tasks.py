@@ -1489,4 +1489,5 @@
 # print("Time Minimum code will be: ", min(total))
 
 a = [1, 1, 2, 2, 4, 4, 5, 5, 5]
+for i in range(len(a)):
 

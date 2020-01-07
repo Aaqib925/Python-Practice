@@ -341,15 +341,15 @@
 #     for j in range(0, i + 1):
 #         print("*", end="")
 #     print()
-import time
-num = int(input("Enter any number: "))
-
-stars = ""
-for i in range(num):
-    stars += "* "
+# import time
+# num = int(input("Enter any number: "))
+#
+# stars = ""
+# for i in range(num):
+#     stars += "* "
 # for i in range(num):
 #     for j in range(num):
-#         time.sleep(0.6)
+#         time.sleep(0.2)
 #         print("\r", end="")
 #         print(stars, end="")
 #         stars = "\t" + stars
