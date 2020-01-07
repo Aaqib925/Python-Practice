@@ -1494,5 +1494,4 @@ for i in a:
     cond = 0
     for j in a:
         if a.index(i) != a.index(j):
-            if abs(i - j) <= 1:
-                con
+            print(str(i) + " - " + str(j) + " = " + str(abs(i - j)))
