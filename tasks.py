@@ -1523,15 +1523,31 @@
 # print(ls)
 # print(max(ls))
 
-a = [100, 100, 50, 40, 40, 20, 10]
-a = sorted(list(set(a)), reverse=True)
-print(a)
+# a = [100, 100, 50, 40, 40, 20, 10]
+# a = sorted(list(set(a)), reverse=True)
+# print(a)
+#
+# alice_score = [5, 25, 50, 120]
+#
+# for i in alice_score:
+#     counter = 1
+#     for j in a:
+#         if i < j:
+#             counter += 1
+#     print(counter)
 
-alice_score = [5, 25, 50, 120]
+from collections import Counter
 
-for i in alice_score:
-    counter = 1
-    for j in a:
-        if i < j:
-            counter += 1
-    print(counter)
+def climbingLeaderboard(scores, alice):
+    res=[]
+    b=list(Counter(scores).keys())
+    temp=len(b)-1
+    for a in alice:
+        for i in range(temp,-1,-1):
+            if b[i]>a:
+                res.append(i+2)
+                temp=i
+                break
+            elif i==0:
+                res.append(1)
+    return res
