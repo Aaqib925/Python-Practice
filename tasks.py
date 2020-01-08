@@ -1522,3 +1522,18 @@
 #     ls.append(count)
 # print(ls)
 # print(max(ls))
+
+a = [100, 100, 50, 40, 40, 20, 10]
+set_a = set(a)
+list_ = list(set_a)
+final = sorted(list_, reverse=True)
+print(final)
+
+alice_score = [5, 25, 50, 120]
+
+for i in alice_score:
+    counter = 1
+    for j in final:
+        if i < j:
+            counter += 1
+    print(counter)
