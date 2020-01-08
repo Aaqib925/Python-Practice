@@ -1510,4 +1510,4 @@
 
 # compliment operator is called as ~ and use to find 1's complement
 
-print(~ 13)
+# print(~ 13)
