@@ -1487,11 +1487,17 @@
 #     if length == 0:
 #         break
 # print("Time Minimum code will be: ", min(total))
-tot = []
-a = [1, 1, 2, 2, 4, 4, 5, 5, 5]
-for i in a:
-    ls = []
-    cond = 0
-    for j in a:
-        if a.index(i) != a.index(j):
-            print(str(i) + " - " + str(j) + " = " + str(abs(i - j)))
+
+# lambda function
+
+# y = lambda x: x * x
+
+# print(y(25))
+
+# x = lambda y: y * 2 * y
+
+# print(x(25))
+
+# int he and operator both should be True (&) is used
+
+# print(77 & 60)
