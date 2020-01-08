@@ -1536,19 +1536,19 @@
 #             counter += 1
 #     print(counter)
 
-from collections import Counter
-
-
-def climbingleaderboard(scores, alice):
-    res = []
-    b = list(Counter(scores).keys())
-    temp = len(b) - 1
-    for a in alice:
-        for i in range(temp, -1, -1):
-            if b[i] > a:
-                res.append(i + 2)
-                temp = i
-                break
-            elif i == 0:
-                res.append(1)
-    return res
+# from collections import Counter
+#
+#
+# def climbingleaderboard(scores, alice):
+#     res = []
+#     b = list(Counter(scores).keys())
+#     temp = len(b) - 1
+#     for a in alice:
+#         for i in range(temp, -1, -1):
+#             if b[i] > a:
+#                 res.append(i + 2)
+#                 temp = i
+#                 break
+#             elif i == 0:
+#                 res.append(1)
+#     return res
