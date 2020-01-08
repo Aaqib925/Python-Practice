@@ -1512,13 +1512,13 @@
 
 # print(~ 13)
 
-a = [1, 1, 2, 2, 4, 4, 5, 5, 5]
-
-set_a = set(a)
-print(set_a)
-ls = []
-for x in set_a:
-    count = a.count(x) + a.count(x + 1)
-    ls.append(count)
-print(ls)
-print(max(ls))
+# a = [1, 1, 2, 2, 4, 4, 5, 5, 5]
+#
+# set_a = set(a)
+# print(set_a)
+# ls = []
+# for x in set_a:
+#     count = a.count(x) + a.count(x + 1)
+#     ls.append(count)
+# print(ls)
+# print(max(ls))
