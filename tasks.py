@@ -1501,3 +1501,8 @@
 # int he and operator both should be True (&) is used
 
 # print(77 & 60)
+
+# print(77 | 60)
+
+# zor gate is operator used by ^ and the operation if odd number is true then true....else false
+
