@@ -1506,3 +1506,8 @@
 
 # zor gate is operator used by ^ and the operation if odd number is true then true....else false
 
+# print(77 ^ 60)
+
+# compliment operator is called as ~ and use to find 1's complement
+
+print(~ 13)
