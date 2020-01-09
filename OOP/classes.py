@@ -52,13 +52,13 @@
 
 # print(student_1.__dict__)  # this will print whole data in form of dictionary
 
-class parent:
-    def __init__(self, first_name, marks):
-        self.first_name = first_name
-        self.marks = marks
-
-    def result(self):
-        print("The Person named {} has {} marks.".format(self.first_name, self.marks))
+# class parent:
+#     def __init__(self, first_name, marks):
+#         self.first_name = first_name
+#         self.marks = marks
+#
+#     def result(self):
+#         print("The Person named {} has {} marks.".format(self.first_name, self.marks))
 
 
 # creating a object for the parent class
@@ -68,11 +68,11 @@ class parent:
 
 # now a creating a child class of parent class by passing the parent class as an argument
 
-class child(parent):
-    def result(self):
-        print("That's how mafia works")
-
-
-obj2 = child("Aaqib", 999)
-obj2.result()
+# class child(parent):
+#     def result(self):
+#         print("That's how mafia works")
+#
+#
+# obj2 = child("Aaqib", 999)
+# obj2.result()
 
