@@ -1552,3 +1552,9 @@
 #             elif i == 0:
 #                 res.append(1)
 #     return res
+
+h = [6, 3, 4, 4, 6, 4, 5, 3, 4, 3, 6, 5, 4, 6, 7, 1, 3, 4, 2, 5, 6, 1, 5, 1, 7, 2]
+word = "nrdyluacvr"
+
+result = max(h[:len(word)]) * len(word)
+print(result)
