@@ -53,3 +53,8 @@
 # print(student_1.__dict__)  # this will print whole data in form of dictionary
 
 class parent:
+    def __init__(self, first_name, marks):
+        self.first_name = first_name
+        self.marks = marks
+    def result(self):
+        print("The Person named {} has {} marks.".format(self.first_name, self.marks))
