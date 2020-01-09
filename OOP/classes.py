@@ -38,10 +38,10 @@
 #         self.roll_no = roll_no
 #         self.uni_name = "NED university"
 
-        # now i will create a method to update uni name
+# now i will create a method to update uni name
 
-    # def update_uni(self, new_uni):
-    #     self.uni_name = new_uni
+# def update_uni(self, new_uni):
+#     self.uni_name = new_uni
 
 
 # student_1 = registration("Aaqib", 18, "CT-047")
@@ -56,5 +56,22 @@ class parent:
     def __init__(self, first_name, marks):
         self.first_name = first_name
         self.marks = marks
+
     def result(self):
         print("The Person named {} has {} marks.".format(self.first_name, self.marks))
+
+
+# creating a object for the parent class
+# obj1 = parent("Aaqib", "999")
+# obj1.result()
+
+
+# now a creating a child class of parent class by passing the parent class as an argument
+
+class child(parent):
+    def result(self):
+        print("That's how mafia works")
+
+
+obj2 = child("Aaqib", 999)
+obj2.result()
