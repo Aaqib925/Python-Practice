@@ -75,3 +75,4 @@ class child(parent):
 
 obj2 = child("Aaqib", 999)
 obj2.result()
+
