@@ -1563,7 +1563,7 @@
 # result = max(ls) * len(word)
 # print(result)
 
-n = [0, 1, 4]
+n = [0, 1, 2, 3, 4, 5]
 final = []
 for i in n:
     total = 1
@@ -1572,4 +1572,5 @@ for i in n:
             total += 1
         else:
             total *= 2
-    print(total)
+    final.append(total)
+print(final)
