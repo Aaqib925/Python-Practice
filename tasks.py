@@ -1573,14 +1573,24 @@
 #         total += 1
 # print(total)
 
-k = 3
-a = [-1, -3, 4, 2]
-counter = 0
-for i in a:
-    if i == -1 * abs(i):
-        counter += 1
+# k = 3
+# a = [-1, -3, 4, 2]
+# counter = 0
+# for i in a:
+#     if i == -1 * abs(i):
+#         counter += 1
+#
+# if counter < k:
+#     print("YES")
+# else:
+#     print("NO")
 
-if counter < k:
-    print("YES")
-else:
-    print("NO")
+i = 20
+j = 23
+k = 6
+counter = 0
+for a in range(i, j + 1):
+    result = a - int(str(a)[::-1])
+    if result % k == 0:
+        counter += 1
+print(counter)
