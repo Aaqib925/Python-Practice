@@ -1603,3 +1603,13 @@
 #     total += like
 #     mine = like * 3
 # print(total)
+
+ls = [1, 2, 3]
+k = 2
+m = [0, 1, 2]
+
+for i in range(k):
+    x = ls.pop()
+    ls.insert(0, x)
+for i in m:
+    print(ls[i])
