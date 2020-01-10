@@ -1573,3 +1573,14 @@
 #         total += 1
 # print(total)
 
+k = 3
+a = [-1, -3, 4, 2]
+counter = 0
+for i in a:
+    if i == -1 * abs(i):
+        counter += 1
+
+if counter < k:
+    print("YES")
+else:
+    print("NO")
