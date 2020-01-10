@@ -1585,12 +1585,12 @@
 # else:
 #     print("NO")
 
-i = 20
-j = 23
-k = 6
-counter = 0
-for a in range(i, j + 1):
-    result = a - int(str(a)[::-1])
-    if result % k == 0:
-        counter += 1
-print(counter)
+# i = 20
+# j = 23
+# k = 6
+# counter = 0
+# for a in range(i, j + 1):
+#     result = a - int(str(a)[::-1])
+#     if result % k == 0:
+#         counter += 1
+# print(counter)
