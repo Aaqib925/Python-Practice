@@ -1563,7 +1563,7 @@
 # result = max(ls) * len(word)
 # print(result)
 
-n = 12
+n = 5
 
 total = 1
 for i in range(n):
