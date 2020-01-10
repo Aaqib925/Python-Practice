@@ -1564,4 +1564,12 @@
 # print(result)
 
 n = [0, 1, 4]
+final = []
 for i in n:
+    total = 1
+    for j in range(1, i + 1):
+        if j % 2 == 0:
+            total += 1
+        else:
+            total *= 2
+    print(total)
