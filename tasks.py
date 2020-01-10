@@ -1563,13 +1563,13 @@
 # result = max(ls) * len(word)
 # print(result)
 
-n = 5
-
-total = 1
-for i in range(n):
-    if i % 2 == 0:
-        total *= 2
-    else:
-        total += 1
-print(total)
+# n = 5
+#
+# total = 1
+# for i in range(n):
+#     if i % 2 == 0:
+#         total *= 2
+#     else:
+#         total += 1
+# print(total)
 
