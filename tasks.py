@@ -1563,14 +1563,13 @@
 # result = max(ls) * len(word)
 # print(result)
 
-n = [0, 1, 2, 3, 4, 5]
-final = []
-for i in n:
-    total = 1
-    for j in range(1, i + 1):
-        if j % 2 == 0:
-            total += 1
-        else:
-            total *= 2
-    final.append(total)
-print(final)
+n = 12
+
+total = 1
+for i in range(n):
+    if i % 2 == 0:
+        total *= 2
+    else:
+        total += 1
+print(total)
+
