@@ -1562,3 +1562,10 @@
 #     ls.append(h[letter])
 # result = max(ls) * len(word)
 # print(result)
+
+
+user = int(input("Enter any number: "))
+col, row = 0, 0
+for i in range(user):
+    for j in range(user):
+        if
