@@ -1595,11 +1595,11 @@
 #         counter += 1
 # print(counter)
 
-n = 3
-mine = 5
-total = 0
-for i in range(1, n + 1):
-    like = mine // 2
-    total += like
-    mine = like * 3
-print(total)
+# n = 3
+# mine = 5
+# total = 0
+# for i in range(1, n + 1):
+#     like = mine // 2
+#     total += like
+#     mine = like * 3
+# print(total)
