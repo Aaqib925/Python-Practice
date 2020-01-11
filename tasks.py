@@ -1692,18 +1692,18 @@
 # print(counter)
 
 
-d1 = 2 ; m1 = 7 ; y1 = 1014
-d2 = 1 ; m2 = 1 ; y2 = 1015
-
-fine = 0
-if y2 > y1:
-    print(0)
-else:
-    if y1 > y2:
-        fine += 10000
-    else:
-        if d1 > d2 and m1 == m2:
-            fine += 15 * (d1 - d2)
-        if m1 > m2:
-            fine += 500 * (m1 - m2)
-    print(fine)
+# d1 = 2 ; m1 = 7 ; y1 = 1014
+# d2 = 1 ; m2 = 1 ; y2 = 1015
+#
+# fine = 0
+# if y2 > y1:
+#     print(0)
+# else:
+#     if y1 > y2:
+#         fine += 10000
+#     else:
+#         if d1 > d2 and m1 == m2:
+#             fine += 15 * (d1 - d2)
+#         if m1 > m2:
+#             fine += 500 * (m1 - m2)
+#     print(fine)
