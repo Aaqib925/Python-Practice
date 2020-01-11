@@ -1639,3 +1639,10 @@
 #     elif c[j] == 0:
 #         e -= 1
 # print(e)
+
+n = 1012
+counter = 0
+for i in str(n):
+    if int(i) != 0 and n % int(i) == 0:
+        counter += 1
+print(counter)
