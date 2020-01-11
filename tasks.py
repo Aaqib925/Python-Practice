@@ -1613,3 +1613,14 @@
 #     ls.insert(0, x)
 # for i in m:
 #     print(ls[i])
+
+p = [2, 3, 1]
+n = len(p)
+
+peta = {}
+for i, j in enumerate(p):
+    peta[j] = i + 1
+print(peta)
+
+for i in range(1, n + 1):
+    print(peta[peta[i]])
