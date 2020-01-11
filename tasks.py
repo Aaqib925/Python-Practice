@@ -1614,13 +1614,28 @@
 # for i in m:
 #     print(ls[i])
 
-p = [2, 3, 1]
-n = len(p)
+# p = [2, 3, 1]
+# n = len(p)
+#
+# peta = {}
+# for i, j in enumerate(p):
+#     peta[j] = i + 1
+# print(peta)
+#
+# for i in range(1, n + 1):
+#     print(peta[peta[i]])
 
-peta = {}
-for i, j in enumerate(p):
-    peta[j] = i + 1
-print(peta)
-
-for i in range(1, n + 1):
-    print(peta[peta[i]])
+# e = 100
+# c = [0, 0, 1, 0, 0, 1, 1, 0]
+# k = 2
+# path = []
+# for i in range(0, len(c), k):
+#     path.append(i)
+# # path.append(0)
+# print(path)
+# for j in path:
+#     if c[j] == 1:
+#         e -= 3
+#     elif c[j] == 0:
+#         e -= 1
+# print(e)
