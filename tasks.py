@@ -1646,3 +1646,38 @@
 #     if int(i) != 0 and n % int(i) == 0:
 #         counter += 1
 # print(counter)
+
+
+# s = "abcd"
+# t = "abcdert"
+# print(len(s))
+# print(len(t))
+# k = 20
+# s1 = ""
+# t1 = ""
+# count = 0
+# for i in range(min(len(s), len(t))):
+#     if s[:i + 1] != t[:i + 1]:
+#         s1 = s[i:]
+#         t1 = t[i:]
+#         break
+#     else:
+#         count += 1
+# print(s1)
+# print(t1)
+# if len(s) > len(t):
+#     z = abs(len(s1) - len(t1))
+#     count += len(t1) - z
+#
+#     # if count <= k and len(s) > len(t) or len(s1) == 0:
+#     #     print("YES")
+#     if count <= k and len(t) <= len(s):
+#         print("YES")
+#     else:
+#         print("NO")
+# else:
+#     if len(t) - count <= k:
+#         print("Yes")
+#     else:
+#         print("No")
+
