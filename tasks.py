@@ -1708,19 +1708,19 @@
 #             fine += 500 * (m1 - m2)
 #     print(fine)
 
-arr = [8, 8, 14, 10, 3, 5, 14, 12]
-
-while True:
-    if len(arr) != 0:
-        mini = min(arr)
-        count = arr.count(mini)
-        print(len(arr))
-        for i in range(count):
-            arr.remove(mini)
-        for j in range(len(arr)):
-            arr[j] -= mini
-        if len(arr) == 1:
-            print(1)
-            break
-    else:
-        break
+# arr = [8, 8, 14, 10, 3, 5, 14, 12]
+#
+# while True:
+#     if len(arr) != 0:
+#         mini = min(arr)
+#         count = arr.count(mini)
+#         print(len(arr))
+#         for i in range(count):
+#             arr.remove(mini)
+#         for j in range(len(arr)):
+#             arr[j] -= mini
+#         if len(arr) == 1:
+#             print(1)
+#             break
+#     else:
+#         break
