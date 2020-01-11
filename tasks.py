@@ -1681,3 +1681,12 @@
 #     else:
 #         print("No")
 
+import math
+a = 17
+b = 24
+counter = 0
+for i in range(a, b + 1):
+    ans = math.sqrt(i)
+    if str(ans)[1:3] == ".0" and len(str(ans)) == 3:
+        counter += 1
+print(counter)
