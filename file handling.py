@@ -62,32 +62,32 @@
 #
 # f.close()
 
-f = open("employee.txt", "a")
-x = int(input("Enter the number of Employees you want to add: "))
-ls = []
-
-for i in range(1, x + 1):
-    ls1 = []
-    empl_id = input("Enter the ID of Employee {}: ".format(i))
-    empl_name = input("Enter the Name of Employee {}: ".format(i))
-    empl_salary = input("Enter the Salary of the Employee {}: ".format(i))
-    ls1.append(empl_id)
-    ls1.append(empl_name)
-    ls1.append(empl_salary)
-    ls.append(ls1)
-
-data = ["Employee ID: ", "Employee Name: ", "Employee Salary: "]
-counter = 1
-for a in ls:
-    f.write("\n")
-    f.write("For Employee {}".format(counter) + "\n")
-    for i in range(3):
-        f.write(data[i] + a[i] + "\n")
-    counter += 1
-
-f = open("employee.txt", "r")
-
-for i in f:
-    print(i, end="")
-
-f.close()
+# f = open("employee.txt", "a")
+# x = int(input("Enter the number of Employees you want to add: "))
+# ls = []
+#
+# for i in range(1, x + 1):
+#     ls1 = []
+#     empl_id = input("Enter the ID of Employee {}: ".format(i))
+#     empl_name = input("Enter the Name of Employee {}: ".format(i))
+#     empl_salary = input("Enter the Salary of the Employee {}: ".format(i))
+#     ls1.append(empl_id)
+#     ls1.append(empl_name)
+#     ls1.append(empl_salary)
+#     ls.append(ls1)
+#
+# data = ["Employee ID: ", "Employee Name: ", "Employee Salary: "]
+# counter = 1
+# for a in ls:
+#     f.write("\n")
+#     f.write("For Employee {}".format(counter) + "\n")
+#     for i in range(3):
+#         f.write(data[i] + a[i] + "\n")
+#     counter += 1
+#
+# f = open("employee.txt", "r")
+#
+# for i in f:
+#     print(i, end="")
+#
+# f.close()
