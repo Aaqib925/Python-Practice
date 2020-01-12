@@ -1740,3 +1740,15 @@
 # length = len(s)
 # ans = s.count ("a") * (n // length) + s[:n % length].count("a")
 # print(ans)
+
+# a = [0, 0, 1, 0, 0, 1, 0]
+# n = 7
+# c = -1
+# i = 0
+# while i < n:
+#     if i < n-2 and a[i+2] == 0:
+#         i += 1
+#     c += 1
+#     i += 1
+#
+# print(c)
