@@ -1735,8 +1735,8 @@
 #             break
 # print(ls)
 
-s = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm"
-n = 736778906400
-length = len(s)
-ans = s.count ("a") * (n // length) + s[:n % length].count("a")
-print(ans)
+# s = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm"
+# n = 736778906400
+# length = len(s)
+# ans = s.count ("a") * (n // length) + s[:n % length].count("a")
+# print(ans)
