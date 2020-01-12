@@ -1724,9 +1724,19 @@
 #             break
 #     else:
 #         break
-# k = 5
-# s = [2, 7, 12, 17, 22]
-# final = []
+
+# k = 3
+# s = [1, 7, 2, 4]
+# ls = []
 # for i in range(len(s)):
 #     for j in range(i + 1, len(s)):
-#         print(s[i] + s[j])
+#         if s[i] + s[j] % k != 0:
+#             ls.append(s[i])
+#             break
+# print(ls)
+
+s = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm"
+n = 736778906400
+length = len(s)
+ans = s.count ("a") * (n // length) + s[:n % length].count("a")
+print(ans)
