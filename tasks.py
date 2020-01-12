@@ -1752,3 +1752,22 @@
 #     i += 1
 #
 # print(c)
+
+arr = [1, 2, 2, 3]
+dic = {}
+for i in arr:
+    dic[i] = 0
+    for j in arr:
+        if i == j:
+            dic[i] += 1
+
+print(dic)
+maxi_keys = list(dic.keys())
+maxi_values = list(dic.values())
+key_index = maxi_values.index(max(maxi_values))
+final_value = maxi_keys[key_index]
+print(final_value)
+
+count = arr.count(final_value)
+print(len(arr) - count)
+
