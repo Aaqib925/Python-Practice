@@ -1887,14 +1887,14 @@
 #                 break
 # print(counter)
 
-n = 8
+n = 4
 mini = 1
 
 r_q = 4
 c_q = 4
-obstacles = [[3, 5]]
+obstacles = []
 counter = 0
-for i in range(1, n + 1):
+for i in range(1, 9):
     if i == 1:
         print("Lower Right")
         x = [r_q, c_q]
@@ -1906,6 +1906,7 @@ for i in range(1, n + 1):
                 print(x)
             else:
                 break
+
     elif i == 2:
         print("Middle Right")
         y = [r_q, c_q]
@@ -1925,6 +1926,8 @@ for i in range(1, n + 1):
             if z not in obstacles:
                 print(z)
                 counter += 1
+            else:
+                break
     elif i == 4:
         print("Upper Middle")
         a = [r_q, c_q]
@@ -1933,6 +1936,8 @@ for i in range(1, n + 1):
             if a not in obstacles:
                 counter += 1
                 print(a)
+            else:
+                break
     elif i == 5:
         print("Upper Left")
         b = [r_q, c_q]
