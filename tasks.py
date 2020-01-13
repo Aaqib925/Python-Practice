@@ -1772,14 +1772,14 @@
 # print(len(arr) - count)
 
 
-# n = 5
+# n = 8
 # maxi = n
 # mini = 1
-# r_q = 4 ; c_p = 3
+# r_q = 4 ; c_p = 4
 #
 # queen = [r_q, c_p]
 #
-# obstacles = [[5, 5], [2, 4], [3, 2]]
+# obstacles = []
 # num_of_obstacles = len(obstacles)
 #
 #
@@ -1793,6 +1793,7 @@
 #         while x[0] < n and x[1] < n:
 #             x[0] += 1
 #             x[1] += 1
+#             x = [x[1], x[0]]
 #             if x not in obstacles:
 #                 # print(x)
 #                 counter += 1
@@ -1804,6 +1805,7 @@
 #         y = [r_q, c_p]
 #         while y[0] == r_q and y[1] < n:
 #             y[1] += 1
+#             y = [y[1], y[0]]
 #             if y not in obstacles:
 #                 # print(y)
 #                 counter += 1
@@ -1816,6 +1818,7 @@
 #         while z[0] > mini and z[1] < n:
 #             z[0] -= 1
 #             z[1] += 1
+#             z = [z[1], z[0]]
 #             if z not in obstacles:
 #                 # print(z)
 #                 counter += 1
@@ -1827,6 +1830,7 @@
 #         a = [r_q, c_p]
 #         while a[0] > mini and a[1] == c_p:
 #             a[0] -= 1
+#             a = [a[1], a[0]]
 #             if a not in obstacles:
 #                 # print(a)
 #                 counter += 1
@@ -1838,6 +1842,7 @@
 #         b = [r_q, c_p]
 #         while b[0] > mini and b[1] == c_p:
 #             b[0] -= 1
+#             b = [b[1], b[0]]
 #             if b not in obstacles:
 #                 # print(b)
 #                 counter += 1
@@ -1849,6 +1854,7 @@
 #         c = [r_q, c_p]
 #         while c[0] == r_q and c[1] > mini:
 #             c[1] -= 1
+#             c = [c[1], c[0]]
 #             if c not in obstacles:
 #                 # print(c)
 #                 counter += 1
@@ -1861,6 +1867,7 @@
 #         while d[0] < n and d[1] > mini:
 #             d[1] -= 1
 #             d[0] += 1
+#             d = [d[1], d[0]]
 #             if d not in obstacles:
 #                 # print(d)
 #                 counter += 1
@@ -1872,9 +1879,11 @@
 #         e = [r_q, c_p]
 #         while e[0] < n and e[1] == c_p:
 #             e[0] += 1
+#             e = [e[1], e[0]]
 #             if e not in obstacles:
 #                 # print(e)
 #                 counter += 1
 #             else:
 #                 break
 # print(counter)
+
