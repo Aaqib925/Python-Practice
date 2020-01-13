@@ -1887,3 +1887,62 @@
 #                 break
 # print(counter)
 
+n = 8
+mini = 1
+
+r_q = 4
+c_q = 4
+
+for i in range(1, n + 1):
+    if i == 1:
+        print("Lower Right")
+        x = [r_q, c_q]
+        while x[0] > mini and x[1] < n:
+            x[0] -= 1
+            x[1] += 1
+            print(x)
+    elif i == 2:
+        print("Middle Right")
+        y = [r_q, c_q]
+        while y[0] == r_q and y[1] < n:
+            y[1] += 1
+            print(y)
+    elif i == 3:
+        print("Upper Right")
+        z = [r_q, c_q]
+        while z[0] < n and z[1] < n:
+            z[0] += 1
+            z[1] += 1
+            print(z)
+    elif i == 4:
+        print("Upper Middle")
+        a = [r_q, c_q]
+        while a[0] < n and a[1] == c_q:
+            a[0] += 1
+            print(a)
+    elif i == 5:
+        print("Upper Left")
+        b = [r_q, c_q]
+        while b[0] < n and b[1] > mini:
+            b[0] += 1
+            b[1] -= 1
+            print(b)
+    elif i == 6:
+        print("Middle left")
+        c = [r_q, c_q]
+        while c[0] == r_q and c[1] > mini:
+            c[1] -= 1
+            print(c)
+    elif i == 7:
+        print("Lower left")
+        d = [r_q, c_q]
+        while d[0] > mini and d[1] > mini:
+            d[0] -= 1
+            d[1] -= 1
+            print(d)
+    elif i == 8:
+        print("Lower Middle")
+        e = [r_q, c_q]
+        while e[0] > mini and e[1] == c_q:
+            e[0] -= 1
+            print(e)
