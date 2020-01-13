@@ -1785,22 +1785,31 @@ num_of_obstacles = len(obstacles)
 # there are 8 possible ways in which the queen can attack
 # The maximum's and minimums are as follows
 
-all_count = []
-
 for i in range(1, n + 1):
-
-    if i == 1:    # for upper right
-        x = queen
+    if i == 1:
+        print("Upper right")
+        x = [r_q, c_p]
         while x[0] < n and x[1] < n:
-            x[0] +=1 ; x[1] += 1
-            print(x)
-    elif i == 2:   # for upper middle end
-        x = queen
-        while x[0] == r_q and x[1] < n:
+            x[0] += 1
             x[1] += 1
-            # print(x)
+            print(x)
+
+    elif i == 2:
+        print("Middle upper")
+        y = [r_q, c_p]
+        while y[0] == r_q and y[1] < n:
+            y[1] += 1
+            print(y)
 
     elif i == 3:
-        x = queen
-        while x[0] >= mini and x[1] < n:
-            x[0]
+        print("Upper left")
+    elif i == 4:
+        print("Middle left")
+    elif i == 5:
+        print("lower left")
+    elif i == 6:
+        print("Lower middle")
+    elif i == 7:
+        print("Lower right")
+    elif i == 8:
+        print("Middle right")
