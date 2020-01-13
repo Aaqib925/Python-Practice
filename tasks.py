@@ -1792,10 +1792,15 @@ for i in range(1, n + 1):
     if i == 1:    # for upper right
         x = queen
         while x[0] < n and x[1] < n:
-            x = [x[0] + 1, x[1] + 1]
-            # print(x)
+            x[0] +=1 ; x[1] += 1
+            print(x)
     elif i == 2:   # for upper middle end
         x = queen
         while x[0] == r_q and x[1] < n:
             x[1] += 1
             # print(x)
+
+    elif i == 3:
+        x = queen
+        while x[0] >= mini and x[1] < n:
+            x[0]
