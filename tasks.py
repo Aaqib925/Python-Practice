@@ -1780,3 +1780,8 @@ queen = [r_q, c_p]
 obstacles = [[5, 5], [4, 2], [2, 3]]
 num_of_obstacles = len(obstacles)
 
+# there are 8 possible ways in which the queen can attack
+
+all_count = []
+
+for i in range(8):
