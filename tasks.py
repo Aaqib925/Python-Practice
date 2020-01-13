@@ -1803,10 +1803,28 @@ for i in range(1, n + 1):
 
     elif i == 3:
         print("Upper left")
+        z = [r_q, c_p]
+        while z[0] > mini and z[1] < n:
+            z[0] -= 1
+            z[1] += 1
+            print(z)
+
     elif i == 4:
         print("Middle left")
+        a = [r_q, c_p]
+        while a[0] > mini and a[1] == c_p:
+            a[0] -= 1
+            print(a)
+
+
     elif i == 5:
         print("lower left")
+        b = [r_q, c_p]
+        while b[0] > mini and b[1] == c_p:
+            b[0] -= 1
+            print(b)
+
+
     elif i == 6:
         print("Lower middle")
     elif i == 7:
