@@ -1773,6 +1773,8 @@
 
 
 n = 8
+maxi = n
+mini = 1
 r_q = 4 ; c_p = 4
 
 queen = [r_q, c_p]
@@ -1781,7 +1783,19 @@ obstacles = [[5, 5], [4, 2], [2, 3]]
 num_of_obstacles = len(obstacles)
 
 # there are 8 possible ways in which the queen can attack
+# The maximum's and minimums are as follows
 
 all_count = []
 
-for i in range(8):
+for i in range(1, n + 1):
+
+    if i == 1:    # for upper right
+        x = queen
+        while x[0] < n and x[1] < n:
+            x = [x[0] + 1, x[1] + 1]
+            # print(x)
+    elif i == 2:   # for upper middle end
+        x = queen
+        while x[0] == r_q and x[1] < n:
+            x[1] += 1
+            # print(x)
