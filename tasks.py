@@ -1816,7 +1816,6 @@ for i in range(1, n + 1):
             a[0] -= 1
             print(a)
 
-
     elif i == 5:
         print("lower left")
         b = [r_q, c_p]
@@ -1824,10 +1823,24 @@ for i in range(1, n + 1):
             b[0] -= 1
             print(b)
 
-
     elif i == 6:
         print("Lower middle")
+        c = [r_q, c_p]
+        while c[0] > mini and c[1] > mini:
+            c[0] -=1
+            c[1] -= 1
+            print(c)
     elif i == 7:
         print("Lower right")
+        d = [r_q, c_p]
+        while d[0] == r_q and d[1] > mini:
+            d[1] -= 1
+            print(d)
+
     elif i == 8:
         print("Middle right")
+        e = [r_q, c_p]
+        while e[0] < n and e[1] > mini:
+            e[0] += 1
+            e[1] -= 1
+            print(e)
