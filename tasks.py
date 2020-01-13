@@ -1887,97 +1887,97 @@
 #                 break
 # print(counter)
 
-n = 8
-mini = 1
-
-r_q = 4
-c_q = 4
-obstacles = [[3, 5]]
-counter = 0
-for i in range(1, 9):
-    if i == 1:
-        # print("Lower Right")
-        x = [r_q, c_q]
-        while x[0] > mini and x[1] < n:
-            x[0] -= 1
-            x[1] += 1
-            if x not in obstacles:
-                counter += 1
-                # print(x)
-            else:
-                break
-
-    elif i == 2:
-        # print("Middle Right")
-        y = [r_q, c_q]
-        while y[0] == r_q and y[1] < n:
-            y[1] += 1
-            if y not in obstacles:
-                counter += 1
-                # print(y)
-            else:
-                break
-    elif i == 3:
-        # print("Upper Right")
-        z = [r_q, c_q]
-        while z[0] < n and z[1] < n:
-            z[0] += 1
-            z[1] += 1
-            if z not in obstacles:
-                # print(z)
-                counter += 1
-            else:
-                break
-    elif i == 4:
-        # print("Upper Middle")
-        a = [r_q, c_q]
-        while a[0] < n and a[1] == c_q:
-            a[0] += 1
-            if a not in obstacles:
-                counter += 1
-                # print(a)
-            else:
-                break
-    elif i == 5:
-        # print("Upper Left")
-        b = [r_q, c_q]
-        while b[0] < n and b[1] > mini:
-            b[0] += 1
-            b[1] -= 1
-            if b not in obstacles:
-                counter += 1
-                # print(b)
-            else:
-                break
-    elif i == 6:
-        # print("Middle left")
-        c = [r_q, c_q]
-        while c[0] == r_q and c[1] > mini:
-            c[1] -= 1
-            if c not in obstacles:
-                # print(c)
-                counter += 1
-            else:
-                break
-    elif i == 7:
-        # print("Lower left")
-        d = [r_q, c_q]
-        while d[0] > mini and d[1] > mini:
-            d[0] -= 1
-            d[1] -= 1
-            if d not in obstacles:
-                counter += 1
-                # print(d)
-            else:
-                break
-    elif i == 8:
-        # print("Lower Middle")
-        e = [r_q, c_q]
-        while e[0] > mini and e[1] == c_q:
-            e[0] -= 1
-            if e not in obstacles:
-                # print(e)
-                counter += 1
-            else:
-                break
-print(counter)
+# n = 8
+# mini = 1
+#
+# r_q = 4
+# c_q = 4
+# obstacles = [[3, 5]]
+# counter = 0
+# for i in range(1, 9):
+#     if i == 1:
+#         # print("Lower Right")
+#         x = [r_q, c_q]
+#         while x[0] > mini and x[1] < n:
+#             x[0] -= 1
+#             x[1] += 1
+#             if x not in obstacles:
+#                 counter += 1
+#                 # print(x)
+#             else:
+#                 break
+#
+#     elif i == 2:
+#         # print("Middle Right")
+#         y = [r_q, c_q]
+#         while y[0] == r_q and y[1] < n:
+#             y[1] += 1
+#             if y not in obstacles:
+#                 counter += 1
+#                 # print(y)
+#             else:
+#                 break
+#     elif i == 3:
+#         # print("Upper Right")
+#         z = [r_q, c_q]
+#         while z[0] < n and z[1] < n:
+#             z[0] += 1
+#             z[1] += 1
+#             if z not in obstacles:
+#                 # print(z)
+#                 counter += 1
+#             else:
+#                 break
+#     elif i == 4:
+#         # print("Upper Middle")
+#         a = [r_q, c_q]
+#         while a[0] < n and a[1] == c_q:
+#             a[0] += 1
+#             if a not in obstacles:
+#                 counter += 1
+#                 # print(a)
+#             else:
+#                 break
+#     elif i == 5:
+#         # print("Upper Left")
+#         b = [r_q, c_q]
+#         while b[0] < n and b[1] > mini:
+#             b[0] += 1
+#             b[1] -= 1
+#             if b not in obstacles:
+#                 counter += 1
+#                 # print(b)
+#             else:
+#                 break
+#     elif i == 6:
+#         # print("Middle left")
+#         c = [r_q, c_q]
+#         while c[0] == r_q and c[1] > mini:
+#             c[1] -= 1
+#             if c not in obstacles:
+#                 # print(c)
+#                 counter += 1
+#             else:
+#                 break
+#     elif i == 7:
+#         # print("Lower left")
+#         d = [r_q, c_q]
+#         while d[0] > mini and d[1] > mini:
+#             d[0] -= 1
+#             d[1] -= 1
+#             if d not in obstacles:
+#                 counter += 1
+#                 # print(d)
+#             else:
+#                 break
+#     elif i == 8:
+#         # print("Lower Middle")
+#         e = [r_q, c_q]
+#         while e[0] > mini and e[1] == c_q:
+#             e[0] -= 1
+#             if e not in obstacles:
+#                 # print(e)
+#                 counter += 1
+#             else:
+#                 break
+# print(counter)
