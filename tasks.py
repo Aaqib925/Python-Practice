@@ -1792,14 +1792,23 @@ for i in range(1, n + 1):
         while x[0] < n and x[1] < n:
             x[0] += 1
             x[1] += 1
-            print(x)
+            for ch in range(len(obstacles)):
+                if x == obstacles[ch]:
+                    break
+                else:
+                    print(x)
 
     elif i == 2:
         print("Middle upper")
         y = [r_q, c_p]
         while y[0] == r_q and y[1] < n:
             y[1] += 1
-            print(y)
+            # print(y)
+            for ah in range(len(obstacles)):
+                if y == obstacles[ah]:
+                    break
+                else:
+                    print(y)
 
     elif i == 3:
         print("Upper left")
@@ -1807,35 +1816,59 @@ for i in range(1, n + 1):
         while z[0] > mini and z[1] < n:
             z[0] -= 1
             z[1] += 1
-            print(z)
+            # print(z)
+            for bh in range(len(obstacles)):
+                if z == obstacles[bh]:
+                    break
+                else:
+                    print(z)
 
     elif i == 4:
         print("Middle left")
         a = [r_q, c_p]
         while a[0] > mini and a[1] == c_p:
             a[0] -= 1
-            print(a)
+            # print(a)
+            for sh in range(len(obstacles)):
+                if a == obstacles[sh]:
+                    break
+                else:
+                    print(a)
 
     elif i == 5:
         print("lower left")
         b = [r_q, c_p]
         while b[0] > mini and b[1] == c_p:
             b[0] -= 1
-            print(b)
-
+            # print(b)
+            for fh in range(len(obstacles)):
+                if b == obstacles[fh]:
+                    break
+                else:
+                    print(b)
     elif i == 6:
         print("Lower middle")
         c = [r_q, c_p]
         while c[0] > mini and c[1] > mini:
-            c[0] -=1
+            c[0] -= 1
             c[1] -= 1
-            print(c)
+            # print(c)
+            for gh in range(len(obstacles)):
+                if c == obstacles[gh]:
+                    break
+                else:
+                    print(c)
     elif i == 7:
         print("Lower right")
         d = [r_q, c_p]
         while d[0] == r_q and d[1] > mini:
             d[1] -= 1
-            print(d)
+            # print(d)
+            for jh in range(len(obstacles)):
+                if d == obstacles[jh]:
+                    break
+                else:
+                    print(d)
 
     elif i == 8:
         print("Middle right")
@@ -1843,4 +1876,8 @@ for i in range(1, n + 1):
         while e[0] < n and e[1] > mini:
             e[0] += 1
             e[1] -= 1
-            print(e)
+            for kh in range(len(obstacles)):
+                if e == obstacles[kh]:
+                    break
+                else:
+                    print(e)
