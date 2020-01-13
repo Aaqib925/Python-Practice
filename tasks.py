@@ -1922,36 +1922,57 @@ for i in range(1, n + 1):
         while z[0] < n and z[1] < n:
             z[0] += 1
             z[1] += 1
-            print(z)
+            if z not in obstacles:
+                print(z)
+                counter += 1
     elif i == 4:
         print("Upper Middle")
         a = [r_q, c_q]
         while a[0] < n and a[1] == c_q:
             a[0] += 1
-            print(a)
+            if a not in obstacles:
+                counter += 1
+                print(a)
     elif i == 5:
         print("Upper Left")
         b = [r_q, c_q]
         while b[0] < n and b[1] > mini:
             b[0] += 1
             b[1] -= 1
-            print(b)
+            if b not in obstacles:
+                counter += 1
+                print(b)
+            else:
+                break
     elif i == 6:
         print("Middle left")
         c = [r_q, c_q]
         while c[0] == r_q and c[1] > mini:
             c[1] -= 1
-            print(c)
+            if c not in obstacles:
+                print(c)
+                counter += 1
+            else:
+                break
     elif i == 7:
         print("Lower left")
         d = [r_q, c_q]
         while d[0] > mini and d[1] > mini:
             d[0] -= 1
             d[1] -= 1
-            print(d)
+            if d not in obstacles:
+                counter += 1
+                print(d)
+            else:
+                break
     elif i == 8:
         print("Lower Middle")
         e = [r_q, c_q]
         while e[0] > mini and e[1] == c_q:
             e[0] -= 1
-            print(e)
+            if e not in obstacles:
+                print(e)
+                counter += 1
+            else:
+                break
+print(counter)
