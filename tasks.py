@@ -1892,7 +1892,8 @@ mini = 1
 
 r_q = 4
 c_q = 4
-
+obstacles = [[3, 5]]
+counter = 0
 for i in range(1, n + 1):
     if i == 1:
         print("Lower Right")
@@ -1900,13 +1901,21 @@ for i in range(1, n + 1):
         while x[0] > mini and x[1] < n:
             x[0] -= 1
             x[1] += 1
-            print(x)
+            if x not in obstacles:
+                counter += 1
+                print(x)
+            else:
+                break
     elif i == 2:
         print("Middle Right")
         y = [r_q, c_q]
         while y[0] == r_q and y[1] < n:
             y[1] += 1
-            print(y)
+            if y not in obstacles:
+                counter += 1
+                print(y)
+            else:
+                break
     elif i == 3:
         print("Upper Right")
         z = [r_q, c_q]
