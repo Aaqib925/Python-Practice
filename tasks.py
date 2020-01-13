@@ -1771,3 +1771,12 @@
 # count = arr.count(final_value)
 # print(len(arr) - count)
 
+
+n = 8
+r_q = 4 ; c_p = 4
+
+queen = [r_q, c_p]
+
+obstacles = [[5, 5], [4, 2], [2, 3]]
+num_of_obstacles = len(obstacles)
+
