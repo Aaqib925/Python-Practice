@@ -2006,8 +2006,28 @@
 b = 3
 w = 6
 bc = 9
+bc1 = bc
 wc = 1
+wc1 = wc
 z = 1
 
 mini = min(bc, wc)
+if mini < bc:
+    bc = mini
+    mini = bc
+    if bc + mini < bc1:
+        bc += z
+    else:
+        bc = bc1
+elif wc < mini and wc + mini < z:
+    wc = mini
+    mini = wc
+    wc = mini
+    if wc + mini < wc1:
+        wc += z
+    else:
+        wc = wc1
+
+total = (bc * b) + (wc * w)
+print(total)
 
