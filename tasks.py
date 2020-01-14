@@ -2003,30 +2003,30 @@
 # ans = [maxi, total]
 # print(ans)
 
-b = 10
-w = 10
-bc = 1
-bc1 = bc
-wc = 1
-wc1 = wc
-z = 1
-if bc != wc:
-    low_cost = ""
-
-    if bc1 < wc1:
-        low_cost += "BC"
-    elif wc1 < bc1:
-        low_cost += "WC"
-
-    if low_cost == "WC":
-        bc = wc + z
-        if bc > bc1:
-            bc = bc1
-
-    elif low_cost == "BC":
-        wc = bc + z
-        if wc > wc1:
-            wc = wc1
-
-total = (b * bc) + (w * wc)
-print(total)
+# b = 10
+# w = 10
+# bc = 1
+# bc1 = bc
+# wc = 1
+# wc1 = wc
+# z = 1
+# if bc != wc:
+#     low_cost = ""
+#
+#     if bc1 < wc1:
+#         low_cost += "BC"
+#     elif wc1 < bc1:
+#         low_cost += "WC"
+#
+#     if low_cost == "WC":
+#         bc = wc + z
+#         if bc > bc1:
+#             bc = bc1
+#
+#     elif low_cost == "BC":
+#         wc = bc + z
+#         if wc > wc1:
+#             wc = wc1
+#
+# total = (b * bc) + (w * wc)
+# print(total)
