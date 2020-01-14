@@ -2003,3 +2003,11 @@
 # ans = [maxi, total]
 # print(ans)
 
+b = 3
+w = 6
+bc = 9
+wc = 1
+z = 1
+
+mini = min(bc, wc)
+
