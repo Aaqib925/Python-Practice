@@ -1982,22 +1982,24 @@
 #                 break
 # print(counter)
 
-n = 5
-topic = ["10101", "11110", "00010"]
+# n = 3
+# topic = ["10101", "11110", "00010"]
+#
+# ls = []
+# for i in range(n):
+#
+#     for j in range(i + 1, n):
+#         count = 0
+#         for a, b in zip(topic[i], topic[j]):
+#             if (a == b or a == str(1) or b == str(1)) and (a != str(0) or b != str(0)):
+#                 # print(a, b)
+#                 count += 1
+#         ls.append(count)
+#
+# print(ls)
+# maxi = max(ls)
+# total = ls.count(maxi)
+#
+# ans = [maxi, total]
+# print(ans)
 
-ls = []
-for i in range(len(topic)):
-
-    for j in range(i + 1, len(topic)):
-        count = 0
-        for a, b in zip(topic[i], topic[j]):
-            if (a == b or a == str(1) or b == str(1)) and (a != str(0) or b != str(0)):
-                # print(a, b)
-                count += 1
-        ls.append(count)
-
-print(ls)
-maxi = max(ls)
-print(maxi)
-total = ls.count(maxi)
-print(total)
