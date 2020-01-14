@@ -2003,13 +2003,13 @@
 # ans = [maxi, total]
 # print(ans)
 
-b = 3
-w = 3
+b = 10
+w = 10
 bc = 1
 bc1 = bc
-wc = 9
+wc = 1
 wc1 = wc
-z = 2
+z = 1
 if bc != wc:
     low_cost = ""
 
@@ -2019,13 +2019,11 @@ if bc != wc:
         low_cost += "WC"
 
     if low_cost == "WC":
-        print("bc KI VALUE CHANGE KARO")
         bc = wc + z
         if bc > bc1:
             bc = bc1
 
     elif low_cost == "BC":
-        print("mc ki value change karo")
         wc = bc + z
         if wc > wc1:
             wc = wc1
