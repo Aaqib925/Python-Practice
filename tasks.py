@@ -2004,30 +2004,17 @@
 # print(ans)
 
 b = 3
-w = 6
-bc = 9
+w = 3
+bc = 1
 bc1 = bc
-wc = 1
+wc = 9
 wc1 = wc
-z = 1
+z = 2
 
-mini = min(bc, wc)
-if mini < bc:
-    bc = mini
-    mini = bc
-    if bc + mini < bc1:
-        bc += z
-    else:
-        bc = bc1
-elif wc < mini and wc + mini < z:
-    wc = mini
-    mini = wc
-    wc = mini
-    if wc + mini < wc1:
-        wc += z
-    else:
-        wc = wc1
+low_cost = ""
 
-total = (bc * b) + (wc * w)
-print(total)
+if bc1 < wc1:
+    low_cost += "BC"
+elif wc1 < bc1:
+    low_cost += "WC"
 
