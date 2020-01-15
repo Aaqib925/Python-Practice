@@ -2057,23 +2057,17 @@
 arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
 brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
 
+maximum_value = max(arr + brr)
+total = []
+for i in range(maximum_value + 1):
+    total.append(0)
 
-arr.sort(reverse=True)
-brr.sort(reverse=True)
-
-mini = ""
-if len(arr) < len(brr):
-    mini += "arr"
-elif len(brr) < len(arr):
-    mini += "brr"
-
-difference = abs(len(arr) - len(brr))
-
-if mini == "arr":
-    for i in range(difference):
-        arr.append("a")
-elif mini == "brr":
-    for i in range(difference):
-        brr.append("a")
-print(arr)
-print(brr)
+for a in arr:
+    total[a] += 1
+for b in brr:
+    total[b] -= 1
+ls = []
+for j in range(len(total)):
+    if total[j] != 0:
+        ls.append(j)
+print(ls)
