@@ -2053,3 +2053,23 @@
 #     for i in ls:
 #         ans.append(abs(i[0] - i[1]))
 #     print(min(ans))
+
+arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
+brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
+
+
+arr.sort(reverse=True)
+brr.sort(reverse=True)
+maxi = ""
+if len(arr) > len(brr):
+    maxi += "arr"
+else:
+    maxi += "brr"
+
+count = 0
+
+if maxi == "arr":
+    count += len(arr)
+elif maxi == "brr":
+    count += len(brr)
+
