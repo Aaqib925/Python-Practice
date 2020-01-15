@@ -2060,16 +2060,20 @@ brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
 
 arr.sort(reverse=True)
 brr.sort(reverse=True)
-maxi = ""
-if len(arr) > len(brr):
-    maxi += "arr"
-else:
-    maxi += "brr"
 
-count = 0
+mini = ""
+if len(arr) < len(brr):
+    mini += "arr"
+elif len(brr) < len(arr):
+    mini += "brr"
 
-if maxi == "arr":
-    count += len(arr)
-elif maxi == "brr":
-    count += len(brr)
+difference = abs(len(arr) - len(brr))
 
+if mini == "arr":
+    for i in range(difference):
+        arr.append("a")
+elif mini == "brr":
+    for i in range(difference):
+        brr.append("a")
+print(arr)
+print(brr)
