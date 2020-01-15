@@ -2031,25 +2031,25 @@
 # total = (b * bc) + (w * wc)
 # print(total)
 
-a = [7, 1, 0, 2, 1, 7]
-ls = []
-counter = 0
-for i in a:
-    x = a.count(i)
-    if x == 1:
-        counter += 1
-    if x == 2:
-        sample = []
-        y = a.index(i)
-        sample.append(y)
-        a[y] = "Done"
-        z = a.index(i)
-        sample.append(z)
-        ls.append(sample)
-if counter == len(a):
-    print(-1)
-else:
-    ans = []
-    for i in ls:
-        ans.append(abs(i[0] - i[1]))
-    print(min(ans))
+# a = [7, 1, 0, 2, 1, 7]
+# ls = []
+# counter = 0
+# for i in a:
+#     x = a.count(i)
+#     if x == 1:
+#         counter += 1
+#     if x == 2:
+#         sample = []
+#         y = a.index(i)
+#         sample.append(y)
+#         a[y] = "Done"
+#         z = a.index(i)
+#         sample.append(z)
+#         ls.append(sample)
+# if counter == len(a):
+#     print(-1)
+# else:
+#     ans = []
+#     for i in ls:
+#         ans.append(abs(i[0] - i[1]))
+#     print(min(ans))
