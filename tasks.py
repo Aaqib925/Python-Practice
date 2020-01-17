@@ -2097,10 +2097,10 @@
 #             print(end=" ")
 #     print("")
 
-mat1 = [[3, 2, 1, 5], [9, 1, 3, 0]]
-mat1_dimension = [2, 4]
-mat2 = [[2, 9, 0], [1, 3, 5], [2, 4, 7], [8, 1, 5]]
-mat2_dimension = [4, 3]
+mat1 = []
+mat2 = []
+mat1_dimension = []
+mat2_dimension = []
 for _ in range(1, 3):
     user = int(input("Enter the number of rows for matrix {}: ".format(_)))
     user1 = int(input("Enter the number of columns for matrix {}: ".format(_)))
@@ -2129,7 +2129,6 @@ else:
         for j in range(mat2_dimension[1]):
             res.append(1)
         result.append(res)
-    print(result)
 
 result = []
 for i in range(mat1_dimension[0]):
@@ -2143,5 +2142,6 @@ for i in range(mat1_dimension[0]):
     for j in range(mat2_dimension[1]):
         for k in range(mat2_dimension[0]):
             result[i][j] += mat1[i][k] * mat2[k][j]
-
+print(mat1)
+print(mat2)
 print(result)
