@@ -2140,6 +2140,8 @@ for i in range(mat1_dimension[0]):
 res_dimension = [mat1_dimension[0], mat2_dimension[1]]
 
 for i in range(mat1_dimension[0]):
-    for j in range(mat2_dimension[1]):
-        for k in range(len(mat1[i])):
-            print(mat1[i][k], mat2[j])
+    x = mat1[i]
+    for j in range(mat2_dimension[0]):
+        y = mat2[j]
+        for k in range(mat2_dimension[0]):
+            print(x[i], y[i])
