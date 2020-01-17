@@ -2139,9 +2139,12 @@ for i in range(mat1_dimension[0]):
     result.append(res)
 res_dimension = [mat1_dimension[0], mat2_dimension[1]]
 
-for i in range(mat1_dimension[0]):
-    x = mat1[i]
-    for j in range(mat2_dimension[0]):
-        y = mat2[j]
-        for k in range(mat2_dimension[0]):
-            print(x[i], y[i])
+print(mat1_dimension)
+print(mat2_dimension)
+
+for i in range(len(mat1)):
+    for j in range(len(mat2[0])):
+        for k in range(len(mat2)):
+            result[i][j] += mat1[i][k] * mat2[k][j]
+
+print(result)
