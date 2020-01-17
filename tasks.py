@@ -2120,7 +2120,7 @@ for _ in range(1, 3):
         elif _ == 2:
             mat2.append(mat3)
 
-if mat1_dimension[0] != mat2_dimension[1]:
+if mat1_dimension[1] != mat2_dimension[0]:
     print("The Multiplication of both matrices is not possible.")
 else:
     result = []
