@@ -2101,35 +2101,35 @@ mat1 = [[3, 2, 1, 5], [9, 1, 3, 0]]
 mat1_dimension = [2, 4]
 mat2 = [[2, 9, 0], [1, 3, 5], [2, 4, 7], [8, 1, 5]]
 mat2_dimension = [4, 3]
-# for _ in range(1, 3):
-#     user = int(input("Enter the number of rows for matrix {}: ".format(_)))
-#     user1 = int(input("Enter the number of columns for matrix {}: ".format(_)))
-#     if _ == 1:
-#         mat1_dimension.append(user)
-#         mat1_dimension.append(user1)
-#     elif _ == 2:
-#         mat2_dimension.append(user)
-#         mat2_dimension.append(user1)
-#     for i in range(1, user + 1):
-#         mat3 = []
-#         for j in range(1, user1 + 1):
-#             x = int(input("Enter {} number for {} matrix {} row {} column : ".format(j, _, i, j)))
-#             mat3.append(x)
-#         if _ == 1:
-#             mat1.append(mat3)
-#         elif _ == 2:
-#             mat2.append(mat3)
-#
-# if mat1_dimension[1] != mat2_dimension[0]:
-#     print("The Multiplication of both matrices is not possible.")
-# else:
-#     result = []
-#     for i in range(mat1_dimension[0]):
-#         res = []
-#         for j in range(mat2_dimension[1]):
-#             res.append(1)
-#         result.append(res)
-#     print(result)
+for _ in range(1, 3):
+    user = int(input("Enter the number of rows for matrix {}: ".format(_)))
+    user1 = int(input("Enter the number of columns for matrix {}: ".format(_)))
+    if _ == 1:
+        mat1_dimension.append(user)
+        mat1_dimension.append(user1)
+    elif _ == 2:
+        mat2_dimension.append(user)
+        mat2_dimension.append(user1)
+    for i in range(1, user + 1):
+        mat3 = []
+        for j in range(1, user1 + 1):
+            x = int(input("Enter {} number for {} matrix {} row {} column : ".format(j, _, i, j)))
+            mat3.append(x)
+        if _ == 1:
+            mat1.append(mat3)
+        elif _ == 2:
+            mat2.append(mat3)
+
+if mat1_dimension[1] != mat2_dimension[0]:
+    print("The Multiplication of both matrices is not possible.")
+else:
+    result = []
+    for i in range(mat1_dimension[0]):
+        res = []
+        for j in range(mat2_dimension[1]):
+            res.append(1)
+        result.append(res)
+    print(result)
 
 result = []
 for i in range(mat1_dimension[0]):
@@ -2137,14 +2137,11 @@ for i in range(mat1_dimension[0]):
     for j in range(mat2_dimension[1]):
         res.append(0)
     result.append(res)
-res_dimension = [mat1_dimension[0], mat2_dimension[1]]
 
-print(mat1_dimension)
-print(mat2_dimension)
 
-for i in range(len(mat1)):
-    for j in range(len(mat2[0])):
-        for k in range(len(mat2)):
+for i in range(mat1_dimension[0]):
+    for j in range(mat2_dimension[1]):
+        for k in range(mat2_dimension[0]):
             result[i][j] += mat1[i][k] * mat2[k][j]
 
 print(result)
