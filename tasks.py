@@ -2072,14 +2072,14 @@
 #         ls.append(j)
 # print(ls)
 
-mat = []
-num = int(input("Enter any number: "))
-for i in range(num):
-    mat1 = []
-    for j in range(num):
-        if i == j:
-            mat1.append(1)
-        else:
-            mat1.append(0)
-    mat.append(mat1)
-print(mat)
+# mat = []
+# num = int(input("Enter any number: "))
+# for i in range(num):
+#     mat1 = []
+#     for j in range(num):
+#         if i == j:
+#             mat1.append(1)
+#         else:
+#             mat1.append(0)
+#     mat.append(mat1)
+# print(mat)
