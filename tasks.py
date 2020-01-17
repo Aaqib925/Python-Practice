@@ -2054,20 +2054,20 @@
 #         ans.append(abs(i[0] - i[1]))
 #     print(min(ans))
 
-arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
-brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
-
-maximum_value = max(arr + brr)
-total = []
-for i in range(maximum_value + 1):
-    total.append(0)
-
-for a in arr:
-    total[a] += 1
-for b in brr:
-    total[b] -= 1
-ls = []
-for j in range(len(total)):
-    if total[j] != 0:
-        ls.append(j)
-print(ls)
+# arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
+# brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
+#
+# maximum_value = max(arr + brr)
+# total = []
+# for i in range(maximum_value + 1):
+#     total.append(0)
+#
+# for a in arr:
+#     total[a] += 1
+# for b in brr:
+#     total[b] -= 1
+# ls = []
+# for j in range(len(total)):
+#     if total[j] != 0:
+#         ls.append(j)
+# print(ls)
