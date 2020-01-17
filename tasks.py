@@ -2096,3 +2096,38 @@
 #         else:
 #             print(end=" ")
 #     print("")
+
+mat1 = []
+mat1_dimension = []
+mat2 = []
+mat2_dimension = []
+for _ in range(1, 3):
+    user = int(input("Enter the number of rows for matrix {}: ".format(_)))
+    user1 = int(input("Enter the number of columns for matrix {}: ".format(_)))
+    if _ == 1:
+        mat1_dimension.append(user)
+        mat1_dimension.append(user1)
+    elif _ == 2:
+        mat2_dimension.append(user)
+        mat2_dimension.append(user1)
+    for i in range(1, user + 1):
+        mat3 = []
+        for j in range(1, user1 + 1):
+            x = int(input("Enter {} number for {} matrix {} row {} column : ".format(j, _, i, j)))
+            mat3.append(x)
+        if _ == 1:
+            mat1.append(mat3)
+        elif _ == 2:
+            mat2.append(mat3)
+
+if mat1_dimension[0] != mat2_dimension[1]:
+    print("The Multiplication of both matrices is not possible.")
+else:
+    result = []
+    for i in range(mat1_dimension[0]):
+        res = []
+        for j in range(mat2_dimension[1]):
+            res.append(1)
+        result.append(res)
+    print(result)
+
