@@ -2154,7 +2154,7 @@
 #     for j in range(i, len(mat[0])):
 #         mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
 # print(mat)
-# import numpy
+
 # result = []
 # mat = [[1, 2, 3, 4], [5, 6, 7, 8]]
 # print(mat)
@@ -2171,3 +2171,7 @@
 #
 # print(result)
 
+import numpy
+
+x = [[1,2],[3,4],[5,6]]
+print(numpy.transpose(x))
