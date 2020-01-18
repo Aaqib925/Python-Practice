@@ -2148,7 +2148,8 @@
 
 # For transposing a matrix
 
-mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+mat = [[1, 2, 4, 7], [3, 4, 5, 8], [5, 6, 6, 7], [1, 2, 4, 3]]
+
 for i in range(len(mat)):
     for j in range(i, len(mat[0])):
         mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
