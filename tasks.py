@@ -2183,33 +2183,43 @@
 # print(numpy.transpose(x))
 
 # import numpy
+# container = [[0, 2, 1], [1, 1, 1], [2, 0, 0]]
+#
+# col_sum = []
+# for i in range(len(container)):
+#     col_sum.append(sum(container[i]))
+# print(col_sum)
+#
+# trans = []
+# for i in range(len(container[0])):
+#     mat = []
+#     for j in range(len(container)):
+#         mat.append(0)
+#     trans.append(mat)
+#
+# for i in range(len(container)):
+#     for j in range(len(container[0])):
+#         trans[j][i] = container[i][j]
+#
+# row_sum = []
+# for i in range(len(trans)):
+#     row_sum.append(sum(trans[i]))
+# print(row_sum)
+#
+# col_sum.sort()
+# row_sum.sort()
+#
+# if col_sum == row_sum:
+#     print("Possible")
+# else:
+#     print("Impossible")
+
 container = [[0, 2, 1], [1, 1, 1], [2, 0, 0]]
 
-col_sum = []
-for i in range(len(container)):
-    col_sum.append(sum(container[i]))
-print(col_sum)
-
-trans = []
-for i in range(len(container[0])):
-    mat = []
-    for j in range(len(container)):
-        mat.append(0)
-    trans.append(mat)
-
+val = 0
 for i in range(len(container)):
     for j in range(len(container[0])):
-        trans[j][i] = container[i][j]
-
-row_sum = []
-for i in range(len(trans)):
-    row_sum.append(sum(trans[i]))
-print(row_sum)
-
-col_sum.sort()
-row_sum.sort()
-
-if col_sum == row_sum:
-    print("Possible")
-else:
-    print("Impossible")
+        # print(container[j][i])
+        val += container[j][i]
+    print(val)
+    val = 0
