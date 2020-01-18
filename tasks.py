@@ -2162,4 +2162,10 @@ for i in range(len(mat[0])):
     for j in range(len(mat)):
         mat1.append(0)
     result.append(mat1)
-print(result)
+
+
+for i in range(len(mat)):
+    for j in range(len(mat[0])):
+        result[j][i] = mat[i][j]
+for a in result:
+    print(a)
