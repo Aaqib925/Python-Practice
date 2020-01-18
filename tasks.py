@@ -2214,12 +2214,13 @@
 # else:
 #     print("Impossible")
 
-container = [[0, 2, 1], [1, 1, 1], [2, 0, 0]]
+# container = [[0, 2, 1], [1, 1, 1], [2, 0, 0]]
+#
+# val = 0
+# for i in range(len(container)):
+#     for j in range(len(container[0])):
+#         # print(container[j][i])
+#         val += container[j][i]
+#     print(val)
+#     val = 0
 
-val = 0
-for i in range(len(container)):
-    for j in range(len(container[0])):
-        # print(container[j][i])
-        val += container[j][i]
-    print(val)
-    val = 0
