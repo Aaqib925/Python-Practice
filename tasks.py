@@ -2183,25 +2183,25 @@
 # print(numpy.transpose(x))
 
 # import numpy
-container = [[0, 2, 1], [1, 1, 1], [2, 0, 0]]
+# container = [[0, 2, 1], [1, 1, 1], [2, 0, 0]]
+#
+# trans = []
+# for i in range(len(container[0])):
+#     mat = []
+#     for j in range(len(container)):
+#         mat.append(0)
+#     trans.append(mat)
+#
+# for i in range(len(container)):
+#     for j in range(len(container[0])):
+#         trans[j][i] = container[i][j]
+#
+# row_sum = []
+# for i in range(len(trans)):
+#     row_sum.append(sum(trans[i]))
+#
+# if all(x <= row_sum[0] for x in row_sum):
+#     print("Possible.")
+# else:
+#     print("Impossible")
 
-trans = []
-for i in range(len(container[0])):
-    mat = []
-    for j in range(len(container)):
-        mat.append(0)
-    trans.append(mat)
-# print(trans)
-
-for i in range(len(container)):
-    for j in range(len(container[0])):
-        trans[j][i] = container[i][j]
-# print(trans)
-row_sum = []
-for i in range(len(trans)):
-    row_sum.append(sum(trans[i]))
-
-if all(x <= row_sum[0] for x in row_sum):
-    print("Possible.")
-else:
-    print("Impossible")
