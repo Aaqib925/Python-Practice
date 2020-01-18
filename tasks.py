@@ -2145,3 +2145,11 @@
 # print(mat1)
 # print(mat2)
 # print(result)
+
+# For transposing a matrix
+
+mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for i in range(len(mat)):
+    for j in range(i, len(mat[0])):
+        mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
+print(mat)
