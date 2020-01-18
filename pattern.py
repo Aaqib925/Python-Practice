@@ -293,7 +293,7 @@
 #
 #         print()
 #
-# pattern(5)
+# pattern(10)
 
 # This is inverted Y
 # def pattern(num):
@@ -321,7 +321,7 @@
 #         print()
 #
 # pattern(5)
-
+#
 # def pattern(num):
 #     for i in range(num):
 #         for j in range(num):
