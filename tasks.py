@@ -2223,4 +2223,11 @@
 #         val += container[j][i]
 #     print(val)
 #     val = 0
+import math
+string = "if man was meant to stay on the ground god would have given us roots"
+new = string.replace(" ", "")
+
+row = round(math.sqrt(len(new)))
+columns = row + 1
+print(row)
 
