@@ -2157,6 +2157,7 @@
 # import numpy
 result = []
 mat = [[1, 2, 3, 4], [5, 6, 7, 8]]
+print(mat)
 for i in range(len(mat[0])):
     mat1 = []
     for j in range(len(mat)):
@@ -2167,5 +2168,5 @@ for i in range(len(mat[0])):
 for i in range(len(mat)):
     for j in range(len(mat[0])):
         result[j][i] = mat[i][j]
-for a in result:
-    print(a)
+
+print(result)
