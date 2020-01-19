@@ -2273,8 +2273,8 @@
 #         trans[j][i] = result[i][j]
 # print(trans)
 
-import math
-s = "feedthedog"
-w = int(math.ceil(len(s.strip())**.5))
-print(w)
-print(" ".join([s[i::w] for i in range(w)]))
+# import math
+# s = "feedthedog"
+# w = int(math.ceil(len(s.strip())**.5))
+# print(w)
+# print(" ".join([s[i::w] for i in range(w)]))
