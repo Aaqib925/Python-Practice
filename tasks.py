@@ -2260,3 +2260,15 @@ for i in range(len(mat1)):
         for k in range(len(mat2)):
             result[i][j] += mat1[i][k] * mat2[k][j]
 print(result)
+
+trans = []
+for i in range(len(result)):
+    ls = []
+    for j in range(len(result[0])):
+        ls.append(0)
+    trans.append(ls)
+
+for i in range(len(result[0])):
+    for j in range(len(result)):
+        trans[j][i] = result[i][j]
+print(trans)
