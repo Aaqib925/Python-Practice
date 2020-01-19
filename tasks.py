@@ -2224,23 +2224,39 @@
 #     print(val)
 #     val = 0
 
-import random
-dic = {}
-for i in range(3):
+# import random
+# dic = {}
+# for i in range(3):
+#     ls = []
+#     x = input("Enter the name of student: ")
+#     chem = int(input("Enter the marks in Chemistry: "))
+#     phy = int(input("Enter the marks in Phyics: "))
+#     math = int(input("Enter the marks in Maths: "))
+#     ls.append(chem)
+#     ls.append(phy)
+#     ls.append(math)
+#     dic[x] = ls
+# print(dic)
+# print("These students are in record:")
+# for i in dic.keys():
+#     print(i)
+# student_names = [i for i in dic.keys()]
+# rand = random.choice(student_names)
+# average = (sum(dic.get(rand)) / 300) * 100
+# print("The Percentage of {} is: ".format(rand), average)
+
+mat1 = [[1, 2, 3], [4, 5, 6]]
+mat2 = [[7, 8], [9, 10], [11, 12]]
+
+result = []
+for i in range(len(mat1)):
     ls = []
-    x = input("Enter the name of student: ")
-    chem = int(input("Enter the marks in Chemistry: "))
-    phy = int(input("Enter the marks in Phyics: "))
-    math = int(input("Enter the marks in Maths: "))
-    ls.append(chem)
-    ls.append(phy)
-    ls.append(math)
-    dic[x] = ls
-print(dic)
-print("These students are in record:")
-for i in dic.keys():
-    print(i)
-student_names = [i for i in dic.keys()]
-rand = random.choice(student_names)
-average = (sum(dic.get(rand)) / 300) * 100
-print("The Percentage of {} is: ".format(rand), average)
+    for j in range(len(mat2[0])):
+        ls.append(0)
+    result.append(ls)
+
+for i in range(len(mat1)):
+    for j in range(len(mat2[0])):
+        for k in range(len(mat2)):
+            result[i][j] += mat1[i][k] * mat2[k][j]
+print(result)
