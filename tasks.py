@@ -2272,3 +2272,20 @@
 #     for j in range(len(result)):
 #         trans[j][i] = result[i][j]
 # print(trans)
+
+import math
+s = "feedthedog"
+L = len(s)
+row = math.floor(L**(1/2))
+print(row)
+col = math.ceil(L**(1/2))
+print(col)
+for i in range(col):
+    x = 0
+    while True:
+        try:
+            print(s[i+x], end='')
+            x += col
+        except:
+            break
+    print(' ', end='')
