@@ -2245,30 +2245,30 @@
 # average = (sum(dic.get(rand)) / 300) * 100
 # print("The Percentage of {} is: ".format(rand), average)
 
-mat1 = [[1, 2, 3], [4, 5, 6]]
-mat2 = [[7, 8], [9, 10], [11, 12]]
-
-result = []
-for i in range(len(mat1)):
-    ls = []
-    for j in range(len(mat2[0])):
-        ls.append(0)
-    result.append(ls)
-
-for i in range(len(mat1)):
-    for j in range(len(mat2[0])):
-        for k in range(len(mat2)):
-            result[i][j] += mat1[i][k] * mat2[k][j]
-print(result)
-
-trans = []
-for i in range(len(result)):
-    ls = []
-    for j in range(len(result[0])):
-        ls.append(0)
-    trans.append(ls)
-
-for i in range(len(result[0])):
-    for j in range(len(result)):
-        trans[j][i] = result[i][j]
-print(trans)
+# mat1 = [[1, 2, 3], [4, 5, 6]]
+# mat2 = [[7, 8], [9, 10], [11, 12]]
+#
+# result = []
+# for i in range(len(mat1)):
+#     ls = []
+#     for j in range(len(mat2[0])):
+#         ls.append(0)
+#     result.append(ls)
+#
+# for i in range(len(mat1)):
+#     for j in range(len(mat2[0])):
+#         for k in range(len(mat2)):
+#             result[i][j] += mat1[i][k] * mat2[k][j]
+# print(result)
+#
+# trans = []
+# for i in range(len(result)):
+#     ls = []
+#     for j in range(len(result[0])):
+#         ls.append(0)
+#     trans.append(ls)
+#
+# for i in range(len(result[0])):
+#     for j in range(len(result)):
+#         trans[j][i] = result[i][j]
+# print(trans)
