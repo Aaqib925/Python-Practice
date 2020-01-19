@@ -2275,17 +2275,6 @@
 
 import math
 s = "feedthedog"
-L = len(s)
-row = math.floor(L**(1/2))
-print(row)
-col = math.ceil(L**(1/2))
-print(col)
-for i in range(col):
-    x = 0
-    while True:
-        try:
-            print(s[i+x], end='')
-            x += col
-        except:
-            break
-    print(' ', end='')
+w = int(math.ceil(len(s.strip())**.5))
+print(w)
+print(" ".join([s[i::w] for i in range(w)]))
