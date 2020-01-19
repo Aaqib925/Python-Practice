@@ -2278,3 +2278,19 @@
 # w = int(math.ceil(len(s.strip())**.5))
 # print(w)
 # print(" ".join([s[i::w] for i in range(w)]))
+
+marks = [37.21, 37.21, 37.2, 41, 39]
+name = ["Harry", "Berry", "Tina", "Akriti"]
+dic = [["Harry", 37.21], ["Berry", 37.21], ["Tina", 37.2], ["Akriti", 41], ["Harsh", 39]]
+
+mini = min(marks)
+
+for i in range(len(marks)):
+    if marks[i] > mini:
+        for j in range(i, len(marks)):
+            if marks[i] < marks[j]:
+                mini = marks[i]
+
+for a, c in sorted(dic):
+    if c == mini:
+        print(a)
