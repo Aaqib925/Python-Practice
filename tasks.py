@@ -2223,3 +2223,24 @@
 #         val += container[j][i]
 #     print(val)
 #     val = 0
+
+import random
+dic = {}
+for i in range(3):
+    ls = []
+    x = input("Enter the name of student: ")
+    chem = int(input("Enter the marks in Chemistry: "))
+    phy = int(input("Enter the marks in Phyics: "))
+    math = int(input("Enter the marks in Maths: "))
+    ls.append(chem)
+    ls.append(phy)
+    ls.append(math)
+    dic[x] = ls
+print(dic)
+print("These students are in record:")
+for i in dic.keys():
+    print(i)
+student_names = [i for i in dic.keys()]
+rand = random.choice(student_names)
+average = (sum(dic.get(rand)) / 300) * 100
+print("The Percentage of {} is: ".format(rand), average)
