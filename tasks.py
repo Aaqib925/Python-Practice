@@ -2315,10 +2315,4 @@
 # print(u)
 
 alpha = "abcdefghijklmnopqrstuvwxyz"
-l1 = input("First letter: ")
-l2 = input("Second letter: ")
-
-if alpha.find(l1) < alpha.find(l2):
-    print("{} is less than {}".format(l1, l2))
-else:
-    print("{} is greater than {}".format(l1, l2))
+word = "abdc"
