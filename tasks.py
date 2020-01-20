@@ -2314,51 +2314,51 @@
 #     m=m-1
 # print(u)
 
-word = "ab"
-i = len(word)
-j = len(word)
-
-if ord(word[i - 1]) != ord(word[i - 2]):
-    while True:
-        ki = word[i - 1]
-        kii = word[i - 2]
-        if ord(kii) < ord(ki):
-            break
-        else:
-            i -= 1
-    # print(i)
-
-    ith = word[i - 2]
-    # print(ith)
-    while True:
-        kj = word[j - 1]
-        if ord(ith) < ord(kj):
-            break
-        else:
-            j -= 1
-    # print(j)
-
-    jth = word[j - 1]
-    # print(jth)
-
-    new = ""
-    for a in word:
-        if a != ith and a != jth:
-            new += a
-        elif a == ith:
-            new += jth
-        elif a == jth:
-            new += ith
-
-    new1 = ""
-    new2 = ""
-    for s in range(len(new)):
-        if s < i - 1:
-            new1 += new[s]
-        else:
-            new2 += new[s]
-
-    final = new1 + new2[::-1]
-    print(final)
-else:
-    print("no answer")
+# word = "zedawdvyyfumwpupuinbdbfndyehircmylbaowuptgmw"
+# i = len(word)
+# j = len(word)
+#
+# if ord(word[i - 1]) != ord(word[i - 2]) and word[-1] != "a":
+#     while True:
+#         ki = word[i - 1]
+#         kii = word[i - 2]
+#         if ord(kii) < ord(ki):
+#             break
+#         else:
+#             i -= 1
+#     # print(i)
+#
+#     ith = word[i - 2]
+#     # print(ith)
+#     while True:
+#         kj = word[j - 1]
+#         if ord(ith) < ord(kj):
+#             break
+#         else:
+#             j -= 1
+#     # print(j)
+#
+#     jth = word[j - 1]
+#     # print(jth)
+#
+#     new = ""
+#     for a in word:
+#         if a != ith and a != jth:
+#             new += a
+#         elif a == ith:
+#             new += jth
+#         elif a == jth:
+#             new += ith
+#
+#     new1 = ""
+#     new2 = ""
+#     for s in range(len(new)):
+#         if s < i - 1:
+#             new1 += new[s]
+#         else:
+#             new2 += new[s]
+#
+#     final = new1 + new2[::-1]
+#     print(final)
+# else:
+#     print("no answer")
