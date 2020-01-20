@@ -2314,7 +2314,7 @@
 #     m=m-1
 # print(u)
 
-word = "bb"
+word = "ab"
 i = len(word)
 j = len(word)
 
@@ -2322,7 +2322,6 @@ if ord(word[i - 1]) != ord(word[i - 2]):
     while True:
         ki = word[i - 1]
         kii = word[i - 2]
-        print(ki, kii)
         if ord(kii) < ord(ki):
             break
         else:
@@ -2330,7 +2329,7 @@ if ord(word[i - 1]) != ord(word[i - 2]):
     # print(i)
 
     ith = word[i - 2]
-    print(ith)
+    # print(ith)
     while True:
         kj = word[j - 1]
         if ord(ith) < ord(kj):
@@ -2340,7 +2339,7 @@ if ord(word[i - 1]) != ord(word[i - 2]):
     # print(j)
 
     jth = word[j - 1]
-    print(jth)
+    # print(jth)
 
     new = ""
     for a in word:
