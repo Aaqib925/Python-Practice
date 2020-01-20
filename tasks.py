@@ -2315,4 +2315,49 @@
 # print(u)
 
 alpha = "abcdefghijklmnopqrstuvwxyz"
-word = "abdc"
+word = "dkhc"
+i = len(word)
+j = len(word)
+
+while True:
+    ki = word[i - 1]
+    kii = word[i - 2]
+    print(ki, kii)
+    if ord(kii) < ord(ki):
+        break
+    else:
+        i -= 1
+# print(i)
+
+ith = word[i - 2]
+print(ith)
+while True:
+    kj = word[j - 1]
+    if ord(ith) < ord(kj):
+        break
+    else:
+        j -= 1
+# print(j)
+
+jth = word[j - 1]
+print(jth)
+
+new = ""
+for a in word:
+    if a != ith and a != jth:
+        new += a
+    elif a == ith:
+        new += jth
+    elif a == jth:
+        new += ith
+
+new1 = ""
+new2 = ""
+for s in range(len(new)):
+    if s < i - 1:
+        new1 += new[s]
+    else:
+        new2 += new[s]
+
+final = new1 + new2[::-1]
+print(final)
