@@ -2294,3 +2294,22 @@
 # for a, c in sorted(dic):
 #     if c == mini:
 #         print(a)
+
+# def dec2bin(num):
+#     if num == 1 or num == 0:
+#         return num
+#     else:
+#         ans = str(num % 2)
+#         return str(dec2bin(num // 2)) + ans
+#
+# print(dec2bin(5))
+
+# a="1011"
+# m=-1
+#
+# u=0
+# for i in range(len(a)):
+#     z=int(a[m])*(2**(i))
+#     u+=z
+#     m=m-1
+# print(u)
