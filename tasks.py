@@ -2437,7 +2437,7 @@ dic2 = {10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen", 1
 dic3 = {20: "twenty", 30: "thirty"}
 spe = {15: "quarter", 30: "half", 45: "quarter"}
 
-time = "11:31"
+time = "12:00"
 ln = len(time)
 last_two = int(time[ln - 2:])
 hour = int(time[0:-3])
@@ -2448,7 +2448,7 @@ if last_two < 10 and last_two != 0 and last_two <= 30:
     x = dic1.get(last_two)
     word += x + " minute past "
 elif last_two == 0:
-    result = "b"
+    result = "s"
     x = dic1.get(last_two)
     word += x
 elif 10 <= last_two <= 20 and last_two != 15:
@@ -2489,4 +2489,25 @@ else:
             y = dic1.get(ls)
             word += x + " " + y + " minutes to "
 if result == "a":
-    if
+    hour += 1
+    if hour < 10:
+        x = dic1.get(hour)
+        word += x
+    else:
+        x = dic2.get(hour)
+        word += x
+elif result == "b":
+    if hour < 10:
+        x = dic1.get(hour)
+        word += x
+    else:
+        x = dic2.get(hour)
+        word += x
+elif result == "s":
+    if hour < 10:
+        x = dic1.get(hour)
+        word = x + " " + word
+    else:
+        x = dic2.get(hour)
+        word = x + " " + word
+print(word)
