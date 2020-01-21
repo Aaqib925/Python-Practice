@@ -2431,3 +2431,7 @@
 #                 s -= m
 #                 count += 1
 # print(count)
+
+dic1 = {"00": "o' clock", "01": "one", "02": "two", "03": "three", "04": "four", "05": "five", "06": "six", "07": "seven", "08": "eight", "09": "nine"}
+dic2 = {"10": "ten", "11": "eleven", "12": "twelve", "13": "thirteen", "14": "fourteen", "15": "fifteen", "16": "sixteen", "17": "seventeen", "18": "eighteen", "19": "nineteen"}
+dic3 = {"20": "twenty", "30": "thirty"}
