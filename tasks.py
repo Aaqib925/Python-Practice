@@ -2389,3 +2389,24 @@
 #     print("INVALID RANGE")
 # else:
 #     print(ls)
+
+d = 3
+ls = [2, 2, 3, 4, 5]
+count = 0
+for i in range(len(ls)):
+    ls1 = []
+    x = ls[i]
+    for j in range(i + 1, len(ls)):
+        y = ls[j]
+        if y - x == d:
+            ls1.append(x)
+            ls1.append(y)
+            x = ls[j]
+    if len(ls1) >= 3:
+        maxi = max(ls1)
+        ls1 = set(ls1)
+        ls1 = list(ls1)
+        if len(ls1) > 3:
+            ls1.remove(maxi)
+        count += 1
+print(count)
