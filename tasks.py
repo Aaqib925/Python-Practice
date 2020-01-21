@@ -2437,9 +2437,10 @@ dic2 = {10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen", 1
 dic3 = {20: "twenty", 30: "thirty"}
 spe = {15: "quarter", 30: "half", 45: "quarter"}
 
-time = "5:00"
-last_two = int(time[2:])
-hour = time[0]
+time = "11:31"
+ln = len(time)
+last_two = int(time[ln - 2:])
+hour = int(time[0:-3])
 word = ""
 result = ""
 if last_two < 10 and last_two != 0 and last_two <= 30:
@@ -2487,3 +2488,5 @@ else:
             x = dic3.get(int(st))
             y = dic1.get(ls)
             word += x + " " + y + " minutes to "
+if result == "a":
+    if
