@@ -2371,3 +2371,6 @@
 #                 lis[i],lis[j]=lis[j],lis[i]
 #                 return "".join(lis[:i+1]+lis[i+1:][::-1])
 # return 'no answer'
+
+# kaprekar numbers
+
