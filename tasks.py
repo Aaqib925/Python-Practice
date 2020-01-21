@@ -2432,6 +2432,58 @@
 #                 count += 1
 # print(count)
 
-dic1 = {"00": "o' clock", "01": "one", "02": "two", "03": "three", "04": "four", "05": "five", "06": "six", "07": "seven", "08": "eight", "09": "nine"}
-dic2 = {"10": "ten", "11": "eleven", "12": "twelve", "13": "thirteen", "14": "fourteen", "15": "fifteen", "16": "sixteen", "17": "seventeen", "18": "eighteen", "19": "nineteen"}
-dic3 = {"20": "twenty", "30": "thirty"}
+dic1 = {0: "o' clock", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine"}
+dic2 = {10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen", 19: "nineteen"}
+dic3 = {20: "twenty", 30: "thirty"}
+spe = {15: "quarter", 30: "half", 45: "quarter"}
+
+time = "5:00"
+last_two = int(time[2:])
+hour = time[0]
+word = ""
+result = ""
+if last_two < 10 and last_two != 0 and last_two <= 30:
+    result = "b"
+    x = dic1.get(last_two)
+    word += x + " minute past "
+elif last_two == 0:
+    result = "b"
+    x = dic1.get(last_two)
+    word += x
+elif 10 <= last_two <= 20 and last_two != 15:
+    x = dic2.get(last_two)
+    dic2.get(x)
+    word += x + " minutes past "
+elif last_two == 15 or last_two == 30:
+    result = "b"
+    x = spe.get(last_two)
+    word += x + " past "
+elif last_two == 45:
+    result = "b"
+    x = spe.get(last_two)
+    word += x + " to "
+else:
+    if last_two <= 30:
+        result = "a"
+        st = str(last_two)[0] + "0"
+        ls = int(str(last_two)[1])
+        x = dic3.get(int(st))
+        y = dic1.get(ls)
+        word += x + " " + y + " minutes past "
+    elif last_two > 30:
+        result = "a"
+        last_two = 60 - last_two
+        if last_two < 10:
+            x = dic1.get(last_two)
+            word += x + " minutes to "
+        elif 10 < last_two < 20:
+            result = "a"
+            x = dic2.get(last_two)
+            word += x + " minutes to "
+        elif last_two <= 30:
+            result = "a"
+            st = str(last_two)[0] + "0"
+            ls = int(str(last_two)[1])
+            x = dic3.get(int(st))
+            y = dic1.get(ls)
+            word += x + " " + y + " minutes to "
