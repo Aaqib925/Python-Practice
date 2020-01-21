@@ -2411,23 +2411,23 @@
 #         count += 1
 # print(count)
 # 100 19 1 180
-s = 180
-p = 100
-d = 19
-m = 1
-count = 0
-if s > p:
-    s -= p
-    count += 1
-    if s > p:
-        while s >= m:
-            cost = p - d
-            if cost >= m:
-                count += 1
-                s -= cost
-                p = cost
-            else:
-                cost = m
-                s -= m
-                count += 1
-print(count)
+# s = 180
+# p = 100
+# d = 19
+# m = 1
+# count = 0
+# if s > p:
+#     s -= p
+#     count += 1
+#     if s > p:
+#         while s >= m:
+#             cost = p - d
+#             if cost >= m:
+#                 count += 1
+#                 s -= cost
+#                 p = cost
+#             else:
+#                 cost = m
+#                 s -= m
+#                 count += 1
+# print(count)
