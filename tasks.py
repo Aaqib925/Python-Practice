@@ -2374,3 +2374,18 @@
 
 # kaprekar numbers
 
+p = 1
+q = 100
+ls = []
+for i in range(p, q + 1):
+    x = str(i ** 2)
+    result = 0
+    if i == 1:
+        ls.append(i)
+    elif i > 8:
+        if i == int(x[0:len(x)//2]) + int(x[len(x)//2:]):
+            ls.append(i)
+if len(ls) == 0:
+    print("INVALID RANGE")
+else:
+    print(ls)
