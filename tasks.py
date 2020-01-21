@@ -2410,23 +2410,24 @@
 #             ls1.remove(maxi)
 #         count += 1
 # print(count)
-
-s = 80
-p = 20
-d = 3
-m = 6
+# 100 19 1 180
+s = 180
+p = 100
+d = 19
+m = 1
 count = 0
 if s > p:
     s -= p
     count += 1
-    while s > m:
-        cost = p - d
-        if cost >= m:
-            count += 1
-            s -= cost
-            p = cost
-        else:
-            cost = m
-            s -= m
-            count += 1
+    if s > p:
+        while s >= m:
+            cost = p - d
+            if cost >= m:
+                count += 1
+                s -= cost
+                p = cost
+            else:
+                cost = m
+                s -= m
+                count += 1
 print(count)
