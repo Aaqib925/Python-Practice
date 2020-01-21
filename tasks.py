@@ -2419,7 +2419,7 @@ count = 0
 if s > p:
     s -= p
     count += 1
-    while s > 1:
+    while s > m:
         cost = p - d
         if cost >= m:
             count += 1
