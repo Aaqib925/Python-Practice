@@ -2528,16 +2528,16 @@
 #             result[i][j] += mat1[i][k] * mat2[k][j]
 # print(result)
 
-mat = [[1, 2, 3, 4], [6, 7, 8, 9]]
-
-tran = []
-
-for i in range(len(mat[0])):
-    ls = []
-    for j in range(len(mat)):
-        ls.append(0)
-    tran.append(ls)
-for i in range(len(mat)):
-    for j in range(len(mat[0])):
-        tran[j][i] = mat[i][j]
-print(tran)
+# mat = [[1, 2, 3, 4], [6, 7, 8, 9]]
+#
+# tran = []
+#
+# for i in range(len(mat[0])):
+#     ls = []
+#     for j in range(len(mat)):
+#         ls.append(0)
+#     tran.append(ls)
+# for i in range(len(mat)):
+#     for j in range(len(mat[0])):
+#         tran[j][i] = mat[i][j]
+# print(tran)
