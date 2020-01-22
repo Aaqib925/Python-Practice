@@ -2579,3 +2579,9 @@
 #     count += 1
 #
 # print(count - 1)
+
+n = [2, 3, 1, 2, 3, 2, 3, 3]
+i = 0
+j = 7
+new = min(n[i: j + 1])
+print(new)
