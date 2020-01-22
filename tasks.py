@@ -2542,9 +2542,9 @@
 #         tran[j][i] = mat[i][j]
 # print(tran)
 
-def dec2bin(num):
-    if num == 1 or num == 0:
-        return num
-    x = str(num % 2)
-    return str(dec2bin(num // 2)) + x
-print(dec2bin(10))
+# def dec2bin(num):
+#     if num == 1 or num == 0:
+#         return num
+#     x = str(num % 2)
+#     return str(dec2bin(num // 2)) + x
+# print(dec2bin(10))
