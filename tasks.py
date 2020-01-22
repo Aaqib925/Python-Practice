@@ -2607,16 +2607,16 @@ n = 27
 #             print(end=' ')
 #     print()
 
-s = [1, 8, 19, 15, 2, 29, 3, 2, 25, 2, 19, 26, 17, 33, 22]
-
-k = 20
-page = 1
-count = 0
-for i in range(len(s)):
-    x = s[i]
-    for j in range(1, x + 1):
-        if page == j:
-            count += 1
-        if j % k == 0 or j == x:
-            page += 1
-print(count)
+# s = [1, 8, 19, 15, 2, 29, 3, 2, 25, 2, 19, 26, 17, 33, 22]
+#
+# k = 20
+# page = 1
+# count = 0
+# for i in range(len(s)):
+#     x = s[i]
+#     for j in range(1, x + 1):
+#         if page == j:
+#             count += 1
+#         if j % k == 0 or j == x:
+#             page += 1
+# print(count)
