@@ -2556,14 +2556,14 @@
 #     for a3 in range((a1 * 2) - 1):
 #         print("*", end="")
 #     print("")
-
-num = int(input("Enter any number: "))
-for i in range(num):
-    for j in range(num):
-        if i == 0 or j == 0 or i == num - 1 or j == num - 1:
-            print("*", end="\t")
-        elif i == j or i + j == num - 1 or i == num // 2:
-            print("*", end="\t")
-        else:
-            print(end="\t")
-    print()
+#
+# num = int(input("Enter any number: "))
+# for i in range(num):
+#     for j in range(num):
+#         if i == 0 or j == 0 or i == num - 1 or j == num - 1:
+#             print("*", end="\t")
+#         elif i == j or i + j == num - 1 or i == num // 2:
+#             print("*", end="\t")
+#         else:
+#             print(end="\t")
+#     print()
