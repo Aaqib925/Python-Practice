@@ -2568,14 +2568,14 @@
 #             print(end="\t")
 #     print()
 
-n = 10
-c = 2
-m = 5
-wraps = n // c
-count = wraps
-while wraps >= 1:
-    wraps -= m
-    wraps += 1
-    count += 1
-
-print(count - 1)
+# n = 10
+# c = 2
+# m = 5
+# wraps = n // c
+# count = wraps
+# while wraps >= 1:
+#     wraps -= m
+#     wraps += 1
+#     count += 1
+#
+# print(count - 1)
