@@ -2548,3 +2548,11 @@
 #     x = str(num % 2)
 #     return str(dec2bin(num // 2)) + x
 # print(dec2bin(10))
+
+n = 5
+for a1 in range(1, ((n + 1) // 2) + 1):
+    for a2 in range((n + 1 // 2) - a1):
+        print(" ", end="")
+    for a3 in range((a1 * 2) - 1):
+        print("*", end="")
+    print("")
