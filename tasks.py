@@ -2437,7 +2437,7 @@
 # dic3 = {20: "twenty", 30: "thirty"}
 # spe = {15: "quarter", 30: "half", 45: "quarter"}
 #
-# time = "5:45"
+# time = "12:00"
 # ln = len(time)
 # last_two = int(time[ln - 2:])
 # hour = int(time[0:-3])
@@ -2512,3 +2512,18 @@
 #         x = dic2.get(hour)
 #         word = x + " " + word
 # print(word)
+
+# mat1 = [[1, 2, 3, 4], [5, 6, 7, 8]]
+# mat2 = [[1, 2], [3, 4], [5, 6], [6, 7]]
+# result = []
+# for i in range(len(mat1)):
+#     ls = []
+#     for j in range(len(mat2[0])):
+#         ls.append(0)
+#     result.append(ls)
+#
+# for i in range(len(mat1)):
+#     for j in range(len(mat2[0])):
+#         for k in range(len(mat2)):
+#             result[i][j] += mat1[i][k] * mat2[k][j]
+# print(result)
