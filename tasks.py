@@ -2580,8 +2580,29 @@
 #
 # print(count - 1)
 
-n = [2, 3, 1, 2, 3, 2, 3, 3]
-i = 0
-j = 7
-new = min(n[i: j + 1])
-print(new)
+# n = [2, 3, 1, 2, 3, 2, 3, 3]
+# i = 0
+# j = 7
+# new = min(n[i: j + 1])
+# print(new)
+# n = 11
+# for rows in range(n):
+#     for col in range(n):
+#         if rows + col == n // 2 or rows - col == n // 2 or col - rows == n // 2 or col + rows == 3 * (n // 2):
+#             print("*", end='')
+#         else:
+#             print(" ", end='')
+#     print()
+
+n = 5
+for row in range(n):
+    for col in range(n+2):
+        if row == 0 and col % 3 != 0:
+            print("*",end='')
+        elif row == 1 and col == 3:
+            print("*",end='')
+        elif row - col == 1 or row + col == 7:
+            print("*",end='')
+        else:
+            print(end=' ')
+    print()
