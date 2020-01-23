@@ -2649,3 +2649,13 @@ n = 27
 # for i in ls:
 #     ans = str(i) + ans
 # print("The two's complement of {} is: ".format(ones), ans)
+
+binary = "10010"
+binary = binary[::-1]
+dec = 0
+j = 0
+for i in binary:
+    x = int(i) * (2 ** j)
+    dec += x
+    j += 1
+print(dec)
