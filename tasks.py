@@ -2621,31 +2621,31 @@ n = 27
 #             page += 1
 # print(count)
 
-num = "1000011111110110"
-ones = ""
-
-for i in num:
-    if i == "0":
-        ones += "1"
-    else:
-        ones += "0"
-print("The one's complement of {} is: ".format(num), ones)
-ones = ones[::-1]
-
-ls = []
-for i in ones:
-    ls.append(int(i))
-
-for i in range(len(ls)):
-    if i == 0:
-        x = ls[0]
-        x += 1
-        if x == 2:
-            ls[0] = 0
-            ls[i + 1] += 1
-        elif x == 1:
-            ls[0] = 1
-ans = ""
-for i in ls:
-    ans = str(i) + ans
-print("The two's complement of {} is: ".format(ones), ans)
+# num = "1000011111110110"
+# ones = ""
+#
+# for i in num:
+#     if i == "0":
+#         ones += "1"
+#     else:
+#         ones += "0"
+# print("The one's complement of {} is: ".format(num), ones)
+# ones = ones[::-1]
+#
+# ls = []
+# for i in ones:
+#     ls.append(int(i))
+#
+# for i in range(len(ls)):
+#     if i == 0:
+#         x = ls[0]
+#         x += 1
+#         if x == 2:
+#             ls[0] = 0
+#             ls[i + 1] += 1
+#         elif x == 1:
+#             ls[0] = 1
+# ans = ""
+# for i in ls:
+#     ans = str(i) + ans
+# print("The two's complement of {} is: ".format(ones), ans)
