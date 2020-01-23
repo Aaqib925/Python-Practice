@@ -2648,5 +2648,4 @@ for i in range(len(ls)):
 ans = ""
 for i in ls:
     ans = str(i) + ans
-# print("The ones complement of {} is: ".format(num), ones)
 print("The two's complement of {} is: ".format(ones), ans)
