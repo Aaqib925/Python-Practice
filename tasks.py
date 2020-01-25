@@ -2585,7 +2585,7 @@
 # j = 7
 # new = min(n[i: j + 1])
 # print(new)
-n = 27
+# n = 27
 # for rows in range(n):
 #     for col in range(n):
 #         if rows + col == n // 2 or rows - col == n // 2 or col - rows == n // 2 or col + rows == 3 * (n // 2):
@@ -2693,3 +2693,17 @@ n = 27
 #     if x > 1:
 #         ls.remove(i)
 # print(ls)
+
+# n = 6
+# m = 6  # this means how many space stations are there
+
+# c = [0, 4]  # this list shows the location of the space stations
+# final = []
+# ls = [0, 1, 2, 3, 4]
+
+# for i in ls:
+#     ls1 = []
+#     for j in c:
+#         ls1.append(abs(i - j))
+#     final.append(min(ls1))
+# print(max(final))
