@@ -2686,10 +2686,10 @@ n = 27
 #
 # seconds = total - (final_mint * 60) - (hours_mint * 60)
 # print(seconds)
-
-ls = [1, 2, 4, 11, 1, 2, 4]
-for i in ls:
-    x = ls.count(i)
-    if x > 1:
-        ls.remove(i)
-print(ls)
+#
+# ls = [1, 2, 4, 11, 1, 2, 4]
+# for i in ls:
+#     x = ls.count(i)
+#     if x > 1:
+#         ls.remove(i)
+# print(ls)
