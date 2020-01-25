@@ -2673,16 +2673,16 @@ n = 27
 # print(minu)
 # print(sec)
 
-total = 12342
-
-hours = total // (3600)
-print(hours)
-hours_mint = hours * 60
-# print(hours_mint)
-total_mint = total // 60
-# print(total_mint)
-final_mint = total_mint - hours_mint
-print(final_mint)
-
-seconds = total - (final_mint * 60) - (hours_mint * 60)
-print(seconds)
+# total = 12342
+#
+# hours = total // 3600
+# print(hours)
+# hours_mint = hours * 60
+# # print(hours_mint)
+# total_mint = total // 60
+# # print(total_mint)
+# final_mint = total_mint - hours_mint
+# print(final_mint)
+#
+# seconds = total - (final_mint * 60) - (hours_mint * 60)
+# print(seconds)
