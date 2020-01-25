@@ -2664,11 +2664,11 @@ n = 27
 #     dec += x
 #     j += 1
 # print(dec)
-x = 86233
-hrs = x//3600
-min1 = x - hrs*3600
-minu = min1//60
-sec = min1 - minu*60
-print(hrs)
-print(minu)
-print(sec)
+# x = 86233
+# hrs = x//3600
+# min1 = x - hrs*3600
+# minu = min1//60
+# sec = min1 - minu*60
+# print(hrs)
+# print(minu)
+# print(sec)
