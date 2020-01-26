@@ -2708,14 +2708,13 @@
 #     final.append(min(ls1))
 # print(max(final))
 
-ls = [2, 3, 4, 5, 6]
+ls = [1, 2]
+# result = False
 count = 0
 for i in range(len(ls)):
     if i + 1 < len(ls):
         if ls[i] % 2 != 0:
             ls[i] += 1
-            if ls[i + 1] % 2 != 0:
-                ls[i + 1] += 1
-        print(ls[i], ls[i + 1])
-
+            ls[i + 1] += 1
+            count += 2
 print(count)
