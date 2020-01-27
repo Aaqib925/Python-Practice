@@ -2719,10 +2719,11 @@
 #             count += 2
 # print(count)
 
-ls = [[1, 1, 1, 2], [1, 9, 1, 2], [1, 6, 7, 2], [1, 2, 3, 4]]
-# ls = [[9, 8, 9], [1, 9, 1], [1, 1, 1]]
+ls = [["1", "1", "1", "2"], ["1", "9", "1", "2"], ["1", '6', "7", "2"], ["1", "2", "3", "4"]]
+ls = [[9, 8, 9], [1, 9, 1], [1, 1, 1]]
 for i in range(1, len(ls) - 1):
     for j in range(1, len(ls[0]) - 1):
         x = ls[i][j]
-        if x < ls[i - 1][j] and x < ls[i][j - 1] and x < ls[i][j + 1] and x < ls[i + 1][j]:
-            ls[i][j]
+        if x > ls[i - 1][j] and x > ls[i][j - 1] and x > ls[i][j + 1] and x > ls[i + 1][j]:
+            ls[i][j] = "X"
+print(ls)
