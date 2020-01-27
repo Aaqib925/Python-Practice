@@ -2733,17 +2733,17 @@
 #                 temp1 += a
 #             ls[i][j] = temp1
 # print(ls)
-
-a = 1
-b = 2
-n = 3
-ls = []
-for i in range(n, 0, -1):
-    count = 0
-    x = a * (i - 1)
-    y = b * (n - i)
-    count += x + y
-    if count not in ls:
-        ls.append(count)
-
-print(ls)
+#
+# a = 1
+# b = 2
+# n = 3
+# ls = []
+# for i in range(n, 0, -1):
+#     count = 0
+#     x = a * (i - 1)
+#     y = b * (n - i)
+#     count += x + y
+#     if count not in ls:
+#         ls.append(count)
+#
+# print(ls)
