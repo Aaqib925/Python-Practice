@@ -2766,3 +2766,22 @@
 #                 else:
 #                     lineChecks = 0
 
+word = "B_RRBR"
+
+word_count = 0
+start = 0
+under = 0
+for i in word:
+    if i == "_" and start == 0:
+        start = 1
+        under += 1
+    elif i == "_" and start == 1:
+        under += 1
+    elif i != "_" and start == 1:
+        word_count += 1
+print(word_count)
+print(under)
+if word_count > under:
+    print("YES")
+else:
+    print("NO")
