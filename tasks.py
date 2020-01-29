@@ -2766,5 +2766,3 @@
 #                 else:
 #                     lineChecks = 0
 
-x = int(input("Enter number: "))
-print(x)
