@@ -2766,4 +2766,23 @@
 #                 else:
 #                     lineChecks = 0
 
-print("NED")
+x = "RRGGBBXY"
+dic = {}
+for i in x:
+    dic[i] = 0
+    for j in x:
+        if i == j:
+            dic[i] += 1
+print(dic)
+if len(dic) == 1 and "_" not in dic:
+    print("YES")
+elif len(dic) == 1 and "_" in dic:
+    print("YES")
+elif "_" not in dic and len(dic) > 1:
+    print("NO")
+elif len(dic) > 1:
+    for a in dic.keys():
+        if a != "_" and dic[a] == 1:
+            print("NO")
+else:
+    print("YES")
