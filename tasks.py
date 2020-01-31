@@ -2766,12 +2766,12 @@
 #                 else:
 #                     lineChecks = 0
 
-rem = 3
-t = 12
-while t > rem:
-    t = t - rem
-    print(t)
-    rem *= 2
-    print(rem)
-print("DONE")
-print(rem - t + 1)
+# rem = 3
+# t = 15
+# while t > rem:
+#     t = t - rem
+#     print(t)
+#     rem *= 2
+#     print(rem)
+# print("DONE")
+# print(rem - t + 1)
