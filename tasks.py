@@ -2770,14 +2770,14 @@ rem = 3
 t = int(input("Enter time: "))
 # while t > rem:
 #     t = t - rem
-#     print(t)
+#     # print(t)
 #     rem *= 2
-#     print(rem)
-# print("DONE")
-# print(rem - t + 1)
+#     # print(rem)
+# # print("DONE")
+# print("Uppar wala ", rem - t + 1)
 
 start = 1
-while t > start + start:
+while t >= start + rem:
     start += rem
     rem *= 2
     # print(start)
