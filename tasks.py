@@ -2780,7 +2780,7 @@ t = int(input("Enter time: "))
 # while t >= start + rem:
 #     start += rem
 #     rem *= 2
-    # print(start)
+# print(start)
 
 # print(start)
 # print(rem)
