@@ -2766,8 +2766,8 @@
 #                 else:
 #                     lineChecks = 0
 
-# rem = 3
-# t = 15
+rem = 3
+t = int(input("Enter time: "))
 # while t > rem:
 #     t = t - rem
 #     print(t)
@@ -2775,3 +2775,14 @@
 #     print(rem)
 # print("DONE")
 # print(rem - t + 1)
+
+start = 1
+while t > start + start:
+    start += rem
+    rem *= 2
+    # print(start)
+
+# print(start)
+# print(rem)
+ans = rem - (t - start)
+print("Answer is: ", ans)
