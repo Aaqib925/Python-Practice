@@ -2767,7 +2767,7 @@
 #                     lineChecks = 0
 
 rem = 3
-# t = int(input("Enter time: "))
+t = int(input("Enter time: "))
 # while t > rem:
 #     t = t - rem
 #     # print(t)
