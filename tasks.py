@@ -2766,7 +2766,7 @@
 #                 else:
 #                     lineChecks = 0
 
-# rem = 3
+rem = 3
 # t = int(input("Enter time: "))
 # while t > rem:
 #     t = t - rem
@@ -2776,13 +2776,13 @@
 # # print("DONE")
 # print("Uppar wala ", rem - t + 1)
 
-# start = 1
-# while t >= start + rem:
-#     start += rem
-#     rem *= 2
-# print(start)
+start = 1
+while t >= start + rem:
+    start += rem
+    rem *= 2
+print(start)
 
-# print(start)
-# print(rem)
-# ans = rem - (t - start)
-# print("Answer is: ", ans)
+print(start)
+print(rem)
+ans = rem - (t - start)
+print("Answer is: ", ans)
