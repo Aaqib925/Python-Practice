@@ -2788,8 +2788,8 @@
 # print("Answer is: ", ans)
 
 x = int(input("Enter any number: "))
-for i in range(x):
-    print(" " * i, end="")
-    for j in range(i, x):
+for i in range(1, x + 1):
+    print(" " * (i - 1), end="")
+    for j in range(i, x + 1):
         print(j, end="")
     print()
