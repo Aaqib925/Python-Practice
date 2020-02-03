@@ -2792,7 +2792,8 @@ num = x
 for i in range(1, x + 1):
     for a in range(num, i - 1, - 1):
         print(a, end="")
-    print(" " * (i - 1) * 2, end="")
+    print(" " * ((i - 1) * 2), end="")
+
     for j in range(i, x + 1):
         print(j, end="")
     print()
