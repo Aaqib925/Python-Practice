@@ -2789,7 +2789,9 @@
 
 x = int(input("Enter any number: "))
 for i in range(1, x + 1):
-    print(" " * (i - 1), end="")
+    for a in range(i, x + 1):
+        print(a, end="")
+    print(" " * (i - 1) * 2, end="")
     for j in range(i, x + 1):
         print(j, end="")
     print()
