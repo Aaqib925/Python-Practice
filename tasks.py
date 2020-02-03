@@ -2776,13 +2776,13 @@ t = int(input("Enter time: "))
 # # print("DONE")
 # print("Uppar wala ", rem - t + 1)
 
-start = 1
-while t >= start + rem:
-    start += rem
-    rem *= 2
-print(start)
+# start = 1
+# while t >= start + rem:
+#     start += rem
+#     rem *= 2
+# print(start)
 
-print(start)
-print(rem)
-ans = rem - (t - start)
-print("Answer is: ", ans)
+# print(start)
+# print(rem)
+# ans = rem - (t - start)
+# print("Answer is: ", ans)
