@@ -2798,11 +2798,11 @@
 #         print(j, end="")
 #     print()
 
-class M_Class:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-
-class1 = M_Class(1, 2)
-print(class1.y)
+# class M_Class:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#
+#
+# class1 = M_Class(1, 2)
+# print(class1.y)
