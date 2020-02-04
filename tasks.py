@@ -2807,19 +2807,19 @@
 # class1 = M_Class(1, 2)
 # print(class1.y)
 
-numbers = []
-string = []
-num = "0123456789"
-alpha = "abcdefghijklmnopqrstuvwxyz"
-
-word = input("Enter any word or number: ")
-
-for i in word:
-    if i in num:
-        numbers.append(word)
-        break
-    if i in alpha:
-        string.append(word)
-        break
-print(numbers)
-print(string)
+# numbers = []
+# string = []
+# num = "0123456789"
+# alpha = "abcdefghijklmnopqrstuvwxyz"
+#
+# word = input("Enter any word or number: ")
+#
+# for i in word:
+#     if i in num:
+#         numbers.append(word)
+#         break
+#     if i in alpha:
+#         string.append(word)
+#         break
+# print(numbers)
+# print(string)
