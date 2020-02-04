@@ -2824,17 +2824,17 @@
 # print(numbers)
 # print(string)
 
-num = int(input("Enter any number: "))
-s = 1
-for i in range(num):
-    # print(i * 2)
-    for a in range(num, i - 1, - 1):
-        print(a, end="")
-    if i < 11:
-        print(" " * (i * 2), end="")
-    else:
-        print(" " * (i * 2 + s), end="")
-        s += 2
-    for j in range(i, num + 1):
-        print(j, end="")
-    print()
+# num = int(input("Enter any number: "))
+# s = 1
+# for i in range(num):
+#     # print(i * 2)
+#     for a in range(num, i - 1, - 1):
+#         print(a, end="")
+#     if i < 11:
+#         print(" " * (i * 2), end="")
+#     else:
+#         print(" " * (i * 2 + s), end="")
+#         s += 2
+#     for j in range(i, num + 1):
+#         print(j, end="")
+#     print()
