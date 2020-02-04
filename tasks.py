@@ -2823,3 +2823,12 @@
 #         break
 # print(numbers)
 # print(string)
+
+num = int(input("Enter any number: "))
+for i in range(num):
+    for a in range(num, i - 1, - 1):
+        print(a, end="")
+    print(" " * i * 2, end="")
+    for j in range(i, num + 1):
+        print(j, end="")
+    print()
