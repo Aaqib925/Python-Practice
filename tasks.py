@@ -2937,3 +2937,12 @@
 #        "farhat": "nazir"}
 # dic.update({"aa": "hey"})
 # print(dic)
+
+# x = int(input("Enter any number: "))
+# if x < 1:
+#     print("Nothing")
+# else:
+#     for i in range(x):
+#         for j in range(x):
+#             print("*", end="")
+#         print()
