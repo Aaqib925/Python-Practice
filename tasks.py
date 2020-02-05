@@ -2857,11 +2857,11 @@
 #             result[i][j] = mat[i][k] * mat2[k][j]
 # print(result)
 
-x = int(input("Enter any number: "))
-for i in range(x):
-    for j in range(x):
-        if i == 0 or i == x - 1 or (i == j and j <= x // 2) or (i + j == x - 1 and i >= x // 2) or ((i == 1 or i == 2) and j == x - 1) or ((i == x - 2 or i == x - 3) and j == x - 1):
-            print("*", end="")
-        else:
-            print(end=" ")
-    print()
+# x = int(input("Enter any number: "))
+# for i in range(x):
+#     for j in range(x):
+#         if i == 0 or i == x - 1 or (i == j and j <= x // 2) or (i + j == x - 1 and i >= x // 2) or ((i == 1 or i == 2) and j == x - 1) or ((i == x - 2 or i == x - 3) and j == x - 1):
+#             print("*", end="")
+#         else:
+#             print(end=" ")
+#     print()
