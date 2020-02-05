@@ -2872,3 +2872,11 @@
 # def main():
 #     print(proc(5, 2))
 # main()
+
+# def fucc():
+#     f = open("sample.txt", "w")
+#     f.write("Hello")
+#     return f
+#
+#
+# print(fucc())
