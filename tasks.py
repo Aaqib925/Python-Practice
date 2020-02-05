@@ -2891,5 +2891,8 @@
 # z = 2 * (ls + [2, 4])
 # print(z)
 
-for i in range(101, 10, -10):
+# for i in range(101, 10, -10):
+#     print(i)
+
+for i in range(3, -4, -1):
     print(i)
