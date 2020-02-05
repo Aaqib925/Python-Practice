@@ -2874,9 +2874,9 @@
 # main()
 
 # print(fucc())
-x = 5
-y = 5
-
-print(not(x != y))
-
-print(x == y)
+# x = 5
+# y = 5
+#
+# print(not(x != y))
+#
+# print(x == y)
