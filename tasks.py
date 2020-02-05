@@ -2874,9 +2874,12 @@
 # main()
 
 # print(fucc())
-# x = 5
-# y = 5
+x = 5
+y = 5
 #
 # print(not(x != y))
 #
 # print(x == y)
+
+print(not(x < y))
+print(x >= y)
