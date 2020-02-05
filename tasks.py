@@ -2901,7 +2901,7 @@
 # x.remove("not")
 # print(x)
 
-n = 50
+# n = 50
 # if 100 < n <= 1000:
 #     print("****")
 # elif 10 < n <= 100:
@@ -2911,11 +2911,22 @@ n = 50
 # elif n <= 1:
 #     print("*")
 
-if n <= 1:
-    print("*")
-if n <= 10:
-    print("**")
-if n <= 100:
-    print("***")
-if n <= 1000:
-    print("****")
+# if n <= 1:
+#     print("*")
+# if n <= 10:
+#     print("**")
+# if n <= 100:
+#     print("***")
+# if n <= 1000:
+#     print("****")
+
+# def func():
+#     # global a
+#     while a < 100:
+#         if a % 5 == 0:
+#             print("*")
+#         a += 1
+#
+#
+# a = 70
+# func()
