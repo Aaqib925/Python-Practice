@@ -2842,17 +2842,26 @@
 #         print(b, end="")
 #     print()
 
-mat = [[1, 2, 3, 2], [5, 3, 1, 4]]
-mat2 = [[1, 2, 3], [9, 8, 6], [2, 3, 1], [1, 6, 5]]
-result = []
-for i in range(len(mat)):
-    new = []
-    for j in range(len(mat2[0])):
-        new.append(0)
-    result.append(new)
+# mat = [[1, 2, 3, 2], [5, 3, 1, 4]]
+# mat2 = [[1, 2, 3], [9, 8, 6], [2, 3, 1], [1, 6, 5]]
+# result = []
+# for i in range(len(mat)):
+#     new = []
+#     for j in range(len(mat2[0])):
+#         new.append(0)
+#     result.append(new)
+#
+# for i in range(len(mat)):
+#     for j in range(len(mat2[0])):
+#         for k in range(len(mat2)):
+#             result[i][j] = mat[i][k] * mat2[k][j]
+# print(result)
 
-for i in range(len(mat)):
-    for j in range(len(mat2[0])):
-        for k in range(len(mat2)):
-            result[i][j] = mat[i][k] * mat2[k][j]
-print(result)
+x = int(input("Enter any number: "))
+for i in range(x):
+    for j in range(x):
+        if i == 0 or i == x - 1 or (i == j and j <= x // 2) or (i + j == x - 1 and i >= x // 2) or ((i == 1 or i == 2) and j == x - 1) or ((i == x - 2 or i == x - 3) and j == x - 1):
+            print("*", end="")
+        else:
+            print(end=" ")
+    print()
