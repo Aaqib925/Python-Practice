@@ -2884,6 +2884,12 @@
 # print(not(x < y))
 # print(x >= y)
 
-ls = [1, 2, 3, 4, 5, 6, 7]
+# ls = [1, 2, 3, 4, 5, 6, 7]
 # print(ls[4:])
-print(ls[-3: -5: -1])
+# print(ls[-3: -5: -1])
+
+# z = 2 * (ls + [2, 4])
+# print(z)
+
+for i in range(101, 10, -10):
+    print(i)
