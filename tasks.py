@@ -2902,11 +2902,20 @@
 # print(x)
 
 n = 50
-if 100 < n <= 1000:
-    print("****")
-elif 10 < n <= 100:
-    print("***")
-elif 1 < n <= 100:
-    print("**")
-elif n <= 1:
+# if 100 < n <= 1000:
+#     print("****")
+# elif 10 < n <= 100:
+#     print("***")
+# elif 1 < n <= 100:
+#     print("**")
+# elif n <= 1:
+#     print("*")
+
+if n <= 1:
     print("*")
+if n <= 10:
+    print("**")
+if n <= 100:
+    print("***")
+if n <= 1000:
+    print("****")
