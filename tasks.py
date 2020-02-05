@@ -2957,10 +2957,10 @@
 #     total = (50 * 0.5) + (100 * 0.75) + ((bill - 150) * 1.2)
 # print(total)
 
-def power(num):
-    ls = []
-    for i in range(1, num + 1):
-        ls.append(str(2 ** i))
-    result = " ".join(ls)
-    return result
-print(power(6))
+# def power(num):
+#     ls = []
+#     for i in range(1, num + 1):
+#         ls.append(str(2 ** i))
+#     result = " ".join(ls)
+#     return result
+# print(power(6))
