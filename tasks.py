@@ -2897,6 +2897,16 @@
 # for i in range(3, -4, -1):
 #     print(i)
 
-x = ["i", "am", "not", "mutable"]
-x.remove("not")
-print(x)
+# x = ["i", "am", "not", "mutable"]
+# x.remove("not")
+# print(x)
+
+n = 50
+if 100 < n <= 1000:
+    print("****")
+elif 10 < n <= 100:
+    print("***")
+elif 1 < n <= 100:
+    print("**")
+elif n <= 1:
+    print("*")
