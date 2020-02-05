@@ -2894,5 +2894,9 @@
 # for i in range(101, 10, -10):
 #     print(i)
 
-for i in range(3, -4, -1):
-    print(i)
+# for i in range(3, -4, -1):
+#     print(i)
+
+x = ["i", "am", "not", "mutable"]
+x.remove("not")
+print(x)
