@@ -2930,3 +2930,10 @@
 #
 # a = 70
 # func()
+#
+# dic = {"aaqib": "nazir",
+#        "saqib": "nazir",
+#        "asim": "nazir",
+#        "farhat": "nazir"}
+# dic.update({"aa": "hey"})
+# print(dic)
