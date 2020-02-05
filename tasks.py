@@ -2874,12 +2874,16 @@
 # main()
 
 # print(fucc())
-x = 5
-y = 5
+# x = 5
+# y = 5
 #
 # print(not(x != y))
 #
 # print(x == y)
 
-print(not(x < y))
-print(x >= y)
+# print(not(x < y))
+# print(x >= y)
+
+ls = [1, 2, 3, 4, 5, 6, 7]
+# print(ls[4:])
+print(ls[-3: -5: -1])
