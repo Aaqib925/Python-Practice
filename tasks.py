@@ -2865,3 +2865,10 @@
 #         else:
 #             print(end=" ")
 #     print()
+
+# def proc(x):
+#     return 2 * x
+#
+# def main():
+#     print(proc(5, 2))
+# main()
