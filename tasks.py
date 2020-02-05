@@ -2947,12 +2947,20 @@
 #             print("*", end="")
 #         print()
 
-total = 0
-bill = int(input("Enter the units consumed: "))
-if bill < 51:
-    total = bill * 0.5
-elif 50 < bill <= 150:
-    total = (50 * 0.5) + ((bill - 50) * 0.75)
-elif bill > 150:
-    total = (50 * 0.5) + (100 * 0.75) + ((bill - 150) * 1.2)
-print(total)
+# total = 0
+# bill = int(input("Enter the units consumed: "))
+# if bill < 51:
+#     total = bill * 0.5
+# elif 50 < bill <= 150:
+#     total = (50 * 0.5) + ((bill - 50) * 0.75)
+# elif bill > 150:
+#     total = (50 * 0.5) + (100 * 0.75) + ((bill - 150) * 1.2)
+# print(total)
+
+def power(num):
+    ls = []
+    for i in range(1, num + 1):
+        ls.append(str(2 ** i))
+    result = " ".join(ls)
+    return result
+print(power(6))
