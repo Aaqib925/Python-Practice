@@ -2982,3 +2982,11 @@
 #
 # print(max_min([1, 4, 6, 2, 110]))
 
+x = int(input("Enter any number: "))
+for i in range(1, x + 1):
+    for a in range(x, i - 1, -1):
+        print(a, end="")
+
+    for b in range(i, x + 1):
+        print(b, end="")
+    print()
