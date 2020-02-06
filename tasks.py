@@ -3065,13 +3065,13 @@
 #                         grid[i - 1][j] = "."
 #                     grid[i][j] = "."
 
-class Color:
-    def __init__(self, col):
-        self.col = col
-
-    def color(self, col):
-        print("The color of the car is: ", col)
-
-
-car1 = Color("Blue")
-print(car1.color("Blue"))
+# class Color:
+#     def __init__(self, col):
+#         self.col = col
+#
+#     def color(self, col):
+#         print("The color of the car is: ", col)
+#
+#
+# car1 = Color("Blue")
+# print(car1.color("Blue"))
