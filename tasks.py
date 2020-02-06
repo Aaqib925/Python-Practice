@@ -3020,3 +3020,12 @@
 #             total += abs(a[i][j] - a[i - 1][j])
 #             print(total)
 # print(total)
+
+# dic = {}
+# x = int(input("Enter the number of records: "))
+# for i in range(x):
+#     key = input("Enter the key: ")
+#     value = input("Enter the value: ")
+#     dic[key] = value
+#
+# print(dic)
