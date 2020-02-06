@@ -2995,28 +2995,28 @@
 #     print(x * 2)
 #     print(count * 2)
 
-h = 3
-w = 3
-a = [[1, 3, 4], [2, 2, 3], [1, 2, 4]]
-total = h * w * 2
-for i in range(h):
-    for j in range(w):
-        if i == 0:
-            total += a[i][j]
-            print(total)
-        if j == 0:
-            total += a[i][j]
-            print(total)
-        if i == h - 1:
-            total += a[i][j]
-            print(total)
-        if j == w - 1:
-            total += a[i][j]
-            print(total)
-        if j != 0:
-            total += abs(a[i][j] - a[i][j - 1])
-            print(total)
-        if i != 0:
-            total += abs(a[i][j] - a[i - 1][j])
-            print(total)
-print(total)
+# h = 3
+# w = 3
+# a = [[1, 3, 4], [2, 2, 3], [1, 2, 4]]
+# total = h * w * 2
+# for i in range(h):
+#     for j in range(w):
+#         if i == 0:
+#             total += a[i][j]
+#             print(total)
+#         if j == 0:
+#             total += a[i][j]
+#             print(total)
+#         if i == h - 1:
+#             total += a[i][j]
+#             print(total)
+#         if j == w - 1:
+#             total += a[i][j]
+#             print(total)
+#         if j != 0:
+#             total += abs(a[i][j] - a[i][j - 1])
+#             print(total)
+#         if i != 0:
+#             total += abs(a[i][j] - a[i - 1][j])
+#             print(total)
+# print(total)
