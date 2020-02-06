@@ -2828,18 +2828,18 @@
 #         print(j, end="")
 #     print()
 
-num = int(input("Enter any number: "))
-x = 2
-for i in range(1, num + 1):
-    for a in range(num, i - 1, -1):
-        print(a, end="")
-    if i < 11:
-        print(" " * ((i - 1) * 2), end="")
-    else:
-        print(" " * ((i - 1) * 2 + x), end="")
-        x += 2
-    for b in range(i, num + 1):
-        print(b, end="")
+# num = int(input("Enter any number: "))
+# x = 2
+# for i in range(1, num + 1):
+#     for a in range(num, i - 1, -1):
+#         print(a, end="")
+#     if i < 11:
+#         print(" " * ((i - 1) * 2), end="")
+#     else:
+#         print(" " * ((i - 1) * 2 + x), end="")
+#         x += 2
+#     for b in range(i, num + 1):
+#         print(b, end="")
     print()
 
 # mat = [[1, 2, 3, 2], [5, 3, 1, 4]]
