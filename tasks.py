@@ -3030,39 +3030,37 @@
 #
 # print(dic)
 
-r = 6
-c = 7
-grid = [[".", ".", ".", ".", ".", ".", "."], [".", ".", ".", "0", ".", ".", "."], [".", ".", ".", ".", "0", ".", "."], [".", ".", ".", ".", ".", ".", "."], ["0", "0", ".", ".", ".", ".", "."], ["0", "0", ".", ".", ".", ".", "."]]
+R = 6
+C = 7
+grid1 = [[".", ".", ".", ".", ".", ".", "."], [".", ".", ".", "0", ".", ".", "."], [".", ".", ".", ".", "0", ".", "."], [".", ".", ".", ".", ".", ".", "."], ["0", "0", ".", ".", ".", ".", "."], ["0", "0", ".", ".", ".", ".", "."]]
 n = 5
 x = 1
-print(grid)
-while x <= n:
-    # print(x)
-    change = False
-    for i in range(r):
-        for j in range(c):
-            if x == 1 or (x > 3 and x % 3 == 0):
-                if grid[i][j] == "0":
-                    grid[i][j] = "I"
-                else:
-                    grid[i][j] = "0"
-                change = True
-    x += 1
-    if x % 2 == 0 and change is True:
-        x += 1
-        for i in range(r):
-            for j in range(c):
-                if grid[i][j] == "I":
-                    if j + 1 < c and grid[i][j + 1] != "I":
-                        grid[i][j + 1] = "."
-                    if j - 1 >= 0 and grid[i][j - 1] != "I":
-                        grid[i][j - 1] = "."
-                    if i + 1 < r and grid[i + 1][j] != "I":
-                        grid[i + 1][j] = "."
-                    # print(grid[i - 1][j])
-                    if grid[i - 1][j] != "I" and grid[i - 1][j] == "0":
-                        # print(grid[i - 1][j])
-                        grid[i - 1][j] = "."
-                    grid[i][j] = "."
-# print(x)
-print(grid)
+print(grid1)
+# while x <= n:
+#     # print(x)
+#     change = False
+#     for i in range(r):
+#         for j in range(c):
+#             if x == 1 or (x > 3 and x % 3 == 0):
+#                 if grid[i][j] == "0":
+#                     grid[i][j] = "I"
+#                 else:
+#                     grid[i][j] = "0"
+#                 change = True
+#     x += 1
+#     if x % 2 == 0 and change is True:
+#         x += 1
+#         for i in range(r):
+#             for j in range(c):
+#                 if grid[i][j] == "I":
+#                     if j + 1 < c and grid[i][j + 1] != "I":
+#                         grid[i][j + 1] = "."
+#                     if j - 1 >= 0 and grid[i][j - 1] != "I":
+#                         grid[i][j - 1] = "."
+#                     if i + 1 < r and grid[i + 1][j] != "I":
+#                         grid[i + 1][j] = "."
+#                     # print(grid[i - 1][j])
+#                     if grid[i - 1][j] != "I" and grid[i - 1][j] == "0":
+#                         # print(grid[i - 1][j])
+#                         grid[i - 1][j] = "."
+#                     grid[i][j] = "."
