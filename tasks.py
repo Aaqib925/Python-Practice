@@ -2982,15 +2982,15 @@
 #
 # print(max_min([1, 4, 6, 2, 110]))
 
-x = int(input("Enter any number: "))
-for i in range(1, x + 1):
-    count = 0
-    for a in range(x, i - 1, -1):
-        print(a, end="")
-        count += 1
-    print(" " * ((x * 2) - (count * 2)), end="")
-    for b in range(i, x + 1):
-        print(b, end="")
-    print()
-    print(x * 2)
-    print(count * 2)
+# x = int(input("Enter any number: "))
+# for i in range(1, x + 1):
+#     count = 0
+#     for a in range(x, i - 1, -1):
+#         print(a, end="")
+#         count += 1
+#     print(" " * ((x * 2) - (count * 2)), end="")
+#     for b in range(i, x + 1):
+#         print(b, end="")
+#     print()
+#     print(x * 2)
+#     print(count * 2)
