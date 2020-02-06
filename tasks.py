@@ -2965,4 +2965,19 @@
 #     return result
 # print(power(6))
 
+def max_min(ls):
+    with open("sample.txt", "w+") as f:
+        mini = ls[0]
+        maxi = ls[0]
+        f.write("The Values are: ")
+        for i in ls:
+            f.write(str(i) + str(" "))
+            if i < mini:
+                mini = i
+            elif i > maxi:
+                maxi = i
 
+    return maxi, mini
+
+
+print(max_min([1, 4, 6, 2, 110]))
