@@ -3074,4 +3074,4 @@
 #
 #
 # car1 = Color("Blue")
-# print(car1.color("Blue"))
+# print(car1.__dict__)
