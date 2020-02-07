@@ -3075,3 +3075,26 @@
 #
 # car1 = Color("Blue")
 # print(car1.__dict__)
+
+num = int(input("Enter any number: "))
+for i in range(num):
+    x = i + 1
+    count = num - 1
+    cond = True
+    for j in range(i + 1):
+        if cond is True and count == num - 1:
+            print(x, end=" ")
+            cond = False
+        else:
+            print(x + count, end=" ")
+            x += count
+            count -= 1
+    print()
+
+
+# grid = [["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["B", "G", "B", "B", "G", "B"]]
+# for i in range(len(grid)):
+#     for j in range(len(grid[0])):
+#         if grid[i][j] == "G":
+#             g_count = 1
+#             if i - g_count >= 0:
