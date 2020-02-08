@@ -3090,21 +3090,21 @@
 #             x += count
 #             count -= 1
 #     print()
-tup = []
-x = int(input("Enter number of elements of tuple: "))
-for i in range(x):
-    y = int(input("Enter any number: "))
-    tup.append(y)
-tup = tuple(tup)
-maxi = tup[0]
-mini = tup[0]
-for i in tup:
-    if i < mini:
-        mini = i
-    elif i > maxi:
-        maxi = i
-print(maxi)
-print(mini)
+# tup = []
+# x = int(input("Enter number of elements of tuple: "))
+# for i in range(x):
+#     y = int(input("Enter any number: "))
+#     tup.append(y)
+# tup = tuple(tup)
+# maxi = tup[0]
+# mini = tup[0]
+# for i in tup:
+#     if i < mini:
+#         mini = i
+#     elif i > maxi:
+#         maxi = i
+# print(maxi)
+# print(mini)
 
 # grid = [["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["B", "G", "B", "B", "G", "B"]]
 # for i in range(len(grid)):
