@@ -3090,14 +3090,6 @@
 #             x += count
 #             count -= 1
 #     print()
-
-
-# grid = [["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["B", "G", "B", "B", "G", "B"]]
-# for i in range(len(grid)):
-#     for j in range(len(grid[0])):
-#         if grid[i][j] == "G":
-#             g_count = 1
-#             if i - g_count >= 0:
 tup = []
 x = int(input("Enter number of elements of tuple: "))
 for i in range(x):
@@ -3113,3 +3105,10 @@ for i in tup:
         maxi = i
 print(maxi)
 print(mini)
+
+# grid = [["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["B", "G", "B", "B", "G", "B"]]
+# for i in range(len(grid)):
+#     for j in range(len(grid[0])):
+#         if grid[i][j] == "G":
+#             g_count = 1
+#             if i - g_count >= 0:
