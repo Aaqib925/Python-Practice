@@ -3098,4 +3098,18 @@
 #         if grid[i][j] == "G":
 #             g_count = 1
 #             if i - g_count >= 0:
-
+tup = []
+x = int(input("Enter number of elements of tuple: "))
+for i in range(x):
+    y = int(input("Enter any number: "))
+    tup.append(y)
+tup = tuple(tup)
+maxi = tup[0]
+mini = tup[0]
+for i in tup:
+    if i < mini:
+        mini = i
+    elif i > maxi:
+        maxi = i
+print(maxi)
+print(mini)
