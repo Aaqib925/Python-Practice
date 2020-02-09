@@ -3106,7 +3106,7 @@
 # print(maxi)
 # print(mini)
 
-print("Hello World")
+# print("Hello World")
 # grid = [["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["B", "G", "B", "B", "G", "B"]]
 # for i in range(len(grid)):
 #     for j in range(len(grid[0])):
