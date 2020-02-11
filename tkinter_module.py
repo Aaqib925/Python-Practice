@@ -39,7 +39,7 @@ from tkinter import *
 
 # for the widgets
 
-root = Tk()
+# root = Tk()
 
 # bg means background and fg means foreground which means color of font
 # we will use fill paramter to make the labels grow inside the main window
@@ -47,13 +47,14 @@ root = Tk()
 
 # first label
 
-label1 = Label(root, text="One", bg="Pink", fg="Blue")
-label1.pack(side=TOP, fill=X)
+# label1 = Label(root, text="One", bg="Pink", fg="Blue")
+# label1.pack(side=TOP, fill=X)
+#
+# label2 = Label(root, text="Two", bg="Black", fg="white")
+# label2.pack(side=LEFT, fill=Y)
+#
+# label3 = Label(root, text="Three", bg="White", fg="Blue")
+# label3.pack(side=RIGHT, fill=X)
+#
+# root.mainloop()
 
-label2 = Label(root, text="Two", bg="Black", fg="white")
-label2.pack(side=LEFT, fill=Y)
-
-label3 = Label(root, text="Three", bg="White", fg="Blue")
-label3.pack(side=RIGHT, fill=X)
-
-root.mainloop()
