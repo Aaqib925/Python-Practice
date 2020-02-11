@@ -3180,7 +3180,7 @@ def format_address(address_string):
                 cond = 1
         else:
             street += i
-    return "house number {} on street named {}".format(number, street)
+    return "house number {} on street named{}".format(number, street)
 
 
 print(format_address("123 Main Street"))
