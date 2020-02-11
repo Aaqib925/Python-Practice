@@ -3136,3 +3136,11 @@
 #   print(3)
 # print(9999 + 8888)
 # print(100 * 100)
+
+# num = 25
+# print(num // 10)
+# count = 0
+# while num > 0:
+#     num //= 10
+#     count += 1
+# print(count)
