@@ -75,4 +75,8 @@ label2.grid(row=1, sticky=E)
 
 entry1.grid(row=0, column=1)
 entry2.grid(row=1, column=1)
+
+# for creating a check box
+checkbox = Checkbutton(root, text="Keep me logged in :)")
+checkbox.grid(columnspan=2)   # columnspan parameter is used to adjust.
 root.mainloop()
