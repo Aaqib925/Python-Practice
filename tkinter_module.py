@@ -58,25 +58,27 @@ from tkinter import *
 #
 # root.mainloop()
 
-root = Tk()
+# root = Tk()
 
 # trying our the grid method with the input fields or entry fields
-label1 = Label(root, text="Name:")
-label2 = Label(root, text="Password:")
+# label1 = Label(root, text="Name:")
+# label2 = Label(root, text="Password:")
 
 # for creating entry field
-entry1 = Entry(root)
-entry2 = Entry(root)
+# entry1 = Entry(root)
+# entry2 = Entry(root)
 
 # now we will use the grid function to place these entries and labels by using rows and columns
 # if i were to align the label we use sticky parameters with north, south, east, west
-label1.grid(row=0, sticky=E)  # E means east
-label2.grid(row=1, sticky=E)
+# label1.grid(row=0, sticky=E)  # E means east
+# label2.grid(row=1, sticky=E)
 
-entry1.grid(row=0, column=1)
-entry2.grid(row=1, column=1)
+# entry1.grid(row=0, column=1)
+# entry2.grid(row=1, column=1)
 
 # for creating a check box
-checkbox = Checkbutton(root, text="Keep me logged in :)")
-checkbox.grid(columnspan=2)   # columnspan parameter is used to adjust.
-root.mainloop()
+# checkbox = Checkbutton(root, text="Keep me logged in :)")
+# checkbox.grid(columnspan=2)   # columnspan parameter is used to adjust.
+# root.mainloop()
+
+# binding function to a GUI program
