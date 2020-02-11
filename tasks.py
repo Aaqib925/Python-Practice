@@ -3113,8 +3113,15 @@
 #             g_count = 1
 #             if i - g_count >= 0:
 
-def sum(x, y):
-		return(x+y)
-print(sum(sum(1,2), sum(3,4)))
+# def sum(x, y):
+# 		return(x+y)
+# print(sum(sum(1,2), sum(3,4)))
+#
+# print(((10 >= 5*2) and (10 <= 5*2)))
 
-print(((10 >= 5*2) and (10 <= 5*2)))
+# x = 5 / 4
+# x = str(x)
+# print(x[2:])
+# new = "0." + x[2:]
+# print(new)
+# print("big" > "small")
