@@ -83,7 +83,7 @@ from tkinter import *
 
 # binding function to a GUI program
 
-root = Tk()
+# root = Tk()
 
 
 # def printname():
@@ -101,12 +101,12 @@ root = Tk()
 
 # by using bind function and events
 
-def printname(event):
-    print("Have a nice day!!")
-
-
-button = Button(root, text="Click me!!")
-
-button.bind("<Button-1>", printname)
-button.pack()
-root.mainloop()
+# def printname(event):
+#     print("Have a nice day!!")
+#
+#
+# button = Button(root, text="Click me!!")
+#
+# button.bind("<Button-1>", printname)
+# button.pack()
+# root.mainloop()
