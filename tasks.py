@@ -3191,3 +3191,11 @@
 #
 # print(format_address("55 North Center Drive"))
 # # Should print "house number 55 on street named North Center Drive"
+
+# def car_listing(car_prices):
+#   result = ""
+#   for i, j in zip(car_prices.keys(), car_prices.values()):
+#     result += "{} costs {} dollars".format(i, j) + "\n"
+#   return result
+#
+# print(car_listing({"Kia Soul":19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000, "Toyota Prius":24000}))
