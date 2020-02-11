@@ -86,15 +86,27 @@ from tkinter import *
 root = Tk()
 
 
-def printname():
-    print("Have a good day :)")
+# def printname():
+#     print("Have a good day :)")
 
 
 # to call a function by pressing the GUI button we will use command parameter inside button function
 # make sure to not to use the parenthesis
 
-button1 = Button(root, text="Click Me!", command=printname)
+# button1 = Button(root, text="Click Me!", command=printname)
 
-button1.pack()
+# button1.pack()
 
+# root.mainloop()
+
+# by using bind function and events
+
+def printname(event):
+    print("Have a nice day!!")
+
+
+button = Button(root, text="Click me!!")
+
+button.bind("<Button-1>", printname)
+button.pack()
 root.mainloop()
