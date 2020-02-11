@@ -82,3 +82,19 @@ from tkinter import *
 # root.mainloop()
 
 # binding function to a GUI program
+
+root = Tk()
+
+
+def printname():
+    print("Have a good day :)")
+
+
+# to call a function by pressing the GUI button we will use command parameter inside button function
+# make sure to not to use the parenthesis
+
+button1 = Button(root, text="Click Me!", command=printname)
+
+button1.pack()
+
+root.mainloop()
