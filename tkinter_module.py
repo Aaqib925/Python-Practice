@@ -11,3 +11,15 @@ from tkinter import *
 # # to hold the screen we use the mainloop fucntion
 # root.mainloop()
 
+root = Tk()
+# this is the upper frame
+topframe = Frame(root)
+
+topframe.pack()
+
+# for the lower frame we will create one and pass the parameter in pack function
+bottomframe = Frame(root)
+bottomframe.pack(side=BOTTOM)
+
+root.mainloop()
+
