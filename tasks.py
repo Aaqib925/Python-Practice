@@ -3219,14 +3219,14 @@
 #
 # print(combine_guests(Rorys_guests, Taylors_guests))
 
-x = "This is a sentence"
-dic = {}
-for i in x:
-    y = i.lower()
-    if y.isalpha():
-        dic[y] = 0
-        for j in x:
-            z = j.lower()
-            if z == y and z.isalpha():
-                dic[y] += 1
-print(dic)
+# x = "This is a sentence"
+# dic = {}
+# for i in x:
+#     y = i.lower()
+#     if y.isalpha():
+#         dic[y] = 0
+#         for j in x:
+#             z = j.lower()
+#             if z == y and z.isalpha():
+#                 dic[y] += 1
+# print(dic)
