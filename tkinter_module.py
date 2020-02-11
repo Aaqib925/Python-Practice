@@ -58,3 +58,21 @@ from tkinter import *
 #
 # root.mainloop()
 
+root = Tk()
+
+# trying our the grid method with the input fields or entry fields
+label1 = Label(root, text="UserName:")
+label2 = Label(root, text="Password:")
+
+# for creating entry field
+entry1 = Entry(root)
+entry2 = Entry(root)
+
+# now we will use the grid function to place these entries and labels by using rows and columns
+
+label1.grid(row=0, column=0)
+label2.grid(row=1, column=0)
+entry1.grid(row=0, column=1)
+entry2.grid(row=1, column=1)
+root.mainloop()
+
