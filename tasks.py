@@ -3144,3 +3144,20 @@
 #     num //= 10
 #     count += 1
 # print(count)
+
+# for x in range(10):
+#     for y in range(x):
+#         print(y)
+# for x in range(1, 10, 3):
+#     print(x)
+
+# def highlight_word(sentence, word):
+# 	return sentence.replace(word, word.upper())
+#
+# print(highlight_word("Have a nice day", "nice"))
+# print(highlight_word("Shhh, don't be so loud!", "loud"))
+# print(highlight_word("Automating with Python is fun", "fun"))
+
+# colors = ["red", "white", "blue"]
+# colors.insert(2, "yellow")
+# print(colors)
