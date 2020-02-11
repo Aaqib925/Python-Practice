@@ -1,6 +1,6 @@
-from tkinter import *
-from tkinter.ttk import Combobox
-import tkinter.messagebox
+from tkinter_module import *
+from tkinter_module.ttk import Combobox
+import tkinter_module.messagebox
 
 
 # ================1stWindow=============================================
