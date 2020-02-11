@@ -110,3 +110,36 @@ from tkinter import *
 # button.bind("<Button-1>", printname)
 # button.pack()
 # root.mainloop()
+
+# mouse click events
+
+root = Tk()
+
+
+def leftclick(event):
+    """ Action on left mouse click """
+    print("Left button clicked.")
+
+
+def middleclick(event):
+    """ Action on middle mouse click """
+    print("Scroll button clicked.")
+
+
+def rightclick(event):
+    """ Action on right mouse click """
+    print("Right button clicked.")
+
+
+# creating a frame, which is gonna be invisible
+mylabel = Label(root, text="Please use any mouse button.")
+mylabel.pack()
+myframe = Frame(root, width=300, height=250)
+myframe.bind("<Button-1>", leftclick)
+myframe.bind("<Button-2>", middleclick)
+myframe.bind("<Button-3>", rightclick)
+
+# for placing the frame into the root window
+
+myframe.pack()
+root.mainloop()
