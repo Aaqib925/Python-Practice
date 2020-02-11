@@ -27,6 +27,9 @@ button1 = Button(topframe, text="Button1", fg="Blue")
 button2 = Button(topframe, text="Button2", fg="red")
 button3 = Button(bottomframe, text="Button3", fg="green")
 button4 = Button(bottomframe, text="Button4", fg="brown")
+
+# by default they are made on the top of other
+
 button1.pack(side=LEFT)
 button2.pack(side=RIGHT)
 button3.pack(side=LEFT)
