@@ -3112,3 +3112,9 @@
 #         if grid[i][j] == "G":
 #             g_count = 1
 #             if i - g_count >= 0:
+
+def sum(x, y):
+		return(x+y)
+print(sum(sum(1,2), sum(3,4)))
+
+print(((10 >= 5*2) and (10 <= 5*2)))
