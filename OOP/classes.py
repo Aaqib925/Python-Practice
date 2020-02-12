@@ -88,3 +88,15 @@
 
 # person1 = Person("Aaqib")
 # print(person1.greetings())
+
+class Fruit:
+    def __init__(self, color, flavor):
+        self.color = color
+        self.flavor = flavor
+
+    def __str__(self):   # __str__ is special method to print the user friendly string
+        return "This apple has {} color and {} flavor".format(self.color, self.flavor)
+
+
+jonagold = Fruit("Red", "Sweet")
+print(jonagold)
