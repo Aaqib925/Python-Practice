@@ -12,3 +12,9 @@ class Apple(Fruit):  # inherited from the parent class of Fruits
 
 class Bannana(Fruit):  # inherited from the parent class of Fruits
     pass
+
+
+apple1 = Apple("Red", "Sweet")
+banana = Bannana("White", "Very Sweet")
+
+print(apple1.color, banana.flavour)
