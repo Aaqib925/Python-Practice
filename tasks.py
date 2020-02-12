@@ -3231,14 +3231,14 @@
 #                 dic[y] += 1
 # print(dic)
 
-punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
-uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an", "as", "i", "me", "my", "we", "our",
-                       "ours", "you", "your", "yours", "he", "she", "him", "his", "her", "hers", "its", "they", "them",
-                       "their", "what", "which", "who", "whom", "this", "that", "am", "are", "was", "were", "be",
-                       "been", "being", "have", "has", "had", "do", "does", "did", "but", "at", "by", "with", "from",
-                       "here", "when", "where", "how", "all", "any", "both", "each", "few", "more", "some", "such",
-                       "no", "nor", "too", "very", "can", "will", "just"]
-
+# punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+# uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an", "as", "i", "me", "my", "we", "our",
+#                        "ours", "you", "your", "yours", "he", "she", "him", "his", "her", "hers", "its", "they", "them",
+#                        "their", "what", "which", "who", "whom", "this", "that", "am", "are", "was", "were", "be",
+#                        "been", "being", "have", "has", "had", "do", "does", "did", "but", "at", "by", "with", "from",
+#                        "here", "when", "where", "how", "all", "any", "both", "each", "few", "more", "some", "such",
+#                        "no", "nor", "too", "very", "can", "will", "just"]
+#
 # sentence = "There is still lingering in many minds, especially in the so-called religious world, a strong prejudice against the dramatic profession. Analyzed down to its origin, the long warfare of church and theatre, the instinctive aversion of priest and player, will be found to be rooted in the essential opposition of their respective ideals of life. The ecclesiastical ideal is ascetic, its method painful obedience and prayer, its chief virtues self-restraint and denial; the dramatic ideal is free, its method self-development and culture, its ruling aims gratification and fulfilment The votaries of these distinctive sets of convictions and sentiments have from an early age formed two hostile camps. Accordingly, when one known as a clergyman was said to be writing the life of an actor, the announcement created surprise and curiosity and elicited censorious comment. The question was often asked, how can this strange conjunction be explained? It is therefore, perhaps, not inappropriate for the author of the present work to state the circumstances and motives which caused him to undertake it. The narrative will be brief, and may, with several advantages, take the place of a formal preface. Conventional prefaces are rarely read; but the writer trusts that the statement he proposes to make will be not only interesting to the reader but likewise helpful, by furnishing him with the proper key and cue to the succeeding chapters. It may serve as a sort of preparatory lighting up of the field to be traversed; a kind of prelusive sketch of the provinces of experience to be surveyed, of the lessons to be taught, and of the credentials of the author in the materials and other conditions secured to him for the completion of his task. This statement is to be taken as an explanation, not as an apology. The only justification needed lies in the belief that the theatrical life may be as pure and noble as the ecclesiastical; that the theatre has as sound a claim to support as the church; that the great actor, properly equipped for his work, is the most flexible and comprehensive style of man in the world, master of all types of human nature and all grades of human experience; and that the priestly profession in our day has as much to learn from the histrionic as it has to teach it."
 
 # ls = sentence.split()
