@@ -76,15 +76,15 @@
 # obj2 = child("Aaqib", 999)
 # obj2.result()
 
-class Person:
-    def __init__(self, name):
-        self.name = name
-
-    def greetings(self):
-        return "Hi, Have a nice day {}".format(self.name)
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def greetings(self):
+#         return "Hi, Have a nice day {}".format(self.name)
 
 
 # creating an instance
 
-person1 = Person("Aaqib")
-print(person1.greetings())
+# person1 = Person("Aaqib")
+# print(person1.greetings())
