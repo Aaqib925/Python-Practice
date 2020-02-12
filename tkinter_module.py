@@ -144,17 +144,17 @@ from tkinter import *
 # myframe.pack()
 # root.mainloop()
 
-root = Tk()
+# root = Tk()
 
 # myframe = Frame(root, width=700, height=300)
 # myframe.pack()
-label1 = Label(root, text="Enter your petition")
-label1.grid(row=0, column=0)
-entry1 = Entry(root)
-entry1.grid(row=0, column=1)
-label2 = Label(root, text="Enter your question")
-label2.grid(row=1, column=0)
-entry2 = Entry(root)
-entry2.grid(row=1, column=1)
-
-root.mainloop()
+# label1 = Label(root, text="Enter your petition")
+# label1.grid(row=0, column=0)
+# entry1 = Entry(root)
+# entry1.grid(row=0, column=1)
+# label2 = Label(root, text="Enter your question")
+# label2.grid(row=1, column=0)
+# entry2 = Entry(root)
+# entry2.grid(row=1, column=1)
+#
+# root.mainloop()
