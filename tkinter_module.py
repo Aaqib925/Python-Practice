@@ -162,6 +162,9 @@ from tkinter import *
 root = Tk()
 
 
+entry1 = Entry(root, bg="Black", fg="White", borderwidth=5)
+entry1.pack()
+
 def greet():
     mylabel = Label(root, text="Have a nice day!")
     mylabel.pack()
@@ -169,9 +172,6 @@ def greet():
 
 mybutton = Button(root, text="Click me!!", padx=50, pady=50, command=greet, bg="Black", fg="White")
 
-# state = disabled will disable the button
-
-# mybutton = Button(root, text="Click me!!", state=DISABLED)
 
 mybutton.pack()
 root.mainloop()
