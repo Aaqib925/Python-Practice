@@ -14,6 +14,9 @@ def button_click():
 def button_equal():
     return
 
+def button_clear():
+    return
+
 
 button1 = Button(root, text="1", padx=35, pady=15, command=button_click)
 button2 = Button(root, text="2", padx=35, pady=15, command=button_click)
@@ -25,7 +28,12 @@ button7 = Button(root, text="7", padx=35, pady=15, command=button_click)
 button8 = Button(root, text="8", padx=35, pady=15, command=button_click)
 button9 = Button(root, text="9", padx=35, pady=15, command=button_click)
 button0 = Button(root, text="0", padx=35, pady=15, command=button_click)
-buttonclear = Button(root, text="=", padx=75, pady=15, command=button_equal)
+buttonequal = Button(root, text="=", padx=77, pady=15, command=button_equal)
+buttonadd = Button(root, text="+", padx=42, pady=15, command=button_equal)
+buttonsub = Button(root, text="-", padx=44, pady=15, command=button_equal)
+buttonmulti = Button(root, text="*", padx=42, pady=15, command=button_equal)
+buttonclear = Button(root, text="Clear All", padx=20, pady=15, command=button_clear)
+
 
 button1.grid(row=3, column=0)
 button2.grid(row=3, column=1)
@@ -40,5 +48,11 @@ button8.grid(row=1, column=1)
 button9.grid(row=1, column=2)
 
 button0.grid(row=4, column=0)
-buttonclear.grid(row=4, column=1, columnspan=2)
+buttonequal.grid(row=4, column=1, columnspan=2)
+
+buttonclear.grid(row=1, column=3)
+buttonadd.grid(row=2, column=3)
+buttonsub.grid(row=3, column=3)
+buttonmulti.grid(row=4, column=3)
+
 root.mainloop()
