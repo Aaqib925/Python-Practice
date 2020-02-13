@@ -167,7 +167,8 @@ def greet():
     mylabel.pack()
 
 
-mybutton = Button(root, text="Click me!!", padx=50, pady=50, command=greet)
+mybutton = Button(root, text="Click me!!", padx=50, pady=50, command=greet, bg="Black", fg="White")
+
 # state = disabled will disable the button
 
 # mybutton = Button(root, text="Click me!!", state=DISABLED)
