@@ -5,8 +5,8 @@ root.title("Simple Calculator")
 
 # creating an entry box
 
-entry_box = Entry(root, width=28, borderwidth=5)
-entry_box.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
+entry_box = Entry(root, width=41, borderwidth=5)
+entry_box.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
 def button_click():
     return
