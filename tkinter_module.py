@@ -184,3 +184,11 @@ from PIL import Image, ImageTk
 
 # for working with images we use pillow module in python
 
+root = Tk()
+
+# my_image = ImageTk.PhotoImage(Image.open('aaqib.jpg'))
+my_image = ImageTk.PhotoImage(Image.open('/home/aaqib/Downloads/aaqib.jpg'))
+mylabel = Label(image=my_image)
+mylabel.pack()
+
+root.mainloop()
