@@ -160,3 +160,17 @@ from tkinter import *
 # root.mainloop()
 
 root = Tk()
+
+
+def greet():
+    mylabel = Label(root, text="Have a nice day!")
+    mylabel.pack()
+
+
+mybutton = Button(root, text="Click me!!", padx=50, pady=50, command=greet)
+# state = disabled will disable the button
+
+# mybutton = Button(root, text="Click me!!", state=DISABLED)
+
+mybutton.pack()
+root.mainloop()
