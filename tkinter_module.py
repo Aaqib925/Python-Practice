@@ -165,8 +165,9 @@ root = Tk()
 entry1 = Entry(root, bg="Black", fg="White", borderwidth=5)
 entry1.pack()
 
+# to use the things typed in the entry label we can use get function
 def greet():
-    mylabel = Label(root, text="Have a nice day!")
+    mylabel = Label(root, text=entry1.get())
     mylabel.pack()
 
 
