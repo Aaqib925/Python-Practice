@@ -1,4 +1,5 @@
 from tkinter import *
+from PIL import Image, ImageTk
 
 # root = Tk()
 # # label is anything to be written or widget
@@ -178,4 +179,8 @@ from tkinter import *
 # root.mainloop()
 
 # to add any icon on the top of the GUI application we used the image and function of root.iconbitmap("path")
+
+# to exit any program we use the root.quit on any button command
+
+# for working with images we use pillow module in python
 
