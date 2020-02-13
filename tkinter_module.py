@@ -159,20 +159,23 @@ from tkinter import *
 #
 # root.mainloop()
 
-root = Tk()
+# root = Tk()
+#
+#
+# entry1 = Entry(root, bg="Black", fg="White", borderwidth=5, width=50)
+# entry1.pack()
+# entry1.insert(0, "Enter your name: ")
+# # to use the things typed in the entry label we can use get function
+# def greet():
+#     mylabel = Label(root, text="Hello " + entry1.get())
+#     mylabel.pack()
+#
+#
+# mybutton = Button(root, text="Click me!!", padx=50, pady=50, command=greet, bg="Black", fg="White")
+#
+#
+# mybutton.pack()
+# root.mainloop()
 
+# to add any icon on the top of the GUI application we used the image and function of root.iconbitmap("path")
 
-entry1 = Entry(root, bg="Black", fg="White", borderwidth=5, width=50)
-entry1.pack()
-entry1.insert(0, "Enter your name: ")
-# to use the things typed in the entry label we can use get function
-def greet():
-    mylabel = Label(root, text="Hello " + entry1.get())
-    mylabel.pack()
-
-
-mybutton = Button(root, text="Click me!!", padx=50, pady=50, command=greet, bg="Black", fg="White")
-
-
-mybutton.pack()
-root.mainloop()
