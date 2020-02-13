@@ -158,3 +158,5 @@ from tkinter import *
 # entry2.grid(row=1, column=1)
 #
 # root.mainloop()
+
+root = Tk()
