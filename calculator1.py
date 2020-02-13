@@ -17,6 +17,9 @@ def button_clear():
     entry_box.delete(0, END)
 
 
+f_num = 0
+math = ""
+
 def button_add():
     first_number = entry_box.get()
     global f_num
