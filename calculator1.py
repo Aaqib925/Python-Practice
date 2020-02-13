@@ -11,6 +11,9 @@ entry_box.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 def button_click():
     return
 
+def button_equal():
+    return
+
 
 button1 = Button(root, text="1", padx=35, pady=15, command=button_click)
 button2 = Button(root, text="2", padx=35, pady=15, command=button_click)
@@ -22,6 +25,7 @@ button7 = Button(root, text="7", padx=35, pady=15, command=button_click)
 button8 = Button(root, text="8", padx=35, pady=15, command=button_click)
 button9 = Button(root, text="9", padx=35, pady=15, command=button_click)
 button0 = Button(root, text="0", padx=35, pady=15, command=button_click)
+buttonclear = Button(root, text="=", padx=75, pady=15, command=button_equal)
 
 button1.grid(row=3, column=0)
 button2.grid(row=3, column=1)
@@ -35,6 +39,6 @@ button7.grid(row=1, column=0)
 button8.grid(row=1, column=1)
 button9.grid(row=1, column=2)
 
-
-
+button0.grid(row=4, column=0)
+buttonclear.grid(row=4, column=1, columnspan=2)
 root.mainloop()
