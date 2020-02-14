@@ -40,7 +40,9 @@ class Employee:
     def increase_raise(cls, class_raise):
         cls.raise_amount = class_raise
 
+
 class Developer(Employee):
+    # raise_amount =
     def __init__(self, first, last, pay, prog_lang):
         super().__init__(first, last, pay)
         self.prog_lang = prog_lang
@@ -48,6 +50,9 @@ class Developer(Employee):
     @classmethod
     def raise_developer(cls, amount):
         cls.raise_amount = amount
+
+    def dev_app_raise(self):
+        self.pay = self.pay * self.raise_amount
 
 
 class Manager(Employee):
@@ -57,6 +62,7 @@ class Manager(Employee):
             self.employees = []
         else:
             self.employees = employees
+
     @classmethod
     def raise_manager(cls, amount):
         cls.raise_amount = amount
@@ -74,10 +80,20 @@ class Manager(Employee):
             self.employees.remove(empl)
 
 
-empl1 = Employee("Aaqib", "Nazir", 100,)
-empl2 = Employee("Test", "User", 100,)
+# empl1 = Employee("Aaqib", "Nazir", 100)
+# empl2 = Employee("Test", "User", 100)
 # empl1.apply_raise()
 # Employee.increase_raise(1.08)
 # empl1.apply_raise()
+# print(empl1.pay)
 
+# for developer subclass
+empl1 = Developer("Aaqib", "Nazir", 100, "Python")
+empl2 = Developer("Test", "User", 100, "Java")
+
+print(Developer.raise_amount)
+print(empl1.pay)
+Developer.raise_developer(1.09)
+print(Developer.raise_amount)
+empl1.dev_app_raise()
 print(empl1.pay)
