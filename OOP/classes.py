@@ -193,6 +193,6 @@ empl_2 = Employee("Test", "User", 100)
 # print(new_empl2.__dict__)
 
 # Using static method
-import datetime
-mydate = datetime.date(2020, 2, 15)
-print(Employee.isworkday(mydate))
+# import datetime
+# mydate = datetime.date(2020, 2, 15)
+# print(Employee.isworkday(mydate))
