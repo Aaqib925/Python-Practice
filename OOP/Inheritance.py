@@ -40,3 +40,12 @@ class Employee:
     def increase_raise(cls, class_raise):
         cls.raise_amount = class_raise
 
+class Developer(Employee):
+    def __init__(self, first, last, pay, prog_lang):
+        super().__init__(first, last, pay)
+        self.prog_lang = prog_lang
+
+    @classmethod
+    def raise_developer(cls, amount):
+        cls.raise_amount = amount
+
