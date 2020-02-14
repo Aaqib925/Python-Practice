@@ -49,3 +49,27 @@ class Developer(Employee):
     def raise_developer(cls, amount):
         cls.raise_amount = amount
 
+
+class Manager(Employee):
+    def __init__(self, first, last, pay, employees=None):
+        super().__init__(first, last, pay)
+        if employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
+    @classmethod
+    def raise_manager(cls, amount):
+        cls.raise_amount = amount
+
+    def all_employees(self):
+        for i in self.employees:
+            print(i.fullname())
+
+    def add_employee(self, empl):
+        if empl not in self.employees:
+            self.employees.append(empl)
+
+    def remove_employee(self, empl):
+        if empl in self.employees:
+            self.employees.remove(empl)
+
