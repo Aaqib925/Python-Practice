@@ -133,6 +133,7 @@ class Employee:
     def fromstring(cls, string):
         first, last, pay = string.split("-")
         return cls(first, last, int(pay))
+
     @staticmethod
     def isworkday(day):
         if day.weekday() == 5 or day.weekday == 6:
@@ -192,3 +193,6 @@ empl_2 = Employee("Test", "User", 100)
 # print(new_empl2.__dict__)
 
 # Using static method
+import datetime
+mydate = datetime.date(2020, 2, 15)
+print(Employee.isworkday(mydate))
