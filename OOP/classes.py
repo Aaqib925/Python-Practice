@@ -179,6 +179,9 @@ empl_2 = Employee("Test", "User", 100)
 empl_1_str = "John-DOE-100"
 empl_2_str = "Test-User-100"
 new_empl = Employee.fromstring(empl_1_str)
+new_empl2 = Employee.fromstring(empl_2_str)
 
 new_empl.apply_raise()
 print(new_empl.pay)
+
+print(new_empl2.__dict__)
