@@ -67,6 +67,9 @@ class Manager(Employee):
     def raise_manager(cls, amount):
         cls.raise_amount = amount
 
+    def man_app_raise(self):
+        self.pay = self.raise_amount * self.pay
+
     def all_employees(self):
         for i in self.employees:
             print(i.fullname())
@@ -88,12 +91,12 @@ class Manager(Employee):
 # print(empl1.pay)
 
 # for developer subclass
-empl1 = Developer("Aaqib", "Nazir", 100, "Python")
-empl2 = Developer("Test", "User", 100, "Java")
-
-print(Developer.raise_amount)
-print(empl1.pay)
-Developer.raise_developer(1.09)
-print(Developer.raise_amount)
-empl1.dev_app_raise()
-print(empl1.pay)
+# empl1 = Developer("Aaqib", "Nazir", 100, "Python")
+# empl2 = Developer("Test", "User", 100, "Java")
+#
+# print(Developer.raise_amount)
+# print(empl1.pay)
+# Developer.raise_developer(1.09)
+# print(Developer.raise_amount)
+# empl1.dev_app_raise()
+# print(empl1.pay)
