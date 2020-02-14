@@ -91,8 +91,8 @@ class Manager(Employee):
 # print(empl1.pay)
 
 # for developer subclass
-# empl1 = Developer("Aaqib", "Nazir", 100, "Python")
-# empl2 = Developer("Test", "User", 100, "Java")
+empl1 = Developer("Aaqib", "Nazir", 100, "Python")
+empl2 = Developer("Test", "User", 100, "Java")
 #
 # print(Developer.raise_amount)
 # print(empl1.pay)
@@ -100,3 +100,18 @@ class Manager(Employee):
 # print(Developer.raise_amount)
 # empl1.dev_app_raise()
 # print(empl1.pay)
+
+
+# for manager class
+manager1 = Manager("AAQIB", "Nazir", 100, [empl1])
+
+manager1.raise_manager(1.15)
+manager1.man_app_raise()
+# print(manager1.pay)
+
+# print(manager1.all_employees())
+manager1.add_employee(empl2)
+manager1.all_employees()
+
+manager1.remove_employee(empl2)
+manager1.all_employees()
