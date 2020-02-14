@@ -73,3 +73,11 @@ class Manager(Employee):
         if empl in self.employees:
             self.employees.remove(empl)
 
+
+empl1 = Employee("Aaqib", "Nazir", 100,)
+empl2 = Employee("Test", "User", 100,)
+# empl1.apply_raise()
+# Employee.increase_raise(1.08)
+# empl1.apply_raise()
+
+print(empl1.pay)
