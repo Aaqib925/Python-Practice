@@ -117,3 +117,6 @@ class Manager(Employee):
 # manager1.all_employees()
 
 # help(Developer)
+
+# print(issubclass(Employee, Manager))
+# print(issubclass(Manager, Employee))
