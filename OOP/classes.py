@@ -107,9 +107,21 @@ class Employee:
         self.last = last
         self.pay = pay
         self.email = first + "." + last + "@company.com"
+    # creating a method for full name of any instance
 
+    def fullname(self):
+        return "{} {}".format(self.first, self.last)
 
 # creating instance of Employee class
 
+
 empl_1 = Employee("Aaqib", "Nazir", "100k")
 empl_2 = Employee("Test", "User", "100k")
+
+print(empl_1.first)
+print(empl_2.first)
+
+print(empl_1.fullname())
+print(Employee.fullname(empl_1))
+
+print()
