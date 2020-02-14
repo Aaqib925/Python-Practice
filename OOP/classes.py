@@ -124,8 +124,12 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
+    @classmethod
+    def increase_raise_amount(cls, amount):
+        cls.raise_amount = amount
 
 # creating instance of Employee class
+
 
 empl_1 = Employee("Aaqib", "Nazir", 100)
 empl_2 = Employee("Test", "User", 100)
@@ -156,5 +160,9 @@ empl_2 = Employee("Test", "User", 100)
 # print(empl_1.raise_amount)
 # print(empl_2.raise_amount)
 
-print(Employee.num_employee)  # because we created 2 instances out of the class
+# print(Employee.num_employee)  # because we created 2 instances out of the class
 
+Employee.increase_raise_amount(1.06)
+print(Employee.raise_amount)
+print(empl_1.raise_amount)
+print(empl_2.raise_amount)
