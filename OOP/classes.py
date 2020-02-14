@@ -102,6 +102,9 @@
 # print(jonagold)
 
 class Employee:
+    # class variable
+    raise_amount = 1.04
+
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
@@ -114,19 +117,39 @@ class Employee:
         return "{} {}".format(self.first, self.last)
 
     def description(self):
-        return "The Employee {} {} having Email {} has pay {}.".format(self.first, self.last, self.email, self.pay)
+        return "The Employee {} {} having Email {} has pay {}.".format(self.first, self.last, self.email, str(self.pay))
+
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
 
 
 # creating instance of Employee class
 
-empl_1 = Employee("Aaqib", "Nazir", "100k")
-empl_2 = Employee("Test", "User", "100k")
+empl_1 = Employee("Aaqib", "Nazir", 100)
+empl_2 = Employee("Test", "User", 100)
 
-print(empl_1.first)
-print(empl_2.first)
+# print(empl_1.first)
+# print(empl_2.first)
+#
+# print(empl_1.fullname())
+# print(Employee.fullname(empl_2))
+#
+# print(empl_1.description())
+# print(Employee.description(empl_2))
 
-print(empl_1.fullname())
-print(Employee.fullname(empl_2))
+# empl_1.apply_raise()  # for increasing the pay for any instance
+# print(empl_1.pay)
 
-print(empl_1.description())
-print(Employee.description(empl_2))
+# If I wanted to increase the pay for particular instance
+
+# empl_1.raise_amount = 1.05
+#
+# empl_1.apply_raise()
+# print(empl_1.pay)
+
+# If I wanted to change the value of class variable, I can do this by calling the class and then class variable
+
+Employee.raise_amount = 1.05
+
+print(empl_1.raise_amount)
+print(empl_2.raise_amount)
