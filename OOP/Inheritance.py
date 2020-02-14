@@ -33,6 +33,10 @@ class Employee:
     def fullname(self):
         return "{} {}".format(self.first, self.last)
 
-
     def apply_raise(self):
         self.pay = self.pay * self.raise_amount
+
+    @classmethod
+    def increase_raise(cls, class_raise):
+        cls.raise_amount = class_raise
+
