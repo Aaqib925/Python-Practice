@@ -113,6 +113,7 @@ class Employee:
         self.pay = pay
         self.email = first + "." + last + "@company.com"
         Employee.num_employee += 1
+
     # creating a method for full name of any instance
 
     def fullname(self):
@@ -132,10 +133,14 @@ class Employee:
     def fromstring(cls, string):
         first, last, pay = string.split("-")
         return cls(first, last, int(pay))
+    @staticmethod
+    def isworkday(day):
+        if day.weekday() == 5 or day.weekday == 6:
+            return False
+        return True
+
 
 # creating instance of Employee class
-
-
 empl_1 = Employee("Aaqib", "Nazir", 100)
 empl_2 = Employee("Test", "User", 100)
 
@@ -176,12 +181,14 @@ empl_2 = Employee("Test", "User", 100)
 # suppose we are passing the string will hyphen separated and we wanted to create a instance using it
 # So we need to make a class method, and we will pass that string to that class method
 
-empl_1_str = "John-DOE-100"
-empl_2_str = "Test-User-100"
-new_empl = Employee.fromstring(empl_1_str)
-new_empl2 = Employee.fromstring(empl_2_str)
+# empl_1_str = "John-DOE-100"
+# empl_2_str = "Test-User-100"
+# new_empl = Employee.fromstring(empl_1_str)
+# new_empl2 = Employee.fromstring(empl_2_str)
+#
+# new_empl.apply_raise()
+# print(new_empl.pay)
+#
+# print(new_empl2.__dict__)
 
-new_empl.apply_raise()
-print(new_empl.pay)
-
-print(new_empl2.__dict__)
+# Using static method
