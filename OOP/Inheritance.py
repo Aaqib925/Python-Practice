@@ -116,4 +116,4 @@ class Manager(Employee):
 # manager1.remove_employee(empl2)
 # manager1.all_employees()
 
-
+# help(Developer)
