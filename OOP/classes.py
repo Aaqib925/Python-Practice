@@ -104,13 +104,15 @@
 class Employee:
     # class variable
     raise_amount = 1.04
+    # For the total number of employees
+    num_employee = 0
 
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.pay = pay
         self.email = first + "." + last + "@company.com"
-
+        Employee.num_employee += 1
     # creating a method for full name of any instance
 
     def fullname(self):
@@ -149,7 +151,10 @@ empl_2 = Employee("Test", "User", 100)
 
 # If I wanted to change the value of class variable, I can do this by calling the class and then class variable
 
-Employee.raise_amount = 1.05
+# Employee.raise_amount = 1.05
+#
+# print(empl_1.raise_amount)
+# print(empl_2.raise_amount)
 
-print(empl_1.raise_amount)
-print(empl_2.raise_amount)
+print(Employee.num_employee)  # because we created 2 instances out of the class
+
