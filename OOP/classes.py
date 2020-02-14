@@ -101,3 +101,15 @@
 # jonagold = Fruit("Red", "Sweet")
 # print(jonagold)
 
+class Employee:
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + "." + last + "@company.com"
+
+
+# creating instance of Employee class
+
+empl_1 = Employee("Aaqib", "Nazir", "100k")
+empl_2 = Employee("Test", "User", "100k")
