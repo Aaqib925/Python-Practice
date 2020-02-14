@@ -131,7 +131,7 @@ class Employee:
     @classmethod
     def fromstring(cls, string):
         first, last, pay = string.split("-")
-        return cls(first, last, pay)
+        return cls(first, last, int(pay))
 
 # creating instance of Employee class
 
@@ -176,6 +176,9 @@ empl_2 = Employee("Test", "User", 100)
 # suppose we are passing the string will hyphen separated and we wanted to create a instance using it
 # So we need to make a class method, and we will pass that string to that class method
 
-empl_1_str = "Aaqib-Nazir-100"
+empl_1_str = "John-DOE-100"
 empl_2_str = "Test-User-100"
+new_empl = Employee.fromstring(empl_1_str)
 
+new_empl.apply_raise()
+print(new_empl.pay)
