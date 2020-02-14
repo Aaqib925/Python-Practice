@@ -128,6 +128,11 @@ class Employee:
     def increase_raise_amount(cls, amount):
         cls.raise_amount = amount
 
+    @classmethod
+    def fromstring(cls, string):
+        first, last, pay = string.split("-")
+        return cls(first, last, pay)
+
 # creating instance of Employee class
 
 
@@ -162,7 +167,15 @@ empl_2 = Employee("Test", "User", 100)
 
 # print(Employee.num_employee)  # because we created 2 instances out of the class
 
-Employee.increase_raise_amount(1.06)
-print(Employee.raise_amount)
-print(empl_1.raise_amount)
-print(empl_2.raise_amount)
+# Employee.increase_raise_amount(1.06)
+# print(Employee.raise_amount)
+# print(empl_1.raise_amount)
+# print(empl_2.raise_amount)
+
+# using class method as an alternative constructors
+# suppose we are passing the string will hyphen separated and we wanted to create a instance using it
+# So we need to make a class method, and we will pass that string to that class method
+
+empl_1_str = "Aaqib-Nazir-100"
+empl_2_str = "Test-User-100"
+
