@@ -3255,3 +3255,6 @@
 #         elif new in dic:
 #             dic[new] += 1
 # print(dic)
+
+ls = ["2", "21", "41", "1", "12"]
+print(sorted(ls, key=int))
