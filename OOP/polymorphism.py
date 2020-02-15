@@ -8,3 +8,21 @@ class Parrot:
         print("Parrots can't swim")
 
 class Penguin:
+    def fly(self):
+        print("Penguins can't fly")
+
+    def swim(self):
+        print("Penguins can swim")
+
+
+# creating instances
+parrot = Parrot()
+penguin = Penguin()
+
+def flying_test(bird):
+    bird.fly()
+
+# passing the instances into the flying test functions
+
+flying_test(parrot)
+flying_test(penguin)
