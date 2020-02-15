@@ -20,7 +20,7 @@ class Penguin:
 parrot = Parrot()
 penguin = Penguin()
 
-
+# this is the example of polymorphism
 def flying_test(bird):
     bird.fly()
 
@@ -28,8 +28,8 @@ def flying_test(bird):
 def swim_test(bird):
     bird.swim()
 
-
 # passing the instances into the flying test functions
+
 
 flying_test(parrot)
 flying_test(penguin)
