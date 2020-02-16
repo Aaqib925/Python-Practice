@@ -3255,26 +3255,26 @@
 #         elif new in dic:
 #             dic[new] += 1
 # print(dic)
-
-class Dec2bin:
-    words = {0: "Zero", 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten"}
-
-    def __init__(self, num):
-        self.num = num
-
-    def binary(self):
-        ans = ""
-        bin = self.num
-        while bin > 0:
-            ans = str(bin % 2) + ans
-            bin //= 2
-        return ans
-
-    def numtowords(self):
-        return self.words.get(self.num)
-
-
-num1 = Dec2bin(2)
-print(num1.num)
-print(num1.binary())
-print(num1.numtowords())
+#
+# class Dec2bin:
+#     words = {0: "Zero", 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten"}
+#
+#     def __init__(self, num):
+#         self.num = num
+#
+#     def binary(self):
+#         ans = ""
+#         bin = self.num
+#         while bin > 0:
+#             ans = str(bin % 2) + ans
+#             bin //= 2
+#         return ans
+#
+#     def numtowords(self):
+#         return self.words.get(self.num)
+#
+#
+# num1 = Dec2bin(2)
+# print(num1.num)
+# print(num1.binary())
+# print(num1.numtowords())
