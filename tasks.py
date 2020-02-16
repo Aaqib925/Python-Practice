@@ -4,7 +4,7 @@
 # "o" or i == "u" or i == "A" or i == "E" or i == "I" or i == "O" or i == "U": vowels += 1
 #
 # print("There are", vowels, "vowels in your String")
-
+#
 # Question:
 # Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
 # between 2000 and 3200 (both included).
@@ -71,11 +71,11 @@
 # print(t)
 #
 #
-
-
+#
+#
 # Question:
 # write a program which takes imput of the marks of the subjects and prompt the grade to the user
-
+#
 # sub1 = int(input("Enter marks in Chemistry: "))
 #
 # sub2 = int(input("Enter marks in Physics: "))
@@ -107,7 +107,7 @@
 #
 # elif per < 50:
 #     print("Fail")
-
+#
 # Let's learn about list comprehensions! You are given three integers X, Y and Z representing the dimensions of a
 # cuboid along with an integer N. You have to print a list of all possible coordinates given by (i, j, k) on a 3D
 # grid where the sum of i + j + k  is not equal to N. Here, 0 <= i <= X; 0 <= j <= Y; 0 <= k <= Z
@@ -129,7 +129,7 @@
 #
 #
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-
+#
 # x = int(input())
 #     y = int(input())
 #     z = int(input())
@@ -137,15 +137,15 @@
 #
 # result = [[a, b, c] for a in range(x + 1) for b in range(y + 1) for c in range(z + 1) if a + b + c != n]
 # print(result)
-
-
+#
+#
 # n = int(input())
 #     arr = map(int, input().split())
 #
 #     print(sorted(list(set(arr)))[-2])
-
+#
 # the guessing game
-
+#
 # import random
 #
 # comp_choice = random.randint(1, 20)
@@ -161,9 +161,9 @@
 #
 # elif my_guess == comp_choice:
 #     print("You guessed the correct number!!")
-
+#
 # program to calculate the square root of positive and complex numbers
-
+#
 # import math
 #
 # num = int(input("Enter any positive number: "))
@@ -171,13 +171,13 @@
 #     print("Please enter a positive number")
 #
 # print("The sqaure root of", num, "is: "math.sqrt(num))
-
+#
 # import cmath
 #
 # num = complex(input("Enter any complex number: "))
 #
 # print("The square root of complex number", num, "is: ", cmath.sqrt(num))
-
+#
 # program to calculate the area of a triangle
 #
 # import math
@@ -200,9 +200,9 @@
 #
 #
 # print(area(para()))
-
+#
 # program to solve the find out the root if quadratic equation
-
+#
 # import math
 #
 # print("Solve the quadratic equation ax^2 + bx + c = 0")
@@ -225,9 +225,9 @@
 #
 #
 # print(roots(discrim()))
-
+#
 # swapping the value of 2 variables
-
+#
 # x = 22
 # y = 33
 #
@@ -235,8 +235,8 @@
 #
 # print("The value of x after swapping is: ", x)
 # print("The value of y after swapping is: ", y)
-
-
+#
+#
 # write a program to calculate the armstrong number
 #
 # num = int(input("Enter any number: "))
@@ -258,17 +258,17 @@
 #
 # else:
 #     print("The number {} is not Armstrong number".format(num))
-
-
+#
+#
 # write a program to generate the square of the numbers
-
-
+#
+#
 # n = int(input("Enter the range of the numbers: "))
 # for i in range(1, n + 1):
 #     print("The square of", i, "is",  i ** 2)
-
+#
 # now making a function which calculate the square of the numbers
-
+#
 # def sq(n):
 #
 #     for i in range(1, n + 1):
@@ -282,34 +282,34 @@
 #     for c in range(3):
 #         if lst[r][c] % 2 == 0:
 #             print("#")
-
-
+#
+#
 # tup = (1, 2, 4, 8)
 # tup = tup[-2: -1]
 # print(tup)
 # tup = tup[-1]
 # print(tup)
-
+#
 # lst = [1, 2]
 #
 # for v in range(2):
 #     lst.insert(-1, lst[v])
 #
 # print(lst)
-
+#
 # d = {"1": "0", "0": "1"}
 #
 # for x in d.values():
 #     print(x, end="")
-
+#
 # def fun(a, b):
 #     return b ** a
 #
 # print(fun(b = 2, 2))
-
+#
 # list = [x * x for x in range(5)]
 # print(list)
-
+#
 # def fun(x, y):
 #     if x == y:
 #         return x
@@ -317,7 +317,7 @@
 #         return fun(x, y - 1)
 #
 # print(fun(0, 3))
-
+#
 # def fun1(a):
 #     return None
 #
@@ -331,11 +331,11 @@
 #     print("*")
 # else:
 #     print("*")
-
-
+#
+#
 # Write a program to convert kilometers into miles
 # 1 kilometer = 0.621371 miles
-
+#
 # print("1. Convert kilometer into miles.")
 # print("2. Convert miles into kilometers.")
 #
@@ -371,8 +371,8 @@
 #
 # else:
 #     print("Invalid choice, Please enter correct choice number.")
-
-
+#
+#
 # write a program to convert celsius into fahrenheit and vice versa
 #
 # print("Please select one choice.")
@@ -402,12 +402,12 @@
 #
 # else:
 #     print("Invalid choice, Please enter correct choice number.")
-
-
+#
+#
 # program to check whether the year is leap year or not condition 1 = if year is divisible by 4 then...it should be
 # divisible by 100 and if its true then it should be divisible by 400 also...if not...then year is not the leap year
-
-
+#
+#
 # year = int(input("Enter the year: "))
 #
 #
@@ -422,14 +422,14 @@
 #
 #
 # isleap(year)
-
-
+#
+#
 # Program to find whether a number is prime number or not...and if not...then explain how...by showing the factors of it
 # prime number is that number which do not have any factors except itself
-
-
+#
+#
 # num = int(input("Enter any number: "))
-
+#
 # we have to write a code by which we can check whether the factors of number exist or not
 #
 # if num > 1:
@@ -442,19 +442,19 @@
 #         print(num, "is a prime number.")
 # else:
 #     print(num, "is not a prime number.")
-
-
+#
+#
 # program to find out the factors of a given number
-
+#
 # num = int(input("Enter any number: "))
 #
 # for i in range(1, num + 1):
 #     if num % i == 0:
 #         print(i, "times", num // i, "is", num)
-
-
+#
+#
 # program to print the prime numbers in a interval
-
+#
 # lower = int(input("Enter the upper limit: "))
 # upper = int(input("Enter the lower limit: "))
 #
@@ -470,9 +470,9 @@
 #             count += 1
 #
 # print("There are", count, "prime numbers in interval", lower, "and", upper)
-
+#
 # write a program to print the factorial of the any number
-
+#
 # num = int(input("Enter any number: "))
 # factorial = 1
 # if num < 0:
@@ -485,17 +485,17 @@
 #     for i in range(1, num + 1):
 #         factorial = factorial * i
 #     print("This factorial of {} is".format(num), factorial)
-
+#
 # program to print the multiplication table
-
+#
 # num = int(input("Enter any number: "))
 # for i in range(1, 11):
 #     print(num, "x", i, "=", num * i)
-
+#
 # program to print the fibonacci series 0, 1, 2, 3, 5, 8 ....
-
+#
 # first the number of terms you want to get in certain fibonacci series
-
+#
 # n_terms = int(input("Enter the number of terms you want in the fibonacci series: "))
 #
 # first_num = 0
@@ -517,10 +517,10 @@
 #         first_num = sec_num
 #         sec_num = nth
 #         counter += 1
-
-
+#
+#
 # write a function to count number of integer in a number
-
+#
 # num = int(input("Enter any number to find out it's length: "))
 #
 #
@@ -533,7 +533,7 @@
 #     return counter
 #
 # write a program to check what number is repeated in the list
-
+#
 # num = int(input("Enter the range of your list: "))
 #
 # my_inp_list = []
@@ -565,9 +565,9 @@
 #     print("The values repeated in the list are: ", check_repeated(my_inp_list))
 # else:
 #     print("Thank You")
-
+#
 # write a program which converts decimal into binary number
-
+#
 # num = 333
 #
 # total = ""
@@ -581,7 +581,7 @@
 #
 # print(total)
 #
-
+#
 # code for making the four bits
 # num = input("Enter any number: ")
 #
@@ -598,9 +598,9 @@
 #     print(num)
 #
 # print(num2)
-
+#
 # program to convert binary to hexa
-
+#
 # num = '00110110010000001110'  # the number from here should be in string format...if not then program will show
 # error if number # starts with zero length = len(str(num))
 #
@@ -651,9 +651,9 @@
 #     num2 = ""
 # final_answer = "".join(str(element) for element in final)
 # print("Your", num, "in Hex Decimal is equal to", final_answer)
-
+#
 # Alhumdullilah <3
-
+#
 # print("Please think a word in your mind.")
 # len_user = int(input("Enter how many letters your word has: "))
 #
@@ -719,7 +719,7 @@
 #
 # final_word = "".join(word)
 # print("Your word is:", final_word)
-
+#
 # num = "12"
 # for i in range(len(num) * 4):
 #     num = str(0) + num
@@ -777,31 +777,31 @@
 #
 # answer = "".join(str(element) for element in hex_list)
 # print(answer)
-
+#
 # program using lambda function
 # lambda function are also called as anonymous functions...in these functions you don't have to write the def keyword
-
+#
 # double = lambda x: x ** 2
 # print(double(5))
-
+#
 # lst = [1, 2, 3, 4, 5, 6]
 # my_lst = list(filter(lambda x: (x % 2 == 0), lst))
 # print(my_lst)
-
+#
 # lst = [1, 2, 3, 4, 5]
 #
 # new_lst = list(map(lambda x: x * 2, lst))
 # print(new_lst)
-
+#
 # how to print the nested index in tuples
 # n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 #
 # # nested index
 # print(n_tuple[0][3])
 # print(n_tuple[1][1])
-
+#
 # num = int(input("Enter any number: "))
-
+#
 # dic1 = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"}
 # dic2 = {10: "Ten", 11: "Eleven", 12: "Twelve", 13: "thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen", 17: "Seventeen", 18: "Eighteen", 19: "Nineteen"}
 # dic3 = {10: "Ten", 20: "Twenty", 30: "Thirty", 40: "Forty", 50: "Fifty", 60: "Sixty", 70: "Seventy", 80: "Eighty", 90: "Ninety", 100: "Hundred"}
@@ -869,9 +869,9 @@
 #     thousands = dic1.get(val4)
 #     word = str(thousands) + " Thousands " + word
 #     print(word)
-
+#
 # program to swap the elements of two lists without using a temporary variable
-
+#
 # list1 = [[1, 2, 3], 2, 3, 4, 6]
 # list2 = ["a", "b", 77]
 # #
@@ -894,7 +894,7 @@
 # list2.reverse()
 # print(list1)
 # print(list2)
-
+#
 # list1 = [1, 2, 3, 4, 5]
 # list2 = [6, 7, 8, 9]
 # list3 = []
@@ -910,7 +910,7 @@
 #
 # print(list1)
 # print(list2)
-
+#
 # from msvcrt import getch
 # from getch import getch
 # string = 'Please predict the answer'
@@ -933,7 +933,7 @@
 #                 y = y + z.decode()
 #
 # print(y)
-
+#
 # list1 = []
 # list2 = []
 # print("For first list")
@@ -952,7 +952,7 @@
 #
 # print(list1)
 # print(list2)
-
+#
 # list1 = []
 # for i in range(1, 6):
 #     num = int(input("Enter the {} number: ".format(i)))
@@ -966,7 +966,7 @@
 #     sorted_list.append(x)
 #     list1.remove(x)
 # print(sorted_list)
-
+#
 # ascending order
 # list1 = []
 # list_length = int(input("Enter the length for your list: "))
@@ -982,8 +982,8 @@
 #             list1[i] = list1[i] - list1[j]
 #
 # print("After swap", list1)
-
-
+#
+#
 # for descending order
 # list1 = []
 # list_length = int(input("Enter the length for your list: "))
@@ -999,13 +999,13 @@
 #             list1[i] = list1[i] - list1[j]
 #
 # print("After swap", list1)
-
+#
 # lst = [1, 2, 3, 4, 5]
 # max_value = max(lst)
 # min_value = min(lst)
 # min_count = 0
 # max_count = 0
-
+#
 # if max_value != min_value:
 #     for i in lst:
 #         if i != min_value:
@@ -1019,7 +1019,7 @@
 #         max_count += lst[i]
 # print(max_count)
 # print(min_count)
-
+#
 # heights = [3, 3, 2, 1]
 # highest_candles = 0
 # maxi = max(heights)
@@ -1027,7 +1027,7 @@
 #     if i == maxi:
 #         highest_candles += 1
 # print(highest_candles)
-
+#
 # s = "12:05:45AM"
 #
 #
@@ -1046,7 +1046,7 @@
 #         elif total == 24:
 #             return "00" + s[2:8]
 #
-
+#
 # def gradingStudents(grades):
 #     round_off = []
 #     for i in grades:
@@ -1058,7 +1058,7 @@
 #         elif i < 38:
 #             round_off.append(i)
 #     return round_off
-
+#
 # tup = ()
 # tup_list = list(tup)
 # for i in range(1, int(input("Enter length of tuple: ")) + 1):
@@ -1075,7 +1075,7 @@
 #
 # print("The minimum value is: ", mini)
 # print("The maximum value is: ", maxi)
-
+#
 # dic = {}
 # word = input("Enter any word: ")
 # for i in range(len(word)):
@@ -1086,7 +1086,7 @@
 #             dic[word[i]] += 1
 #
 # print(dic)
-
+#
 # dic = {}
 # word = input("Enter any word or sentence: ")
 # dic["Spaces"] = 0
@@ -1102,7 +1102,7 @@
 #
 #
 # print(dic)
-
+#
 # s = 7
 # t = 11
 # a = 5
@@ -1125,13 +1125,13 @@
 #
 # print(apple_count)
 # print(orange_count)
-
+#
 # def kangaroo(x1, v1, x2, v2):
 #     if v1 > v2 and (x2 - x1) % (v1 - v2) == 0:
 #         return "YES"
 #     else:
 #         return "NO"
-
+#
 # a = [2, 6]
 # b = [24, 36]
 # counter = 0
@@ -1150,7 +1150,7 @@
 #         counter += 1
 #
 # print(counter)
-
+#
 # scores = [10]
 # highest_record = 0
 # lowest_record = 0
@@ -1165,13 +1165,13 @@
 #         lowest_record += 1
 # print(highest_record)
 # print(lowest_record)
-
+#
 # num = int(input("Enter any number: "))
 # for i in range(1, num + 1):
 #     if num % i == 0:
 #         print(str(i), "\t*\t", str(num // i), "\t=\t", num)
-
-
+#
+#
 # data = 50
 #
 # try:
@@ -1187,18 +1187,18 @@
 #     print("Inside except block", end="")
 # else:
 #     print("GFG", end="")
-
+#
 # In this code....first...the try block executes and since the number can't be divided by zero than the except block
 # executed and printed cannot divide by zero
 # Since the try block don't ran properly else part doesn't executed
-
+#
 # in the second try block...data is divisible by 5 so that the try block run...no exception raised....then it goes
 # straight to the else block and print GFC
-
+#
 # Since end="" is used in the exception block, so line doesn't terminate and GFC is printed in the same line
-
+#
 # code 2
-
+#
 # value = [1, 2, 3, 4]
 # data = 0
 #
@@ -1218,15 +1218,15 @@
 #     print('CSIT ZeroDivisionError ', end='')
 # finally:
 #     print('Python ZeroDivisionError ')
-
+#
 # since there is not error in the try block then the exception will not be raised...then the finally block will print
 # after that since the data is not divisible by zero than it will raise exception and print the line in exception block
 # after that finally block will be executed
 # since the end="" is used after every print...so line will not be terminated
-
-
+#
+#
 # create a program to find the inverse of 2 x 2 matrix
-
+#
 # matrix = []
 # for i in range(1, 3):
 #     mat = []
@@ -1254,7 +1254,7 @@
 #             # matrix[i][j] = str(matrix[i][j]) +  "/" + str(determinant)
 #             matrix[i][j] = matrix[i][j] / determinant
 #     print(matrix)
-
+#
 # s = "DDUUDDUDUUUD"
 # count = 0
 # sea_level = 0
@@ -1267,7 +1267,7 @@
 #     if sea_level == 0 and i == "U":
 #         count += 1
 # print(count)
-
+#
 # b = 5
 # maxi = -1
 # keyboard = [4]
@@ -1279,7 +1279,7 @@
 #             maxi = max(maxi, i + j)
 #
 # print(maxi)
-
+#
 # def det2x2(matrix):
 #     """ This functions returns the determinant of 2 x 2 matrix """
 #     det = matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
@@ -1356,15 +1356,15 @@
 #     for j in range(3):
 #         adjoint[i][j] = round(adjoint[i][j] / determinant, 2)
 # print("The inverse of matrix is: ", adjoint)
-
+#
 # important commands for the installation of mysql
 # you ahve to install libssl with command sudo apt-get install libssl-dev
 # then use in the terminal of virtual project pip install mysql
 # then use the command pip install mysql-connector
 # this will work Insha Allah
-
+#
 # i will make a program to find out the magic square for n terms in range
-
+#
 # mat = [[4, 5, 8], [2, 4, 1], [1, 9, 7]]
 # ans = 0
 # for i in range(3):
@@ -1372,7 +1372,7 @@
 #     ans += num
 #
 # print(ans)
-
+#
 # try:
 #     user = int(input("Enter the range of the square: "))
 #     if user % 2 == 0:
@@ -1461,7 +1461,7 @@
 #     print("Your magic matrix is as follows: ")
 #     print(ans)
 #     print("The sum for rows columns and diagonals of above matrix is: ", const)
-
+#
 # user = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
 #
 # conditions = [
@@ -1493,31 +1493,31 @@
 #     if length == 0:
 #         break
 # print("Time Minimum code will be: ", min(total))
-
+#
 # lambda function
-
+#
 # y = lambda x: x * x
-
+#
 # print(y(25))
-
+#
 # x = lambda y: y * 2 * y
-
+#
 # print(x(25))
-
+#
 # int he and operator both should be True (&) is used
-
+#
 # print(77 & 60)
-
+#
 # print(77 | 60)
-
+#
 # zor gate is operator used by ^ and the operation if odd number is true then true....else false
-
+#
 # print(77 ^ 60)
-
+#
 # compliment operator is called as ~ and use to find 1's complement
-
+#
 # print(~ 13)
-
+#
 # a = [1, 1, 2, 2, 4, 4, 5, 5, 5]
 #
 # set_a = set(a)
@@ -1528,7 +1528,7 @@
 #     ls.append(count)
 # print(ls)
 # print(max(ls))
-
+#
 # a = [100, 100, 50, 40, 40, 20, 10]
 # a = sorted(list(set(a)), reverse=True)
 # print(a)
@@ -1541,7 +1541,7 @@
 #         if i < j:
 #             counter += 1
 #     print(counter)
-
+#
 # from collections import Counter
 #
 #
@@ -1558,7 +1558,7 @@
 #             elif i == 0:
 #                 res.append(1)
 #     return res
-
+#
 # h = [6, 3, 4, 4, 6, 4, 5, 3, 4, 3, 6, 5, 4, 6, 7, 1, 3, 4, 2, 5, 6, 1, 5, 1, 7, 2]
 # word = "nrdyluacvr"
 # abc = "abcdefghijklmnopqrstuvwxyz"
@@ -1568,7 +1568,7 @@
 #     ls.append(h[letter])
 # result = max(ls) * len(word)
 # print(result)
-
+#
 # n = 5
 #
 # total = 1
@@ -1578,7 +1578,7 @@
 #     else:
 #         total += 1
 # print(total)
-
+#
 # k = 3
 # a = [-1, -3, 4, 2]
 # counter = 0
@@ -1590,7 +1590,7 @@
 #     print("YES")
 # else:
 #     print("NO")
-
+#
 # i = 20
 # j = 23
 # k = 6
@@ -1600,7 +1600,7 @@
 #     if result % k == 0:
 #         counter += 1
 # print(counter)
-
+#
 # n = 3
 # mine = 5
 # total = 0
@@ -1609,7 +1609,7 @@
 #     total += like
 #     mine = like * 3
 # print(total)
-
+#
 # ls = [1, 2, 3]
 # k = 2
 # m = [0, 1, 2]
@@ -1619,7 +1619,7 @@
 #     ls.insert(0, x)
 # for i in m:
 #     print(ls[i])
-
+#
 # p = [2, 3, 1]
 # n = len(p)
 #
@@ -1630,7 +1630,7 @@
 #
 # for i in range(1, n + 1):
 #     print(peta[peta[i]])
-
+#
 # e = 100
 # c = [0, 0, 1, 0, 0, 1, 1, 0]
 # k = 2
@@ -1645,15 +1645,15 @@
 #     elif c[j] == 0:
 #         e -= 1
 # print(e)
-
+#
 # n = 1012
 # counter = 0
 # for i in str(n):
 #     if int(i) != 0 and n % int(i) == 0:
 #         counter += 1
 # print(counter)
-
-
+#
+#
 # s = "abcd"
 # t = "abcdert"
 # print(len(s))
@@ -1686,7 +1686,7 @@
 #         print("Yes")
 #     else:
 #         print("No")
-
+#
 # import math
 # a = 17
 # b = 24
@@ -1696,8 +1696,8 @@
 #     if str(ans)[1:3] == ".0" and len(str(ans)) == 3:
 #         counter += 1
 # print(counter)
-
-
+#
+#
 # d1 = 2 ; m1 = 7 ; y1 = 1014
 # d2 = 1 ; m2 = 1 ; y2 = 1015
 #
@@ -1713,7 +1713,7 @@
 #         if m1 > m2:
 #             fine += 500 * (m1 - m2)
 #     print(fine)
-
+#
 # arr = [8, 8, 14, 10, 3, 5, 14, 12]
 #
 # while True:
@@ -1730,7 +1730,7 @@
 #             break
 #     else:
 #         break
-
+#
 # k = 3
 # s = [1, 7, 2, 4]
 # ls = []
@@ -1740,13 +1740,13 @@
 #             ls.append(s[i])
 #             break
 # print(ls)
-
+#
 # s = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm"
 # n = 736778906400
 # length = len(s)
 # ans = s.count ("a") * (n // length) + s[:n % length].count("a")
 # print(ans)
-
+#
 # a = [0, 0, 1, 0, 0, 1, 0]
 # n = 7
 # c = -1
@@ -1758,7 +1758,7 @@
 #     i += 1
 #
 # print(c)
-
+#
 # arr = [1, 2, 2, 3]
 # dic = {}
 # for i in arr:
@@ -1776,8 +1776,8 @@
 #
 # count = arr.count(final_value)
 # print(len(arr) - count)
-
-
+#
+#
 # n = 8
 # maxi = n
 # mini = 1
@@ -1892,7 +1892,7 @@
 #             else:
 #                 break
 # print(counter)
-
+#
 # n = 8
 # mini = 1
 #
@@ -1987,7 +1987,7 @@
 #             else:
 #                 break
 # print(counter)
-
+#
 # n = 3
 # topic = ["10101", "11110", "00010"]
 #
@@ -2008,7 +2008,7 @@
 #
 # ans = [maxi, total]
 # print(ans)
-
+#
 # b = 10
 # w = 10
 # bc = 1
@@ -2036,7 +2036,7 @@
 #
 # total = (b * bc) + (w * wc)
 # print(total)
-
+#
 # a = [7, 1, 0, 2, 1, 7]
 # ls = []
 # counter = 0
@@ -2059,7 +2059,7 @@
 #     for i in ls:
 #         ans.append(abs(i[0] - i[1]))
 #     print(min(ans))
-
+#
 # arr = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]
 # brr = [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]
 #
@@ -2077,7 +2077,7 @@
 #     if total[j] != 0:
 #         ls.append(j)
 # print(ls)
-
+#
 # mat = []
 # num = int(input("Enter any number: "))
 # for i in range(num):
@@ -2089,7 +2089,7 @@
 #             mat1.append(0)
 #     mat.append(mat1)
 # print(mat)
-
+#
 # num = int(input("Enter any number: "))
 # for i in range(num):
 #     for j in range(num):
@@ -2102,7 +2102,7 @@
 #         else:
 #             print(end=" ")
 #     print("")
-
+#
 # mat1 = []
 # mat2 = []
 # mat1_dimension = []
@@ -2151,16 +2151,16 @@
 # print(mat1)
 # print(mat2)
 # print(result)
-
+#
 # For transposing a matrix
-
+#
 # mat = [[1, 2], [3, 4]]
 #
 # for i in range(len(mat)):
 #     for j in range(i, len(mat[0])):
 #         mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
 # print(mat)
-
+#
 # result = []
 # mat = [[1, 2, 3, 4], [5, 6, 7, 8]]
 # print(mat)
@@ -2176,12 +2176,12 @@
 #         result[j][i] = mat[i][j]
 #
 # print(result)
-
+#
 # import numpy
 #
 # x = [[1, 2], [3, 4], [5, 6]]
 # print(numpy.transpose(x))
-
+#
 # import numpy
 # container = [[0, 2, 1], [1, 1, 1], [2, 0, 0]]
 #
@@ -2213,7 +2213,7 @@
 #     print("Possible")
 # else:
 #     print("Impossible")
-
+#
 # container = [[0, 2, 1], [1, 1, 1], [2, 0, 0]]
 #
 # val = 0
@@ -2223,7 +2223,7 @@
 #         val += container[j][i]
 #     print(val)
 #     val = 0
-
+#
 # import random
 # dic = {}
 # for i in range(3):
@@ -2244,7 +2244,7 @@
 # rand = random.choice(student_names)
 # average = (sum(dic.get(rand)) / 300) * 100
 # print("The Percentage of {} is: ".format(rand), average)
-
+#
 # mat1 = [[1, 2, 3], [4, 5, 6]]
 # mat2 = [[7, 8], [9, 10], [11, 12]]
 #
@@ -2272,13 +2272,13 @@
 #     for j in range(len(result)):
 #         trans[j][i] = result[i][j]
 # print(trans)
-
+#
 # import math
 # s = "feedthedog"
 # w = int(math.ceil(len(s.strip())**.5))
 # print(w)
 # print(" ".join([s[i::w] for i in range(w)]))
-
+#
 # marks = [37.21, 37.21, 37.2, 41, 39]
 # name = ["Harry", "Berry", "Tina", "Akriti"]
 # dic = [["Harry", 37.21], ["Berry", 37.21], ["Tina", 37.2], ["Akriti", 41], ["Harsh", 39]]
@@ -2294,7 +2294,7 @@
 # for a, c in sorted(dic):
 #     if c == mini:
 #         print(a)
-
+#
 # def dec2bin(num):
 #     if num == 1 or num == 0:
 #         return num
@@ -2303,7 +2303,7 @@
 #         return str(dec2bin(num // 2)) + ans
 #
 # print(dec2bin(5))
-
+#
 # a="1011"
 # m=-1
 #
@@ -2313,7 +2313,7 @@
 #     u+=z
 #     m=m-1
 # print(u)
-
+#
 # word = "zedawdvyyfumwpupuinbdbfndyehircmylbaowuptgmw"
 # i = len(word)
 # j = len(word)
@@ -2362,7 +2362,7 @@
 #     print(final)
 # else:
 #     print("no answer")
-
+#
 # for i in range(len(s)-1)[::-1]:
 #     if s[i] < s[i+1]:
 #         for j in range(i+1,len(s))[::-1]:
@@ -2371,9 +2371,9 @@
 #                 lis[i],lis[j]=lis[j],lis[i]
 #                 return "".join(lis[:i+1]+lis[i+1:][::-1])
 # return 'no answer'
-
+#
 # kaprekar numbers
-
+#
 # p = 1
 # q = 100
 # ls = []
@@ -2389,7 +2389,7 @@
 #     print("INVALID RANGE")
 # else:
 #     print(ls)
-
+#
 # d = 3
 # ls = [2, 2, 3, 4, 5]
 # count = 0
@@ -2431,7 +2431,7 @@
 #                 s -= m
 #                 count += 1
 # print(count)
-
+#
 # dic1 = {0: "o' clock", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine"}
 # dic2 = {10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen", 19: "nineteen"}
 # dic3 = {20: "twenty", 30: "thirty"}
@@ -2512,7 +2512,7 @@
 #         x = dic2.get(hour)
 #         word = x + " " + word
 # print(word)
-
+#
 # mat1 = [[1, 2, 3, 4], [5, 6, 7, 8]]
 # mat2 = [[1, 2], [3, 4], [5, 6], [6, 7]]
 # result = []
@@ -2527,7 +2527,7 @@
 #         for k in range(len(mat2)):
 #             result[i][j] += mat1[i][k] * mat2[k][j]
 # print(result)
-
+#
 # mat = [[1, 2, 3, 4], [6, 7, 8, 9]]
 #
 # tran = []
@@ -2541,14 +2541,14 @@
 #     for j in range(len(mat[0])):
 #         tran[j][i] = mat[i][j]
 # print(tran)
-
+#
 # def dec2bin(num):
 #     if num == 1 or num == 0:
 #         return num
 #     x = str(num % 2)
 #     return str(dec2bin(num // 2)) + x
 # print(dec2bin(10))
-
+#
 # n = 5
 # for a1 in range(1, ((n + 1) // 2) + 1):
 #     for a2 in range((n + 1 // 2) - a1):
@@ -2567,7 +2567,7 @@
 #         else:
 #             print(end="\t")
 #     print()
-
+#
 # n = 10
 # c = 2
 # m = 5
@@ -2579,7 +2579,7 @@
 #     count += 1
 #
 # print(count - 1)
-
+#
 # n = [2, 3, 1, 2, 3, 2, 3, 3]
 # i = 0
 # j = 7
@@ -2593,7 +2593,7 @@
 #         else:
 #             print(" ", end='')
 #     print()
-
+#
 # n = 5
 # for row in range(n):
 #     for col in range(n+2):
@@ -2606,7 +2606,7 @@
 #         else:
 #             print(end=' ')
 #     print()
-
+#
 # s = [1, 8, 19, 15, 2, 29, 3, 2, 25, 2, 19, 26, 17, 33, 22]
 #
 # k = 20
@@ -2620,7 +2620,7 @@
 #         if j % k == 0 or j == x:
 #             page += 1
 # print(count)
-
+#
 # num = "0000000000000000000"
 # ones = ""
 #
@@ -2654,7 +2654,7 @@
 # for i in ls:
 #     ans = str(i) + ans
 # print("The two's complement of {} is: ".format(ones), ans)
-
+#
 # binary = "10010"
 # binary = binary[::-1]
 # dec = 0
@@ -2672,7 +2672,7 @@
 # print(hrs)
 # print(minu)
 # print(sec)
-
+#
 # total = 12342
 #
 # hours = total // 3600
@@ -2693,21 +2693,21 @@
 #     if x > 1:
 #         ls.remove(i)
 # print(ls)
-
+#
 # n = 6
 # m = 6  # this means how many space stations are there
-
+#
 # c = [0, 4]  # this list shows the location of the space stations
 # final = []
 # ls = [0, 1, 2, 3, 4]
-
+#
 # for i in ls:
 #     ls1 = []
 #     for j in c:
 #         ls1.append(abs(i - j))
 #     final.append(min(ls1))
 # print(max(final))
-
+#
 # ls = [1, 2]
 # # result = False
 # count = 0
@@ -2718,7 +2718,7 @@
 #             ls[i + 1] += 1
 #             count += 2
 # print(count)
-
+#
 # ls = [["1", "1", "1", "2"], ["1", "9", "1", "2"], ["1", '6', "7", "2"], ["1", "2", "3", "4"]]
 # ls = [["9", "8", "9"], ["1", "9", "1"], ["1", "1", "1"]]
 # for i in range(1, len(ls) - 1):
@@ -2747,7 +2747,7 @@
 #         ls.append(count)
 #
 # print(ls)
-
+#
 # G = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 0], [0, 9, 8, 7, 6, 5, 4, 3, 2, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]]
 # ls = [[3, 4, 8, 8, 9, 2, 4, 6, 4, 3, 0, 3, 2, 1, 9, 7, 8, 5, 6, 7], [5, 8, 9, 5, 7, 5, 4, 2, 8, 0, 0, 4, 2, 0, 9, 2, 6, 6, 4, 3], [3, 5, 5, 0, 2, 5, 0, 5, 6, 1, 4, 4, 6, 4, 3, 0, 8, 8, 2, 1], [1, 4, 8, 5, 8, 2, 2, 4, 6, 2, 3, 2, 5, 2, 4, 9, 2, 8, 2, 3], [7, 2, 5, 0, 9, 9, 8, 0, 9, 2, 0, 2, 5, 7, 7, 6, 1, 0, 1, 7], [2, 2, 8, 4, 2, 0, 1, 4, 8, 9, 4, 3, 8, 7, 1, 1, 9, 4, 0, 1], [0, 1, 1, 1, 2, 9, 5, 0, 5, 6, 2, 3, 4, 8, 6, 9, 2, 4, 9, 3], [1, 6, 4, 1, 7, 4, 0, 3, 4, 7, 8, 9, 9, 9, 6, 1, 0, 5, 9, 4], [7, 9, 4, 2, 6, 4, 1, 1, 1, 1, 2, 1, 1, 6, 7, 2, 6, 7, 0, 6], [6, 5, 1, 7, 5, 7, 4, 2, 4, 8, 3, 7, 7, 9, 2, 8, 3, 0, 5, 2], [8, 9, 0, 7, 8, 7, 3, 0, 3, 3, 7, 9, 6, 4, 3, 9, 7, 2, 0, 1], [1, 3, 7, 6, 5, 2, 2, 8, 5, 4, 7, 2, 3, 9, 9, 2, 5, 1, 6, 7], [2, 6, 1, 1, 3, 7, 0, 4, 4, 4, 4, 6, 3, 6, 8, 1, 5, 1, 6, 1], [2, 5, 9, 9, 3, 2, 1, 6, 1, 6, 2, 8, 0, 0, 9, 5, 2, 0, 4, 4], [8, 8, 7, 9, 6, 4, 1, 6, 2, 3, 3, 9, 8, 1, 7, 5, 6, 0, 3, 4], [1, 4, 4, 1, 6, 6, 2, 7, 2, 1, 2, 1, 1, 7, 2, 8, 3, 5, 1, 6], [1, 5, 2, 4, 8, 8, 2, 5, 3, 0, 4, 9, 4, 1, 0, 1, 2, 8, 6, 3], [8, 8, 4, 6, 0, 4, 9, 6, 6, 6, 2, 7, 9, 3, 3, 6, 9, 3, 8, 5], [5, 9, 7, 2, 7, 2, 9, 1, 0, 2, 3, 6, 1, 8, 8, 6, 7, 7, 0, 8], [1, 9, 7, 5, 5, 9, 4, 0, 0, 1, 7, 8, 0, 8, 6, 2, 8, 3, 2, 6]]
 # ls = [[7, 6, 5, 2, 1, 5, 7, 5, 4, 8, 8, 6, 0, 6, 9, 2, 4, 2, 1, 0, 2, 2, 5, 0, 3], [9, 2, 8, 3, 5, 9, 7, 4, 6, 7, 8, 7, 7, 8, 6, 5, 3, 0, 3, 5, 5, 3, 6, 7, 5], [4, 1, 6, 0, 3, 8, 9, 4, 8, 5, 2, 5, 0, 0, 8, 9, 2, 8, 9, 3, 0, 9, 4, 9, 3], [2, 5, 8, 3, 4, 7, 0, 7, 2, 1, 4, 5, 7, 1, 5, 0, 4, 9, 7, 5, 6, 9, 3, 0, 0], [3, 2, 2, 0, 1, 3, 0, 7, 7, 8, 6, 3, 6, 5, 7, 1, 7, 0, 9, 4, 9, 0, 9, 0, 5], [3, 5, 8, 8, 8, 7, 3, 0, 1, 7, 6, 6, 0, 0, 4, 7, 6, 9, 4, 7, 2, 5, 7, 4, 9], [9, 2, 8, 8, 9, 9, 1, 3, 8, 7, 8, 4, 8, 8, 7, 0, 1, 5, 9, 5, 6, 7, 0, 6, 1], [4, 8, 4, 0, 1, 0, 1, 6, 7, 3, 3, 8, 3, 4, 7, 8, 7, 0, 0, 7, 3, 7, 2, 3, 7], [8, 4, 3, 0, 9, 1, 6, 5, 3, 6, 8, 8, 0, 1, 9, 0, 1, 5, 8, 2, 2, 9, 8, 9, 8], [8, 9, 8, 6, 1, 0, 6, 4, 9, 0, 0, 4, 2, 2, 6, 0, 4, 6, 0, 5, 4, 7, 1, 5, 0], [2, 5, 9, 1, 4, 6, 0, 3, 9, 5, 9, 5, 7, 6, 3, 1, 8, 7, 8, 7, 7, 9, 3, 7, 8], [1, 8, 1, 6, 1, 9, 0, 8, 7, 1, 6, 8, 9, 6, 8, 0, 4, 2, 3, 5, 0, 1, 9, 2, 0], [0, 7, 0, 4, 0, 4, 7, 2, 9, 4, 5, 6, 3, 3, 8, 7, 0, 1, 4, 2, 8, 1, 3, 4, 1], [8, 5, 4, 4, 7, 7, 4, 6, 6, 4, 0, 5, 6, 8, 1, 1, 2, 5, 8, 2, 0, 9, 3, 2, 1], [9, 6, 0, 9, 2, 9, 4, 7, 5, 6, 3, 9, 2, 5, 6, 3, 4, 4, 7, 0, 6, 0, 5, 2, 6], [0, 1, 7, 0, 1, 7, 3, 8, 5, 9, 5, 9, 3, 3, 6, 9, 0, 5, 4, 5, 9, 0, 7, 9, 5], [6, 0, 8, 8, 9, 8, 5, 6, 7, 3, 7, 9, 6, 9, 7, 5, 8, 1, 0, 2, 2, 1, 5, 7, 7], [7, 7, 3, 8, 8, 0, 0, 7, 5, 7, 9, 1, 9, 4, 7, 2, 4, 3, 7, 6, 2, 2, 3, 4, 9], [5, 4, 7, 4, 1, 2, 0, 0, 4, 5, 2, 5, 3, 0, 0, 9, 6, 5, 3, 3, 4, 8, 3, 8, 8], [3, 9, 3, 0, 4, 9, 1, 4, 0, 1, 8, 7, 7, 8, 4, 9, 2, 4, 9, 4, 1, 0, 0, 1, 3], [1, 4, 8, 6, 4, 7, 7, 0, 4, 1, 4, 0, 3, 7, 4, 6, 3, 9, 6, 9, 2, 5, 3, 3, 7], [2, 9, 5, 5, 5, 7, 9, 0, 2, 2, 8, 2, 7, 5, 9, 2, 9, 1, 9, 8, 7, 8, 7, 1, 3], [2, 6, 2, 5, 5, 4, 7, 9, 6, 1, 8, 6, 8, 1, 0, 0, 9, 8, 5, 2, 9, 1, 5, 1, 4], [3, 6, 7, 3, 2, 9, 9, 8, 0, 9, 8, 5, 1, 3, 2, 5, 1, 7, 4, 5, 5, 5, 6, 5, 2], [4, 5, 3, 3, 3, 9, 8, 9, 7, 3, 8, 0, 1, 6, 4, 7, 8, 5, 9, 6, 8, 0, 9, 0, 7]]
@@ -2765,7 +2765,7 @@
 #                         print("YES")
 #                 else:
 #                     lineChecks = 0
-
+#
 # rem = 3
 # t = int(input("Enter time: "))
 # while t > rem:
@@ -2775,18 +2775,18 @@
 #     # print(rem)
 # # print("DONE")
 # print("Uppar wala ", rem - t + 1)
-
+#
 # start = 1
 # while t >= start + rem:
 #     start += rem
 #     rem *= 2
 # print(start)
-
+#
 # print(start)
 # print(rem)
 # ans = rem - (t - start)
 # print("Answer is: ", ans)
-
+#
 # class M_Class:
 #     def __init__(self, x, y):
 #         self.x = x
@@ -2795,7 +2795,7 @@
 #
 # class1 = M_Class(1, 2)
 # print(class1.y)
-
+#
 # numbers = []
 # string = []
 # num = "0123456789"
@@ -2812,7 +2812,7 @@
 #         break
 # print(numbers)
 # print(string)
-
+#
 # num = int(input("Enter any number: "))
 # s = 1
 # for i in range(num):
@@ -2827,7 +2827,7 @@
 #     for j in range(i, num + 1):
 #         print(j, end="")
 #     print()
-
+#
 # num = int(input("Enter any number: "))
 # x = 2
 # for i in range(1, num + 1):
@@ -2841,7 +2841,7 @@
 #     for b in range(i, num + 1):
 #         print(b, end="")
 #     print()
-
+#
 # mat = [[1, 2, 3, 2], [5, 3, 1, 4]]
 # mat2 = [[1, 2, 3], [9, 8, 6], [2, 3, 1], [1, 6, 5]]
 # result = []
@@ -2856,7 +2856,7 @@
 #         for k in range(len(mat2)):
 #             result[i][j] = mat[i][k] * mat2[k][j]
 # print(result)
-
+#
 # x = int(input("Enter any number: "))
 # for i in range(x):
 #     for j in range(x):
@@ -2865,14 +2865,14 @@
 #         else:
 #             print(end=" ")
 #     print()
-
+#
 # def proc(x):
 #     return 2 * x
 #
 # def main():
 #     print(proc(5, 2))
 # main()
-
+#
 # print(fucc())
 # x = 5
 # y = 5
@@ -2880,27 +2880,27 @@
 # print(not(x != y))
 #
 # print(x == y)
-
+#
 # print(not(x < y))
 # print(x >= y)
-
+#
 # ls = [1, 2, 3, 4, 5, 6, 7]
 # print(ls[4:])
 # print(ls[-3: -5: -1])
-
+#
 # z = 2 * (ls + [2, 4])
 # print(z)
-
+#
 # for i in range(101, 10, -10):
 #     print(i)
-
+#
 # for i in range(3, -4, -1):
 #     print(i)
-
+#
 # x = ["i", "am", "not", "mutable"]
 # x.remove("not")
 # print(x)
-
+#
 # n = 50
 # if 100 < n <= 1000:
 #     print("****")
@@ -2910,7 +2910,7 @@
 #     print("**")
 # elif n <= 1:
 #     print("*")
-
+#
 # if n <= 1:
 #     print("*")
 # if n <= 10:
@@ -2919,7 +2919,7 @@
 #     print("***")
 # if n <= 1000:
 #     print("****")
-
+#
 # def func():
 #     # global a
 #     while a < 100:
@@ -2937,7 +2937,7 @@
 #        "farhat": "nazir"}
 # dic.update({"aa": "hey"})
 # print(dic)
-
+#
 # x = int(input("Enter any number: "))
 # if x < 1:
 #     print("Nothing")
@@ -2946,7 +2946,7 @@
 #         for j in range(x):
 #             print("*", end="")
 #         print()
-
+#
 # total = 0
 # bill = int(input("Enter the units consumed: "))
 # if bill < 51:
@@ -2956,7 +2956,7 @@
 # elif bill > 150:
 #     total = (50 * 0.5) + (100 * 0.75) + ((bill - 150) * 1.2)
 # print(total)
-
+#
 # def power(num):
 #     ls = []
 #     for i in range(1, num + 1):
@@ -2964,7 +2964,7 @@
 #     result = " ".join(ls)
 #     return result
 # print(power(6))
-
+#
 # def max_min(ls):
 #     with open("sample.txt", "w+") as f:
 #         mini = ls[0]
@@ -2981,7 +2981,7 @@
 #
 #
 # print(max_min([1, 4, 6, 2, 110]))
-
+#
 # x = int(input("Enter any number: "))
 # for i in range(1, x + 1):
 #     count = 0
@@ -2994,7 +2994,7 @@
 #     print()
 #     print(x * 2)
 #     print(count * 2)
-
+#
 # h = 3
 # w = 3
 # a = [[1, 3, 4], [2, 2, 3], [1, 2, 4]]
@@ -3020,7 +3020,7 @@
 #             total += abs(a[i][j] - a[i - 1][j])
 #             print(total)
 # print(total)
-
+#
 # dic = {}
 # x = int(input("Enter the number of records: "))
 # for i in range(x):
@@ -3029,7 +3029,7 @@
 #     dic[key] = value
 #
 # print(dic)
-
+#
 # R = 6
 # C = 7
 # grid1 = [[".", ".", ".", ".", ".", ".", "."], [".", ".", ".", "0", ".", ".", "."], [".", ".", ".", ".", "0", ".", "."], [".", ".", ".", ".", ".", ".", "."], ["0", "0", ".", ".", ".", ".", "."], ["0", "0", ".", ".", ".", ".", "."]]
@@ -3064,7 +3064,7 @@
 #                         # print(grid[i - 1][j])
 #                         grid[i - 1][j] = "."
 #                     grid[i][j] = "."
-
+#
 # class Color:
 #     def __init__(self, col):
 #         self.col = col
@@ -3075,7 +3075,7 @@
 #
 # car1 = Color("Blue")
 # print(car1.__dict__)
-
+#
 # num = int(input("Enter any number: "))
 # for i in range(num):
 #     x = i + 1
@@ -3105,20 +3105,20 @@
 #         maxi = i
 # print(maxi)
 # print(mini)
-
+#
 # grid = [["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["G", "G", "G", "G", "G", "G"], ["B", "G", "B", "B", "G", "B"], ["B", "G", "B", "B", "G", "B"]]
 # for i in range(len(grid)):
 #     for j in range(len(grid[0])):
 #         if grid[i][j] == "G":
 #             g_count = 1
 #             if i - g_count >= 0:
-
+#
 # def sum(x, y):
 # 		return(x+y)
 # print(sum(sum(1,2), sum(3,4)))
 #
 # print(((10 >= 5*2) and (10 <= 5*2)))
-
+#
 # x = 5 / 4
 # x = str(x)
 # print(x[2:])
@@ -3136,7 +3136,7 @@
 #   print(3)
 # print(9999 + 8888)
 # print(100 * 100)
-
+#
 # num = 25
 # print(num // 10)
 # count = 0
@@ -3144,20 +3144,20 @@
 #     num //= 10
 #     count += 1
 # print(count)
-
+#
 # for x in range(10):
 #     for y in range(x):
 #         print(y)
 # for x in range(1, 10, 3):
 #     print(x)
-
+#
 # def highlight_word(sentence, word):
 # 	return sentence.replace(word, word.upper())
 #
 # print(highlight_word("Have a nice day", "nice"))
 # print(highlight_word("Shhh, don't be so loud!", "loud"))
 # print(highlight_word("Automating with Python is fun", "fun"))
-
+#
 # colors = ["red", "white", "blue"]
 # colors.insert(2, "yellow")
 # print(colors)
@@ -3165,7 +3165,7 @@
 # print(animal[3:6])
 # print(animal[-5])
 # print
-
+#
 # def format_address(address_string):
 #     # Declare variables
 #     number = ""
@@ -3191,7 +3191,7 @@
 #
 # print(format_address("55 North Center Drive"))
 # # Should print "house number 55 on street named North Center Drive"
-
+#
 # def car_listing(car_prices):
 #   result = ""
 #   for i, j in zip(car_prices.keys(), car_prices.values()):
@@ -3199,7 +3199,7 @@
 #   return result
 #
 # print(car_listing({"Kia Soul":19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000, "Toyota Prius":24000}))
-
+#
 # def combine_guests(guests1, guests2):
 #     # Combine both dictionaries into one, with each key listed
 #     # only once, and the value from guests1 taking precedence
@@ -3218,7 +3218,7 @@
 # Taylors_guests = {"David": 4, "Nancy": 1, "Robert": 2, "Adam": 1, "Samantha": 3, "Chris": 5}
 #
 # print(combine_guests(Rorys_guests, Taylors_guests))
-
+#
 # x = "This is a sentence"
 # dic = {}
 # for i in x:
@@ -3230,7 +3230,7 @@
 #             if z == y and z.isalpha():
 #                 dic[y] += 1
 # print(dic)
-
+#
 # punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 # uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an", "as", "i", "me", "my", "we", "our",
 #                        "ours", "you", "your", "yours", "he", "she", "him", "his", "her", "hers", "its", "they", "them",
@@ -3240,7 +3240,7 @@
 #                        "no", "nor", "too", "very", "can", "will", "just"]
 #
 # sentence = "There is still lingering in many minds, especially in the so-called religious world, a strong prejudice against the dramatic profession. Analyzed down to its origin, the long warfare of church and theatre, the instinctive aversion of priest and player, will be found to be rooted in the essential opposition of their respective ideals of life. The ecclesiastical ideal is ascetic, its method painful obedience and prayer, its chief virtues self-restraint and denial; the dramatic ideal is free, its method self-development and culture, its ruling aims gratification and fulfilment The votaries of these distinctive sets of convictions and sentiments have from an early age formed two hostile camps. Accordingly, when one known as a clergyman was said to be writing the life of an actor, the announcement created surprise and curiosity and elicited censorious comment. The question was often asked, how can this strange conjunction be explained? It is therefore, perhaps, not inappropriate for the author of the present work to state the circumstances and motives which caused him to undertake it. The narrative will be brief, and may, with several advantages, take the place of a formal preface. Conventional prefaces are rarely read; but the writer trusts that the statement he proposes to make will be not only interesting to the reader but likewise helpful, by furnishing him with the proper key and cue to the succeeding chapters. It may serve as a sort of preparatory lighting up of the field to be traversed; a kind of prelusive sketch of the provinces of experience to be surveyed, of the lessons to be taught, and of the credentials of the author in the materials and other conditions secured to him for the completion of his task. This statement is to be taken as an explanation, not as an apology. The only justification needed lies in the belief that the theatrical life may be as pure and noble as the ecclesiastical; that the theatre has as sound a claim to support as the church; that the great actor, properly equipped for his work, is the most flexible and comprehensive style of man in the world, master of all types of human nature and all grades of human experience; and that the priestly profession in our day has as much to learn from the histrionic as it has to teach it."
-
+#
 # ls = sentence.split()
 # dic = {}
 # for i in ls:
