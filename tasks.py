@@ -3256,5 +3256,18 @@
 #             dic[new] += 1
 # print(dic)
 
-ls = ["2", "21", "41", "1", "12"]
-print(sorted(ls, key=int))
+class Dec2bin:
+    def __init__(self, num):
+        self.num = num
+
+    def binary(self):
+        ans = ""
+        while self.num > 0:
+            ans = str(self.num % 2) + ans
+            self.num //= 2
+        return ans
+
+
+num1 = Dec2bin(2)
+print(num1.num)
+print(num1.binary())
