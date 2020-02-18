@@ -3334,12 +3334,7 @@
 # if s == 0:
 #     count += 1
 #     n += 1
-#
-# if n < 6:
-#     count += 6 - n
-# print(count)
-
-# alpha = "abcdefghijklmnopqrstuvwxyz"
+#efghijklmnopqrstuvwxyz"
 # alpha2 = alpha.upper()
 # ls = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 # k = 5
@@ -3362,6 +3357,11 @@
 #     else:
 #         new += i
 # print(new)
+# if n < 6:
+#     count += 6 - n
+# print(count)
+
+# alpha = "abcd
 
 # class mylist:
 #     def __init__(self, ls):
@@ -3389,3 +3389,10 @@
 # print(ls2.maxi())
 # print(ls2.mini())
 # print(ls2.mysort())
+
+# x = "OOSDSSOSOSWEWSOSOSOSOSOSOSSSSOSOSOSS"
+# count = 0
+# for i in x:
+#     if i != "S" and i != "O":
+#         count += 1
+# print(count)
