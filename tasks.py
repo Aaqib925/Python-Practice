@@ -3279,15 +3279,25 @@
 # print(num1.binary())
 # print(num1.numtowords())
 
-x = "aaabccddd"
-def reduce(x):
-    res = []
-    for c in x:
-        if res and res[-1] == c:
-            res.pop()
-        else:
-            res.append(c)
-        print(res)
-    res = ''.join(res)
-    return res or "Empty String"
-print(reduce(x))
+# x = "aaabccddd"
+# def reduce(x):
+#     res = []
+#     for c in x:
+#         if res and res[-1] == c:
+#             res.pop()
+#         else:
+#             res.append(c)
+#         print(res)
+#     res = ''.join(res)
+#     return res or "Empty String"
+# print(reduce(x))
+
+x = "saveChangesInTheEditor"
+upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+if x[0] not in upper:
+    x = x[0].upper() + x[1:]
+count = 0
+for i in x:
+    if i in upper:
+        count += 1
+print(count)
