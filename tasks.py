@@ -3302,40 +3302,40 @@
 #         count += 1
 # print(count)
 
-numbers = "0123456789"
-lower_case = "abcdefghijklmnopqrstuvwxyz"
-upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-special_characters = "!@#$%^&*()-+"
-n = 4
-password = "4700"
-count = 0
-s = 0
-lower = 0
-num = 0
-upper = 0
-for i in password:
-    if i in numbers:
-        num = 1
-    elif i in lower_case:
-        lower = 1
-    elif i in upper_case:
-        upper = 1
-    elif i in special_characters:
-        s = 1
-if s == 0:
-    count += 1
-    n += 1
-if lower == 0:
-    count += 1
-    n += 1
-if upper == 0:
-    count += 1
-    n += 1
-if s == 0:
-    count += 1
-    n += 1
-
-if n < 6:
-    count += 6 - n
-print(count)
+# numbers = "0123456789"
+# lower_case = "abcdefghijklmnopqrstuvwxyz"
+# upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# special_characters = "!@#$%^&*()-+"
+# n = 4
+# password = "4700"
+# count = 0
+# s = 0
+# lower = 0
+# num = 0
+# upper = 0
+# for i in password:
+#     if i in numbers:
+#         num = 1
+#     elif i in lower_case:
+#         lower = 1
+#     elif i in upper_case:
+#         upper = 1
+#     elif i in special_characters:
+#         s = 1
+# if s == 0:
+#     count += 1
+#     n += 1
+# if lower == 0:
+#     count += 1
+#     n += 1
+# if upper == 0:
+#     count += 1
+#     n += 1
+# if s == 0:
+#     count += 1
+#     n += 1
+#
+# if n < 6:
+#     count += 6 - n
+# print(count)
 
