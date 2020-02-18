@@ -3397,15 +3397,15 @@
 #         count += 1
 # print(count)
 
-x = "hereiamstackerrank"
-y = "hackerrank"
-count = 0
-let = 0
-for i in x:
-    if i in x and i == y[let]:
-        count += 1
-        let += 1
-if count >= len(y):
-    print("YES")
-else:
-    print("NO")
+# x = "hereiamstackerrank"
+# y = "hackerrank"
+# count = 0
+# let = 0
+# for i in x:
+#     if i in x and i == y[let]:
+#         count += 1
+#         let += 1
+# if count >= len(y):
+#     print("YES")
+# else:
+#     print("NO")
