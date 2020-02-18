@@ -3362,3 +3362,26 @@
 #     else:
 #         new += i
 # print(new)
+
+class mylist:
+    def __init__(self, ls):
+        self.ls = ls
+
+    def maxi(self):
+        maxi = self.ls[0]
+        for i in self.ls:
+            if i > maxi:
+                maxi = i
+        return maxi
+
+    def mini(self):
+        mini = self.ls[0]
+        for i in self.ls:
+            if i < mini:
+                mini = i
+        return mini
+
+
+ls2 = mylist([1, 7, 4, 2, 3])
+print(ls2.maxi())
+print(ls2.mini())
