@@ -3342,7 +3342,7 @@
 # alpha = "abcdefghijklmnopqrstuvwxyz"
 # alpha2 = alpha.upper()
 # ls = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-# k = 3
+# k = 5
 # for i in range(k):
 #     y = ls[0]
 #     ls.remove(y)
@@ -3350,15 +3350,15 @@
 # ls = "".join(ls)
 # ls2 = ls.upper()
 # print(ls2)
-# word = "middle-Outz"
+# word = "Always-Look-on-the-Bright-Side-of-Life"
 # new = ""
 # for i in word:
 #     if i in alpha:
 #         x = alpha.find(i)
-#         new += ls[x - 1]
+#         new += ls[x]
 #     elif i in alpha2:
 #         x = alpha2.find(i)
-#         new += ls2[x - 1]
+#         new += ls2[x]
 #     else:
 #         new += i
 # print(new)
