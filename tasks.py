@@ -3339,26 +3339,26 @@
 #     count += 6 - n
 # print(count)
 
-alpha = "abcdefghijklmnopqrstuvwxyz"
-alpha2 = alpha.upper()
-ls = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-k = 3
-for i in range(k):
-    y = ls[0]
-    ls.remove(y)
-    ls.append(y)
-ls = "".join(ls)
-ls2 = ls.upper()
-print(ls2)
-word = "middle-Outz"
-new = ""
-for i in word:
-    if i in alpha:
-        x = alpha.find(i)
-        new += ls[x - 1]
-    elif i in alpha2:
-        x = alpha2.find(i)
-        new += ls2[x - 1]
-    else:
-        new += i
-print(new)
+# alpha = "abcdefghijklmnopqrstuvwxyz"
+# alpha2 = alpha.upper()
+# ls = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# k = 3
+# for i in range(k):
+#     y = ls[0]
+#     ls.remove(y)
+#     ls.append(y)
+# ls = "".join(ls)
+# ls2 = ls.upper()
+# print(ls2)
+# word = "middle-Outz"
+# new = ""
+# for i in word:
+#     if i in alpha:
+#         x = alpha.find(i)
+#         new += ls[x - 1]
+#     elif i in alpha2:
+#         x = alpha2.find(i)
+#         new += ls2[x - 1]
+#     else:
+#         new += i
+# print(new)
