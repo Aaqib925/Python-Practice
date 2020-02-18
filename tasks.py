@@ -3381,7 +3381,11 @@ class mylist:
                 mini = i
         return mini
 
+    def mysort(self):
+        return "Khud karly"
+
 
 ls2 = mylist([1, 7, 4, 2, 3])
 print(ls2.maxi())
 print(ls2.mini())
+print(ls2.mysort())
