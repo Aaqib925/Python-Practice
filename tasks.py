@@ -3409,3 +3409,5 @@
 #     print("YES")
 # else:
 #     print("NO")
+
+s = "We promptly judged antique ivory buckles for the prize"
