@@ -3448,7 +3448,7 @@
 #         final.append("No")
 # print(final)
 
-s = "bcxz"
+# s = "bcxz"
 # s_as = []
 # for i in s:
 #     s_as.append(ord(i))
@@ -3467,3 +3467,10 @@ s = "bcxz"
 #     print("Funny")
 # else:
 #     print("Not Funny")
+
+# arr = ["abcdde", "baccd", "eeabg"]
+# new = []
+# for i in arr:
+#     new.append(set(i))
+# gems = set.intersection(*new)
+# print(len(gems))
