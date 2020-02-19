@@ -3410,14 +3410,40 @@
 # else:
 #     print("NO")
 
-s = "We promptly judged antique ivory buckles for the next prize"
-alpha = "abcdefghijklmnopqrstuvwxyz"
-s = s.lower()
-count = 0
-for i in alpha:
-    if i in s:
-        count += 1
-if count < 26:
-    print("not pangram")
-elif count == 26:
-    print("pangram")
+# s = "We promptly judged antique ivory buckles for the next prize"
+# alpha = "abcdefghijklmnopqrstuvwxyz"
+# s = s.lower()
+# count = 0
+# for i in alpha:
+#     if i in s:
+#         count += 1
+# if count < 26:
+#     print("not pangram")
+# elif count == 26:
+#     print("pangram")
+
+# alpha = "abcdefghijklmnopqrstuvwxyz"
+# dic = {}
+# queries = [9, 7, 8, 12, 5]
+# s = "aaabbbbcccddd"
+# for i in s:
+#     dic[i] = 0
+#     for j in s:
+#         if i == j:
+#             dic[i] += 1
+# # print(dic)
+# result = []
+# for i in dic.keys():
+#     if dic[i] == 1:
+#         x = alpha.find(i) + 1
+#         result.append(x)
+#     else:
+#         for j in range(1, dic[i] + 1):
+#             result.append((alpha.find(i) + 1) * j)
+# final = []
+# for i in queries:
+#     if i in result:
+#         final.append("Yes")
+#     else:
+#         final.append("No")
+# print(final)
