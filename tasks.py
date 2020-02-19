@@ -3410,4 +3410,14 @@
 # else:
 #     print("NO")
 
-s = "We promptly judged antique ivory buckles for the prize"
+s = "We promptly judged antique ivory buckles for the next prize"
+alpha = "abcdefghijklmnopqrstuvwxyz"
+s = s.lower()
+count = 0
+for i in alpha:
+    if i in s:
+        count += 1
+if count < 26:
+    print("not pangram")
+elif count == 26:
+    print("pangram")
