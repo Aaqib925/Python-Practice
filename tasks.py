@@ -3447,3 +3447,23 @@
 #     else:
 #         final.append("No")
 # print(final)
+
+s = "bcxz"
+# s_as = []
+# for i in s:
+#     s_as.append(ord(i))
+# print(s_as)
+# result1 = []
+# for i in range(1, len(s_as)):
+#     result1.append(s_as[i] - s_as[i - 1])
+# s_as.reverse()
+# print(s_as)
+# print(result1)
+# result2 = []
+# for i in range(len(s_as) - 1):
+#     result2.append(s_as[i] - s_as[i + 1])
+# print(result2)
+# if result1 == result2:
+#     print("Funny")
+# else:
+#     print("Not Funny")
