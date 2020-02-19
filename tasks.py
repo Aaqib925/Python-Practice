@@ -3474,3 +3474,4 @@
 #     new.append(set(i))
 # gems = set.intersection(*new)
 # print(len(gems))
+
