@@ -3475,13 +3475,13 @@
 # gems = set.intersection(*new)
 # print(len(gems))
 
-s = "AAABBB"
-count = 0
-for i in range(len(s)):
-    if i + 1 < len(s):
-        if s[i] == "A" and s[i + 1] == "A":
-            count += 1
-        elif s[i] == "B" and s[i + 1] == "B":
-            count += 1
-
-print(count)
+# s = "AAABBB"
+# count = 0
+# for i in range(len(s)):
+#     if i + 1 < len(s):
+#         if s[i] == "A" and s[i + 1] == "A":
+#             count += 1
+#         elif s[i] == "B" and s[i + 1] == "B":
+#             count += 1
+#
+# print(count)
