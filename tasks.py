@@ -3486,3 +3486,18 @@
 #
 # print(count)
 
+s = "91011"
+i = 1
+while i <= len(s):
+    x = s[i - 1]
+    print(x)
+    y = ""
+    for j in range(i, len(s)):
+        new = s[i: j + 1]
+        # i += 1
+        if int(new) - int(x) == 1:
+            y = new
+            break
+    print(y)
+    i += len(y) - 1
+
