@@ -3504,3 +3504,16 @@
 #                 print(number)
 #                 x = number
 # print(result)
+
+arr = [-20, -3916237, -357920, -3620601, 7374819, -7330761, 30, 6246457, -6461594, 266854, -520, -470]
+# arr.sort()
+# arr = [1, 2, 3, 4, 5]
+mini = 100000000000
+result = []
+for i in range(len(arr)):
+    if i + 1 < len(arr):
+        if arr[i + 1] - arr[i] <= mini:
+            mini = arr[i + 1] - arr[i]
+            result.append(arr[i])
+            result.append(arr[i + 1])
+print(result)
