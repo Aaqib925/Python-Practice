@@ -3486,21 +3486,21 @@
 #
 # print(count)
 
-s = "567"
-x = s[0]
-y = len(s)
-result = True
-for a in range(y):
-    for i in range(y):
-        number = s[s.find(x) + 1: i + s.find(x)]
-        print(number)
-
-        if number != "":
-            if int(number) - int(x) != 1:
-                result = False
-                break
-            if int(number) - int(x) == 1:
-                print(number + "-" + x)
-                print(number)
-                x = number
-print(result)
+# s = "567"
+# x = s[0]
+# y = len(s)
+# result = True
+# for a in range(y):
+#     for i in range(y):
+#         number = s[s.find(x) + 1: i + s.find(x)]
+#         print(number)
+#
+#         if number != "":
+#             if int(number) - int(x) != 1:
+#                 result = False
+#                 break
+#             if int(number) - int(x) == 1:
+#                 print(number + "-" + x)
+#                 print(number)
+#                 x = number
+# print(result)
