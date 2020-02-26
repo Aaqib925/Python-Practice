@@ -3505,3 +3505,18 @@
 #                 x = number
 # print(result)
 
+s = "101112"
+x = s[0]
+numbers = []
+while True:
+    for i in range(s.find(x[-1]) + 1, len(s)):
+        y = s[s.find(x[-1]) + 1: i + 1]
+        if y[0] != "0" and int(y) - int(x) == 1:
+            numbers.append(int(x))
+            x = y
+        else:
+            print(x)
+    break
+
+
+
