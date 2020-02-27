@@ -3505,18 +3505,51 @@
 #                 x = number
 # print(result)
 
-s = "101112"
-x = s[0]
-numbers = []
-while True:
-    for i in range(s.find(x[-1]) + 1, len(s)):
-        y = s[s.find(x[-1]) + 1: i + 1]
-        if y[0] != "0" and int(y) - int(x) == 1:
-            numbers.append(int(x))
-            x = y
-        else:
-            print(x)
-    break
+# s = "9110"
+# x = s[0]
+# numbers = []
+# while True:
+#     for i in range(s.find(x[-1]) + 1, len(s)):
+#         y = s[s.find(x[-1]) + 1: i + 1]
+#         if y[0] != "0" and int(y) - int(x) == 1:
+#             numbers.append(int(x))
+#             x = y
+#         else:
+#             print(x)
+#     break
 
+# x = int(input("Enter any number: "))
+# if x % 2 == 0 and x > 0:
+#     print("the number is even")
+# elif x % 2 != 0 and x > 0:
+#     print("The number is odd")
+# elif x < 0:
+#     print("please enter a positive number")
+#     x = int(input("Enter any posistive number: "))
+#
+#     if x % 2 == 0:
+#         print("The number is positive")
+#
+#     else:
+#         print("The number is Odd")
 
-
+# a = int(input("Enter any first number: "))
+# b = int(input("Enter any second number: "))
+#
+# print("1 - Addition")
+# print("2 - Subtraction")
+# print("3 - Multiplication")
+# print("4 - Division")
+#
+# x = int(input("which function you want to perform: "))
+#
+# if x == 1:
+#     print(a + b)
+# elif x == 2:
+#     print(a - b)
+# elif x == 3:
+#     print(a * b)
+# elif x == 4:
+#     print(a / b)
+# else:
+#     print("Enter valid operation number")
