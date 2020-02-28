@@ -40,6 +40,12 @@ class Employee:
     def email(self):
         return "{}.{}@company.com".format(self.first, self.last)
 
+    @fullname.deleter
+    def fullname(self):
+        self.first = None
+        self.last = None
+        print("Deleted")
+
 
 emp1 = Employee("Aaqib", "Nazir")
 print(emp1.fullname)
@@ -48,3 +54,5 @@ print(emp1.first)
 print(emp1.last)
 print(emp1.fullname)
 print(emp1.email)
+del emp1.fullname
+print(emp1.fullname)
