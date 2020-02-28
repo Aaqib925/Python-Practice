@@ -3553,3 +3553,20 @@
 #     print(a / b)
 # else:
 #     print("Enter valid operation number")
+
+s = "101103"
+first = s[0]
+counter = s.find(first) + 2
+# result = True
+while True:
+    for i in range(s.find(first[-1]) + 1, len(s)):
+        new = s[s.find(first[-1]) + 1: i + 1]
+        if int(new) - int(first) == 1:
+            print(first, new)
+            first = new
+        else:
+            first = s[s.find(first): counter]
+            # print(first)
+            counter += 1
+            print(first)
+    break
