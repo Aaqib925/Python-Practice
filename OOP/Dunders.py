@@ -16,9 +16,13 @@ class Employee:
     def __add__(self, other):
         return self.pay + other.pay
 
+    def __len__(self):
+        return "The length of full name is: " + str(len(self.fullname))
+
 
 empl1 = Employee("Aaqib", "Nazir", 100000)
 empl2 = Employee("test", "user", 100000)
 print(empl1.__repr__())
 print(empl1.__str__())
 print(empl1 + empl2)
+print(empl1.__len__())
