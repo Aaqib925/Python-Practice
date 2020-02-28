@@ -10,8 +10,9 @@ class Employee:
         return "The Name of Employee is {} with pay {}".format(self.fullname, str(self.pay))
 
     def __repr__(self):
-        return "Employee {}, {}, {}".format(self.first, self.last, self.pay)
+        return "Employee ('{}', '{}', '{}')".format(self.first, self.last, self.pay)
 
 
 empl1 = Employee("Aaqib", "Nazir", 100000)
-print(empl1)
+print(empl1.__repr__())
+print(empl1.__str__())
