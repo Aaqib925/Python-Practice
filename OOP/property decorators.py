@@ -15,5 +15,6 @@ class Employee:
 
 
 empl1 = Employee("Aaqib", "Nazir")
+empl1.first = "Hello"
 print(empl1.fullname)
 print(empl1.email)
