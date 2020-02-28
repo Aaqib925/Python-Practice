@@ -6,3 +6,6 @@ class Employee:
         self.fullname = first + " " + last
         self.pay = pay
 
+    def __str__(self):
+        return "The Name of Employee is {} with pay {}".format(self.fullname, self.pay)
+
