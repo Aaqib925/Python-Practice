@@ -35,7 +35,15 @@ class Employee:
         first, last = name.split(" ")
         self.first = first
         self.last = last
+    @property
+    def email(self):
+        return "{}.{}@company.com".format(self.first, self.last)
 
 
 emp1 = Employee("Aaqib", "Nazir")
 print(emp1.fullname)
+emp1.fullname = "Test User"
+print(emp1.first)
+print(emp1.last)
+print(emp1.fullname)
+print(emp1.email)
