@@ -3577,3 +3577,10 @@
 #         # print(first)
 #     if counter == len(s):
 #         break
+
+first_num = 0
+while True:
+    first_num = input("Enter any number: ")
+    if first_num.isdigit():
+        break
+print(first_num)
