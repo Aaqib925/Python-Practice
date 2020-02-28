@@ -35,6 +35,7 @@ class Employee:
         first, last = name.split(" ")
         self.first = first
         self.last = last
+
     @property
     def email(self):
         return "{}.{}@company.com".format(self.first, self.last)
