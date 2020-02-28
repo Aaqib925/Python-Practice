@@ -3578,10 +3578,11 @@
 #     if counter == len(s):
 #         break
 
-first_num = 0
-while True:
-    first_num = input("Enter any number: ")
-    if first_num.isdigit():
-        first_num = int(first_num)
-        break
-print(first_num)
+# first_num = 0
+# while True:
+#     first_num = input("Enter any number: ")
+#     if first_num.isdigit():
+#         first_num = int(first_num)
+#         break
+# print(first_num)
+
