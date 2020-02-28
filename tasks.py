@@ -3554,26 +3554,26 @@
 # else:
 #     print("Enter valid operation number")
 
-s = "99100"
-first = s[0]
-counter = s.find(first) + 2
-result = True
-while True:
-    for i in range(s.find(first) + 1, len(s)):
-        print("Index", s.find(first))
-        new = s[s.find(first[-1]) + 1: i + 1]
-        print(new)
-        if int(new) - int(first) == 1:
-            result = True
-            print(first, new)
-            first = new
-        else:
-            result = False
-
-    if result is False:
-        first = s[s.find(first): counter]
-        print("Mew", first)
-        counter += 1
-        # print(first)
-    if counter == len(s):
-        break
+# s = "101112"
+# first = s[0]
+# counter = s.find(first) + 2
+# result = True
+# while True:
+#     for i in range(s.find(first[-1]) + 1, len(s)):
+#         # print("Index", s.find(first[-1]))
+#         new = s[s.find(first[-1]) + 1: i + 1]
+#         # print(new)
+#         if int(new) - int(first) == 1:
+#             result = True
+#             print(first, new)
+#             first = new
+#         else:
+#             result = False
+#
+#     if result is False:
+#         first = s[s.find(first): counter]
+#         print("Mew", first)
+#         counter += 1
+#         # print(first)
+#     if counter == len(s):
+#         break
