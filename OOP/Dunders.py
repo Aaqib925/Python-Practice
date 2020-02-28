@@ -7,5 +7,11 @@ class Employee:
         self.pay = pay
 
     def __str__(self):
-        return "The Name of Employee is {} with pay {}".format(self.fullname, self.pay)
+        return "The Name of Employee is {} with pay {}".format(self.fullname, str(self.pay))
 
+    def __repr__(self):
+        return "Employee {}, {}, {}".format(self.first, self.last, self.pay)
+
+
+empl1 = Employee("Aaqib", "Nazir", 100000)
+print(empl1)
