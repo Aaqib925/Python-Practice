@@ -83,40 +83,40 @@ class Manager(Employee):
             self.employees.remove(empl)
 
 
-# empl1 = Employee("Aaqib", "Nazir", 100)
-# empl2 = Employee("Test", "User", 100)
-# empl1.apply_raise()
-# Employee.increase_raise(1.08)
-# empl1.apply_raise()
-# print(empl1.pay)
+empl1 = Employee("Aaqib", "Nazir", 100)
+empl2 = Employee("Test", "User", 100)
+empl1.apply_raise()
+Employee.increase_raise(1.08)
+empl1.apply_raise()
+print(empl1.pay)
 
 # for developer subclass
-# empl1 = Developer("Aaqib", "Nazir", 100, "Python")
-# empl2 = Developer("Test", "User", 100, "Java")
-#
-# print(Developer.raise_amount)
-# print(empl1.pay)
-# Developer.raise_developer(1.09)
-# print(Developer.raise_amount)
-# empl1.dev_app_raise()
-# print(empl1.pay)
+empl1 = Developer("Aaqib", "Nazir", 100, "Python")
+empl2 = Developer("Test", "User", 100, "Java")
+
+print(Developer.raise_amount)
+print(empl1.pay)
+Developer.raise_developer(1.09)
+print(Developer.raise_amount)
+empl1.dev_app_raise()
+print(empl1.pay)
 
 
 # for manager class
-# manager1 = Manager("AAQIB", "Nazir", 100, [empl1])
+manager1 = Manager("AAQIB", "Nazir", 100, [empl1])
 
-# manager1.raise_manager(1.15)
-# manager1.man_app_raise()
-# print(manager1.pay)
+manager1.raise_manager(1.15)
+manager1.man_app_raise()
+print(manager1.pay)
 
-# print(manager1.all_employees())
-# manager1.add_employee(empl2)
-# manager1.all_employees()
+print(manager1.all_employees())
+manager1.add_employee(empl2)
+manager1.all_employees()
 
-# manager1.remove_employee(empl2)
-# manager1.all_employees()
+manager1.remove_employee(empl2)
+manager1.all_employees()
 
-# help(Developer)
+help(Developer)
 
-# print(issubclass(Employee, Manager))
-# print(issubclass(Manager, Employee))
+print(issubclass(Employee, Manager))
+print(issubclass(Manager, Employee))
