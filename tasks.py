@@ -3586,3 +3586,10 @@
 #         break
 # print(first_num)
 
+arr = [-20, -3916237, -357920, -3620601, 7374819, -7330761, 30, 6246457, -6461594, 266854, -520, -470]
+arr.sort()
+print(arr)
+# for i in range(len(arr)):
+#     if i + 1 < len(arr):
+#         print(arr[i], arr[i + 1])
+dic = {}
