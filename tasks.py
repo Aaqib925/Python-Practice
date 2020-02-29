@@ -3586,23 +3586,19 @@
 #         break
 # print(first_num)
 
-arr = [-20, -3916237, -357920, -3620601, 7374819, -7330761, 30, 6246457, -6461594, 266854, -520, -470]
-arr.sort()
-# print(arr)
+# arr = [5, 4, 3, 2]
+# arr.sort()
+# ls1 = []
+# ls2 = []
 # for i in range(len(arr)):
+#     ls = []
 #     if i + 1 < len(arr):
-#         print(arr[i], arr[i + 1])
-ls1 = []
-ls2 = []
-for i in range(len(arr)):
-    ls = []
-    if i + 1 < len(arr):
-        ls.append(arr[i])
-        ls.append(arr[i + 1])
-        ls1.append(ls)
-        ls2.append(ls[1] - ls[0])
-mini = min(ls2)
-for i in range(len(ls2)):
-    if ls2[i] == mini:
-        for j in ls1[i]:
-            print(j, end=" ")
+#         ls.append(arr[i])
+#         ls.append(arr[i + 1])
+#         ls1.append(ls)
+#         ls2.append(ls[1] - ls[0])
+# mini = min(ls2)
+# for i in range(len(ls2)):
+#     if ls2[i] == mini:
+#         for j in ls1[i]:
+#             print(j, end=" ")
