@@ -3602,3 +3602,4 @@
 #     if ls2[i] == mini:
 #         for j in ls1[i]:
 #             print(j, end=" ")
+
