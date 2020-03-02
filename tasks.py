@@ -3650,7 +3650,6 @@ for i in range(1, rows - 1):
                     else:
                         break
                 else:
-                    # print("yes")
                     break
             print(count)
             result *= count
