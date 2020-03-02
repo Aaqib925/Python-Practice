@@ -3603,11 +3603,42 @@
 #         for j in ls1[i]:
 #             print(j, end=" ")
 
+rows = 5
+columns = 6
+# grid = [
+#     ["G", "G", "G", "G", "G", "G"],
+#     ["G", "B", "B", "B", "G", "B"],
+#     ["G", "G", "G", "G", "G", "G"],
+#     ["G", "G", "B", "B", "G", "B"],
+#     ["G", "G", "G", "G", "G", "G"]
+# ]
 grid = [
+    ["B", "G", "B", "B", "G", "B"],
     ["G", "G", "G", "G", "G", "G"],
-    ["G", "B", "B", "B", "G", "B"],
+    ["B", "G", "B", "B", "G", "B"],
     ["G", "G", "G", "G", "G", "G"],
-    ["G", "G", "B", "B", "G", "B"],
-    ["G", "G", "G", "G", "G", "G"]
+    ["B", "G", "B", "B", "G", "B"],
+    ["B", "G", "B", "B", "G", "B"]
 ]
-
+# result = 1
+# for i in range(1, rows - 1):
+#     for j in range(1, columns - 1):
+#         if grid[i][j] == "G":
+#             count = 1
+#             x = 1
+#             while True:
+#                 if j + x < columns and j - x >= 0 and i + x < rows and i - x >= 0:
+#                     if grid[i][j] == "G" and grid[i][j + x] == "G" and grid[i][j - x] == "G" and grid[i + x][j] == "G" and grid[i - x][j] == "G":
+#                         count += 4
+#                         grid[i][j] += "XY"
+#                         grid[i][j + x] += "XY"
+#                         grid[i][j - x] += "XY"
+#                         grid[i + x][j] += "XY"
+#                         grid[i - x][j] += "XY"
+#                         x += 1
+#                     else:
+#                         break
+#                 else:
+#                     break
+#             result *= count
+# print(result)
