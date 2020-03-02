@@ -3334,7 +3334,7 @@
 # if s == 0:
 #     count += 1
 #     n += 1
-#efghijklmnopqrstuvwxyz"
+# efghijklmnopqrstuvwxyz"
 # alpha2 = alpha.upper()
 # ls = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 # k = 5
@@ -3603,8 +3603,8 @@
 #         for j in ls1[i]:
 #             print(j, end=" ")
 
-rows = 6
-columns = 6
+rows = 10
+columns = 9
 # grid = [
 #     ["G", "G", "G", "G", "G", "G"],
 #     ["G", "B", "B", "B", "G", "B"],
@@ -3612,14 +3612,25 @@ columns = 6
 #     ["G", "G", "B", "B", "G", "B"],
 #     ["G", "G", "G", "G", "G", "G"]
 # ]
-grid = [
-    ["B", "G", "B", "B", "G", "B"],
-    ["G", "G", "G", "G", "G", "G"],
-    ["B", "G", "B", "B", "G", "B"],
-    ["G", "G", "G", "G", "G", "G"],
-    ["B", "G", "B", "B", "G", "B"],
-    ["B", "G", "B", "B", "G", "B"]
-]
+# grid = [
+#     ["B", "G", "B", "B", "G", "B"],
+#     ["G", "G", "G", "G", "G", "G"],
+#     ["B", "G", "B", "B", "G", "B"],
+#     ["G", "G", "G", "G", "G", "G"],
+#     ["B", "G", "B", "B", "G", "B"],
+#     ["B", "G", "B", "B", "G", "B"]
+# ]
+grid = [["B", "B", "B", "G", "B", "G", "B", "B", "B"],
+     ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
+     ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
+     ["G", "G", "G", "G", "G", "G", "G", "G", "G"],
+     ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
+     ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
+     ["G", "G", "G", "G", "G", "G", "G", "G", "G"],
+     ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
+     ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
+     ["B", "B", "B", "G", "B", "G", "B", "B", "B"]
+     ]
 result = 1
 for i in range(1, rows - 1):
     for j in range(1, columns - 1):
@@ -3642,28 +3653,5 @@ for i in range(1, rows - 1):
                     break
             result *= count
 print(result)
-def twoPluses(grid):
-    rows = 5
-    columns = 6
-    result = 1
-    for i in range(1, rows - 1):
-        for j in range(1, columns - 1):
-            if grid[i][j] == "G":
-                count = 1
-                x = 1
-                while True:
-                    if j + x < columns and j - x >= 0 and i + x < rows and i - x >= 0:
-                        if grid[i][j] == "G" and grid[i][j + x] == "G" and grid[i][j - x] == "G" and grid[i + x][j] == "G" and grid[i - x][j] == "G":
-                            count += 4
-                            grid[i][j] = "XY"
-                            grid[i][j + x] = "XY"
-                            grid[i][j - x] = "XY"
-                            grid[i + x][j] = "XY"
-                            grid[i - x][j] = "XY"
-                            x += 1
-                        else:
-                            break
-                    else:
-                        break
-                result *= count
-    return result
+
+
