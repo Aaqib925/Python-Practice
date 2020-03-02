@@ -3640,8 +3640,8 @@ for i in range(1, rows - 1):
             while True:
                 if j + x < columns and j - x >= 0 and i + x < rows and i - x >= 0:
                     if grid[i][j] == "G" and grid[i][j + x] == "G" and grid[i][j - x] == "G" and grid[i + x][j] == "G" and grid[i - x][j] == "G":
+                        print("Value of x: ", x)
                         count += 4
-                        grid[i][j] += "XY"
                         grid[i][j + x] += "XY"
                         grid[i][j - x] += "XY"
                         grid[i + x][j] += "XY"
@@ -3650,7 +3650,9 @@ for i in range(1, rows - 1):
                     else:
                         break
                 else:
+                    # print("yes")
                     break
+            print(count)
             result *= count
 print(result)
 
