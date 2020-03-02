@@ -3651,8 +3651,6 @@ for i in range(1, rows - 1):
                         break
                 else:
                     break
-            print(count)
             result *= count
 print(result)
-
 
