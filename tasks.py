@@ -3718,3 +3718,9 @@
 #     elif i == pivot:
 #         equal.append(str(i))
 # print(" ".join(left), " ".join(equal), " ".join(right))
+
+# arr = [1, 1, 3, 2, 1]
+# result = [0] * 100
+# for i in arr:
+#     result[i] += 1
+# print(result)
