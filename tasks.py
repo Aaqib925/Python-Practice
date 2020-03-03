@@ -3672,8 +3672,21 @@
 #             print(a, end=" ")
 #         break
 
-arr = [1, 4, 3, 5, 6, 2]
-print(arr)
-for i in range(1, len(arr) - 1):
-
-    print()
+# arr = [1, 4, 3, 5, 6, 2]
+# for i in range(1, len(arr)):
+#     x = i
+#     while True:
+#         if arr[x] < arr[x - 1] and x - 1 >= 0:
+#             arr[x], arr[x - 1] = arr[x - 1], arr[x]
+#             x -= 1
+#         elif arr[x] > arr[x - 1]:
+#             for a in arr:
+#                 print(a, end=" ")
+#             print()
+#             break
+#         else:
+#             arr[0] = arr[x]
+#             for a in arr:
+#                 print(a, end=" ")
+#             print()
+#             break
