@@ -3703,3 +3703,18 @@
 #             break
 #
 # print(count)
+
+arr = [4, 5, 3, 7, 2]
+sorted_array = []
+pivot = arr[0]
+left = []
+right = []
+equal = []
+for i in arr:
+    if i < pivot:
+        left.append(str(i))
+    elif i > pivot:
+        right.append(str(i))
+    elif i == pivot:
+        equal.append(str(i))
+print(" ".join(left), " ".join(equal), " ".join(right))
