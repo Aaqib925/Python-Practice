@@ -3690,3 +3690,16 @@
 #                 print(a, end=" ")
 #             print()
 #             break
+# arr = [1, 1, 2, 2, 3, 3, 5, 5, 7, 7, 9, 9]
+# count = 0
+# for i in range(1, len(arr)):
+#     x = i
+#     while x >= 0:
+#         if arr[x] < arr[x - 1] and x - 1 >= 0:
+#             arr[x], arr[x - 1] = arr[x - 1], arr[x]
+#             count += 1
+#             x -= 1
+#         else:
+#             break
+#
+# print(count)
