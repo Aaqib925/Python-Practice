@@ -3656,3 +3656,12 @@
 #             result *= count
 # print(result)
 
+arr = [2, 4, 6, 8, 3]
+i = len(arr) - 1
+while True:
+    if arr[i] < arr[i - 1]:
+        arr[i], arr[i - 1] = arr[i - 1], arr[i]
+        i -= 1
+        print(arr)
+    else:
+        break
