@@ -3656,18 +3656,18 @@
 #             result *= count
 # print(result)
 
-arr = [2, 4, 6, 8, 3]
-i = len(arr) - 1
-x = arr[-1]
-while True:
-    if x < arr[i - 1]:
-        arr[i] = arr[i - 1]
-        i -= 1
-        for a in arr:
-            print(a, end=" ")
-        print()
-    else:
-        arr[i] = x
-        for a in arr:
-            print(a, end=" ")
-        break
+# arr = [2, 4, 6, 8, 3]
+# x = arr[len(arr) - 1]
+# i = len(arr) - 1
+# while True:
+#     if x < arr[i - 1] and i > 0:
+#         arr[i] = arr[i - 1]
+#         i -= 1
+#         for a in arr:
+#             print(a, end=" ")
+#         print()
+#     else:
+#         arr[i] = x
+#         for a in arr:
+#             print(a, end=" ")
+#         break
