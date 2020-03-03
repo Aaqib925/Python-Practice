@@ -3671,3 +3671,9 @@
 #         for a in arr:
 #             print(a, end=" ")
 #         break
+
+arr = [1, 4, 3, 5, 6, 2]
+print(arr)
+for i in range(1, len(arr) - 1):
+
+    print()
