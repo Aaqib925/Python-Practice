@@ -3728,7 +3728,8 @@
 # du = shutil.disk_usage("/")
 # print(du)
 
-import psutil
-cu = psutil.cpu_count()
-print(cu)
+# import psutil
+# # cu = psutil.cpu_count()
+# cu = psutil.cpu_percent(1.0)
+# print(cu)
 
