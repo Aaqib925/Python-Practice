@@ -3724,4 +3724,6 @@
 # for i in arr:
 #     result[i] += 1
 # print(result)
-
+import shutil
+du = shutil.disk_usage("/")
+print(du)
