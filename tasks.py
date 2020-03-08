@@ -3611,7 +3611,8 @@
 #     ["G", "G", "B", "B", "G", "B"],
 #     ["G", "G", "G", "G", "G", "G"]
 # ]
-# grid = [["B", "B", "B", "G", "B", "G", "B", "B", "B"],
+# grid = [
+#      ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
 #      ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
 #      ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
 #      ["G", "G", "G", "G", "G", "G", "G", "G", "G"],
@@ -3622,8 +3623,8 @@
 #      ["B", "B", "B", "G", "B", "G", "B", "B", "B"],
 #      ["B", "B", "B", "G", "B", "G", "B", "B", "B"]
 #      ]
-# rows = 6
-# columns = 6
+# rows = 10
+# columns = 9
 # grid = [
 #     ["B", "G", "B", "B", "G", "B"],
 #     ["G", "G", "G", "G", "G", "G"],
@@ -3642,7 +3643,7 @@
 #             while True:
 #                 if j + x < columns and j - x >= 0 and i + x < rows and i - x >= 0:
 #                     if grid[i][j] == "G" and grid[i][j + x] == "G" and grid[i][j - x] == "G" and grid[i + x][j] == "G" and grid[i - x][j] == "G":
-#                         print("Value of x: ", x)
+#                         # print("Value of x: ", x)
 #                         count += 4
 #                         grid[i][j + x] += "XY"
 #                         grid[i][j - x] += "XY"
