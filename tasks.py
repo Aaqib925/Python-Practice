@@ -3734,3 +3734,4 @@
 # cu = psutil.cpu_percent(1.0)
 # print(cu)
 
+# print(bin(97))
