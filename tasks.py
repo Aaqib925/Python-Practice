@@ -3749,3 +3749,5 @@
 #     print("Yes")
 # else:
 #     print("No")
+
+arr = [1, 5, 4, 3, 2, 6]
