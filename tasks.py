@@ -3733,7 +3733,10 @@
 # cu = psutil.cpu_percent(1.0)
 # print(cu)
 
-arr = [1, 6, 5, 2, 4, 3]
+# arr = [1, 6, 5, 2, 4, 3]
+# arr = [3, 1, 2]
+# arr = [1, 3, 4, 2]
+arr = [1, 2, 3, 5, 4]
 result = []
 for i in range(len(arr)):
     x = arr[i]
