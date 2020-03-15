@@ -3738,4 +3738,11 @@ result = []
 for i in range(len(arr)):
     x = arr[i]
     count = 0
-    for
+    for j in range(i + 1, len(arr)):
+        if x > arr[j]:
+            count += 1
+    result.append(count)
+if sum(result) % 2 == 0:
+    print("Yes")
+else:
+    print("No")
