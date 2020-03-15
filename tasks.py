@@ -3728,9 +3728,14 @@
 # import shutil
 # du = shutil.disk_usage("/")
 # print(du)
-
 # import psutil
 # # cu = psutil.cpu_count()
 # cu = psutil.cpu_percent(1.0)
 # print(cu)
 
+arr = [1, 6, 5, 2, 4, 3]
+result = []
+for i in range(len(arr)):
+    x = arr[i]
+    count = 0
+    for
