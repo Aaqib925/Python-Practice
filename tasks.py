@@ -3750,8 +3750,8 @@
 # else:
 #     print("No")
 
-# arr = [1, 5, 4, 3, 2, 6]
-arr = [1, 2, 3, 5, 4]
+arr = [1, 5, 4, 3, 2, 6]
+# arr = [1, 2, 3, 5, 4]
 # arr = [1, 2, 3, 8, 5, 6, 4, 9]
 for i in range(len(arr)):
     check = True
@@ -3766,6 +3766,15 @@ for i in range(len(arr)):
                 else:
                     break
             print("Your list is: ", end="")
-            for a in range(i, count + 1):
-                print(arr[a], end=" ")
-            print()
+            new = [arr[a] for a in range(i + 1, count + 1)]
+            print(new)
+            swap_cond = 0
+            reverse_cond = 0
+            for b in range(1, len(new)):
+                if new[0] > new[b]:
+                    reverse_cond = 1
+                else:
+                    reverse_cond = 0
+                    break
+            print("Swap", swap_cond)
+            print("Reverse", reverse_cond)
