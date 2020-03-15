@@ -3750,4 +3750,22 @@
 # else:
 #     print("No")
 
-arr = [1, 5, 4, 3, 2, 6]
+# arr = [1, 5, 4, 3, 2, 6]
+arr = [1, 2, 3, 5, 4]
+# arr = [1, 2, 3, 8, 5, 6, 4, 9]
+for i in range(len(arr)):
+    check = True
+    for j in range(i + 1, len(arr)):
+        if arr[i] > arr[j] and check is True:
+            print(arr[i])
+            check = False
+            count = i
+            for k in range(i + 1, len(arr)):
+                if arr[i] > arr[k]:
+                    count += 1
+                else:
+                    break
+            print("Your list is: ", end="")
+            for a in range(i, count + 1):
+                print(arr[a], end=" ")
+            print()
