@@ -3750,10 +3750,12 @@
 # else:
 #     print("No")
 
-arr = [1, 5, 4, 3, 2, 6]
+# arr = [1, 5, 4, 3, 2, 6]
+# arr = [3, 1, 2]
 # arr = [1, 2, 3, 5, 4]
 # arr = [1, 2, 3, 8, 5, 6, 4, 9]
 # arr = [2, 4, 6, 8, 12, 10, 14, 16, 18, 20]
+arr = [4, 2]
 reverse_upper = 1
 reverse_down = 1
 swap_upper = 1
@@ -3762,7 +3764,7 @@ check = True
 for i in range(len(arr)):
     for j in range(i + 1, len(arr)):
         if arr[i] > arr[j] and check is True:
-            print(arr[i])
+            # print(arr[i])
             check = False
             count = i
             for k in range(i + 1, len(arr)):
@@ -3770,9 +3772,9 @@ for i in range(len(arr)):
                     count += 1
                 else:
                     break
-            print("Your list is: ", end="")
+            # print("Your list is: ", end="")
             new = [arr[a] for a in range(i + 1, count + 1)]
-            print(new)
+            # print(new)
             swap_cond = 0
             reverse_cond = 0
             for b in range(1, len(new)):
@@ -3781,13 +3783,15 @@ for i in range(len(arr)):
                 else:
                     reverse_cond = 0
                     break
-            print("Swap", swap_cond)
-            print("Reverse", reverse_cond)
+            # print("Swap", swap_cond)
+            # print("Reverse", reverse_cond)
             if reverse_cond == 1:
                 reverse_upper += i
                 reverse_down += arr.index(new[-1])
+                print("yes")
+                print("reverse", reverse_upper, reverse_down)
             else:
                 swap_upper += i
                 swap_down += arr.index(min(new))
-            print(reverse_upper, reverse_down)
-            print(swap_upper, swap_down)
+                print("yes")
+                print("swap", swap_upper, swap_down)
