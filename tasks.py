@@ -3750,9 +3750,14 @@
 # else:
 #     print("No")
 
-arr = [1, 5, 4, 3, 2, 6]
+# arr = [1, 5, 4, 3, 2, 6]
 # arr = [1, 2, 3, 5, 4]
 # arr = [1, 2, 3, 8, 5, 6, 4, 9]
+arr = [2, 4, 6, 8, 12, 10, 14, 16, 18, 20]
+reverse_upper = 1
+reverse_down = 1
+swap_upper = 1
+swap_down = 1
 for i in range(len(arr)):
     check = True
     for j in range(i + 1, len(arr)):
@@ -3778,3 +3783,11 @@ for i in range(len(arr)):
                     break
             print("Swap", swap_cond)
             print("Reverse", reverse_cond)
+            if reverse_cond == 1:
+                reverse_upper += i
+                reverse_down += arr.index(new[-1])
+            else:
+                swap_upper += i
+                swap_down += arr.index(min(new))
+            print(reverse_upper, reverse_down)
+            print(swap_upper, swap_down)
