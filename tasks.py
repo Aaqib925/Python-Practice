@@ -3737,15 +3737,15 @@
 # arr = [3, 1, 2]
 # arr = [1, 3, 4, 2]
 arr = [1, 2, 3, 5, 4]
-result = []
-for i in range(len(arr)):
-    x = arr[i]
-    count = 0
-    for j in range(i + 1, len(arr)):
-        if x > arr[j]:
-            count += 1
-    result.append(count)
-if sum(result) % 2 == 0:
-    print("Yes")
-else:
-    print("No")
+# result = []
+# for i in range(len(arr)):
+#     x = arr[i]
+#     count = 0
+#     for j in range(i + 1, len(arr)):
+#         if x > arr[j]:
+#             count += 1
+#     result.append(count)
+# if sum(result) % 2 == 0:
+#     print("Yes")
+# else:
+#     print("No")
