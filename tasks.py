@@ -3795,3 +3795,5 @@
 #                 swap_down += arr.index(min(new))
 #                 print("yes")
 #                 print("swap", swap_upper, swap_down)
+
+print("Today is my birthday, I miss her <3")
