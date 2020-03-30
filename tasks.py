@@ -3796,5 +3796,5 @@
 #                 print("yes")
 #                 print("swap", swap_upper, swap_down)
 
-print("Today is my birthday, I miss her <3")
-print("She didn't wished me <3")
+# print("Today is my birthday, I miss her <3")
+# print("She didn't wished me <3")
