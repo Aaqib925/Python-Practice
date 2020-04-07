@@ -3798,3 +3798,9 @@
 
 # print("Today is my birthday, I miss her <3")
 # print("She didn't wished me <3")
+
+x = "aaqib"
+new = ""
+for i in x:
+    new += i.upper()
+print(new)
