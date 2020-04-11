@@ -3800,7 +3800,7 @@
 # print("She didn't wished me <3")
 
 x = "aaqib"
-new = ""
-for i in x:
-    new += i.upper()
-print(new)
+# new = ""
+# for i in x:
+#     new += i.upper()
+# print(new)
