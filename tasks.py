@@ -3804,3 +3804,8 @@
 # for i in x:
 #     new += i.upper()
 # print(new)
+
+arr = [[1, 2], [4, 3]]
+for i in range(len(arr)):
+    for j in range(len(arr[0])):
+        print(arr[i][j])
