@@ -3806,6 +3806,11 @@
 # print(new)
 
 arr = [[1, 2], [4, 3]]
-for i in range(len(arr)):
-    for j in range(len(arr[0])):
-        print(arr[i][j])
+result = [[0, 0], [0, 0]]
+factor = 2
+for i in range(factor):
+    result[0][0] = arr[0][1]
+    result[0][1] = arr[1][1]
+    result[1][0] = arr[0][0]
+    result[1][1] = arr[1][0]
+print(result)
