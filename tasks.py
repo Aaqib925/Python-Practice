@@ -3815,12 +3815,15 @@
 #     result[1][1] = arr[1][0]
 # print(result)
 
-matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+# matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
-layer = 0
-factor = 3
+matrix = [[1, 2, 3, 4], [7, 8, 9, 10], [19, 20, 21, 22], [25, 26, 27, 28]]
+layer = 1
+l = 2
 for i in range(len(matrix)):
     for j in range(len(matrix[0])):
-        if (i == layer and j <= factor) or (i == factor and j <= factor) and (i >):
+        if (i == layer or i == l) and layer <= j <= l:
+            print(matrix[i][j])
+        elif (j == layer or j == l) and layer < i < l:
             print(matrix[i][j])
     print("Done")
