@@ -3818,8 +3818,9 @@
 matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
 layer = 0
+factor = 3
 for i in range(len(matrix)):
     for j in range(len(matrix[0])):
-        print(matrix[i][j])
-
+        if (i == layer and j <= factor) or (i == factor and j <= factor) and (i >):
+            print(matrix[i][j])
     print("Done")
