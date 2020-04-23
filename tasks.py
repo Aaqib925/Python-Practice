@@ -3835,5 +3835,6 @@ for i in range(len(matrix)):
     for j in range(len(matrix[0])):
         if (i == layer or i == length - layer) and (layer <= j <= columns - layer):
             print(matrix[i][j])
-
+        elif (j == layer or j == columns - layer) and (layer < i < len(matrix)):
+            print(matrix[i][j])
     print("Done")
