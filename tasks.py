@@ -3828,3 +3828,12 @@ matrix = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 
 #         elif (j == layer or j == l) and layer < i < l:
 #             print(matrix[i][j])
 #     print("Done")
+layer = 1
+columns = len(matrix[0]) - 1
+length = len(matrix) - 1
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        if (i == layer or i == length - layer) and (layer <= j <= columns - layer):
+            print(matrix[i][j])
+
+    print("Done")
