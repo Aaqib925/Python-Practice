@@ -3805,12 +3805,21 @@
 #     new += i.upper()
 # print(new)
 
-arr = [[1, 2], [4, 3]]
-result = [[0, 0], [0, 0]]
-factor = 2
-for i in range(factor):
-    result[0][0] = arr[0][1]
-    result[0][1] = arr[1][1]
-    result[1][0] = arr[0][0]
-    result[1][1] = arr[1][0]
-print(result)
+# arr = [[1, 2], [4, 3]]
+# result = [[0, 0], [0, 0]]
+# factor = 2
+# for i in range(factor):
+#     result[0][0] = arr[0][1]
+#     result[0][1] = arr[1][1]
+#     result[1][0] = arr[0][0]
+#     result[1][1] = arr[1][0]
+# print(result)
+
+matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+
+layer = 0
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        print(matrix[i][j])
+
+    print("Done")
