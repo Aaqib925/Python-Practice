@@ -3820,9 +3820,8 @@
 x = input("Enter any word: ")
 cond = True
 
-
 for i in range(len(x)):
-    if x[i] != x[-(i + 1)]:
+    if x[i].lower() != x[-(i + 1)].lower():
         cond = False
         break
 
