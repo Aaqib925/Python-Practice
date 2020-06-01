@@ -3831,7 +3831,7 @@
 #     print("Your word {} is a palindrome.".format(x))
 
 
-# matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
 # matrix = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 26, 27, 28]]
 # layer = 1
@@ -3844,14 +3844,14 @@
 #         elif (j == layer or j == l) and layer < i < l:
 #             print(matrix[i][j])
 #     print("Done")
-# layer = 0
-# columns = len(matrix[0]) - 1
-# length = len(matrix) - 1
-# for i in range(len(matrix)):
-#     for j in range(len(matrix[0])):
-#         if (i == layer or i == length - layer) and (layer <= j <= columns - layer):
-#             print(matrix[i][j])
-#         elif (j == layer or j == columns - layer) and (layer < i < len(matrix)):
-#             print(matrix[i][j])
-#     print("Done")
+layer = 0
+columns = len(matrix[0]) - 1
+length = len(matrix) - 1
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        if (i == layer or i == length - layer) and (layer <= j <= columns - layer):
+            print(matrix[i][j])
+        elif (j == layer or j == columns - layer) and (layer < i < len(matrix)):
+            print(matrix[i][j])
+    print("Done")
 
