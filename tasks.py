@@ -3826,6 +3826,10 @@ for i in range(len(x)):
         cond = False
         break
 
+if cond is False:
+    print("Your word {} is not a palindrome.".format(x))
+else:
+    print("Your word {} is a palindrome.".format(x))
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
 # matrix = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 26, 27, 28]]
