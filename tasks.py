@@ -3817,18 +3817,18 @@
 
 # palindrom algorithm
 
-x = input("Enter any word: ")
-cond = True
-
-for i in range(len(x)):
-    if x[i].lower() != x[-(i + 1)].lower():
-        cond = False
-        break
-
-if cond is False:
-    print("Your word {} is not a palindrome.".format(x))
-else:
-    print("Your word {} is a palindrome.".format(x))
+# x = input("Enter any word: ")
+# cond = True
+#
+# for i in range(len(x)):
+#     if x[i].lower() != x[-(i + 1)].lower():
+#         cond = False
+#         break
+#
+# if cond is False:
+#     print("Your word {} is not a palindrome.".format(x))
+# else:
+#     print("Your word {} is a palindrome.".format(x))
 
 
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
