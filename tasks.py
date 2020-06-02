@@ -3830,7 +3830,7 @@
 # else:
 #     print("Your word {} is a palindrome.".format(x))
 
-print(False and False)
+# print(False and False)
 
 matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
