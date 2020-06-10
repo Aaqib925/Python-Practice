@@ -3841,7 +3841,12 @@ x = int(input("Enter the number you want to locate using binary search: "))
 
 def binarySearch(arr):
     location = 0
+    low = 0
+    high = len(arr) - 1
+    while True:
 
+
+binarySearch(array)
 
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
