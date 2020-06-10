@@ -3843,9 +3843,19 @@ def binarySearch(value, arr):
     location = 0
     low = 0
     high = len(arr) - 1
+    location = 0
     found = False
-
-
+    while low <= high and not found:
+        mid = (low + high) // 2
+        if value == arr[mid]:
+            found = True
+            location = mid
+        else:
+            if value > arr[mid]:
+                low = mid + 1
+            elif value < arr[mid]:
+                high = mid - 1
+    return location
 
 print(binarySearch(x, array))
 
