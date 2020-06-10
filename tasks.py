@@ -3832,6 +3832,17 @@
 
 # print(False and False)
 
+# binary search algorithm
+
+array = [10, 14, 19, 26, 31, 42, 44]
+
+x = int(input("Enter the number you want to locate using binary search: "))
+
+
+def binarySearch(arr):
+    location = 0
+
+
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
 # matrix = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 26, 27, 28]]
