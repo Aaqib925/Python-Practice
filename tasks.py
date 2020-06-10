@@ -3844,14 +3844,13 @@ def binarySearch(value, arr):
     low = 0
     high = len(arr) - 1
     mid = (low + high) / 2
-    while True:
-        if value == mid:
-            location = mid
-            return location
-        elif value > mid:
-            low = mid + 1
-        elif value < mid:
-            high = mid - 1
+    if value == mid:
+        return mid
+    else:
+        if value > mid:
+            while
+
+print(binarySearch(x, array))
 
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
