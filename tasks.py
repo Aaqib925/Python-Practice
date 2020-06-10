@@ -3839,14 +3839,20 @@ array = [10, 14, 19, 26, 31, 42, 44]
 x = int(input("Enter the number you want to locate using binary search: "))
 
 
-def binarySearch(arr):
+def binarySearch(value, arr):
     location = 0
     low = 0
     high = len(arr) - 1
+    mid = (low + high)/ 2
     while True:
+        if value == mid:
+            return mid
+        elif value > mid:
+            low = mid + 1
+        elif value < mid:
+            high = mid - 1
 
 
-binarySearch(array)
 
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
