@@ -3840,7 +3840,6 @@ x = int(input("Enter the number you want to locate using binary search: "))
 
 
 def binarySearch(value, arr):
-    location = 0
     low = 0
     high = len(arr) - 1
     location = 0
