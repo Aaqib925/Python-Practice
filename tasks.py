@@ -3834,30 +3834,30 @@
 
 # binary search algorithm
 
-array = [10, 14, 19, 26, 31, 42, 44]
-
-x = int(input("Enter the number you want to locate using binary search: "))
-
-
-def binarySearch(value, arr):
-    low = 0
-    high = len(arr) - 1
-    location = 0
-    found = False
-    while low <= high and not found:
-        mid = (low + high) // 2
-        if value == arr[mid]:
-            found = True
-            location = mid
-        else:
-            if value > arr[mid]:
-                low = mid + 1
-            elif value < arr[mid]:
-                high = mid - 1
-    return location
-
-
-print(binarySearch(x, array))
+# array = [10, 14, 19, 26, 31, 42, 44]
+#
+# x = int(input("Enter the number you want to locate using binary search: "))
+#
+#
+# def binarySearch(value, arr):
+#     low = 0
+#     high = len(arr) - 1
+#     location = 0
+#     found = False
+#     while low <= high and not found:
+#         mid = (low + high) // 2
+#         if value == arr[mid]:
+#             found = True
+#             location = mid
+#         else:
+#             if value > arr[mid]:
+#                 low = mid + 1
+#             elif value < arr[mid]:
+#                 high = mid - 1
+#     return location
+#
+#
+# print(binarySearch(x, array))
 
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
