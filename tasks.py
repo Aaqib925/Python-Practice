@@ -3843,16 +3843,15 @@ def binarySearch(value, arr):
     location = 0
     low = 0
     high = len(arr) - 1
-    mid = (low + high)/ 2
+    mid = (low + high) / 2
     while True:
         if value == mid:
-            return mid
+            location = mid
+            return location
         elif value > mid:
             low = mid + 1
         elif value < mid:
             high = mid - 1
-
-
 
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
@@ -3878,4 +3877,3 @@ def binarySearch(value, arr):
 #         elif (j == layer or j == columns - layer) and (layer < i < len(matrix)):
 #             print(matrix[i][j])
 #     print("Done")
-
