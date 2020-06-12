@@ -3939,3 +3939,11 @@ for j in range(len(indexes)):
         print(indexes[(j + factor) - len(indexes)])
 
 result = []
+
+for i in range(len(matrix)):
+    ls = []
+    for j in range(len(matrix[0])):
+        ls.append(0)
+    result.append(ls)
+
+print(result)
