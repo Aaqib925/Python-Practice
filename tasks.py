@@ -3946,8 +3946,6 @@ for j in range(len(indexes)):
         x += indexes[j + factor]
     else:
         x += indexes[(j + factor) - len(indexes)]
-    print(elements[j], x)
+    result[x[0]][x[1]] += elements[j]
 
 
-
-# print(result)
