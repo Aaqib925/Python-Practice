@@ -3960,67 +3960,67 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 # print(result)
 
 
-def matrixRotation(matrix, r):
-    factor = r
-    rows = len(matrix)
-    columns = len(matrix[0])
-    num = min(rows, columns) // 2
-
-    result = []
-
-    for i in range(rows):
-        ls = []
-        for j in range(columns):
-            ls.append(0)
-        result.append(ls)
-
-    for layer in range(num):
-        indexes = []
-        elements = []
-        # first pair
-
-        for i in range(layer, rows - layer - 1):
-            # print(matrix[i][layer])
-            indexes.append((i, layer))
-            elements.append(matrix[i][layer])
-
-        # second pair
-
-        for i in range(layer, columns - layer - 1):
-            # print(matrix[rows - layer - 1][i])
-            indexes.append((rows - layer - 1, i))
-            elements.append(matrix[rows - layer - 1][i])
-
-        # third pair
-
-        for i in range(rows - layer - 1, layer, -1):
-            # print(matrix[i][columns - layer - 1])
-            indexes.append((i, columns - layer - 1))
-            elements.append(matrix[i][columns - layer - 1])
-
-        # fourth pair
-
-        for i in range(columns - layer - 1, layer, -1):
-            # print(matrix[layer][i])
-            indexes.append((layer, i))
-            elements.append(matrix[layer][i])
-
-        for j in range(len(indexes)):
-            x = ()
-            if j + factor < len(indexes):
-                # print(x)
-                x += indexes[j + factor]
-            elif (j + factor) - len(indexes) == len(indexes):
-                x += indexes[0]
-                # print(x)
-
-            else:
-                x += indexes[(j + factor) - len(indexes)]
-                # print(x)
-            if x != ():
-                result[x[0]][x[1]] += elements[j]
-
-    return result
-
-
-print(matrixRotation(matrix1, 7))
+# def matrixRotation(matrix, r):
+#     factor = r
+#     rows = len(matrix)
+#     columns = len(matrix[0])
+#     num = min(rows, columns) // 2
+#
+#     result = []
+#
+#     for i in range(rows):
+#         ls = []
+#         for j in range(columns):
+#             ls.append(0)
+#         result.append(ls)
+#
+#     for layer in range(num):
+#         indexes = []
+#         elements = []
+#         # first pair
+#
+#         for i in range(layer, rows - layer - 1):
+#             # print(matrix[i][layer])
+#             indexes.append((i, layer))
+#             elements.append(matrix[i][layer])
+#
+#         # second pair
+#
+#         for i in range(layer, columns - layer - 1):
+#             # print(matrix[rows - layer - 1][i])
+#             indexes.append((rows - layer - 1, i))
+#             elements.append(matrix[rows - layer - 1][i])
+#
+#         # third pair
+#
+#         for i in range(rows - layer - 1, layer, -1):
+#             # print(matrix[i][columns - layer - 1])
+#             indexes.append((i, columns - layer - 1))
+#             elements.append(matrix[i][columns - layer - 1])
+#
+#         # fourth pair
+#
+#         for i in range(columns - layer - 1, layer, -1):
+#             # print(matrix[layer][i])
+#             indexes.append((layer, i))
+#             elements.append(matrix[layer][i])
+#
+#         for j in range(len(indexes)):
+#             x = ()
+#             if j + factor < len(indexes):
+#                 # print(x)
+#                 x += indexes[j + factor]
+#             elif (j + factor) - len(indexes) == len(indexes):
+#                 x += indexes[0]
+#                 # print(x)
+#
+#             else:
+#                 x += indexes[(j + factor) - len(indexes)]
+#                 # print(x)
+#             if x != ():
+#                 result[x[0]][x[1]] += elements[j]
+#
+#     return result
+#
+#
+# print(matrixRotation(matrix1, 7))
