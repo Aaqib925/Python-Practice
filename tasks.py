@@ -3956,3 +3956,9 @@ for j in range(len(indexes)):
         result[x[0]][x[1]] += elements[j]
 
 print(result)
+
+
+def matrixRotation(matrix, r):
+    factor = r
+    rows = len(matrix)
+    columns = len(matrix[0])
