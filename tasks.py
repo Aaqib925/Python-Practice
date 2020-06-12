@@ -3926,4 +3926,6 @@ print("Done")
 for i in range(columns - layer - 1, layer, -1):
     print(matrix[layer][i])
     indexes.append((layer, i))
+    elements.append(matrix[layer][i])
+
 print(indexes)
