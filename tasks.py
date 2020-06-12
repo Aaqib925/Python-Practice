@@ -3885,7 +3885,7 @@
 #     print("Done")
 
 
-matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
+matrix1 = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
 layer = 0
 rows = len(matrix)
 # print(rows)
@@ -3962,3 +3962,19 @@ def matrixRotation(matrix, r):
     factor = r
     rows = len(matrix)
     columns = len(matrix[0])
+    num = min(rows, columns) // 2
+
+
+    result = []
+
+    for i in range(rows):
+        ls = []
+        for j in range(columns):
+            ls.append(0)
+        result.append(ls)
+
+
+    for layer in range(num):
+
+
+# print(matrixRotation(matrix1, 2))
