@@ -3861,7 +3861,7 @@
 
 # matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
 
-# matrix = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 26, 27, 28]]
+matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 26, 27, 28]]
 # layer = 1
 # l = len(matrix)
 # print(l)
@@ -3885,7 +3885,9 @@
 #     print("Done")
 
 
-matrix1 = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
+# matrix1 = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
+
+
 # layer = 0
 # rows = len(matrix)
 # # print(rows)
@@ -3972,7 +3974,6 @@ def matrixRotation(matrix, r):
             ls.append(0)
         result.append(ls)
 
-
     for layer in range(num):
         indexes = []
         elements = []
@@ -3990,14 +3991,12 @@ def matrixRotation(matrix, r):
             indexes.append((rows - layer - 1, i))
             elements.append(matrix[rows - layer - 1][i])
 
-
         # third pair
 
         for i in range(rows - layer - 1, layer, -1):
             # print(matrix[i][columns - layer - 1])
             indexes.append((i, columns - layer - 1))
             elements.append(matrix[i][columns - layer - 1])
-
 
         # fourth pair
 
@@ -4022,4 +4021,6 @@ def matrixRotation(matrix, r):
                 result[x[0]][x[1]] += elements[j]
 
     return result
-print(matrixRotation(matrix1, 2))
+
+
+print(matrixRotation(matrix1, 7))
