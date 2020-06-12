@@ -3859,7 +3859,7 @@
 #
 # print(binarySearch(x, array))
 
-matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
+# matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
 
 # matrix = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 26, 27, 28]]
 # layer = 1
@@ -3885,17 +3885,20 @@ matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
 #     print("Done")
 
 
-# matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
-layer = 0
+matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
+layer = 1
 rows = len(matrix)
 # print(rows)
 columns = len(matrix[0])
 # print(columns)
 
+indexes = []
+
 # first pair
 
 for i in range(layer, rows - layer - 1):
     print(matrix[i][layer])
+    indexes.append((i, layer))
 
 print("Done")
 # second pair
