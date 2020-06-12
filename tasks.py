@@ -3896,3 +3896,9 @@ columns = len(matrix[0])
 
 for i in range(layer, rows - layer - 1):
     print(matrix[i][layer])
+
+print("Done")
+# second pair
+
+for i in range(layer, columns - layer - 1):
+    print(matrix[rows - layer - 1][i])
