@@ -3948,4 +3948,4 @@ for j in range(len(indexes)):
         x += indexes[(j + factor) - len(indexes)]
     result[x[0]][x[1]] += elements[j]
 
-
+print(result)
