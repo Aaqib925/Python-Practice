@@ -3885,8 +3885,8 @@
 #     print("Done")
 
 
-matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
-layer = 1
+# matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
+layer = 0
 rows = len(matrix)
 # print(rows)
 columns = len(matrix[0])
