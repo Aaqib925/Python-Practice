@@ -3859,7 +3859,7 @@
 #
 # print(binarySearch(x, array))
 
-# matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+# matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
 
 # matrix = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 26, 27, 28]]
 # layer = 1
@@ -3883,3 +3883,5 @@
 #         elif (j == layer or j == columns - layer) and (layer < i < len(matrix)):
 #             print(matrix[i][j])
 #     print("Done")
+
+
