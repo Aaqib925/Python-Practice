@@ -3891,10 +3891,18 @@ rows = len(matrix)
 # print(rows)
 columns = len(matrix[0])
 # print(columns)
-factor = 7
+factor = 2
 
 indexes = []
 elements = []
+
+result = []
+
+for i in range(len(matrix)):
+    ls = []
+    for j in range(len(matrix[0])):
+        ls.append(0)
+    result.append(ls)
 
 # first pair
 
@@ -3938,14 +3946,8 @@ for j in range(len(indexes)):
         x += indexes[j + factor]
     else:
         x += indexes[(j + factor) - len(indexes)]
+    print(elements[j], x)
 
 
-result = []
-
-for i in range(len(matrix)):
-    ls = []
-    for j in range(len(matrix[0])):
-        ls.append(0)
-    result.append(ls)
 
 # print(result)
