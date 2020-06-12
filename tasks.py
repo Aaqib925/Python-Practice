@@ -3907,7 +3907,12 @@ print("Done")
 
 # third pair
 
-for i in range(columns - layer - 1, layer):
+for i in range(columns - layer - 1, layer, -1):
     print(matrix[i][columns - layer - 1])
 
 print("Done")
+
+# fourth pair
+
+for i in range(columns - layer - 1, layer, -1):
+    print(matrix[layer][i])
