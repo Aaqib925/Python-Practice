@@ -3893,12 +3893,14 @@ columns = len(matrix[0])
 # print(columns)
 
 indexes = []
+elements = []
 
 # first pair
 
 for i in range(layer, rows - layer - 1):
     print(matrix[i][layer])
     indexes.append((i, layer))
+    elements.append(matrix[i][layer])
 
 print("Done")
 # second pair
@@ -3906,6 +3908,7 @@ print("Done")
 for i in range(layer, columns - layer - 1):
     print(matrix[rows - layer - 1][i])
     indexes.append((rows - layer - 1, i))
+    elements.append(matrix[rows - layer - 1][i])
 
 print("Done")
 
@@ -3914,6 +3917,7 @@ print("Done")
 for i in range(rows - layer - 1, layer, -1):
     print(matrix[i][columns - layer - 1])
     indexes.append((i, columns - layer - 1))
+    elements.append(matrix[i][columns - layer - 1])
 
 print("Done")
 
