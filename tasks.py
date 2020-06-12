@@ -3891,6 +3891,7 @@ rows = len(matrix)
 # print(rows)
 columns = len(matrix[0])
 # print(columns)
+factor = 2
 
 indexes = []
 elements = []
@@ -3929,3 +3930,4 @@ for i in range(columns - layer - 1, layer, -1):
     elements.append(matrix[layer][i])
 
 print(indexes)
+print(elements)
