@@ -3886,7 +3886,7 @@
 
 
 matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
-layer = 0
+layer = 1
 rows = len(matrix)
 # print(rows)
 columns = len(matrix[0])
@@ -3943,9 +3943,15 @@ print(elements)
 for j in range(len(indexes)):
     x = ()
     if j + factor < len(indexes):
+        print(x)
         x += indexes[j + factor]
+    elif (j + factor) - len(indexes) == len(indexes):
+        x += indexes[0]
+        print(x)
+
     else:
         x += indexes[(j + factor) - len(indexes)]
+        print(x)
     result[x[0]][x[1]] += elements[j]
 
 print(result)
