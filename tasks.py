@@ -3931,3 +3931,9 @@ for i in range(columns - layer - 1, layer, -1):
 
 print(indexes)
 print(elements)
+
+for j in range(len(indexes)):
+    if j + factor < len(indexes):
+        print(indexes[j + factor])
+    else:
+        print(indexes[(j + factor) - len(indexes)])
