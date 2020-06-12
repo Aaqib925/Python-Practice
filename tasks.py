@@ -3964,7 +3964,6 @@ def matrixRotation(matrix, r):
     columns = len(matrix[0])
     num = min(rows, columns) // 2
 
-
     result = []
 
     for i in range(rows):
@@ -3975,6 +3974,36 @@ def matrixRotation(matrix, r):
 
 
     for layer in range(num):
+        indexes = []
+        elements = []
+        # first pair
 
+        for i in range(layer, rows - layer - 1):
+            # print(matrix[i][layer])
+            indexes.append((i, layer))
+            elements.append(matrix[i][layer])
+
+        # second pair
+
+        for i in range(layer, columns - layer - 1):
+            # print(matrix[rows - layer - 1][i])
+            indexes.append((rows - layer - 1, i))
+            elements.append(matrix[rows - layer - 1][i])
+
+
+        # third pair
+
+        for i in range(rows - layer - 1, layer, -1):
+            # print(matrix[i][columns - layer - 1])
+            indexes.append((i, columns - layer - 1))
+            elements.append(matrix[i][columns - layer - 1])
+
+
+        # fourth pair
+
+        for i in range(columns - layer - 1, layer, -1):
+            # print(matrix[layer][i])
+            indexes.append((layer, i))
+            elements.append(matrix[layer][i])
 
 # print(matrixRotation(matrix1, 2))
