@@ -3891,7 +3891,7 @@ rows = len(matrix)
 # print(rows)
 columns = len(matrix[0])
 # print(columns)
-factor = 2
+factor = 7
 
 indexes = []
 elements = []
@@ -3937,3 +3937,5 @@ for j in range(len(indexes)):
         print(indexes[j + factor])
     else:
         print(indexes[(j + factor) - len(indexes)])
+
+result = []
