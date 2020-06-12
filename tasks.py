@@ -3933,10 +3933,12 @@ print(indexes)
 print(elements)
 
 for j in range(len(indexes)):
+    x = ()
     if j + factor < len(indexes):
-        print(indexes[j + factor])
+        x += indexes[j + factor]
     else:
-        print(indexes[(j + factor) - len(indexes)])
+        x += indexes[(j + factor) - len(indexes)]
+
 
 result = []
 
@@ -3946,4 +3948,4 @@ for i in range(len(matrix)):
         ls.append(0)
     result.append(ls)
 
-print(result)
+# print(result)
