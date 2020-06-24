@@ -4024,3 +4024,14 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 #
 #
 # print(matrixRotation(matrix1, 7))
+
+
+def fibonacci(num):
+    if num == 0 or num == 1:
+        return 1
+    return fibonacci(num - 1) + (num - 2)
+
+numberOfterms = 10
+
+for i in range(numberOfterms):
+    print(fibonacci(i))
