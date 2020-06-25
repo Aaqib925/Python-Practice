@@ -4026,11 +4026,11 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 # print(matrixRotation(matrix1, 7))
 
 
-def fibonacci(num):
-    if num <= 1:
-        return num
-    return fibonacci(num - 1) + fibonacci(num - 2)
-
-nterms = 10
-for i in range(nterms):
-    print(fibonacci(i))
+# def fibonacci(num):
+#     if num <= 1:
+#         return num
+#     return fibonacci(num - 1) + fibonacci(num - 2)
+#
+# nterms = 10
+# for i in range(nterms):
+#     print(fibonacci(i))
