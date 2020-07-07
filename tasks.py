@@ -4031,6 +4031,13 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 #         return num
 #     return fibonacci(num - 1) + fibonacci(num - 2)
 #
-# nterms = 10
+# nterms = 10 =my
 # for i in range(nterms):
 #     print(fibonacci(i))
+
+import random
+deck = [i for i in range(0, 52)]
+for i in range(4):
+    x = random.randint(0, 51)
+    print(deck[x])
+
