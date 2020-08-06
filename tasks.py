@@ -3862,6 +3862,8 @@
 # matrix = [[1, 2, 3, 4], [12, 1, 2, 5], [11, 4, 3, 6], [10, 9, 8, 7]]
 
 matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25, 26, 27, 28]]
+
+
 # layer = 1
 # l = len(matrix)
 # print(l)
@@ -4035,9 +4037,59 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 # for i in range(nterms):
 #     print(fibonacci(i))
 
-import random
-deck = [i for i in range(0, 52)]
-for i in range(4):
-    x = random.randint(0, 51)
-    print(deck[x])
+# import random
+# deck = [i for i in range(0, 52)]
+# for i in range(4):
+#     x = random.randint(0, 51)
+#     print(deck[x])
+# 
 
+# arr = [12, 35, 63, 67, 72, 77, 82, 91]
+# print(a)
+
+# def bubbleSort(arr):
+#     n = len(arr)
+#
+#     # Traverse through all array elements
+#     for i in range(n):
+#
+#         # Last i elements are already in place
+#         for j in range(0, n - i - 1):
+#
+#             # traverse the array from 0 to n-i-1
+#             # Swap if the element found is greater
+#             # than the next element
+#             if arr[j] > arr[j + 1]:
+#                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
+#
+#             # Driver code to test above
+
+
+arr = [33, 27, 22, 21, 54, 17, 12, 8]
+
+
+# Python program for implementation of Bubble Sort
+
+def bubbleSort(arr):
+    n = len(arr)
+
+    # Traverse through all array elements
+    for i in range(n):
+
+        # Last i elements are already in place
+        for j in range(0, n - i - 1):
+
+            # traverse the array from 0 to n-i-1
+            # Swap if the element found is greater
+            # than the next element
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                print(arr)
+            # Driver code to test above
+
+
+arr = [65, 11, 54, 45, 36, 25, 7, 4]
+
+bubbleSort(arr)
+
+print("Sorted array is:", arr)
