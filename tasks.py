@@ -4065,31 +4065,31 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 #             # Driver code to test above
 
 
-arr = [33, 27, 22, 21, 54, 17, 12, 8]
+# arr = [33, 27, 22, 21, 54, 17, 12, 8]
 
 
 # Python program for implementation of Bubble Sort
 
-def bubbleSort(arr):
-    n = len(arr)
-
-    # Traverse through all array elements
-    for i in range(n):
-
-        # Last i elements are already in place
-        for j in range(0, n - i - 1):
-
-            # traverse the array from 0 to n-i-1
-            # Swap if the element found is greater
-            # than the next element
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-                print(arr)
-            # Driver code to test above
-
-
-arr = [65, 11, 54, 45, 36, 25, 7, 4]
-
-bubbleSort(arr)
-
-print("Sorted array is:", arr)
+# def bubbleSort(arr):
+#     n = len(arr)
+#
+#     # Traverse through all array elements
+#     for i in range(n):
+#
+#         # Last i elements are already in place
+#         for j in range(0, n - i - 1):
+#
+#             # traverse the array from 0 to n-i-1
+#             # Swap if the element found is greater
+#             # than the next element
+#             if arr[j] > arr[j + 1]:
+#                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
+#                 print(arr)
+#             # Driver code to test above
+#
+#
+# arr = [65, 11, 54, 45, 36, 25, 7, 4]
+#
+# bubbleSort(arr)
+#
+# print("Sorted array is:", arr)
