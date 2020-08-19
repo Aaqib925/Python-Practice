@@ -4093,3 +4093,39 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 # bubbleSort(arr)
 #
 # print("Sorted array is:", arr)
+
+print "How many possible 4-digit numbers, each between 3500 & 6500, can be made"
+print "from the digits 0, 3, 4, 5, 6, 7, 8, and 9 if the digits can be used only"
+print "once? How many of these are odd numbers between 3500 & 6500?"
+print ""
+odd4 = 0
+s3 = 0
+s4 = 0
+s5 = 0
+all4 = 0
+lodd4 = []
+for num in range(3501,6000):
+    listnum = []
+    snum = str(num)
+    for k in range(4):
+        listnum += [snum[k]]
+    if len(set(listnum)) != 4 or  '1' in listnum or '2' in listnum:
+         continue
+    else:
+        all4 += 1
+        if snum[0] == "3":
+          s3 += 1
+        elif snum[0] == "4":
+          s4 += 1
+        elif snum[0] == "5":
+          s5 += 1
+        # if num % 2 == 1:
+        odd4 += 1
+        lodd4 += [num]
+print "There are",all4,"such 4-digit numbers."
+print ""
+print s3
+print s4
+print s5
+print "There are",odd4,"such 4-digit odd numbers:"
+print lodd4
