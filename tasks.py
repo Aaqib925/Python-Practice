@@ -4122,10 +4122,10 @@ for num in range(3501,6000):
         # if num % 2 == 1:
         odd4 += 1
         lodd4 += [num]
-print "There are",all4,"such 4-digit numbers."
-print ""
-print s3
-print s4
-print s5
-print "There are",odd4,"such 4-digit odd numbers:"
-print lodd4
+print ("There are",all4,"such 4-digit numbers.")
+print ("")
+print (s3)
+print (s4)
+print (s5)
+print ("There are",odd4,"such 4-digit odd numbers:")
+print (lodd4)
