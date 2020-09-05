@@ -4071,7 +4071,7 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 
 # def bubbleSort(arr):
 #     n = len(arr)
-#
+#     x = 0
 #     # Traverse through all array elements
 #     for i in range(n):
 #
@@ -4084,14 +4084,15 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 #             if arr[j] > arr[j + 1]:
 #                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 #                 print(arr)
+#                 x += 1
 #             # Driver code to test above
+#     # print(x/len(arr))
 #
-#
-# arr = [65, 11, 54, 45, 36, 25, 7, 4]
-#
+# # arr = [65, 11, 54, 45, 36, 25, 7, 4]
+# arr = [99, 88, 77, 66, 55, 44, 22, 11]
 # bubbleSort(arr)
-#
-# print("Sorted array is:", arr)
+
+print("Sorted array is:", arr)
 # odd4 = 0
 # s3 = 0
 # s4 = 0
