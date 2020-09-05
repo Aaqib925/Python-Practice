@@ -4092,7 +4092,7 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 # arr = [99, 88, 77, 66, 55, 44, 22, 11]
 # bubbleSort(arr)
 
-print("Sorted array is:", arr)
+# print("Sorted array is:", arr)
 # odd4 = 0
 # s3 = 0
 # s4 = 0
@@ -4124,3 +4124,9 @@ print("Sorted array is:", arr)
 # print(s5)
 # print("There are", odd4, "such 4-digit odd numbers:")
 # print(lodd4)
+x = 0
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i)
+        x += 1
+print("Total", x)
