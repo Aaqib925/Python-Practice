@@ -4130,3 +4130,19 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 #         print(i)
 #         x += 1
 # print("Total", x)
+def permutation(arr):
+    ip = len(arr) - 2
+    while (ip >= 0 and arr[ip] >= arr[ip + 1]):
+        ip -= 1
+    if ip < 0:
+        return arr
+        
+    for i in reversed(range(ip, len(arr))):
+        if arr[i] > arr[ip]:
+            arr[i], arr[ip] = arr[ip], arr[i]
+            break
+    arr[ip+1:] = reversed(arr[ip+1:])
+    return arr
+arr = [1, 2, 3, 4]
+for i in range(24):
+    print(permutation(arr))
