@@ -4146,3 +4146,15 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 # arr = [1, 2, 3, 4]
 # for i in range(24):
 #     print(permutation(arr))
+
+# arr = [1, 2, 3, 2, 1]
+# ans = 0
+# for i in range(len(arr)):
+#     count = 0
+#     for j in range(len(arr)):
+#         if arr[i] == arr[j]:
+#             count += 1
+#     if count == 1:
+#         ans = arr[i]
+#         break
+# print(ans)
