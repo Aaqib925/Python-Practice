@@ -4164,24 +4164,26 @@ class rip:
         self.result = 0
 
     def addition(self, a, b, c, d, e, f):
-        result = (a + b + c) + (d + e + f)
-        return result
+        self.result = (a + b + c) + (d + e + f)
+        return self.result
     
     def subtraction(self, a, b, c, d, e, f):
-        result = (a + b + c) - (d + e + f)
-        return result
+        self.result = (a + b + c) - (d + e + f)
+        return self.result
     
     def product(self, a, b, c, d, e, f):
-        result = (a + b + c) * (d + e + f)
-        return result
+        self.result = (a + b + c) * (d + e + f)
+        return self.result
 
     def divide(self, a, b, c, d, e, f):
-        result = (a + b + c) / (d + e + f)
-        return result
+        self.result = (a + b + c) / (d + e + f)
+        return self.result
 
 obj = rip()
 
 print(obj.addition(1, 2, 3, 4, 5, 6))
-print(obj.subtraction(1, 2, 3, 4, 5, 6))
-print(obj.divide(1, 2, 3, 4, 5, 6))
-print(obj.product(1, 2, 3, 4, 5, 6))
+# print(obj.subtraction(1, 2, 3, 4, 5, 6))
+# print(obj.divide(1, 2, 3, 4, 5, 6))
+# print(obj.product(1, 2, 3, 4, 5, 6))
+
+print(obj.result)
