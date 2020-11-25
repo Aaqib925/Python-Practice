@@ -4160,17 +4160,24 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 # print(ans)
 
 class rip:
+    def __init__(self):
+        self.result = 0
+
     def addition(self, a, b, c, d, e, f):
-        return (a + b + c) + (d + e + f)
+        result = (a + b + c) + (d + e + f)
+        return result
     
     def subtraction(self, a, b, c, d, e, f):
-        return (a + b + c) - (d + e + f)
+        result = (a + b + c) - (d + e + f)
+        return result
     
     def product(self, a, b, c, d, e, f):
-        return (a + b + c) * (d + e + f)
+        result = (a + b + c) * (d + e + f)
+        return result
 
     def divide(self, a, b, c, d, e, f):
-        return (a + b + c) / (d + e + f)
+        result = (a + b + c) / (d + e + f)
+        return result
 
 obj = rip()
 
