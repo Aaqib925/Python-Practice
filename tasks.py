@@ -4158,3 +4158,9 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 #         ans = arr[i]
 #         break
 # print(ans)
+
+class rip:
+    def addition(self, a, b, c, d, e, f):
+        return (a + b + c) + (d + e + f)
+    
+    def subtraction()
