@@ -4163,4 +4163,13 @@ class rip:
     def addition(self, a, b, c, d, e, f):
         return (a + b + c) + (d + e + f)
     
-    def subtraction()
+    def subtraction(self, a, b, c, d, e, f):
+        return (a + b + c) - (d, e, f)
+    
+    def product(self, a, b, c, d, e, f):
+        return (a + b + c) * (d, e, f)
+
+    def divide(self, a, b, c, d, e, f):
+        return (a + b + c) / (d, e, f)
+
+obj = rip 
