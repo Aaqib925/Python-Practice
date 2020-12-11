@@ -4188,46 +4188,46 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 
 # print(obj.result)
 
-x = int(input("Enter number of students to calculate percentage: "))
-results = []
-dict = {}
-for i in range(x):
-    y = int(input("Enter How many Subjects for Person {}: ".format(i + 1)))
-    while (y != 3 or y != 5):
-        y = int(input("Please Enter 3 or 5: "))
-        if (y == 3 or y == 5):
-            break
-    percentage = 0
-    for j in range(y):
-        marks = float(input("Enter marks for Person {}, Subject {}: ".format(i + 1, j + 1)))
-        percentage += marks
-    percentage /= y
-    print()
-    if percentage>=94 and percentage<=100:
-        print('A+\nExtra Ordinary')
-    elif percentage>=85 and percentage<=93:
-        print('A\nExellent')
-    elif percentage>=80 and percentage<=84:
-        print('A-\nVery Good')
-    elif percentage>=75 and percentage<=79:
-        print('B+\nVery good')
-    elif percentage>=70 and percentage<=74:
-        print('B\nGood')
-    elif percentage>=67 and percentage<=69:
-        print('B-\nAbove Average')
-    elif percentage>=64 and percentage<=66:
-        print('C+\nAverage')
-    elif percentage>=60 and percentage<=63:
-        print('C\nSatisfactory')
-    elif percentage>=57 and percentage<=59:
-        print('C-\nAdequate')
-    elif percentage>=54 and percentage<=56:
-        print('D+\nPass')
-    else:
-        print('Fail')
-    dict[percentage] = i + 1
-    results.append(percentage)
+# x = int(input("Enter number of students to calculate percentage: "))
+# results = []
+# dict = {}
+# for i in range(x):
+#     y = int(input("Enter How many Subjects for Person {}: ".format(i + 1)))
+#     while (y != 3 or y != 5):
+#         y = int(input("Please Enter 3 or 5: "))
+#         if (y == 3 or y == 5):
+#             break
+#     percentage = 0
+#     for j in range(y):
+#         marks = float(input("Enter marks for Person {}, Subject {}: ".format(i + 1, j + 1)))
+#         percentage += marks
+#     percentage /= y
+#     print()
+#     if percentage>=94 and percentage<=100:
+#         print('A+\nExtra Ordinary')
+#     elif percentage>=85 and percentage<=93:
+#         print('A\nExellent')
+#     elif percentage>=80 and percentage<=84:
+#         print('A-\nVery Good')
+#     elif percentage>=75 and percentage<=79:
+#         print('B+\nVery good')
+#     elif percentage>=70 and percentage<=74:
+#         print('B\nGood')
+#     elif percentage>=67 and percentage<=69:
+#         print('B-\nAbove Average')
+#     elif percentage>=64 and percentage<=66:
+#         print('C+\nAverage')
+#     elif percentage>=60 and percentage<=63:
+#         print('C\nSatisfactory')
+#     elif percentage>=57 and percentage<=59:
+#         print('C-\nAdequate')
+#     elif percentage>=54 and percentage<=56:
+#         print('D+\nPass')
+#     else:
+#         print('Fail')
+#     dict[percentage] = i + 1
+#     results.append(percentage)
 
-results.sort(reverse=True)
-for i in range(len(results)):
-    print("Person {} stands with {} Postion, Percentage {}".format(dict[results[i]], i + 1, results[i]))
+# results.sort(reverse=True)
+# for i in range(len(results)):
+#     print("Person {} stands with {} Postion, Percentage {}".format(dict[results[i]], i + 1, results[i]))
