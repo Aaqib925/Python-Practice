@@ -4231,3 +4231,11 @@ matrix1 = [[1, 2, 3, 4], [7, 8, 9, 10], [13, 14, 15, 16], [19, 20, 21, 22], [25,
 # results.sort(reverse=True)
 # for i in range(len(results)):
 #     print("Person {} stands with {} Postion, Percentage {}".format(dict[results[i]], i + 1, results[i]))
+
+# x = input("Enter any String: ")
+# # x = x.lower()
+# result = 0
+# for i in x:
+#     if i != 'a' or i != 'e' or i != 'i' or i != 'o' or i != 'u':
+#         result += 1
+# print("Consonants: ", result)
